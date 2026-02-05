@@ -1,1 +1,18 @@
-{"project":"besttrips","pages_total":1,"pages_target":1000,"last_deployment":"2026-02-04T15:13:00Z","last_batch_size":10,"success_rate_7d":1.0,"current_status":"initializing","paused":false,"pause_reason":null,"next_batch_eta":"2026-02-05T19:00:00Z","errors_today":0,"builds_today":1}
+{
+  "project": "besttrips",
+  "pages_total": 1,
+  "pages_target": 1000,
+  "last_deployment": "2026-02-04T15:13:00Z",
+  "last_batch_size": 10,
+  "success_rate_7d": 1.0,
+  "current_status": "3day_sprint",
+  "paused": false,
+  "pause_reason": null,
+  "next_batch_eta": "2026-02-05T19:30:00Z",
+  "errors_today": 0,
+  "builds_today": 1,
+  "batch_size": 50,
+  "builds_per_day": 8,
+  "sprint_start": "2026-02-05T19:30:00Z",
+  "sprint_end": "2026-02-08T15:00:00Z"
+}
