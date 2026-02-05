@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Paris",
+    "country": "France",
+    "slug": "paris"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 99,
+  "slug": "best-hotels-couples-paris",
+  "title": "Best Hotels for Couples in Paris",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.815Z"
+}

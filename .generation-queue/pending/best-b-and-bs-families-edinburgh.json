@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "slug": "edinburgh"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 93,
+  "slug": "best-b-and-bs-families-edinburgh",
+  "title": "Best B&Bs for Families in Edinburgh",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.818Z"
+}

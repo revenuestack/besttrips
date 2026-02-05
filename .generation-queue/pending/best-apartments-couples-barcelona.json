@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 94,
+  "slug": "best-apartments-couples-barcelona",
+  "title": "Best Apartments for Couples in Barcelona",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.815Z"
+}

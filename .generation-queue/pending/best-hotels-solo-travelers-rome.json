@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 96,
+  "slug": "best-hotels-solo-travelers-rome",
+  "title": "Best Hotels for Solo Travelers in Rome",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "slug": "edinburgh"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 94,
+  "slug": "best-hotels-families-edinburgh",
+  "title": "Best Hotels for Families in Edinburgh",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.818Z"
+}

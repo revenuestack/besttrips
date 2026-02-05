@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 94,
+  "slug": "best-apartments-couples-rome",
+  "title": "Best Apartments for Couples in Rome",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

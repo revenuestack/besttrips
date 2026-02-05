@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 93,
+  "slug": "best-b-and-bs-couples-vienna",
+  "title": "Best B&Bs for Couples in Vienna",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

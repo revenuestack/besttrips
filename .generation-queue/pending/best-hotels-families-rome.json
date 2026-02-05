@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 100,
+  "slug": "best-hotels-families-rome",
+  "title": "Best Hotels for Families in Rome",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

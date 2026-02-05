@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 94,
+  "slug": "best-hotels-business-barcelona",
+  "title": "Best Hotels for Business Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.815Z"
+}

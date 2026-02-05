@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Dublin",
+    "country": "Ireland",
+    "slug": "dublin"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 93,
+  "slug": "best-b-and-bs-families-dublin",
+  "title": "Best B&Bs for Families in Dublin",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.818Z"
+}

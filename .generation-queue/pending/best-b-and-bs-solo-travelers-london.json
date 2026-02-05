@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "London",
+    "country": "England",
+    "slug": "london"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 94,
+  "slug": "best-b-and-bs-solo-travelers-london",
+  "title": "Best B&Bs for Solo Travelers in London",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.815Z"
+}

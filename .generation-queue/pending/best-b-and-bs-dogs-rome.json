@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 96,
+  "slug": "best-b-and-bs-dogs-rome",
+  "title": "Best B&Bs for Dog Owners in Rome",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

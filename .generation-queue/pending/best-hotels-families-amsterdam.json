@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "slug": "amsterdam"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 98,
+  "slug": "best-hotels-families-amsterdam",
+  "title": "Best Hotels for Families in Amsterdam",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

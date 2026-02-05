@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "slug": "prague"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 95,
+  "slug": "best-b-and-bs-families-prague",
+  "title": "Best B&Bs for Families in Prague",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

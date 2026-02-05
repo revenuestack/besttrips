@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 93,
+  "slug": "best-hostels-families-rome",
+  "title": "Best Hostels for Families in Rome",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

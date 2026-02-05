@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 97,
+  "slug": "best-b-and-bs-couples-rome",
+  "title": "Best B&Bs for Couples in Rome",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

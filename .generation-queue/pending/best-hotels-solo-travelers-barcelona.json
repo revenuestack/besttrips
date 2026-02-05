@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 96,
+  "slug": "best-hotels-solo-travelers-barcelona",
+  "title": "Best Hotels for Solo Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.815Z"
+}

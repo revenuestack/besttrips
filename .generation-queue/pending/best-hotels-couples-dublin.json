@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Dublin",
+    "country": "Ireland",
+    "slug": "dublin"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 93,
+  "slug": "best-hotels-couples-dublin",
+  "title": "Best Hotels for Couples in Dublin",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.818Z"
+}

@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 93,
+  "slug": "best-hotels-dogs-lisbon",
+  "title": "Best Hotels for Dog Owners in Lisbon",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.817Z"
+}

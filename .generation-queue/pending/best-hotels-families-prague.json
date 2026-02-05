@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "slug": "prague"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 96,
+  "slug": "best-hotels-families-prague",
+  "title": "Best Hotels for Families in Prague",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.816Z"
+}

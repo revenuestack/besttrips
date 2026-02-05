@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 93,
+  "slug": "best-hotels-budget-barcelona",
+  "title": "Best Hotels for Budget Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-05T16:01:24.815Z"
+}
