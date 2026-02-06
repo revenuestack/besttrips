@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 80,
+  "slug": "best-guesthouses-solo-travelers-lisbon",
+  "title": "Best Guesthouses for Solo Travelers in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

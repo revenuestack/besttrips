@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Dublin",
+    "country": "Ireland",
+    "slug": "dublin"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 78,
+  "slug": "best-villas-business-dublin",
+  "title": "Best Villas for Business Travelers in Dublin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

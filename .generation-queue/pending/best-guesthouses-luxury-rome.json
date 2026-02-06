@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-guesthouses-luxury-rome",
+  "title": "Best Guesthouses for Luxury Travelers in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

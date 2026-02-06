@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Madrid",
+    "country": "Spain",
+    "slug": "madrid"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-guesthouses-budget-madrid",
+  "title": "Best Guesthouses for Budget Travelers in Madrid",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "London",
+    "country": "England",
+    "slug": "london"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 99,
+  "slug": "best-hotels-couples-london",
+  "title": "Best Hotels for Couples in London",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.523Z"
+}

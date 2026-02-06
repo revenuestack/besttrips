@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 94,
+  "slug": "best-hotels-business-rome",
+  "title": "Best Hotels for Business Travelers in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

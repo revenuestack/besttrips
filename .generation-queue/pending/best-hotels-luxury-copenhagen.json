@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "slug": "copenhagen"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 85,
+  "slug": "best-hotels-luxury-copenhagen",
+  "title": "Best Hotels for Luxury Travelers in Copenhagen",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

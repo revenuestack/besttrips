@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 68,
+  "slug": "best-guesthouses-seniors-porto",
+  "title": "Best Guesthouses for Seniors in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

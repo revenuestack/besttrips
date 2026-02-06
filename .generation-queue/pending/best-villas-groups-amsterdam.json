@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "slug": "amsterdam"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-villas-groups-amsterdam",
+  "title": "Best Villas for Groups in Amsterdam",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

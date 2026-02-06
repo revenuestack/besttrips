@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 66,
+  "slug": "best-resorts-adventure-venice",
+  "title": "Best Resorts for Adventure Seekers in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

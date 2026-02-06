@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Athens",
+    "country": "Greece",
+    "slug": "athens"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 86,
+  "slug": "best-apartments-couples-athens",
+  "title": "Best Apartments for Couples in Athens",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

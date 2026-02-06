@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 66,
+  "slug": "best-guesthouses-seniors-venice",
+  "title": "Best Guesthouses for Seniors in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

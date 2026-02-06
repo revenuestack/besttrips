@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 80,
+  "slug": "best-camping-dogs-berlin",
+  "title": "Best Campsites for Dog Owners in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

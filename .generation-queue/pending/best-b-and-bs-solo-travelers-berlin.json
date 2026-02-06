@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 92,
+  "slug": "best-b-and-bs-solo-travelers-berlin",
+  "title": "Best B&Bs for Solo Travelers in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

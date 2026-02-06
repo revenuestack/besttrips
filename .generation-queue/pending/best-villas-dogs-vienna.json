@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 83,
+  "slug": "best-villas-dogs-vienna",
+  "title": "Best Villas for Dog Owners in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

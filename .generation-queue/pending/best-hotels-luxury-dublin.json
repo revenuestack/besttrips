@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Dublin",
+    "country": "Ireland",
+    "slug": "dublin"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 85,
+  "slug": "best-hotels-luxury-dublin",
+  "title": "Best Hotels for Luxury Travelers in Dublin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

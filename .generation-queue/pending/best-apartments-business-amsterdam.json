@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "slug": "amsterdam"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 88,
+  "slug": "best-apartments-business-amsterdam",
+  "title": "Best Apartments for Business Travelers in Amsterdam",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

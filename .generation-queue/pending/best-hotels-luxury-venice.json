@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-hotels-luxury-venice",
+  "title": "Best Hotels for Luxury Travelers in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

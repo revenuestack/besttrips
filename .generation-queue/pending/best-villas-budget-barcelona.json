@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 82,
+  "slug": "best-villas-budget-barcelona",
+  "title": "Best Villas for Budget Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

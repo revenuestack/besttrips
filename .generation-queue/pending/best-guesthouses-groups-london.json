@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "London",
+    "country": "England",
+    "slug": "london"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-guesthouses-groups-london",
+  "title": "Best Guesthouses for Groups in London",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

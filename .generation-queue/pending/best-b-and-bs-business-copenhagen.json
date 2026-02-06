@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "slug": "copenhagen"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 87,
+  "slug": "best-b-and-bs-business-copenhagen",
+  "title": "Best B&Bs for Business Travelers in Copenhagen",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

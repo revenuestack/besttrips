@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 73,
+  "slug": "best-guesthouses-dogs-brussels",
+  "title": "Best Guesthouses for Dog Owners in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

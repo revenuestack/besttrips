@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 97,
+  "slug": "best-hotels-couples-berlin",
+  "title": "Best Hotels for Couples in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

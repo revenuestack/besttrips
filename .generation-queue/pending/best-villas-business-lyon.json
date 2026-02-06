@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lyon",
+    "country": "France",
+    "slug": "lyon"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 74,
+  "slug": "best-villas-business-lyon",
+  "title": "Best Villas for Business Travelers in Lyon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

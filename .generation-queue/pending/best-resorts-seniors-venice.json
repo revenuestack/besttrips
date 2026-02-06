@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 69,
+  "slug": "best-resorts-seniors-venice",
+  "title": "Best Resorts for Seniors in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

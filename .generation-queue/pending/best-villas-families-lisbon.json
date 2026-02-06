@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 86,
+  "slug": "best-villas-families-lisbon",
+  "title": "Best Villas for Families in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

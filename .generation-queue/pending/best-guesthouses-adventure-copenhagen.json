@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "slug": "copenhagen"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 69,
+  "slug": "best-guesthouses-adventure-copenhagen",
+  "title": "Best Guesthouses for Adventure Seekers in Copenhagen",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

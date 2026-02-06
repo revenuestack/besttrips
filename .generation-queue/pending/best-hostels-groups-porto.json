@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 71,
+  "slug": "best-hostels-groups-porto",
+  "title": "Best Hostels for Groups in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

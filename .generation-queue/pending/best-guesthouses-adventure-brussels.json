@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 63,
+  "slug": "best-guesthouses-adventure-brussels",
+  "title": "Best Guesthouses for Adventure Seekers in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

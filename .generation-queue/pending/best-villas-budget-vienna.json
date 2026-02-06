@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 78,
+  "slug": "best-villas-budget-vienna",
+  "title": "Best Villas for Budget Travelers in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

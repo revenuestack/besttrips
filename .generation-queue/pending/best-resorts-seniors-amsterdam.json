@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "slug": "amsterdam"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-resorts-seniors-amsterdam",
+  "title": "Best Resorts for Seniors in Amsterdam",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

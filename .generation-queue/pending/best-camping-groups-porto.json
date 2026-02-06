@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 63,
+  "slug": "best-camping-groups-porto",
+  "title": "Best Campsites for Groups in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

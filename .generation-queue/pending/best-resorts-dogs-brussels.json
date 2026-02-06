@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 76,
+  "slug": "best-resorts-dogs-brussels",
+  "title": "Best Resorts for Dog Owners in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

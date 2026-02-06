@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "slug": "copenhagen"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-villas-budget-copenhagen",
+  "title": "Best Villas for Budget Travelers in Copenhagen",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Dublin",
+    "country": "Ireland",
+    "slug": "dublin"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 85,
+  "slug": "best-hostels-couples-dublin",
+  "title": "Best Hostels for Couples in Dublin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

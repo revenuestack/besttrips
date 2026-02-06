@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Madrid",
+    "country": "Spain",
+    "slug": "madrid"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 71,
+  "slug": "best-villas-seniors-madrid",
+  "title": "Best Villas for Seniors in Madrid",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

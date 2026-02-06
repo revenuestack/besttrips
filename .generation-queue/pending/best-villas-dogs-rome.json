@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 87,
+  "slug": "best-villas-dogs-rome",
+  "title": "Best Villas for Dog Owners in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

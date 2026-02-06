@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-resorts-business-brussels",
+  "title": "Best Resorts for Business Travelers in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

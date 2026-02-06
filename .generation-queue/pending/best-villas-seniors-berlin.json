@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 77,
+  "slug": "best-villas-seniors-berlin",
+  "title": "Best Villas for Seniors in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

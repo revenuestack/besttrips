@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 84,
+  "slug": "best-b-and-bs-dogs-florence",
+  "title": "Best B&Bs for Dog Owners in Florence",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

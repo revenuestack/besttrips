@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-camping-families-porto",
+  "title": "Best Campsites for Families in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

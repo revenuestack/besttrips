@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Budapest",
+    "country": "Hungary",
+    "slug": "budapest"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 82,
+  "slug": "best-hotels-seniors-budapest",
+  "title": "Best Hotels for Seniors in Budapest",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.530Z"
+}

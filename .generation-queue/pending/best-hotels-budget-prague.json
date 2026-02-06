@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "slug": "prague"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 89,
+  "slug": "best-hotels-budget-prague",
+  "title": "Best Hotels for Budget Travelers in Prague",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

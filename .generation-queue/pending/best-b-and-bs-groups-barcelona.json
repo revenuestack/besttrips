@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 87,
+  "slug": "best-b-and-bs-groups-barcelona",
+  "title": "Best B&Bs for Groups in Barcelona",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

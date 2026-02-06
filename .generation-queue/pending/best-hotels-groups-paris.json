@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Paris",
+    "country": "France",
+    "slug": "paris"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 88,
+  "slug": "best-hotels-groups-paris",
+  "title": "Best Hotels for Groups in Paris",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.523Z"
+}

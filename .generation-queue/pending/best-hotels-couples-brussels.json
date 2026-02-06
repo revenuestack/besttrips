@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 87,
+  "slug": "best-hotels-couples-brussels",
+  "title": "Best Hotels for Couples in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 80,
+  "slug": "best-villas-families-porto",
+  "title": "Best Villas for Families in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

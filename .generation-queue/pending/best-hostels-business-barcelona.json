@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 87,
+  "slug": "best-hostels-business-barcelona",
+  "title": "Best Hostels for Business Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

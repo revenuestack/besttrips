@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 81,
+  "slug": "best-guesthouses-dogs-vienna",
+  "title": "Best Guesthouses for Dog Owners in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-villas-solo-travelers-florence",
+  "title": "Best Villas for Solo Travelers in Florence",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

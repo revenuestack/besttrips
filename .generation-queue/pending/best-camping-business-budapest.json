@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Budapest",
+    "country": "Hungary",
+    "slug": "budapest"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 71,
+  "slug": "best-camping-business-budapest",
+  "title": "Best Campsites for Business Travelers in Budapest",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.531Z"
+}

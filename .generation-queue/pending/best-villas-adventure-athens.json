@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Athens",
+    "country": "Greece",
+    "slug": "athens"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 68,
+  "slug": "best-villas-adventure-athens",
+  "title": "Best Villas for Adventure Seekers in Athens",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

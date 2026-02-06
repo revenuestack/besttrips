@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Dublin",
+    "country": "Ireland",
+    "slug": "dublin"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 88,
+  "slug": "best-apartments-couples-dublin",
+  "title": "Best Apartments for Couples in Dublin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

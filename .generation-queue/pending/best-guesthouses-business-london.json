@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "London",
+    "country": "England",
+    "slug": "london"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 82,
+  "slug": "best-guesthouses-business-london",
+  "title": "Best Guesthouses for Business Travelers in London",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

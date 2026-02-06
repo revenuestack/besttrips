@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 63,
+  "slug": "best-camping-seniors-venice",
+  "title": "Best Campsites for Seniors in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

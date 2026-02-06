@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 80,
+  "slug": "best-resorts-budget-vienna",
+  "title": "Best Resorts for Budget Travelers in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

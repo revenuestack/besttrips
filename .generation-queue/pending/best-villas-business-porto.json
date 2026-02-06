@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 74,
+  "slug": "best-villas-business-porto",
+  "title": "Best Villas for Business Travelers in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

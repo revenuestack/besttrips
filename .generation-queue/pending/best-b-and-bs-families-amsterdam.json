@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "slug": "amsterdam"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 97,
+  "slug": "best-b-and-bs-families-amsterdam",
+  "title": "Best B&Bs for Families in Amsterdam",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

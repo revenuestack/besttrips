@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 88,
+  "slug": "best-b-and-bs-seniors-rome",
+  "title": "Best B&Bs for Seniors in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

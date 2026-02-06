@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 69,
+  "slug": "best-guesthouses-luxury-porto",
+  "title": "Best Guesthouses for Luxury Travelers in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

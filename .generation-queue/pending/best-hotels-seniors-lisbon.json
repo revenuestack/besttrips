@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 86,
+  "slug": "best-hotels-seniors-lisbon",
+  "title": "Best Hotels for Seniors in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.528Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 83,
+  "slug": "best-resorts-solo-travelers-vienna",
+  "title": "Best Resorts for Solo Travelers in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

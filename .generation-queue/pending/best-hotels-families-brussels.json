@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 88,
+  "slug": "best-hotels-families-brussels",
+  "title": "Best Hotels for Families in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

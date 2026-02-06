@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 85,
+  "slug": "best-hostels-business-berlin",
+  "title": "Best Hostels for Business Travelers in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

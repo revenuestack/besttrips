@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "slug": "prague"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 72,
+  "slug": "best-villas-adventure-prague",
+  "title": "Best Villas for Adventure Seekers in Prague",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.528Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-guesthouses-couples-brussels",
+  "title": "Best Guesthouses for Couples in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

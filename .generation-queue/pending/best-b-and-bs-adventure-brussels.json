@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-b-and-bs-adventure-brussels",
+  "title": "Best B&Bs for Adventure Seekers in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

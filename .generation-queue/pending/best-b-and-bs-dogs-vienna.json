@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 92,
+  "slug": "best-b-and-bs-dogs-vienna",
+  "title": "Best B&Bs for Dog Owners in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

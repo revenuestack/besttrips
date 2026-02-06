@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lyon",
+    "country": "France",
+    "slug": "lyon"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 74,
+  "slug": "best-camping-couples-lyon",
+  "title": "Best Campsites for Couples in Lyon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

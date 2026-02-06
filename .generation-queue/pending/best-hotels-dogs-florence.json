@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 85,
+  "slug": "best-hotels-dogs-florence",
+  "title": "Best Hotels for Dog Owners in Florence",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

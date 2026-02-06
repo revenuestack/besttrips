@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "slug": "copenhagen"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 87,
+  "slug": "best-hostels-families-copenhagen",
+  "title": "Best Hostels for Families in Copenhagen",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

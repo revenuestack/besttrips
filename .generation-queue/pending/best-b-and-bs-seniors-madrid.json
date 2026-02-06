@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Madrid",
+    "country": "Spain",
+    "slug": "madrid"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 80,
+  "slug": "best-b-and-bs-seniors-madrid",
+  "title": "Best B&Bs for Seniors in Madrid",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "slug": "amsterdam"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 88,
+  "slug": "best-villas-families-amsterdam",
+  "title": "Best Villas for Families in Amsterdam",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

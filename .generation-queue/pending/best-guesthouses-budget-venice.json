@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 69,
+  "slug": "best-guesthouses-budget-venice",
+  "title": "Best Guesthouses for Budget Travelers in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

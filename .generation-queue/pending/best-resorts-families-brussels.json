@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-resorts-families-brussels",
+  "title": "Best Resorts for Families in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

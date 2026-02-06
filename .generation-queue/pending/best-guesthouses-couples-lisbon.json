@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 83,
+  "slug": "best-guesthouses-couples-lisbon",
+  "title": "Best Guesthouses for Couples in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

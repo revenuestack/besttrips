@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lyon",
+    "country": "France",
+    "slug": "lyon"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 71,
+  "slug": "best-villas-luxury-lyon",
+  "title": "Best Villas for Luxury Travelers in Lyon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

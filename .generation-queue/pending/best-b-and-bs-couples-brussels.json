@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 85,
+  "slug": "best-b-and-bs-couples-brussels",
+  "title": "Best B&Bs for Couples in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "slug": "edinburgh"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 72,
+  "slug": "best-villas-groups-edinburgh",
+  "title": "Best Villas for Groups in Edinburgh",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.530Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Budapest",
+    "country": "Hungary",
+    "slug": "budapest"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-hostels-luxury-budapest",
+  "title": "Best Hostels for Luxury Travelers in Budapest",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.530Z"
+}

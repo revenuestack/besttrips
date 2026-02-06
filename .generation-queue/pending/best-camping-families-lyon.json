@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lyon",
+    "country": "France",
+    "slug": "lyon"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-camping-families-lyon",
+  "title": "Best Campsites for Families in Lyon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

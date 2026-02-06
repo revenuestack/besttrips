@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 69,
+  "slug": "best-guesthouses-budget-brussels",
+  "title": "Best Guesthouses for Budget Travelers in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

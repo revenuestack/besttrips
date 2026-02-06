@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Athens",
+    "country": "Greece",
+    "slug": "athens"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 80,
+  "slug": "best-guesthouses-families-athens",
+  "title": "Best Guesthouses for Families in Athens",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

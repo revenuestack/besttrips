@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 81,
+  "slug": "best-hotels-budget-brussels",
+  "title": "Best Hotels for Budget Travelers in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

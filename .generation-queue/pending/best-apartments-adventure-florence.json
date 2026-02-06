@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 70,
+  "slug": "best-apartments-adventure-florence",
+  "title": "Best Apartments for Adventure Seekers in Florence",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

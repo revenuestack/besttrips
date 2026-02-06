@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Athens",
+    "country": "Greece",
+    "slug": "athens"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 77,
+  "slug": "best-camping-families-athens",
+  "title": "Best Campsites for Families in Athens",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

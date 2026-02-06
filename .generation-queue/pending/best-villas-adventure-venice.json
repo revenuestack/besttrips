@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 64,
+  "slug": "best-villas-adventure-venice",
+  "title": "Best Villas for Adventure Seekers in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

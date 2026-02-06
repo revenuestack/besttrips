@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 78,
+  "slug": "best-guesthouses-business-lisbon",
+  "title": "Best Guesthouses for Business Travelers in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

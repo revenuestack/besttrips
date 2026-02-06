@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-b-and-bs-groups-brussels",
+  "title": "Best B&Bs for Groups in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

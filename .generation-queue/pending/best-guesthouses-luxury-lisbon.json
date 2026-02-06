@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-guesthouses-luxury-lisbon",
+  "title": "Best Guesthouses for Luxury Travelers in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.529Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 74,
+  "slug": "best-guesthouses-seniors-vienna",
+  "title": "Best Guesthouses for Seniors in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

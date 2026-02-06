@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 83,
+  "slug": "best-b-and-bs-adventure-berlin",
+  "title": "Best B&Bs for Adventure Seekers in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

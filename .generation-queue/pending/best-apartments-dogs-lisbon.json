@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 89,
+  "slug": "best-apartments-dogs-lisbon",
+  "title": "Best Apartments for Dog Owners in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.528Z"
+}

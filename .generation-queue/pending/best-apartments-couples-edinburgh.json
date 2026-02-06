@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "slug": "edinburgh"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 88,
+  "slug": "best-apartments-couples-edinburgh",
+  "title": "Best Apartments for Couples in Edinburgh",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.530Z"
+}

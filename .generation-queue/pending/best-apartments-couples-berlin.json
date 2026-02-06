@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 92,
+  "slug": "best-apartments-couples-berlin",
+  "title": "Best Apartments for Couples in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

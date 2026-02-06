@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lyon",
+    "country": "France",
+    "slug": "lyon"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 77,
+  "slug": "best-resorts-solo-travelers-lyon",
+  "title": "Best Resorts for Solo Travelers in Lyon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-apartments-seniors-venice",
+  "title": "Best Apartments for Seniors in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

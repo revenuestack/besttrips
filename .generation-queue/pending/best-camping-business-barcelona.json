@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-camping-business-barcelona",
+  "title": "Best Campsites for Business Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

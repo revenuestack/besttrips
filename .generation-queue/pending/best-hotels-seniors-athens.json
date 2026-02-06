@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Athens",
+    "country": "Greece",
+    "slug": "athens"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 82,
+  "slug": "best-hotels-seniors-athens",
+  "title": "Best Hotels for Seniors in Athens",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

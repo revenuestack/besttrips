@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 78,
+  "slug": "best-villas-families-florence",
+  "title": "Best Villas for Families in Florence",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

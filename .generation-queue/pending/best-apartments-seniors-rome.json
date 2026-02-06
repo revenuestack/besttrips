@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 85,
+  "slug": "best-apartments-seniors-rome",
+  "title": "Best Apartments for Seniors in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 94,
+  "slug": "best-b-and-bs-solo-travelers-barcelona",
+  "title": "Best B&Bs for Solo Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

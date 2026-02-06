@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 80,
+  "slug": "best-camping-couples-vienna",
+  "title": "Best Campsites for Couples in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

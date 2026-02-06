@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "London",
+    "country": "England",
+    "slug": "london"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 78,
+  "slug": "best-villas-groups-london",
+  "title": "Best Villas for Groups in London",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.524Z"
+}

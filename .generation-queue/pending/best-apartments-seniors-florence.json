@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-apartments-seniors-florence",
+  "title": "Best Apartments for Seniors in Florence",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

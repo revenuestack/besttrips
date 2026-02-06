@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 82,
+  "slug": "best-villas-business-berlin",
+  "title": "Best Villas for Business Travelers in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

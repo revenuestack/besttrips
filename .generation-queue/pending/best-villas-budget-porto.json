@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 72,
+  "slug": "best-villas-budget-porto",
+  "title": "Best Villas for Budget Travelers in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

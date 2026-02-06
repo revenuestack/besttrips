@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 81,
+  "slug": "best-apartments-dogs-brussels",
+  "title": "Best Apartments for Dog Owners in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

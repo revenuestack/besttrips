@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-resorts-groups-rome",
+  "title": "Best Resorts for Groups in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

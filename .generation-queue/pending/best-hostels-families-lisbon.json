@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "families",
+    "name": "Families"
+  },
+  "filters": [],
+  "priority": 89,
+  "slug": "best-hostels-families-lisbon",
+  "title": "Best Hostels for Families in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.528Z"
+}

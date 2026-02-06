@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 74,
+  "slug": "best-guesthouses-groups-berlin",
+  "title": "Best Guesthouses for Groups in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

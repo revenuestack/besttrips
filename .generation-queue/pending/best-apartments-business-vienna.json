@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 86,
+  "slug": "best-apartments-business-vienna",
+  "title": "Best Apartments for Business Travelers in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

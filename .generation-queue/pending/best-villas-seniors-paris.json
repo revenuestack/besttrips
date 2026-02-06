@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Paris",
+    "country": "France",
+    "slug": "paris"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-villas-seniors-paris",
+  "title": "Best Villas for Seniors in Paris",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.523Z"
+}

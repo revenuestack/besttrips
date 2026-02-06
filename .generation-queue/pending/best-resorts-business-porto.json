@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Porto",
+    "country": "Portugal",
+    "slug": "porto"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-resorts-business-porto",
+  "title": "Best Resorts for Business Travelers in Porto",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

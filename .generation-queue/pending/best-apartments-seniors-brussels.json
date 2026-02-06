@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-apartments-seniors-brussels",
+  "title": "Best Apartments for Seniors in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

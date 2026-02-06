@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 85,
+  "slug": "best-guesthouses-dogs-rome",
+  "title": "Best Guesthouses for Dog Owners in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

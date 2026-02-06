@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Berlin",
+    "country": "Germany",
+    "slug": "berlin"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-villas-luxury-berlin",
+  "title": "Best Villas for Luxury Travelers in Berlin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

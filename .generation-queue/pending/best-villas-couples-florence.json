@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "villas",
+    "name": "Villas"
+  },
+  "audience": {
+    "key": "couples",
+    "name": "Couples"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-villas-couples-florence",
+  "title": "Best Villas for Couples in Florence",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

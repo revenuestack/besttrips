@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-guesthouses-groups-rome",
+  "title": "Best Guesthouses for Groups in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

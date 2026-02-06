@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-b-and-bs-seniors-venice",
+  "title": "Best B&Bs for Seniors in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

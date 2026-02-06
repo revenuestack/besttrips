@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 93,
+  "slug": "best-apartments-dogs-rome",
+  "title": "Best Apartments for Dog Owners in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Athens",
+    "country": "Greece",
+    "slug": "athens"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-camping-solo-travelers-athens",
+  "title": "Best Campsites for Solo Travelers in Athens",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.534Z"
+}

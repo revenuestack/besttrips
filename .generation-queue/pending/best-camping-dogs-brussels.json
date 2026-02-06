@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Brussels",
+    "country": "Belgium",
+    "slug": "brussels"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 70,
+  "slug": "best-camping-dogs-brussels",
+  "title": "Best Campsites for Dog Owners in Brussels",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

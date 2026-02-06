@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 70,
+  "slug": "best-guesthouses-business-venice",
+  "title": "Best Guesthouses for Business Travelers in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Rome",
+    "country": "Italy",
+    "slug": "rome"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 81,
+  "slug": "best-camping-solo-travelers-rome",
+  "title": "Best Campsites for Solo Travelers in Rome",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.525Z"
+}

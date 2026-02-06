@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "slug": "prague"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-hostels-adventure-prague",
+  "title": "Best Hostels for Adventure Seekers in Prague",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}

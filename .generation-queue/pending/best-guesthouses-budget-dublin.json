@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Dublin",
+    "country": "Ireland",
+    "slug": "dublin"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-guesthouses-budget-dublin",
+  "title": "Best Guesthouses for Budget Travelers in Dublin",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.530Z"
+}

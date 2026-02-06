@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Venice",
+    "country": "Italy",
+    "slug": "venice"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "budget",
+    "name": "Budget Travelers"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-apartments-budget-venice",
+  "title": "Best Apartments for Budget Travelers in Venice",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.535Z"
+}

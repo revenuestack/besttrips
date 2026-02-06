@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "slug": "edinburgh"
+  },
+  "type": {
+    "key": "hotels",
+    "name": "Hotels"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 90,
+  "slug": "best-hotels-solo-travelers-edinburgh",
+  "title": "Best Hotels for Solo Travelers in Edinburgh",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.530Z"
+}

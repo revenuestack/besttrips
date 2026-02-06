@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Paris",
+    "country": "France",
+    "slug": "paris"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 73,
+  "slug": "best-camping-groups-paris",
+  "title": "Best Campsites for Groups in Paris",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.523Z"
+}

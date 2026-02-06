@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Vienna",
+    "country": "Austria",
+    "slug": "vienna"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 86,
+  "slug": "best-hostels-dogs-vienna",
+  "title": "Best Hostels for Dog Owners in Vienna",
+  "status": "pending",
+  "created": "2026-02-06T17:22:47.526Z"
+}
