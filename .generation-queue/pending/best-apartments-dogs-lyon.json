@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Lyon",
+    "country": "France",
+    "slug": "lyon"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 83,
+  "slug": "best-apartments-dogs-lyon",
+  "title": "Best Apartments for Dog Owners in Lyon",
+  "status": "pending",
+  "created": "2026-02-06T18:43:11.110Z"
+}

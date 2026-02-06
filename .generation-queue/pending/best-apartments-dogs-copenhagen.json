@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "slug": "copenhagen"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 87,
+  "slug": "best-apartments-dogs-copenhagen",
+  "title": "Best Apartments for Dog Owners in Copenhagen",
+  "status": "pending",
+  "created": "2026-02-06T18:43:11.106Z"
+}

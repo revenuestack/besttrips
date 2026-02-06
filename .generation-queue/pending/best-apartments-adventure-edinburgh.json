@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "slug": "edinburgh"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-apartments-adventure-edinburgh",
+  "title": "Best Apartments for Adventure Seekers in Edinburgh",
+  "status": "pending",
+  "created": "2026-02-06T18:43:11.107Z"
+}

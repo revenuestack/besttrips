@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 78,
+  "slug": "best-apartments-adventure-lisbon",
+  "title": "Best Apartments for Adventure Seekers in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T18:43:11.106Z"
+}

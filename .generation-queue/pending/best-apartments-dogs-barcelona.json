@@ -1,0 +1,23 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "dogs",
+    "name": "Dog Owners"
+  },
+  "filters": [
+    "pet-friendly"
+  ],
+  "priority": 93,
+  "slug": "best-apartments-dogs-barcelona",
+  "title": "Best Apartments for Dog Owners in Barcelona",
+  "status": "pending",
+  "created": "2026-02-06T18:43:11.102Z"
+}
