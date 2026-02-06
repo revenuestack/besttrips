@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Paris",
+    "country": "France",
+    "slug": "paris"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 87,
+  "slug": "best-apartments-luxury-paris",
+  "title": "Best Apartments for Luxury Travelers in Paris",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.477Z"
+}

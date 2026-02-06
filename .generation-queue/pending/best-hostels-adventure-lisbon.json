@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "slug": "lisbon"
+  },
+  "type": {
+    "key": "hostels",
+    "name": "Hostels"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 75,
+  "slug": "best-hostels-adventure-lisbon",
+  "title": "Best Hostels for Adventure Seekers in Lisbon",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.482Z"
+}

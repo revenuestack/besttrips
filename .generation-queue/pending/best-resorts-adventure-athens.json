@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Athens",
+    "country": "Greece",
+    "slug": "athens"
+  },
+  "type": {
+    "key": "resorts",
+    "name": "Resorts"
+  },
+  "audience": {
+    "key": "adventure",
+    "name": "Adventure Seekers"
+  },
+  "filters": [],
+  "priority": 70,
+  "slug": "best-resorts-adventure-athens",
+  "title": "Best Resorts for Adventure Seekers in Athens",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.486Z"
+}

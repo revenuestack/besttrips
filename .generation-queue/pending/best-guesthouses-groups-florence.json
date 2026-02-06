@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "groups",
+    "name": "Groups"
+  },
+  "filters": [],
+  "priority": 64,
+  "slug": "best-guesthouses-groups-florence",
+  "title": "Best Guesthouses for Groups in Florence",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.488Z"
+}

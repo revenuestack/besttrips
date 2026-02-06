@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "slug": "copenhagen"
+  },
+  "type": {
+    "key": "guesthouses",
+    "name": "Guesthouses"
+  },
+  "audience": {
+    "key": "business",
+    "name": "Business Travelers"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-guesthouses-business-copenhagen",
+  "title": "Best Guesthouses for Business Travelers in Copenhagen",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.482Z"
+}

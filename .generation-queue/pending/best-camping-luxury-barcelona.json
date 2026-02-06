@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "slug": "barcelona"
+  },
+  "type": {
+    "key": "camping",
+    "name": "Campsites"
+  },
+  "audience": {
+    "key": "luxury",
+    "name": "Luxury Travelers"
+  },
+  "filters": [],
+  "priority": 76,
+  "slug": "best-camping-luxury-barcelona",
+  "title": "Best Campsites for Luxury Travelers in Barcelona",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.478Z"
+}

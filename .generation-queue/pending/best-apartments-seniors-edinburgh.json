@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Edinburgh",
+    "country": "Scotland",
+    "slug": "edinburgh"
+  },
+  "type": {
+    "key": "apartments",
+    "name": "Apartments"
+  },
+  "audience": {
+    "key": "seniors",
+    "name": "Seniors"
+  },
+  "filters": [],
+  "priority": 79,
+  "slug": "best-apartments-seniors-edinburgh",
+  "title": "Best Apartments for Seniors in Edinburgh",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.483Z"
+}

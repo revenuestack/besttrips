@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Florence",
+    "country": "Italy",
+    "slug": "florence"
+  },
+  "type": {
+    "key": "b-and-bs",
+    "name": "B&Bs"
+  },
+  "audience": {
+    "key": "solo-travelers",
+    "name": "Solo Travelers"
+  },
+  "filters": [],
+  "priority": 82,
+  "slug": "best-b-and-bs-solo-travelers-florence",
+  "title": "Best B&Bs for Solo Travelers in Florence",
+  "status": "pending",
+  "created": "2026-02-06T19:52:24.487Z"
+}
