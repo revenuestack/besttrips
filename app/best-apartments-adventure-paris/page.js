@@ -1,42 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Paris",
-  description: "Paris isn't just museums and cafés—it's an adventure playground where cobblestone streets lead to world-class bouldering, forest trails, and endless cycling routes."
-};
+  title: 'Best Apartments for Adventure Seekers in Paris',
+  description: 'Paris isn\'t just museums and cafés—it\'s an adventure playground for thrill-seekers.'
+}
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Paris</h1>
-      
-      <div className="hook">
-        <p>Paris isn't just museums and cafés—it's an adventure playground where cobblestone streets lead to world-class bouldering, forest trails, and endless cycling routes.</p>
-      </div>
+export default function Page() {
+  const content = {
+  "intro": "Paris isn't just museums and cafés—it's an adventure playground for thrill-seekers. Staying in apartments gives you the freedom to start early, return late, and live like a local explorer. Choose neighborhoods with quick access to climbing gyms, riverside trails, and day-trip departure points.",
+  "why_stay": [
+    "Apartments offer flexible schedules perfect for sunrise Seine kayaking sessions and late-night returns from climbing gyms.",
+    "Self-catering kitchens let you fuel up properly before biking Bois de Vincennes or hiking Fontainebleau's boulder fields.",
+    "Local neighborhoods provide authentic bases near hidden skateparks, parkour spots, and adventure community hubs throughout Paris."
+  ],
+  "neighborhoods": [
+    "Belleville: Edgy hillside district with stunning city views, street art, and proximity to Buttes-Chaumont's cliff-climbing park.",
+    "Canal Saint-Martin: Waterside location perfect for morning runs, bike paths, and easy access to climbing gyms in northeastern Paris.",
+    "13th Arrondissement: Modern area near Seine docks for kayaking, close to Fontainebleau forest access via quick train connections."
+  ],
+  "tips": [
+    "Rent bikes through Vélib' stations to explore Bois de Boulogne, Vincennes forest, and riverside paths extending 50+ kilometers.",
+    "Book apartments near Gare de Lyon or Gare du Nord for weekend escapes to Fontainebleau climbing or Normandy coasteering adventures."
+  ],
+  "cta": "Find your Paris adventure base today and unlock the city's wild side from your own apartment!"
+}
 
-      <section className="why-choose">
-        <h2>Why Choose Paris?</h2>
-        <ul>
-          <li>Direct train access to Fontainebleau's legendary sandstone boulders, considered some of the best climbing terrain in Europe, reachable in under an hour</li>
-          <li>Extensive cycling infrastructure with dedicated bike lanes connecting you to Versailles' gardens, the Seine riverside paths, and Bois de Vincennes and Bois de Boulogne forests for trail running and hiking</li>
-          <li>Vibrant inline skating culture including the famous Friday night Pari Roller mass skate events, plus countless spots for urban exploration from abandoned railways to rooftop views</li>
-        </ul>
-      </section>
-
-      <section className="considerations">
-        <h2>Things to Consider</h2>
-        <ul>
-          <li>Book apartments near RER train lines (particularly Line R for Fontainebleau access) or metro stations connecting to Gare de Lyon for quickest adventure access</li>
-          <li>Ground-floor or elevator buildings are essential if you're hauling climbing gear, bikes, or trail running equipment daily</li>
-        </ul>
-      </section>
-
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>The 11th and 20th arrondissements offer affordable apartments with excellent metro connections and proximity to Bois de Vincennes for morning trail runs. The 13th puts you near Gare de Lyon for fast Fontainebleau access. For cycling enthusiasts, apartments near Canal Saint-Martin (10th) provide scenic bike routes. The Latin Quarter (5th) balances adventure access with classic Parisian charm, though prices run higher.</p>
-      </section>
-
-      <div className="cta">
-        <p>Search for apartments with bike storage, near RER stations, and in neighborhoods that let you swap climbing shoes for running trails without crossing the entire city.</p>
-      </div>
-    </div>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }

@@ -1,42 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Rome",
-  description: "Rome isn't just ancient ruins and pasta—it's a launchpad for adrenaline-fueled adventures from the Apennines to the Tyrrhenian coast."
-};
+  title: 'Best Apartments for Adventure Seekers in Rome',
+  description: 'Rome\'s apartments offer adventure seekers the perfect base to explore ancient ruins, cobblestone streets, and hidden treasures at their own pace.'
+}
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Rome</h1>
-      
-      <div className="hook">
-        <p>Rome isn't just ancient ruins and pasta—it's a launchpad for adrenaline-fueled adventures from the Apennines to the Tyrrhenian coast.</p>
-      </div>
+export default function Page() {
+  const content = {
+  "intro": "Rome's apartments offer adventure seekers the perfect base to explore ancient ruins, cobblestone streets, and hidden treasures at their own pace. Stay like a local in vibrant neighborhoods where every corner reveals a new discovery, from underground catacombs to sunset views atop historic hills. Apartments provide the freedom and flexibility to fuel your explorations with morning espresso before conquering the city.",
+  "why_stay": [
+    "Apartments in central neighborhoods put you steps from iconic ruins, allowing spontaneous dawn visits before crowds arrive.",
+    "Enjoy the freedom to plan early morning hikes up Aventine Hill or late-night explorations of illuminated fountains.",
+    "Local markets and delis let you pack picnic provisions for adventures in Villa Borghese or along the Appian Way."
+  ],
+  "neighborhoods": [
+    "Monti - Bohemian district near the Colosseum with winding medieval streets, artisan shops, and easy access to ancient sites.",
+    "Trastevere - Charming riverside neighborhood with cobblestone alleys, vibrant nightlife, and proximity to Janiculum Hill for panoramic views.",
+    "Testaccio - Authentic Roman quarter featuring food markets, the ancient Monte Testaccio, and fewer tourists for genuine local experiences."
+  ],
+  "tips": [
+    "Book apartments with bike storage or near metro stations to maximize your daily exploration radius across Rome's seven hills.",
+    "Choose accommodations with fully equipped kitchens to save money for adventure activities like Vespa tours or gladiator experiences."
+  ],
+  "cta": "Book your Roman apartment today and unlock the Eternal City's adventures with the freedom only local living provides."
+}
 
-      <section className="why-choose">
-        <h2>Why Choose Rome?</h2>
-        <ul>
-          <li>Strategic location with cycling routes like the historic Appian Way, hiking trails in Castelli Romani hills within 30 minutes, and coastal water sports at Ostia beaches just a metro ride away</li>
-          <li>Unique blend of urban exploration through millennia-old archaeological sites, catacombs, and hidden ruins that double as your daily walking routes and weekend discovery missions</li>
-          <li>Easy access to Apennine mountain ranges for weekend skiing, rock climbing, and trail running while maintaining a home base in one of the world's most captivating cities</li>
-        </ul>
-      </section>
-
-      <section className="considerations">
-        <h2>Things to Consider</h2>
-        <ul>
-          <li>Summer heat (June-August) can reach 35°C+, making early morning or evening adventures essential—prioritize apartments with air conditioning and bike storage</li>
-          <li>Many historic center apartments lack elevators and parking, so choose neighborhoods with metro access near Termini or Tiburtina stations for quick escapes to trailheads</li>
-        </ul>
-      </section>
-
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Testaccio and San Lorenzo offer authentic Roman living with excellent public transport links to adventure hotspots, plus bike-friendly streets and local gear shops. Prati, near the Vatican, provides metro access and proximity to riverside cycling paths along the Tiber. For direct Appian Way access, consider apartments in Appio-Latino or Tuscolano districts, where you can literally step out your door onto ancient cobblestones leading to countryside trails.</p>
-      </section>
-
-      <div className="cta">
-        <p>Book your adventure base in Rome today and transform every morning coffee into the starting line of your next epic exploration.</p>
-      </div>
-    </div>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }

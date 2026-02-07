@@ -1,42 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Adventure Seekers in London",
-  description: "London's best apartments for adventure seekers put you at the crossroads of urban exploration and wild escapes, with the Thames Path at your doorstep and mountain trails just a train ride away."
-};
+  title: 'Best Apartments for Adventure Seekers in London',
+  description: 'London\'s apartments offer adventure seekers the perfect base to explore this dynamic city\'s endless thrills.'
+}
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in London</h1>
-      
-      <div className="hook">
-        <p>London's best apartments for adventure seekers put you at the crossroads of urban exploration and wild escapes, with the Thames Path at your doorstep and mountain trails just a train ride away.</p>
-      </div>
+export default function Page() {
+  const content = {
+  "intro": "London's apartments offer adventure seekers the perfect base to explore this dynamic city's endless thrills. From rock climbing walls to Thames kayaking, urban exploration to food market adventures, staying in a self-catered flat gives you freedom and flexibility. Wake up in vibrant neighborhoods where every street corner promises discovery.",
+  "why_stay": [
+    "Apartments provide kitchens for fueling early morning adventures and late-night returns from London's legendary nightlife scene.",
+    "Self-catering accommodation saves money for experiences like indoor skydiving, zip-lining at O2 Arena, or spontaneous West End shows.",
+    "Washing machines mean packing light for multi-day adventures hiking the Thames Path or cycling through Richmond Park's wilderness."
+  ],
+  "neighborhoods": [
+    "Shoreditch: Street art paradise with climbing gyms, rooftop bars, and direct access to Olympic Park's adventure activities.",
+    "Camden: Edgy markets, canal-side walks, and proximity to Regent's Park for morning runs and outdoor yoga sessions.",
+    "Canary Wharf: Modern apartments near cable car rides, watersports centers, and excellent transport links to adventure destinations."
+  ],
+  "tips": [
+    "Book apartments near Tube stations for quick access to day trips like Brighton beaches or Chiltern Hills hiking trails.",
+    "Choose neighborhoods with 24-hour grocery stores and bike rental schemes for maximum spontaneity and adventure flexibility."
+  ],
+  "cta": "Book your London adventure apartment today and transform the city into your ultimate urban playground."
+}
 
-      <section className="why-choose">
-        <h2>Why Choose London?</h2>
-        <ul>
-          <li>Direct access to 180 miles of Thames Path for cycling and running, plus world-class climbing gyms like The Castle and Vauxwall within the city</li>
-          <li>Strategic transport connections to Surrey Hills, Chilterns, and South Downs for weekend hiking, with Brighton's coast reachable in under an hour</li>
-          <li>Vibrant neighborhoods offering urban adventure through street art tours, rooftop experiences, and 24-hour exploration opportunities across diverse cultural districts</li>
-        </ul>
-      </section>
-
-      <section className="considerations">
-        <h2>Things to Consider</h2>
-        <ul>
-          <li>Properties near major train stations (Waterloo, King's Cross, Paddington) command premium prices but save commute time to adventure destinations</li>
-          <li>Ground-floor or secure storage apartments are essential for cyclists and outdoor gear enthusiasts who need bike and equipment storage</li>
-        </ul>
-      </section>
-
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>East London areas like Hackney and Stratford offer affordable options with excellent cycling infrastructure and Olympic Park trails. South London neighborhoods including Clapham and Brixton provide quick access to Surrey Hills while maintaining urban energy. North London's Camden and Kentish Town position you near Regent's Canal towpaths and direct trains to Peak District climbing areas. West London's Hammersmith combines riverside cycling routes with easy M4 corridor access to Welsh mountains.</p>
-      </section>
-
-      <div className="cta">
-        <p>Book your London adventure base today and discover why this city is the ultimate launchpad for explorers who want metropolitan excitement and wilderness escape in equal measure.</p>
-      </div>
-    </div>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }

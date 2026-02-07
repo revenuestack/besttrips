@@ -1,42 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Lisbon",
-  description: "Lisbon combines urban charm with thrilling outdoor adventures, making it the perfect base for adrenaline seekers who want the best of both worlds."
-};
+  title: 'Best Apartments for Adventure Seekers in Lisbon',
+  description: 'Lisbon offers adventure seekers the perfect base for exploring Portugal\'s dramatic coastline, historic hills, and vibrant outdoor culture.'
+}
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Lisbon</h1>
-      
-      <div className="hook">
-        <p>Lisbon combines urban charm with thrilling outdoor adventures, making it the perfect base for adrenaline seekers who want the best of both worlds.</p>
-      </div>
+export default function Page() {
+  const content = {
+  "intro": "Lisbon offers adventure seekers the perfect base for exploring Portugal's dramatic coastline, historic hills, and vibrant outdoor culture. Staying in an apartment gives you the freedom to start early surf sessions, return from day hikes on your schedule, and experience the city like a local. Choose neighborhoods that balance proximity to adventure with authentic Portuguese charm.",
+  "why_stay": [
+    "Apartments provide flexible access to early morning surf spots and late-night returns from coastal exploration adventures.",
+    "Equipped kitchens let you fuel up properly before climbs, hikes, and water sports without expensive restaurants.",
+    "Local neighborhoods offer authentic experiences, bike-friendly streets, and connections to outdoor communities and adventure groups."
+  ],
+  "neighborhoods": [
+    "Alfama: Historic hillside district with cobblestone climbs, stunning viewpoints, and access to riverside cycling paths along the Tagus.",
+    "Cais do Sodré: Waterfront hub near ferry terminals for coastal trips, with vibrant nightlife and proximity to surf spots.",
+    "Alcântara: Riverside area with modern apartments, bike lanes, climbing gyms, and quick access to Sintra hiking trails."
+  ],
+  "tips": [
+    "Book apartments near metro stations for easy day trips to Cascais beaches, Sintra mountains, and Arrábida Natural Park.",
+    "Choose places with bike storage and outdoor gear space; Lisbon's hills are challenging but rewarding for active explorers."
+  ],
+  "cta": "Find your Lisbon adventure apartment today and unlock Portugal's most thrilling outdoor experiences from your doorstep."
+}
 
-      <section className="why-choose">
-        <h2>Why Choose Lisbon?</h2>
-        <ul>
-          <li>Prime location between Atlantic surf breaks and Sintra's mountain trails, with most adventure spots reachable within 30-45 minutes</li>
-          <li>Walkable historic neighborhoods like Alfama and Mouraria double as urban hiking expeditions with steep cobblestone streets and panoramic viewpoints</li>
-          <li>Year-round outdoor conditions with 300 days of sunshine, ideal for coastal cliff exploration, river cycling, and beach activities in every season</li>
-        </ul>
-      </section>
-
-      <section className="considerations">
-        <h2>Things to Consider</h2>
-        <ul>
-          <li>Many authentic buildings feature steep stairs without elevators—great training for hikers but challenging after long adventure days</li>
-          <li>Peak summer months bring crowds to popular surf beaches and Sintra trails; consider shoulder seasons (April-May, September-October) for better access</li>
-        </ul>
-      </section>
-
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Adventure seekers should target Cais do Sodré for quick train access to Cascais surf beaches and coastal paths, or Santos for proximity to riverside cycling routes along the Tagus. Alfama offers built-in daily workouts with its labyrinthine hills and authentic atmosphere. For those prioritizing Sintra mountain access, Alcântara provides direct train connections while maintaining urban convenience. Príncipe Real balances central location with easy escapes to nature, plus rooftop apartments offering stunning views of the adventure playground surrounding you.</p>
-      </section>
-
-      <div className="cta">
-        <p>Book your Lisbon adventure base today and wake up ready to surf, hike, and explore one of Europe's most dynamic outdoor playgrounds.</p>
-      </div>
-    </div>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }
