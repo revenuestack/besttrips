@@ -1,33 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Dog Owners in Lyon",
-  description: "Discover the perfect pet-friendly apartments in Lyon for you and your furry companion. Explore dog-loving neighborhoods with parks, riverside walks, and tail-wagging amenities.",
-};
+  title: 'Best Apartments for Dog Owners in Lyon',
+  description: 'Discover pet-friendly apartments in Lyon with parks, riverside walks, and welcoming neighborhoods perfect for you and your furry companion.'
+}
 
 export default function Page() {
-  return (
-    <>
-      <h1>Best Apartments for Dog Owners in Lyon</h1>
-      
-      <p>Lyon isn't just a UNESCO World Heritage city for humans—it's a paradise for four-legged travelers too. With sprawling riverside paths along the Rhône and Saône, abundant green spaces, and a genuinely dog-friendly culture, finding the perfect apartment for you and your pup is easier than you might think.</p>
+  const content = {
+  "intro": "Lyon offers an exceptional blend of urban culture and dog-friendly living, making it one of France's most welcoming cities for travelers with pets. With expansive riverside parks along the Rhône and Saône, pedestrian-friendly streets, and a growing number of pet-accepting apartments, Lyon provides the perfect base for exploring with your four-legged companion. The city's relaxed attitude toward dogs in public spaces means you and your pup can enjoy café terraces, markets, and outdoor adventures together.",
+  "why_stay": [
+    "Lyon's numerous parks including Parc de la Tête d'Or with dedicated dog areas provide perfect spaces for daily exercise and socialization.",
+    "Many apartment rentals feature ground-floor access or elevators and proximity to green spaces, making multiple daily walks effortless.",
+    "The city's dog-friendly culture means restaurants with outdoor seating, boutique shops, and even some museums welcome well-behaved pets."
+  ],
+  "neighborhoods": [
+    "Presqu'île: This central peninsula between two rivers offers easy access to quays perfect for morning and evening dog walks, plus countless pet-friendly café terraces where your dog can relax while you enjoy Lyon's famous cuisine.",
+    "Croix-Rousse: Known for its village atmosphere and hilltop location, this bohemian neighborhood features quiet streets, small parks, and a weekly market where dogs are welcome, plus apartments with easier outdoor access than high-rise buildings.",
+    "Confluence: Lyon's modern waterfront district boasts contemporary apartments with balconies, proximity to expansive riverside paths ideal for long walks, and the dog-friendly Parc de Saône where your pup can run and play."
+  ],
+  "tips": [
+    "Book apartments near Parc de la Tête d'Or or along the riverside quays to ensure convenient access to off-leash areas and long walking routes.",
+    "Check that your apartment has easy ground access or an elevator, and confirm pet policies including any size restrictions or additional cleaning fees before booking."
+  ],
+  "cta": "Find your perfect dog-friendly apartment in Lyon today and experience French culture with your best friend by your side!"
+}
 
-      <h2>Why Choose Lyon for Dog Owners</h2>
-      <ul>
-        <li>Extensive riverside promenades and parks like Parc de la Tête d'Or (Europe's largest urban park) offer endless walking and play opportunities right from your doorstep</li>
-        <li>Lyon's compact, walkable neighborhoods mean most apartments are within minutes of pet supply stores, veterinary clinics, and dog-friendly cafés where your companion is genuinely welcomed</li>
-        <li>Many modern apartment buildings feature pet amenities, and French landlords in Lyon are increasingly accommodating to responsible pet owners, especially in family-oriented districts</li>
-      </ul>
-
-      <h2>Considerations</h2>
-      <ul>
-        <li>Pet deposits (caution animaux) can add €200-500 to your upfront costs, and some older buildings have strict no-pet clauses—always confirm pet policies in writing before signing</li>
-        <li>Lyon's historic Vieux Lyon features charming cobblestone streets but limited green space, requiring longer walks to reach parks—opt for Presqu'île or Confluence for easier access</li>
-      </ul>
-
-      <h2>Best Neighborhoods</h2>
-      <p>Presqu'île offers central location with quick river access, while Confluence provides modern pet-friendly builds near waterfront parks. Croix-Rousse delivers village charm with hilltop gardens, and Part-Dieu suits those wanting urban convenience near Parc de la Tête d'Or's 117 hectares of canine heaven.</p>
-
-      <h2>Start Your Lyon Adventure</h2>
-      <p>Ready to find your perfect Lyon apartment? Start your search today and discover why this French city is quickly becoming one of Europe's most dog-friendly destinations. Your pup's French adventure awaits!</p>
-    </>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }
