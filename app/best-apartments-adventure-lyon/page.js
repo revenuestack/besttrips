@@ -1,26 +1,26 @@
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Lyon',
-  description: 'Lyon offers the perfect basecamp for adventurers seeking urban exploration and outdoor thrills.'
+  description: 'Discover top Lyon apartments perfectly positioned for adventure seekers, with easy access to Alps skiing, cycling trails, and outdoor activities.'
 }
 
 export default function Page() {
   const content = {
-  "intro": "Lyon offers the perfect basecamp for adventurers seeking urban exploration and outdoor thrills. Nestled between the Rhône and Saône rivers with the Alps nearby, this vibrant city combines historic charm with adrenaline-pumping activities. Choose an apartment here to experience authentic French living while accessing world-class hiking, cycling, and water sports.",
+  "intro": "Lyon is an adventure seeker's dream base, offering immediate access to urban cycling trails, river sports, and proximity to the French Alps for skiing and hiking. Staying in a well-located apartment gives you the perfect launching pad for both city explorations and mountain expeditions. Choose accommodations that balance comfort with quick access to Lyon's outdoor playground and surrounding alpine adventures.",
   "why_stay": [
-    "Central location provides easy access to paragliding in Annecy, skiing in Chamonix, and rock climbing in Bugey.",
-    "Lyon's traboules and hillside neighborhoods offer urban exploration, steep climbs, and breathtaking panoramic city views daily.",
-    "Riverside bike paths, kayaking opportunities, and nearby Via Ferrata routes make every weekend an outdoor adventure playground."
+    "Lyon's strategic location puts you just 90 minutes from world-class Alps skiing, hiking, and paragliding while offering urban adventures like hillside cycling and river kayaking.",
+    "Apartment rentals provide secure gear storage, early-start flexibility, and space to plan multi-day expeditions without hotel checkout constraints.",
+    "Neighborhoods like Croix-Rousse and Confluence offer immediate access to cycling paths, climbing spots, and trail networks that connect directly to wilderness areas."
   ],
   "neighborhoods": [
-    "Croix-Rousse: The bohemian hilltop district with steep staircases, street art, and stunning sunrise views over the city.",
-    "Confluence: Modern waterfront area where two rivers meet, perfect for cycling, riverside runs, and contemporary urban exploration.",
-    "Vieux Lyon: Historic Renaissance quarter with secret traboules, cobblestone climbs, and proximity to Fourvière hill hiking trails."
+    "Croix-Rousse: This hillside district features steep cycling climbs, direct access to the Monts d'Or trails, and a vibrant local market scene perfect for stocking up before dawn alpine departures.",
+    "Confluence: Modern waterfront neighborhood with immediate Rhône and Saône river access for kayaking, plus bike paths leading south to Pilat Regional Park's hiking trails.",
+    "Vieux Lyon: Historic quarter positioned at the base of Fourvière Hill's climbing routes and trail running paths, with metro connections to regional adventure destinations."
   ],
   "tips": [
-    "Rent apartments near metro stations for quick escapes to Chartreuse or Vercors regional parks within 90 minutes.",
-    "Book accommodations with secure bike storage and consider neighborhoods offering both nightlife and early morning trail access."
+    "Book apartments with secure bike storage and early check-in options, as most alpine adventures require 5-6 AM departures to beat crowds and afternoon weather.",
+    "Choose locations near TCL metro stations for quick access to Gare de Lyon-Part-Dieu, where trains depart hourly to Chamonix, Annecy, and Grenoble adventure hubs."
   ],
-  "cta": "Find your Lyon adventure apartment today and unlock the gateway to Alpine thrills and urban exploration in France's outdoor capital!"
+  "cta": "Book your Lyon adventure apartment today and unlock access to both urban thrills and Alpine expeditions from France's ultimate outdoor basecamp."
 }
 
   return <div>{JSON.stringify(content)}</div>
