@@ -1,33 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Dog Owners in Dublin",
-  description: "Discover the perfect pet-friendly apartments in Dublin for you and your furry companion. Expert guide to dog-friendly neighborhoods, amenities, and essential tips for finding your ideal home.",
-};
+  title: 'Best Apartments for Dog Owners in Dublin',
+  description: 'Dublin offers exceptional apartment living for dog owners, combining urban convenience with abundant green spaces.'
+}
 
 export default function Page() {
-  return (
-    <>
-      <h1>Best Apartments for Dog Owners in Dublin</h1>
-      
-      <p>Dublin has transformed into one of Europe's most dog-friendly capitals, with an impressive selection of pet-welcoming apartments that cater to both you and your four-legged family member. Finding the perfect apartment where your dog can thrive doesn't mean compromising on style, location, or modern amenities.</p>
+  const content = {
+  "intro": "Dublin offers exceptional apartment living for dog owners, combining urban convenience with abundant green spaces. The city's welcoming attitude toward pets and numerous dog-friendly parks make it an ideal destination for travelers with four-legged companions.",
+  "why_stay": [
+    "Proximity to Phoenix Park, one of Europe's largest enclosed parks with extensive off-leash areas for dogs.",
+    "Dog-friendly culture with many cafes, pubs, and restaurants welcoming pets on patios and outdoor seating areas.",
+    "Excellent veterinary services and pet supply stores conveniently located throughout the city for any pet needs."
+  ],
+  "neighborhoods": [
+    "Ballsbridge: Upscale area near Herbert Park with tree-lined streets, riverside walks along the Dodder, and pet-friendly establishments.",
+    "Portobello: Trendy neighborhood featuring canal-side paths perfect for dog walks, vibrant cafe culture, and close to St. Stephen's Green.",
+    "Drumcondra: Family-friendly area adjacent to Griffith Park, offering quieter streets and easy access to Botanic Gardens' dog-walking routes."
+  ],
+  "tips": [
+    "Book apartments near designated dog exercise areas and verify pet policies including any size restrictions or additional fees.",
+    "Download the Dublin Dog Walking app to find nearby parks, waste disposal stations, and connect with local dog-owner communities."
+  ],
+  "cta": "Discover your perfect dog-friendly Dublin apartment today and experience Ireland's capital with your furry best friend by your side!"
+}
 
-      <h2>Why Choose Dublin for Dog Owners</h2>
-      <ul>
-        <li>Dublin offers abundant green spaces within walking distance of most apartments, including Phoenix Park (one of Europe's largest urban parks), Herbert Park, and numerous coastal walking trails in areas like Sandymount and Howth</li>
-        <li>Pet-friendly apartment complexes increasingly feature dog-washing stations, secure ground-floor units with private garden access, and proximity to excellent veterinary services and pet supply stores</li>
-        <li>The city's dog-welcoming culture extends to cafes, pubs, and public transport (dogs allowed on Dublin Bus, DART, and Luas), making apartment living with a dog remarkably convenient</li>
-      </ul>
-
-      <h2>Considerations</h2>
-      <ul>
-        <li>Pet deposits and monthly pet fees typically range from €200-500 deposits plus €25-50 monthly, so factor these additional costs into your budget when apartment hunting</li>
-        <li>Older Victorian conversions may lack elevators and have strict noise policies, which can be challenging for larger or more vocal breeds—always verify building-specific pet policies before committing</li>
-      </ul>
-
-      <h2>Best Neighborhoods</h2>
-      <p>Ballsbridge and Sandymount offer upscale apartments near embassy district parks and beaches. Stoneybatter provides character-filled buildings near Phoenix Park at more affordable rates. The Docklands appeal to professionals seeking modern developments with integrated pet amenities, while Rathmines balances student energy with spacious period apartments and excellent park access.</p>
-
-      <h2>Start Your Dublin Adventure</h2>
-      <p>Ready to find your dog-friendly Dublin apartment? Start your search today by contacting local estate agents who specialize in pet-friendly properties, and don't forget to schedule viewings with your pup to ensure the space works for both of you.</p>
-    </>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }
