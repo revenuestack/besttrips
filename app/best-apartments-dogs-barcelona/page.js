@@ -1,33 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Dog Owners in Barcelona",
-  description: "Discover the best pet-friendly apartments in Barcelona. Find dog-welcoming neighborhoods, nearby parks, and tail-wagging amenities for you and your furry companion.",
-};
+  title: 'Best Apartments for Dog Owners in Barcelona',
+  description: 'Barcelona welcomes four-legged travelers with open arms, offering dog-friendly apartments that combine Mediterranean lifestyle with canine comfort.'
+}
 
 export default function Page() {
-  return (
-    <>
-      <h1>Best Apartments for Dog Owners in Barcelona</h1>
-      
-      <p>Barcelona isn't just a paradise for humans—it's a dream destination for dogs too. With over 100 parks, dog-friendly beaches, and a culture that genuinely embraces four-legged friends, finding the perfect pet-friendly apartment here means unlocking a lifestyle where your pup can thrive alongside you in one of Europe's most vibrant cities.</p>
+  const content = {
+  "intro": "Barcelona welcomes four-legged travelers with open arms, offering dog-friendly apartments that combine Mediterranean lifestyle with canine comfort. From beachside studios to spacious flats near parks, the city's rental market caters perfectly to pet parents seeking temporary homes.",
+  "why_stay": [
+    "Many Barcelona apartments feature private terraces and balconies, perfect for morning coffee while your pup lounges.",
+    "The city's extensive network of dog parks and beaches means adventure is always walking distance away.",
+    "Local landlords increasingly welcome pets, with flexible policies and nearby veterinary services for peace of mind."
+  ],
+  "neighborhoods": [
+    "Poblenou - Modern apartments near dog-friendly beaches with converted industrial lofts and the expansive Parc del Centre del Poblenou.",
+    "Gràcia - Charming village-like area with numerous plazas, shaded squares perfect for dog socialization, and pet-welcoming cafés.",
+    "Eixample - Spacious high-ceiling flats close to multiple veterinary clinics, pet stores, and the beloved Parc de Joan Miró."
+  ],
+  "tips": [
+    "Book apartments near Metro stops allowing dogs (most lines permit pets in off-peak hours) for easy city exploration.",
+    "Request ground-floor units or buildings with elevators, and confirm nearby green spaces before booking your stay."
+  ],
+  "cta": "Start searching for your perfect dog-friendly Barcelona apartment today and discover why this vibrant city is a tail-wagging paradise for traveling pets!"
+}
 
-      <h2>Why Choose Barcelona for Dog Owners</h2>
-      <ul>
-        <li>Barcelona boasts dedicated dog beaches like Platja de Llevant and countless parks including the expansive Parc de la Ciutadella, giving your dog daily adventure opportunities right from your doorstep.</li>
-        <li>The city's pet-friendly culture means most neighborhoods have veterinary clinics, pet stores, and dog-welcoming cafés within walking distance, making daily life with your companion effortlessly convenient.</li>
-        <li>Many modern Barcelona apartments feature outdoor spaces like terraces or balconies, plus easy access to pedestrian-friendly streets perfect for morning and evening walks year-round.</li>
-      </ul>
-
-      <h2>Considerations</h2>
-      <ul>
-        <li>Elevator availability is crucial for apartment buildings, especially in older Gothic Quarter or Eixample properties—always confirm this before booking if you have a larger breed.</li>
-        <li>Some apartments may require additional pet deposits or have breed/size restrictions, so clarify pet policies upfront and ask about any extra cleaning fees to avoid surprises.</li>
-      </ul>
-
-      <h2>Best Neighborhoods</h2>
-      <p>Gràcia offers charming plazas and a village feel with abundant green spaces, while Poblenou provides proximity to dog beaches and modern apartments. Eixample delivers central location with wide sidewalks, and Sant Antoni combines local character with nearby Parc de Joan Miró—all excellent choices for dog owners.</p>
-
-      <h2>Start Your Barcelona Adventure</h2>
-      <p>Ready to explore Barcelona with your best friend? Browse our curated selection of dog-friendly apartments and start planning your Mediterranean adventure. Filter by neighborhood, amenities, and pet policies to find your perfect home away from home—where both you and your pup will feel instantly welcome.</p>
-    </>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }

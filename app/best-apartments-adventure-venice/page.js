@@ -1,42 +1,27 @@
 export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Venice",
-  description: "Venice isn't just gondolas and grand palaces—it's an adventure playground where waterways become kayaking routes and hidden islands await exploration."
-};
+  title: 'Best Apartments for Adventure Seekers in Venice',
+  description: 'Venice apartments offer adventure seekers the perfect base for exploring hidden canals, secret passages, and authentic neighborhoods beyond tourist crowds.'
+}
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Venice</h1>
-      
-      <div className="hook">
-        <p>Venice isn't just gondolas and grand palaces—it's an adventure playground where waterways become kayaking routes and hidden islands await exploration.</p>
-      </div>
+export default function Page() {
+  const content = {
+  "intro": "Venice apartments offer adventure seekers the perfect base for exploring hidden canals, secret passages, and authentic neighborhoods beyond tourist crowds. Wake up to gondola songs and spend days kayaking waterways or cycling Lido beaches. Choose apartments with rooftop terraces for sunset views over terracotta rooftops.",
+  "why_stay": [
+    "Live like locals in residential areas, discovering family-run bacari and navigating maze-like streets off typical tourist routes.",
+    "Save money on accommodation compared to hotels, leaving budget for water sports, island hopping, and authentic cicchetti crawls.",
+    "Enjoy kitchen facilities to prepare fresh market finds from Rialto, fueling early morning explorations before crowds arrive."
+  ],
+  "neighborhoods": [
+    "Cannaregio - Authentic residential quarter with local markets, quiet canals, and Jewish Ghetto's historic streets to explore",
+    "Dorsoduro - Artsy district near university, with vibrant nightlife, contemporary galleries, and scenic waterfront promenades",
+    "Castello - Eastern neighborhood offering local life, green spaces at Giardini, and Arsenal's maritime history"
+  ],
+  "tips": [
+    "Book ground-floor apartments with easy water access for storing kayaks or paddleboards during Venice lagoon adventures",
+    "Purchase vaporetto passes for unlimited island hopping to Murano, Burano, and adventure-filled Lido beach cycling"
+  ],
+  "cta": "Book your Venice apartment today and unlock the city's adventurous soul beyond the crowded squares."
+}
 
-      <section className="why-choose">
-        <h2>Why Choose Venice?</h2>
-        <ul>
-          <li>Stay in Cannaregio or Dorsoduro for authentic neighborhoods with easy canal kayak launch points and proximity to vaporetto lines connecting to Lido's cycling paths and lagoon islands like Torcello and Burano for off-the-beaten-path exploration</li>
-          <li>Base yourself near Santa Lucia station for convenient early-morning train access to the Dolomites (2-3 hours), returning by evening to paddle Venice's quieter canals or explore the Arsenale district's maritime history</li>
-          <li>Choose apartments on Lido island itself for direct beach access, extensive cycling infrastructure, and a local's perspective while remaining just 10 minutes by boat from Venice's historic core</li>
-        </ul>
-      </section>
-
-      <section className="considerations">
-        <h2>Things to Consider</h2>
-        <ul>
-          <li>Ground-floor or lift-equipped apartments are essential when hauling adventure gear through Venice's endless bridges and narrow passages—confirm accessibility before booking</li>
-          <li>Summer heat and crowds peak July-August; opt for shoulder seasons (April-May, September-October) when canal kayaking is more pleasant and Dolomite trails remain accessible without winter closures</li>
-        </ul>
-      </section>
-
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Cannaregio offers the perfect balance—residential authenticity, fewer tourists, and northern lagoon access for kayaking. Dorsoduro attracts creative adventurers with its university vibe and proximity to southern canals. For serious cyclists and beach lovers, Lido provides car-free streets, 11km of riding terrain, and a relaxed island atmosphere. Castello's eastern edge near the Arsenale puts you closest to Sant'Elena's parks and less-trafficked waterways.</p>
-      </section>
-
-      <div className="cta">
-        <p>Book your Venice adventure base today and discover the city beyond the postcards—where every canal is a path and every island holds secrets.</p>
-      </div>
-    </div>
-  );
+  return <div>{JSON.stringify(content)}</div>
 }
