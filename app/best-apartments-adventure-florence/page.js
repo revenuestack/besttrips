@@ -1,42 +1,40 @@
 export const metadata = {
   title: "Best Apartments for Adventure Seekers in Florence",
-  description: "Florence isn't just Renaissance art and Duomo views—it's your basecamp for Tuscan adventures that blend culture with adrenaline-pumping outdoor escapes."
+  description: "Discover the best apartments in Florence for adventure seekers. Find the perfect base for hiking Tuscan hills, biking scenic routes, and exploring Renaissance treasures on foot."
 };
 
 export default function GuidePage() {
   return (
     <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Florence</h1>
+      <section className="hook">
+        <p>Florence isn\'t just museums and galleries—it\'s your gateway to Tuscan adventures. From dawn hikes in the Apennines to sunset bike rides through Chianti vineyards, the right apartment puts you at the heart of it all.</p>
+      </section>
       
-      <div className="hook">
-        <p>Florence isn't just Renaissance art and Duomo views—it's your basecamp for Tuscan adventures that blend culture with adrenaline-pumping outdoor escapes.</p>
-      </div>
-
       <section className="why-choose">
-        <h2>Why Choose Florence?</h2>
+        <h2>Why Choose Apartments?</h2>
         <ul>
-          <li>Prime access to Chianti's legendary cycling routes and vineyard trails, with the Apuan Alps climbing destinations just 90 minutes away for weekend mountain adventures</li>
-          <li>Walkable base for exploring authentic neighborhoods like San Frediano and Sant'Ambrogio, where local markets and hidden trattorie fuel your daily expeditions</li>
-          <li>Strategic location for spontaneous day trips to Cinque Terre's coastal trails, Tuscan hill town hikes, and off-the-beaten-path medieval villages inaccessible to tour buses</li>
+          <li>Prime access to hiking trails in Fiesole and Settignano hills, with apartments near trailheads offering panoramic views of the Arno Valley</li>
+          <li>Bike-friendly neighborhoods with secure storage, close to rental shops and the 160km Chianti bike route through olive groves and medieval villages</li>
+          <li>Self-catering kitchens perfect for fueling multi-day adventures, plus laundry facilities for gear maintenance between excursions</li>
         </ul>
       </section>
-
+      
       <section className="considerations">
-        <h2>Things to Consider</h2>
+        <h2>Considerations</h2>
         <ul>
-          <li>Book apartments near Oltrarno or Santa Croce districts for easier bike storage and quick exits to countryside routes without navigating historic center traffic restrictions</li>
-          <li>Summer heat (June-August) can make midday activities challenging—prioritize accommodations with air conditioning and plan adventures for early morning or evening hours</li>
+          <li>Upper-floor apartments without elevators are common in historic buildings—great leg workouts but challenging with heavy hiking gear</li>
+          <li>Book apartments near Porta Romana or San Niccolò for quick access to countryside trails while staying within walking distance of city center attractions</li>
         </ul>
       </section>
-
+      
       <section className="neighborhoods">
         <h2>Best Neighborhoods</h2>
-        <p>Oltrarno offers the perfect blend of authentic Florence living and adventure access, with bike-friendly streets leading directly to countryside routes and proximity to climbing gear shops. San Frediano provides a local vibe with easy access to both the Arno River running paths and bus connections to trailheads. Santa Croce positions you near bike rental hubs and the eastern exits toward Chianti wine country, while maintaining walkability to cultural sites for rest days.</p>
+        <p>San Niccolò offers riverside paths and hillside access, Oltrarno provides authentic local vibes near Boboli Gardens\' trails, while Fiesole—just 20 minutes out—delivers mountain village charm with direct trail access and stunning valley views.</p>
       </section>
-
-      <div className="cta">
-        <p>Book your Florence adventure apartment now and discover why this Renaissance city is the ultimate hub for Tuscan outdoor exploration.</p>
-      </div>
+      
+      <section className="cta">
+        <p>Ready to base your Tuscan adventure in Florence? Browse apartments with bike storage, trail access, and authentic neighborhood character today.</p>
+      </section>
     </div>
   );
 }

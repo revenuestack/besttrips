@@ -1,42 +1,40 @@
 export const metadata = {
   title: "Best Apartments for Adventure Seekers in Berlin",
-  description: "Berlin transforms into an adrenaline-fueled playground where urban grit meets wild Brandenburg nature, making it the ultimate base for adventure seekers."
+  description: "Discover the perfect apartment base for your Berlin adventure. From bike-friendly neighborhoods to areas with extreme sports access, find where thrill-seekers stay in Germany's dynamic capital."
 };
 
 export default function GuidePage() {
   return (
     <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Berlin</h1>
+      <section className="hook">
+        <p>Berlin pulses with urban adventure, and choosing the right apartment puts you at the heart of the action. Whether you\'re cycling the Berlin Wall Trail, exploring abandoned sites, or kayaking the Spree, your basecamp matters.</p>
+      </section>
       
-      <div className="hook">
-        <p>Berlin transforms into an adrenaline-fueled playground where urban grit meets wild Brandenburg nature, making it the ultimate base for adventure seekers.</p>
-      </div>
-
       <section className="why-choose">
-        <h2>Why Choose Berlin?</h2>
+        <h2>Why Choose Apartments?</h2>
         <ul>
-          <li>Unmatched variety: cycle the Spree riverside paths in the morning, explore hauntingly beautiful abandoned sites like Teufelsberg by afternoon, and tackle world-class climbing gyms before sunset</li>
-          <li>Strategic gateway location with Brandenburg's forests, lakes, and hiking trails just 30-60 minutes away, letting you escape to nature without sacrificing city conveniences</li>
-          <li>Year-round adventure calendar from summer paddleboarding on Wannsee to winter urban exploration, plus Berlin's exceptional public transport means car-free adventuring</li>
+          <li>Flexible home base with kitchen facilities to fuel early morning adventures and late-night returns from Berlin\'s legendary nightlife</li>
+          <li>Space for adventure gear storage including bikes, climbing equipment, and outdoor essentials in spacious German apartments</li>
+          <li>Local neighborhood immersion in areas where Berliners actually live, bike, and explore beyond typical tourist zones</li>
         </ul>
       </section>
-
+      
       <section className="considerations">
-        <h2>Things to Consider</h2>
+        <h2>Considerations</h2>
         <ul>
-          <li>Neighborhoods closer to parks and water access (Charlottenburg, Kreuzberg) command premium rents but save commute time to adventure hotspots</li>
-          <li>Ground-floor or apartments with secure bike storage are essential since cycling is your primary transport mode for reaching trailheads and waterfront launch points</li>
+          <li>Book apartments near U-Bahn or S-Bahn stations for quick access to Teufelsberg, Müggelsee, or Grunewald forest adventures</li>
+          <li>Summer months (May-September) offer peak adventure conditions but require advance booking, especially in popular districts</li>
         </ul>
       </section>
-
+      
       <section className="neighborhoods">
         <h2>Best Neighborhoods</h2>
-        <p>Kreuzberg and Friedrichshain offer the perfect adventurer's balance—proximity to the East Side Gallery for urban runs, direct Spree access for kayaking, and excellent S-Bahn connections to Brandenburg hiking. Charlottenburg positions you near Tiergarten's sprawling trails and Wannsee's water sports scene. Neukölln appeals to budget-conscious adventurers with authentic Berlin edge, climbing gyms, and quick access to Tempelhofer Feld's massive open space for cycling and outdoor activities.</p>
+        <p>Friedrichshain offers urban exploration with East Side Gallery access and Spree kayaking. Kreuzberg combines canal-side cycling with vibrant street culture. Prenzlauer Berg provides easy bike routes to parks and lakes. Neukölln attracts adventurous travelers with its raw energy and affordable options near Tempelhofer Feld, Berlin\'s massive former airport turned urban park.</p>
       </section>
-
-      <div className="cta">
-        <p>Book your Berlin adventure apartment now and discover why this city rewards those who seek thrills both within its rebellious streets and beyond its wild green borders.</p>
-      </div>
+      
+      <section className="cta">
+        <p>Find your Berlin adventure apartment today and unlock Germany\'s most dynamic city from a local\'s perspective.</p>
+      </section>
     </div>
   );
 }

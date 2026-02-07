@@ -1,42 +1,40 @@
 export const metadata = {
   title: "Best Apartments for Adventure Seekers in Copenhagen",
-  description: "Copenhagen transforms apartment living into a launchpad for daily adventures, where your doorstep opens directly onto bike lanes, harbor kayaking routes, and wilderness trails."
+  description: "Discover top apartments in Copenhagen perfect for adventure seekers. Stay near cycling routes, harbor activities, and outdoor exploration hubs in Denmark's vibrant capital."
 };
 
 export default function GuidePage() {
   return (
     <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Copenhagen</h1>
+      <section className="hook">
+        <p>Copenhagen isn\'t just a city—it\'s an adventure playground where cycling culture meets Nordic wilderness, and your apartment is the perfect basecamp for exploring it all.</p>
+      </section>
       
-      <div className="hook">
-        <p>Copenhagen transforms apartment living into a launchpad for daily adventures, where your doorstep opens directly onto bike lanes, harbor kayaking routes, and wilderness trails.</p>
-      </div>
-
       <section className="why-choose">
-        <h2>Why Choose Copenhagen?</h2>
+        <h2>Why Choose Apartments?</h2>
         <ul>
-          <li>Pedal anywhere in minutes thanks to 400+ kilometers of dedicated bike lanes connecting every neighborhood to forests, beaches, and urban parks—most apartments include dedicated bike storage</li>
-          <li>Launch kayaks straight from harbor-side neighborhoods like Islands Brygge and Christianshavn, with equipment rentals steps from waterfront apartments and year-round swimming culture</li>
-          <li>Access Zealand's ancient beech forests, coastal cliffs, and hiking trails within 30 minutes by bike or train, making weekend wilderness escapes effortless from your urban base</li>
+          <li>Unmatched cycling infrastructure with over 390km of bike lanes connecting you to beaches, forests, and urban adventures within minutes of your doorstep</li>
+          <li>Proximity to harbor swimming spots, kayaking channels, and waterfront activities that let you dive into adventure before breakfast</li>
+          <li>Easy access to day-trip destinations like Møn\'s chalk cliffs, Swedish coastlines, and Zealand\'s forests via efficient public transit</li>
         </ul>
       </section>
-
+      
       <section className="considerations">
-        <h2>Things to Consider</h2>
+        <h2>Considerations</h2>
         <ul>
-          <li>Summer (May-September) offers midnight sun adventures and peak outdoor conditions, while winter requires embracing Denmark's 'friluftsliv' philosophy—there's no bad weather, only bad clothing</li>
-          <li>Ground-floor or apartments with elevators matter when hauling bikes, kayaks, or hiking gear daily; prioritize neighborhoods with storage facilities and easy outdoor access</li>
+          <li>Copenhagen\'s compact size means most adventure-focused neighborhoods fill quickly during summer months—book early for June-August stays</li>
+          <li>While most apartments include bike storage, confirm availability beforehand since cycling is your primary adventure tool here</li>
         </ul>
       </section>
-
+      
       <section className="neighborhoods">
         <h2>Best Neighborhoods</h2>
-        <p>Vesterbro and Nørrebro blend urban energy with direct bike routes to Frederiksberg Gardens and coastal paths. Islands Brygge offers harbor swimming platforms and kayak launches outside your window. Østerbro provides instant access to Fælledparken's vast green spaces and coastal trails toward Charlottenlund Forest. Christianshavn's canals and alternative vibe suit adventurers seeking waterfront living with authentic local character.</p>
+        <p>Vesterbro offers hipster vibes with quick routes to beaches. Nørrebro provides authentic local culture near green spaces. Islands Brygge places you waterfront with harbor pools and kayak rentals at your doorstep. Østerbro connects you to coastal paths and Fælledparken\'s outdoor activities.</p>
       </section>
-
-      <div className="cta">
-        <p>Book your Copenhagen adventure base today and discover why Danes consistently rank among the world's happiest people—the secret is outside your apartment door.</p>
-      </div>
+      
+      <section className="cta">
+        <p>Find your Copenhagen adventure basecamp today—search apartments in these neighborhoods and start planning your Nordic exploration.</p>
+      </section>
     </div>
   );
 }

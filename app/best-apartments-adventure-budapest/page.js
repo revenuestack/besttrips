@@ -1,42 +1,40 @@
 export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Budapest",
-  description: "Budapest transforms into an adventure playground where your apartment becomes base camp for exploring underground caves, scaling hills, and diving into Europe's most electrifying urban scenes."
+  title: "Best Apartments for Adventure Seekers in Budapest | Your Ultimate Base Camp",
+  description: "Discover the perfect apartments for adventure seekers in Budapest. From thermal cave diving to urban exploration, find your ideal home base in Hungary's thrilling capital."
 };
 
 export default function GuidePage() {
   return (
     <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Budapest</h1>
+      <section className="hook">
+        <p>Budapest pulses with adrenaline-pumping opportunities, from spelunking beneath Castle Hill to kayaking the Danube at sunset. Choosing the right apartment transforms your adventure from a simple trip into an immersive experience, giving you the freedom to explore on your own schedule while enjoying the comforts of a local home base.</p>
+      </section>
       
-      <div className="hook">
-        <p>Budapest transforms into an adventure playground where your apartment becomes base camp for exploring underground caves, scaling hills, and diving into Europe's most electrifying urban scenes.</p>
-      </div>
-
       <section className="why-choose">
-        <h2>Why Choose Budapest?</h2>
+        <h2>Why Choose Apartments?</h2>
         <ul>
-          <li>Position yourself between the Buda Hills for weekend hiking and rock climbing while staying minutes from thermal cave systems like Szemlő-hegyi and Pálvölgyi, offering rare underground exploration opportunities</li>
-          <li>Access the Danube cycling path directly from central neighborhoods, with easy connections to Margaret Island's running trails and nearby lakes for kayaking, SUP, and sailing adventures</li>
-          <li>Immerse yourself in Budapest's legendary ruin bar district where adventure meets nightlife—explore abandoned buildings turned art spaces, hidden courtyards, and underground speakeasies that define the city's alternative culture</li>
+          <li>Freedom and flexibility to start early morning hikes in the Buda Hills or return late from ruin bar crawls without hotel curfews or rigid check-in times</li>
+          <li>Kitchen facilities let you fuel adventures with hearty Hungarian breakfasts and pack picnic lunches for day trips to the Pilis Mountains or Danube Bend</li>
+          <li>Authentic neighborhood experiences in districts like District VIII or XI place you near climbing gyms, bike rental shops, and local adventure tour operators</li>
         </ul>
       </section>
-
+      
       <section className="considerations">
-        <h2>Things to Consider</h2>
+        <h2>Considerations</h2>
         <ul>
-          <li>Buda-side apartments offer closer proximity to hiking trails and nature but require crossing bridges to reach the ruin bars and cycling routes concentrated in Pest</li>
-          <li>Peak summer months (June-August) bring crowds to popular adventure spots and higher apartment rates, while spring and fall offer ideal temperatures for outdoor activities with better availability and pricing</li>
+          <li>Book apartments near public transport hubs like Deák Ferenc tér or along Metro Line 2 for quick access to both Buda\'s outdoor adventures and Pest\'s urban exploration</li>
+          <li>Verify secure bike storage if you plan cycling tours, and confirm the apartment has reliable Wi-Fi for booking last-minute adventure activities and navigation</li>
         </ul>
       </section>
-
+      
       <section className="neighborhoods">
         <h2>Best Neighborhoods</h2>
-        <p>District VII (the Jewish Quarter) puts you at the heart of ruin bar exploration with excellent public transport to adventure zones. Districts V and VI offer central locations with quick access to Danube cycling paths. For nature lovers, District XII in Buda provides direct access to hiking trails while maintaining connections to downtown. District XIII near Margaret Island balances water sports access with urban amenities, perfect for active travelers wanting morning runs before city exploration.</p>
+        <p>District V (Belváros) offers central access to river sports and cycling paths. District XI (Újbuda) sits near Gellért Hill\'s hiking trails and climbing spots. District VIII (Józsefváros) provides budget-friendly options close to ruin bars and the starting point for urban exploration tours.</p>
       </section>
-
-      <div className="cta">
-        <p>Book your Budapest adventure base today and discover why this city offers the perfect blend of natural thrills and urban exploration.</p>
-      </div>
+      
+      <section className="cta">
+        <p>Ready to base yourself in Budapest\'s most adventure-friendly apartments? Browse our curated selection and book your perfect launch pad for Hungarian thrills today.</p>
+      </section>
     </div>
   );
 }

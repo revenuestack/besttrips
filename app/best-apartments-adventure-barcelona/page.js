@@ -1,42 +1,40 @@
 export const metadata = {
   title: "Best Apartments for Adventure Seekers in Barcelona",
-  description: "Barcelona isn't just a beach city—it's an adventure playground where Mediterranean coastline meets mountain trails, making it the ultimate base for thrill-seekers."
+  description: "Discover the perfect Barcelona apartments for thrill-seekers. Base yourself near climbing spots, beaches, and mountain trails while exploring Catalonia's adventure capital."
 };
 
 export default function GuidePage() {
   return (
     <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Barcelona</h1>
+      <section className="hook">
+        <p>Barcelona isn\'t just about Gaudí and tapas—it\'s an adventure playground where Mediterranean beaches meet Montjuïc\'s hiking trails and world-class climbing spots. The right apartment puts you within reach of kitesurfing, mountain biking, and dawn swims before your morning cortado.</p>
+      </section>
       
-      <div className="hook">
-        <p>Barcelona isn't just a beach city—it's an adventure playground where Mediterranean coastline meets mountain trails, making it the ultimate base for thrill-seekers.</p>
-      </div>
-
       <section className="why-choose">
-        <h2>Why Choose Barcelona?</h2>
+        <h2>Why Choose Apartments?</h2>
         <ul>
-          <li>Wake up to mountain biking in Collserola Natural Park's 8,000 hectares of trails, then cool off with afternoon water sports on Barceloneta Beach—all within 30 minutes of your apartment.</li>
-          <li>Rock climbing at Montjuïc's crags offers stunning city views while you scale limestone walls, and the iconic Tibidabo summit provides challenging hiking routes with panoramic rewards.</li>
-          <li>Weekend warriors can reach the Pyrenees in under two hours for world-class skiing, mountaineering, and backcountry adventures, then return to urban comfort by Sunday evening.</li>
+          <li>Strategic locations near Barceloneta Beach for water sports, Collserola Natural Park for trail running, and climbing gyms like Sharma Climbing BCN—many apartments offer bike storage and gear-drying areas.</li>
+          <li>Flexible self-catering options let you fuel early starts and late returns on your schedule, with local markets like La Boqueria providing fresh supplies for packed lunches before day trips to Montserrat.</li>
+          <li>Cost-effective bases for multi-day adventures: use Barcelona as your hub for Costa Brava coasteering, Pyrenees hiking, or Via Ferrata routes, returning to comfortable apartments instead of pricey hotels.</li>
         </ul>
       </section>
-
+      
       <section className="considerations">
-        <h2>Things to Consider</h2>
+        <h2>Considerations</h2>
         <ul>
-          <li>Apartments near metro lines L3 or L7 provide fastest access to trailheads, though expect to pay 15-20% premium for neighborhoods bordering Collserola like Sarrià-Sant Gervasi.</li>
-          <li>Summer heat (June-August) can make midday adventures intense—prioritize apartments with air conditioning and consider ground-floor units for easy bike storage and gear management.</li>
+          <li>Book apartments in neighborhoods with easy metro access to adventure zones—Sants for mountain access, Poblenou for beaches—and confirm secure storage for bikes, boards, or climbing gear.</li>
+          <li>Summer (June-September) offers perfect water sports conditions but higher prices; spring and fall provide ideal hiking weather and better apartment rates with fewer tourists crowding trails.</li>
         </ul>
       </section>
-
+      
       <section className="neighborhoods">
         <h2>Best Neighborhoods</h2>
-        <p>Gràcia and Sarrià-Sant Gervasi sit at Collserola's doorstep, offering immediate trail access while maintaining authentic Barcelona character. For beach-sport enthusiasts, Poblenou combines proximity to water sports with excellent cycling infrastructure. El Raval and Poble Sec provide budget-friendly options near Montjuïc's climbing zones, while Sant Antoni offers balanced access to both mountains and sea with vibrant local markets for post-adventure fuel.</p>
+        <p>Poblenou blends beach proximity with local vibes and excellent cycling infrastructure. Gràcia offers authentic Barcelona living near Collserola\'s trails. Sants provides direct access to mountain trains and bike routes, while Barceloneta puts you steps from Mediterranean water sports—though it\'s touristy and pricier.</p>
       </section>
-
-      <div className="cta">
-        <p>Find your adventure basecamp—search Barcelona apartments with outdoor gear storage and quick transit to trails, beaches, and beyond.</p>
-      </div>
+      
+      <section className="cta">
+        <p>Find your adventure base in Barcelona today and start planning epic days exploring Catalonia\'s peaks, seas, and hidden trails.</p>
+      </section>
     </div>
   );
 }

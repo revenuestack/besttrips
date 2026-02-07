@@ -1,42 +1,40 @@
 export const metadata = {
   title: "Best Apartments for Adventure Seekers in Edinburgh",
-  description: "Edinburgh is an adventure seeker's dream, where rugged volcanic peaks meet historic cobblestone streets, offering urban exploration and wild Scottish landscapes within minutes of your doorstep."
+  description: "Discover the best apartments in Edinburgh for adventure seekers. Find your perfect base near Arthur's Seat, historic trails, and highland gateways for unforgettable Scottish adventures."
 };
 
 export default function GuidePage() {
   return (
     <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Edinburgh</h1>
+      <section className="hook">
+        <p>Edinburgh is an adventurer\'s paradise where ancient volcanoes meet medieval streets and the Scottish Highlands wait at your doorstep. Choosing the right apartment puts you at the heart of it all.</p>
+      </section>
       
-      <div className="hook">
-        <p>Edinburgh is an adventure seeker's dream, where rugged volcanic peaks meet historic cobblestone streets, offering urban exploration and wild Scottish landscapes within minutes of your doorstep.</p>
-      </div>
-
       <section className="why-choose">
-        <h2>Why Choose Edinburgh?</h2>
+        <h2>Why Choose Apartments?</h2>
         <ul>
-          <li>Hike Arthur's Seat, an extinct volcano in the city center, with panoramic views over Edinburgh and the Firth of Forth, or tackle coastal trails along dramatic cliffs and hidden beaches</li>
-          <li>Use Edinburgh as your gateway to the Scottish Highlands, with world-class rock climbing, mountaineering, and wilderness hiking just 1-2 hours away by car or train</li>
-          <li>Explore underground vaults and historic closes by day, then return to modern apartments with all the amenities you need to recover and plan your next adventure</li>
+          <li>Prime access to Arthur\'s Seat, Pentland Hills, and coastal paths for daily hiking and trail running adventures right from your doorstep</li>
+          <li>Central location to Scotland\'s outdoor playground with easy connections to the Highlands, Cairngorms, and world-class mountain biking trails within an hour\'s drive</li>
+          <li>Authentic Scottish experience with apartments in historic neighborhoods offering climbing walls, gear rental shops, and adventure tour operators nearby</li>
         </ul>
       </section>
-
+      
       <section className="considerations">
-        <h2>Things to Consider</h2>
+        <h2>Considerations</h2>
         <ul>
-          <li>Edinburgh's weather can be unpredictable year-round, so choose apartments with proper heating and drying space for wet gear after outdoor adventures</li>
-          <li>Parking can be challenging in central neighborhoods, so consider proximity to public transport if you're planning Highland day trips, or look for rentals with dedicated parking</li>
+          <li>Edinburgh\'s weather changes rapidly—choose apartments with good heating, drying facilities for wet gear, and secure storage for bikes and equipment</li>
+          <li>Peak adventure season (May-September) means higher prices and limited availability, so book early or consider shoulder seasons for better deals and quieter trails</li>
         </ul>
       </section>
-
+      
       <section className="neighborhoods">
         <h2>Best Neighborhoods</h2>
-        <p>Leith offers affordable apartments with coastal trail access and vibrant nightlife, while Newington and Marchmont put you within walking distance of Arthur's Seat and Holyrood Park. Old Town apartments provide instant access to underground vaults and historic sites, though they're pricier. Stockbridge combines riverside walks with quick access to both city center attractions and northbound Highland routes, making it ideal for balancing urban and outdoor adventures.</p>
+        <p>Leith offers coastal access and modern amenities, Old Town provides historic charm near castle ramparts and underground vaults, while Bruntsfield and Morningside give direct access to hiking trails with quieter residential vibes. Stockbridge combines riverside walks with vibrant cafes perfect for post-adventure recovery.</p>
       </section>
-
-      <div className="cta">
-        <p>Book your Edinburgh adventure base today and discover why this compact city is the perfect launchpad for Scotland's wildest experiences.</p>
-      </div>
+      
+      <section className="cta">
+        <p>Book your Edinburgh adventure base today and wake up ready to conquer Scotland\'s most iconic peaks and hidden trails.</p>
+      </section>
     </div>
   );
 }

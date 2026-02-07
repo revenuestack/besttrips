@@ -1,42 +1,40 @@
 export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Brussels",
-  description: "Brussels isn't just waffles and bureaucrats—it's a launchpad for adventure seekers who crave both urban thrills and wild escapes."
+  title: "Best Apartments for Adventure Seekers in Brussels | Your Base for Belgian Exploration",
+  description: "Find the perfect apartment in Brussels for adventure seekers. Stay near cycling routes, climbing gyms, and quick access to Ardennes hiking trails."
 };
 
 export default function GuidePage() {
   return (
     <div className="guide-page">
-      <h1>Best Apartments for Adventure Seekers in Brussels</h1>
+      <section className="hook">
+        <p>Brussels isn\'t just about waffles and EU politics—it\'s a launchpad for adrenaline-fueled exploration. From urban cycling adventures through cobblestone streets to weekend escapes into the rugged Ardennes, the right apartment puts you at the heart of Belgium\'s action. Choose accommodations that blend local authenticity with easy access to adventure hotspots, bike rentals, and transport hubs connecting you to rock climbing, kayaking, and forest trails within an hour.</p>
+      </section>
       
-      <div className="hook">
-        <p>Brussels isn't just waffles and bureaucrats—it's a launchpad for adventure seekers who crave both urban thrills and wild escapes.</p>
-      </div>
-
       <section className="why-choose">
-        <h2>Why Choose Brussels?</h2>
+        <h2>Why Choose Apartments?</h2>
         <ul>
-          <li>Cycle through Sonian Forest's ancient beech canopies or tackle urban trails weaving through parks like Bois de la Cambre, all accessible within 30 minutes from your apartment</li>
-          <li>Rock climbing gyms like Blomm and Manneken Bloc offer year-round training, while the Ardennes region—less than an hour away—delivers world-class hiking, kayaking, and caving weekends</li>
-          <li>Explore Brussels' diverse neighborhoods on foot or bike: from graffiti-laden Saint-Gilles to the cobbled lanes of Sablon, every district offers its own micro-adventure</li>
+          <li>Central location near bike-sharing stations, climbing gyms like Entrepot, and Brussels Park for morning runs</li>
+          <li>Quick train connections to Dinant, Durbuy, and Ardennes adventure zones for hiking, caving, and kayaking day trips</li>
+          <li>Proximity to vibrant neighborhoods with street art tours, urban exploring, and late-night energy for post-adventure socializing</li>
         </ul>
       </section>
-
+      
       <section className="considerations">
-        <h2>Things to Consider</h2>
+        <h2>Considerations</h2>
         <ul>
-          <li>Weather can be unpredictable—apartments with bike storage and gear-drying space are essential for year-round adventurers</li>
-          <li>Public transport is excellent, but proximity to Brussels-South or Brussels-Central stations maximizes weekend escape potential to the Ardennes</li>
+          <li>Brussels weather is unpredictable—apartments with gear storage and drying space are essential for muddy boots and wet equipment</li>
+          <li>Parking is challenging in central areas; prioritize apartments near Metro stations if planning car rentals for Ardennes excursions</li>
         </ul>
       </section>
-
+      
       <section className="neighborhoods">
         <h2>Best Neighborhoods</h2>
-        <p>Ixelles and Saint-Gilles blend urban energy with park access—perfect bases near cycling routes yet close to climbing gyms and nightlife. Etterbeek offers quieter residential vibes with direct paths to Sonian Forest. For car-free living, choose Schaerbeek or Molenbeek where excellent metro links connect you to trailheads and regional trains. Uccle provides a suburban gateway if you prefer green surroundings while maintaining city access.</p>
+        <p>Ixelles offers youthful energy near Bois de la Cambre park for trail running. Saint-Gilles provides authentic character with easy access to cycling routes. Schaerbeek connects quickly to northern climbing areas, while Etterbeek sits near EU Quarter with excellent transport links.</p>
       </section>
-
-      <div className="cta">
-        <p>Find your Brussels adventure base today—book an apartment that puts forests, cliffs, and cobblestones all within reach.</p>
-      </div>
+      
+      <section className="cta">
+        <p>Book your adventure-ready Brussels apartment today and unlock Belgium\'s wild side—from urban exploration to mountain trails, your base camp awaits.</p>
+      </section>
     </div>
   );
 }
