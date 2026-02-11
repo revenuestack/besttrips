@@ -1,27 +1,61 @@
 export const metadata = {
-  title: 'Best Apartments for Luxury in Berlin',
-  description: 'Berlin\'s luxury apartment scene combines cutting-edge design with historic charm, offering discerning travelers spacious accommodations in one of Europe\'s most dynamic capitals.'
-}
+  title: "Best Luxury Apartments in Berlin: Premium Serviced Rentals & Designer Stays 2026",
+  description: "Discover Berlin's finest luxury apartments. Curated serviced rentals in Mitte, Charlottenburg & Prenzlauer Berg with designer interiors and concierge service.",
+};
 
 export default function Page() {
   const content = {
-    "intro": "Berlin's luxury apartment scene combines cutting-edge design with historic charm, offering discerning travelers spacious accommodations in one of Europe's most dynamic capitals. From converted industrial lofts to sleek penthouses overlooking the Spree, these premium stays provide the perfect blend of privacy, comfort, and authentic local living.",
-    "why_stay": [
-      "Experience Berlin like a local with full kitchens, living spaces, and the freedom to create your own schedule.",
-      "Luxury apartments offer significantly more space than hotels, ideal for families, extended stays, or entertaining guests stylishly.",
-      "Enjoy premium amenities including private terraces, designer furnishings, concierge services, and often stunning city or river views."
+    hook: "Berlin's luxury apartment scene offers discerning travelers an elevated alternative to traditional hotels. From converted historic townhouses in Charlottenburg to sleek penthouses overlooking Museum Island, the city's premium serviced apartments blend Berlin's creative edge with five-star amenities, spacious layouts, and the privacy of your own residence.",
+    highlights: [
+      "Designer interiors by renowned German architects featuring floor-to-ceiling windows, premium appliances, and curated art collections",
+      "Prime locations in Mitte, Charlottenburg, and Prenzlauer Berg—walking distance to cultural landmarks, Michelin-starred dining, and boutique shopping",
+      "Full-service amenities including 24/7 concierge, in-apartment spa treatments, private chefs, and dedicated housekeeping",
+      "Spacious living areas (80-250+ sqm) with fully equipped kitchens, work spaces, and often private terraces or balconies"
     ],
-    "neighborhoods": [
-      "Mitte: The historic center featuring Museum Island, Unter den Linden, and upscale apartments in beautifully restored 19th-century buildings.",
-      "Charlottenburg: Berlin's most elegant district with tree-lined boulevards, designer boutiques, and sophisticated apartments near Kurfürstendamm.",
-      "Prenzlauer Berg: Trendy neighborhood offering charming cobblestone streets, organic markets, and converted lofts with distinctive character and modern luxury."
+    considerations: [
+      "Minimum stay requirements typically range from 3-7 nights, particularly during high season and major events like Berlin Art Week",
+      "Book 2-3 months ahead for peak periods (September-October, Christmas markets); many properties require advance wire transfers for reservations"
     ],
-    "tips": [
-      "Book apartments with parking if driving, as Berlin's excellent public transport makes cars unnecessary but visitor parking can be challenging.",
-      "Consider properties with 24-hour concierge services for restaurant reservations, private tours, and access to exclusive cultural events year-round."
-    ],
-    "cta": "Discover Berlin's finest luxury apartments and elevate your stay with unmatched space, style, and authentic urban sophistication."
-  }
-  
-  return <div>{JSON.stringify(content)}</div>
+    location_context: "Berlin's luxury apartments cluster in historic Charlottenburg near Kurfürstendamm's shopping district, central Mitte for museum access, and trendy Prenzlauer Berg for its village atmosphere. Each neighborhood offers distinct character while maintaining excellent public transport connections.",
+    cta: "Browse our curated selection of Berlin's most exclusive apartments and secure your designer sanctuary in Germany's dynamic capital."
+  };
+
+  return (
+    <article className="max-w-4xl mx-auto px-4 py-8">
+      <p className="text-lg mb-6">{content.hook}</p>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
+        <ul className="space-y-3">
+          {content.highlights.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-green-600 font-bold">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
+        <ul className="space-y-3">
+          {content.considerations.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-amber-600 font-bold">⚠</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
+        <p className="text-gray-700">{content.location_context}</p>
+      </section>
+
+      <section className="bg-blue-50 p-6 rounded-lg">
+        <p className="text-lg font-semibold text-center">{content.cta}</p>
+      </section>
+    </article>
+  );
 }

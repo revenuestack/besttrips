@@ -1,14 +1,61 @@
 export const metadata = {
-  title: 'Best Apartments for Luxury Travelers in Edinburgh',
-  description: 'Discover Edinburgh\'s finest luxury apartments. From New Town Georgian elegance to Old Town historic charm—your ultimate guide to upscale stays.'
-}
+  title: "Best Luxury Apartments in Edinburgh: Stay in Style in Scotland's Capital",
+  description: "Discover Edinburgh's finest luxury apartments. Spacious elegance in the Old Town, New Town, and West End with modern amenities and historic charm.",
+};
 
 export default function Page() {
   const content = {
-    "title": "Best Apartments for Luxury Travelers in Edinburgh",
-    "meta_description": "Discover Edinburgh's finest luxury apartments. From New Town Georgian elegance to Old Town historic charm—your ultimate guide to upscale stays.",
-    "content": "Edinburgh stands as one of Europe's most captivating capitals, where medieval cobblestones meet Georgian grandeur beneath the shadow of an ancient castle. For luxury travelers seeking more than a hotel room, the city's collection of high-end apartments offers an unparalleled way to experience Scottish sophistication. Imagine waking up in a restored Georgian townhouse with views of Arthur's Seat, or hosting evening drinks in your private terrace overlooking the Royal Mile.\n\nWhy Choose a Luxury Apartment in Edinburgh?\n\nLuxury apartments provide discerning travelers with something hotels simply cannot match: authentic immersion in Edinburgh's most prestigious neighborhoods. These properties combine the exclusivity and service of five-star hotels with the space, privacy, and character of a private residence. You'll enjoy full kitchens stocked by personal shoppers, dedicated concierge services, and interiors designed by Scotland's top architects. Whether you're planning a week-long stay or a month exploring the Highlands, luxury apartments offer the freedom to live like a local while enjoying amenities that surpass most hotel suites.\n\nWhere to Stay: Edinburgh's Premier Neighborhoods\n\nNew Town remains the gold standard for luxury accommodations. This UNESCO World Heritage Site features impeccably preserved Georgian architecture, with wide boulevards like George Street and Princes Street offering world-class shopping and dining. Apartments here often occupy entire floors of historic townhouses, featuring soaring ceilings, original cornicing, and views across private gardens.\n\nThe West End and Stockbridge attract those seeking quieter elegance. These residential areas offer tree-lined streets, artisan cafes, and proximity to the Royal Botanic Garden. Luxury apartments here tend toward contemporary renovations within Victorian shells, blending modern comfort with historical charm.\n\nOld Town appeals to travelers wanting to be in the heart of Edinburgh's ancient center. Despite its tourist popularity, select buildings have been transformed into exclusive residences. Expect dramatic castle views, exposed stone walls, and the thrill of living within walking distance of centuries of history.\n\nThe Shore and Leith represent Edinburgh's renaissance district, where historic warehouses have become ultra-modern lofts. This waterfront area combines cutting-edge design with Michelin-starred dining and a more relaxed, cosmopolitan atmosphere.\n\nWhat Defines a Luxury Apartment?\n\nTrue luxury properties in Edinburgh offer far more than square footage. Look for apartments with 24-hour concierge services capable of securing restaurant reservations, arranging private distillery tours, or booking helicopter transfers to the Highlands. High-end finishes should include Italian marble bathrooms, German kitchen appliances, underfloor heating, and smart home technology.\n\nThe best properties feature thoughtful extras: king-sized beds with Egyptian cotton linens, rainfall showers, wine fridges stocked with Scottish craft spirits, and Nespresso machines with premium coffee selections. Many include access to private gyms, secure parking, and even partnerships with nearby spas. Window views matter tremendously—prioritize properties overlooking Edinburgh Castle, Princes Street Gardens, or Calton Hill.\n\nPrice Expectations and Booking Strategy\n\nLuxury apartments in Edinburgh typically range from £250-£600 per night, with ultra-premium properties exceeding £800 during August's Festival season. One-bedroom apartments average £300-£400, while two-bedroom properties with exceptional locations command £450-£600.\n\nBook directly through specialized luxury rental agencies or property management companies rather than mass-market platforms. These agencies offer better quality control and can accommodate special requests. Reserve at least three months ahead for summer travel, and six months for Festival dates. Consider shoulder seasons (April-May, September-October) for better rates without sacrificing Edinburgh's appeal.\n\nTop Luxury Apartment Recommendations\n\nThe Charlotte Square Residence offers two bedrooms across 1,800 square feet in a Grade A listed Georgian building. Features include a private entrance, original 18th-century details, contemporary Scottish art collection, and a dedicated property manager. Pricing from £525 per night.\n\nCastle Terrace Penthouse provides modern luxury with three bedrooms, floor-to-ceiling windows, and arguably Edinburgh's finest private terrace overlooking the castle. The property includes a chef's kitchen, wine room, and priority reservations at nearby Michelin-starred restaurants. From £650 per night.\n\nStockbridge Mews House combines boutique-hotel service with residential privacy. This converted coach house features exposed beams, a private courtyard, underfloor heating throughout, and exclusive access to a members-only club. From £380 per night.\n\nYour Edinburgh Awaits\n\nEdinburgh's luxury apartment scene offers sophisticated travelers the perfect blend of independence and indulgence. Whether you're drawn to New Town's classical elegance or Leith's contemporary edge, the right apartment transforms a visit into an immersive experience. Start exploring properties today and discover why discerning travelers are choosing private residences over traditional hotels in Scotland's captivating capital."
-  }
-  
-  return <div>{JSON.stringify(content)}</div>
+    hook: "Edinburgh's luxury apartment scene offers discerning travelers the perfect blend of historic grandeur and contemporary comfort. From Georgian townhouses in the New Town to converted warehouses near the Royal Mile, these high-end serviced apartments provide more space, privacy, and authentic local living than traditional hotels—without sacrificing five-star amenities.",
+    highlights: [
+      "Prime locations in the Old Town, New Town, and West End—steps from Edinburgh Castle, Princes Street, and world-class dining",
+      "Spacious layouts with fully-equipped designer kitchens, separate living areas, and often multiple bedrooms for families or groups",
+      "High-end amenities including concierge services, premium linens, rainfall showers, and smart home technology",
+      "Character-filled properties featuring original Georgian architecture, exposed stone walls, and period features with modern luxuries"
+    ],
+    considerations: [
+      "Edinburgh's historic buildings often lack elevators—confirm accessibility if stairs are a concern, especially in Old Town properties",
+      "Peak season (August Festival, Hogmanay) requires booking 6-12 months ahead, with rates doubling during major events"
+    ],
+    location_context: "Edinburgh's luxury apartments cluster in three prime areas: the UNESCO-listed Old Town offers medieval charm near major attractions; the elegant Georgian New Town provides refined sophistication; and the leafy West End delivers village-like tranquility with easy city access.",
+    cta: "Ready to experience Edinburgh like a local? Browse our curated collection of luxury apartments and book your perfect Scottish retreat today."
+  };
+
+  return (
+    <article className="max-w-4xl mx-auto px-4 py-8">
+      <p className="text-lg mb-6">{content.hook}</p>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
+        <ul className="space-y-3">
+          {content.highlights.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-green-600 font-bold">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
+        <ul className="space-y-3">
+          {content.considerations.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-amber-600 font-bold">⚠</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
+        <p className="text-gray-700">{content.location_context}</p>
+      </section>
+
+      <section className="bg-blue-50 p-6 rounded-lg">
+        <p className="text-lg font-semibold text-center">{content.cta}</p>
+      </section>
+    </article>
+  );
 }

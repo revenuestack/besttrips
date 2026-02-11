@@ -1,27 +1,61 @@
 export const metadata = {
-  title: 'Best Apartments for Luxury in Athens',
-  description: 'Athens seamlessly blends ancient splendor with contemporary luxury, offering discerning travelers exquisite apartment accommodations in one of Europe\'s most captivating capitals.'
-}
+  title: "Best Luxury Apartments in Athens: Premium Stays in Greece's Historic Capital",
+  description: "Discover Athens' finest luxury apartments. Stay in style near the Acropolis with modern amenities, stunning views, and authentic Greek hospitality.",
+};
 
 export default function Page() {
   const content = {
-    "intro": "Athens seamlessly blends ancient splendor with contemporary luxury, offering discerning travelers exquisite apartment accommodations in one of Europe's most captivating capitals. From neoclassical penthouses overlooking the Acropolis to designer lofts in cosmopolitan neighborhoods, the city's luxury apartment scene provides privacy, space, and authentic Athenian living. Experience world-class amenities, personalized service, and unparalleled access to iconic landmarks and Michelin-starred dining.",
-    "why_stay": [
-      "Spacious, elegantly designed interiors with premium furnishings, private terraces, and breathtaking views of the Acropolis or Lycabettus Hill.",
-      "Exclusive locations in historic districts, offering intimate cultural immersion while maintaining proximity to luxury shopping and fine dining.",
-      "Personalized concierge services, private chefs, and curated experiences that transform your stay into an unforgettable Mediterranean journey."
+    hook: "Athens seamlessly blends ancient grandeur with contemporary sophistication, and its luxury apartment offerings reflect this captivating duality. From neoclassical buildings in Kolonaki to sleek penthouses overlooking the Acropolis, the city's premium apartments provide discerning travelers with space, privacy, and an authentic Athenian lifestyle that hotels simply cannot match.",
+    highlights: [
+      "Panoramic Acropolis and Parthenon views from private terraces and floor-to-ceiling windows",
+      "Prime locations in Plaka, Kolonaki, and Syntagma—steps from world-class dining, boutiques, and ancient sites",
+      "Full kitchens, designer furnishings, and high-end amenities including marble bathrooms and smart home technology",
+      "Personalized concierge services, from private chefs to yacht arrangements and archaeological tours"
     ],
-    "neighborhoods": [
-      "Kolonaki: Athens' most prestigious address, featuring upscale boutiques, art galleries, and refined dining beneath Mount Lycabettus.",
-      "Plaka: The historic heart nestled below the Acropolis, offering charming neoclassical architecture and pedestrian streets lined with cafés.",
-      "Psyrri: A revitalized artistic quarter blending bohemian character with modern luxury, perfect for culture enthusiasts seeking authentic nightlife."
+    considerations: [
+      "Book well in advance for summer season (June-September) when demand peaks and prices increase significantly",
+      "Many historic buildings lack elevators; verify accessibility if staying in renovated neoclassical properties"
     ],
-    "tips": [
-      "Book apartments with rooftop access for private Acropolis views during sunset—an unmatched experience worth the premium investment.",
-      "Visit during shoulder seasons (April-May or September-October) for ideal weather, fewer crowds, and more availability at premier properties."
-    ],
-    "cta": "Elevate your Athens experience—reserve your luxury apartment today and discover Greece's capital in unparalleled style and comfort."
-  }
-  
-  return <div>{JSON.stringify(content)}</div>
+    location_context: "Athens' luxury apartments cluster in prestigious neighborhoods like Kolonaki, known for upscale shopping and embassy row elegance, and Plaka, where ancient streets meet boutique charm. The revitalized downtown areas near Syntagma Square offer walkability to museums, rooftop bars, and the Acropolis archaeological site.",
+    cta: "Experience Athens like a local aristocrat—browse our curated collection of luxury apartments and secure your exclusive Athenian retreat today."
+  };
+
+  return (
+    <article className="max-w-4xl mx-auto px-4 py-8">
+      <p className="text-lg mb-6">{content.hook}</p>
+      
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
+        <ul className="space-y-3">
+          {content.highlights.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-green-600 font-bold">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
+        <ul className="space-y-3">
+          {content.considerations.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-amber-600 font-bold">⚠</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
+        <p className="text-gray-700">{content.location_context}</p>
+      </section>
+
+      <section className="bg-blue-50 p-6 rounded-lg">
+        <p className="text-lg font-semibold text-center">{content.cta}</p>
+      </section>
+    </article>
+  );
 }
