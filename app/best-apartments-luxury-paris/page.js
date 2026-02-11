@@ -1,39 +1,60 @@
 export const metadata = {
-  title: "Best Apartments for Luxury Travelers in Paris",
-  description: "Discover exceptional luxury apartments in Paris. Experience five-star amenities, prime locations, and Parisian elegance in Le Marais, Saint-Germain, and more."
+  title: "Best Luxury Apartments in Paris: Exclusive Stays in the City of Light",
+  description: "Discover Paris's finest luxury apartments. From Marais penthouses to Saint-Germain elegance, experience the City of Light like a true Parisian insider.",
 };
 
 export default function Page() {
+  const content = {
+    hook: "Paris reveals its most enchanting secrets when you live like a local—but with five-star refinement. The city's luxury apartments offer something grand hotels cannot: authentic Parisian life wrapped in opulence. Picture yourself sipping morning espresso on a private terrace overlooking the Seine, or returning after a day at the Louvre to your own marble-clad sanctuary with Eiffel Tower views.",
+    highlights: [
+      "Authentic Parisian living with hotel-level amenities and concierge services",
+      "Prime locations in prestigious arrondissements: Le Marais, Saint-Germain, and the Golden Triangle",
+      "Spacious layouts with full kitchens, multiple bedrooms, and private terraces—ideal for extended stays",
+      "Historic Haussmannian architecture meets modern luxury: herringbone floors, chandeliers, and smart home technology"
+    ],
+    considerations: [
+      "Book 3-6 months ahead for peak season (April-October) and premium properties in top neighborhoods",
+      "Most luxury apartments require minimum 3-7 night stays; weekly rates offer better value than nightly"
+    ],
+    location_context: "Paris's luxury apartment scene centers on the Right Bank's 1st, 8th, and 16th arrondissements, plus the Left Bank's 6th and 7th. The Marais blends medieval charm with contemporary cool, Saint-Germain-des-Prés offers literary café culture, while the 16th provides residential elegance near the Trocadéro. Each neighborhood delivers that coveted Parisian blend of history, haute cuisine, and high fashion.",
+    cta: "Browse our curated collection of Paris luxury apartments and secure your private Parisian address today."
+  };
+
   return (
-    <article className="guide-content">
-      <h1>Best Apartments for Luxury Travelers in Paris</h1>
+    <article className="max-w-4xl mx-auto px-4 py-8">
+      <p className="text-lg mb-6">{content.hook}</p>
       
-      <p className="hook">Paris luxury apartments offer discerning travelers the perfect blend of home-like comfort and five-star sophistication in the world's most romantic city.</p>
-      
-      <section className="why-choose">
-        <h2>Why Choose These Accommodations</h2>
-        <ul>
-          <li>Spacious layouts with designer interiors, gourmet kitchens, and premium furnishings that rival the finest hotels while offering the privacy and flexibility of your own residence</li>
-          <li>Prime locations in prestigious arrondissements place you steps from iconic landmarks, Michelin-starred restaurants, haute couture boutiques, and world-class museums</li>
-          <li>Exclusive amenities including concierge services, private terraces with Eiffel Tower views, spa-quality bathrooms, and cutting-edge smart home technology</li>
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
+        <ul className="space-y-3">
+          {content.highlights.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-green-600 font-bold">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
       </section>
-      
-      <section className="considerations">
-        <h2>Important Considerations</h2>
-        <ul>
-          <li>Luxury apartments typically require minimum stay requirements of 3-7 nights and advance booking, especially during fashion weeks and peak seasons from April to October</li>
-          <li>Parisian buildings often feature charming historic architecture but may lack elevators; confirm accessibility needs and floor level when booking higher-end walk-ups</li>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
+        <ul className="space-y-3">
+          {content.considerations.map((item, i) => (
+            <li key={i} className="flex gap-3">
+              <span className="text-amber-600 font-bold">⚠</span>
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
       </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>The 7th arrondissement offers unparalleled elegance near the Eiffel Tower with wide boulevards and exceptional dining. Le Marais combines historic charm with trendy galleries and boutiques, while Saint-Germain-des-Prés provides intellectual sophistication amid literary cafés and antique shops. The 8th arrondissement near Champs-Élysées delivers ultimate prestige with luxury shopping and grand Haussmannian architecture. For artistic ambiance, Montmartre's hilltop apartments offer romantic cobblestone streets and sweeping city panoramas.</p>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
+        <p className="text-gray-700">{content.location_context}</p>
       </section>
-      
-      <section className="cta">
-        <p><strong>Book your luxury Parisian apartment today and experience the City of Light like never before—where elegance, comfort, and authentic French living await.</strong></p>
+
+      <section className="bg-blue-50 p-6 rounded-lg">
+        <p className="text-lg font-semibold text-center">{content.cta}</p>
       </section>
     </article>
   );
