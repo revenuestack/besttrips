@@ -1,25 +1,39 @@
-import TravelPage from '@/components/TravelPage'
-
 export const metadata = {
-  title: "Radisson Blu Hotel, Gdansk - Contemporary Luxury in Poland's Maritime Jewel",
-  description: "Experience contemporary elegance at Radisson Blu Hotel, Gdansk. Prime location for exploring the historic Old Town, modern amenities, and exceptional comfort from £318.22.",
-}
+  title: "Radisson Blu Hotel Gdansk - Contemporary Elegance in Poland's Historic Port City",
+  description: "Experience modern luxury at Radisson Blu Hotel Gdansk. Ideally located for exploring the Old Town, waterfront, and historic attractions in Poland's Baltic gem."
+};
 
 export default function Page() {
-  const data = {
-    hook: "Nestled in the heart of Gdansk, the Radisson Blu Hotel offers the perfect blend of modern sophistication and Polish hospitality, placing you within easy reach of this enchanting Baltic city's historic treasures and vibrant waterfront.",
-    why_stay: [
-      "Prime location for exploring Gdansk's stunning Old Town, Gothic architecture, and the famous Długi Targ (Long Market) – most attractions are within walking distance or a short tram ride",
-      "Contemporary rooms featuring sleek Scandinavian design, premium bedding, and modern amenities that provide a serene retreat after days spent sightseeing",
-      "Excellent dining options including on-site restaurants serving both international cuisine and authentic Polish specialties, plus a stylish bar perfect for evening relaxation"
-    ],
-    watch_out: [
-      "The premium price point of £318.22+ per night reflects the upscale positioning – budget-conscious travelers may find more affordable options in the city center",
-      "Some rooms may overlook busy streets, so light sleepers should request quieter accommodations facing the interior courtyard when booking"
-    ],
-    amenities: "Free Wi-Fi throughout, fitness center, spa facilities, 24-hour reception, business center, conference rooms, restaurant, bar, room service, parking (charges apply), and multilingual staff ready to assist with tour bookings and local recommendations.",
-    cta: "Book your stay at Radisson Blu Hotel, Gdansk today and immerse yourself in contemporary elegance while discovering Poland's historic maritime capital."
-  }
+  return (
+    <article className="prose lg:prose-xl mx-auto px-4 py-8">
+      <h1>Radisson Blu Hotel Gdansk</h1>
+      
+      <p>
+        Nestled in the heart of Gdansk, the Radisson Blu Hotel combines contemporary elegance with the charm of Poland's most captivating Baltic city. This stylish retreat offers modern travelers a sophisticated base for exploring centuries of maritime history, stunning architecture, and vibrant cultural scenes.
+      </p>
 
-  return <TravelPage {...data} />
+      <h2>Why Stay Here</h2>
+      <ul>
+        <li>Prime location for exploring Gdansk's UNESCO-listed Old Town and historic Long Market</li>
+        <li>Contemporary rooms with modern amenities and sleek Scandinavian-inspired design</li>
+        <li>On-site dining featuring international and regional Polish cuisine</li>
+        <li>Easy access to waterfront promenades, maritime museums, and the European Solidarity Centre</li>
+      </ul>
+
+      <h2>Things to Know</h2>
+      <ul>
+        <li>Gdansk experiences cold winters; pack accordingly if visiting between November and March</li>
+        <li>The hotel's central location means nearby nightlife and events may create occasional noise</li>
+      </ul>
+
+      <h2>About the Area</h2>
+      <p>
+        Gdansk blends Gothic architecture with waterfront beauty along the Motława River. The city's reconstructed Old Town showcases colorful merchant houses, while nearby Sopot offers beaches and the longest wooden pier in Europe. The hotel provides convenient access to Gdansk's main railway station, making day trips to Malbork Castle or the Tri-City area effortless.
+      </p>
+
+      <p className="text-lg font-semibold mt-8">
+        Book your stay at Radisson Blu Hotel Gdansk and discover where contemporary comfort meets centuries of Polish heritage.
+      </p>
+    </article>
+  );
 }
