@@ -1,61 +1,29 @@
+import GuideLayout from '@/components/GuideLayout'
+
 export const metadata = {
-  title: "Best Luxury Apartments in Athens: Premium Stays in Greece's Historic Capital",
-  description: "Discover Athens' finest luxury apartments. Stay in style near the Acropolis with modern amenities, stunning views, and authentic Greek hospitality.",
-};
+  title: "Best Apartments for Luxury Travelers in Athens",
+  description: "Discover Athens' finest luxury apartments offering sophistication, privacy, and prime locations near ancient landmarks and upscale neighborhoods."
+}
 
 export default function Page() {
-  const content = {
-    hook: "Athens seamlessly blends ancient grandeur with contemporary sophistication, and its luxury apartment offerings reflect this captivating duality. From neoclassical buildings in Kolonaki to sleek penthouses overlooking the Acropolis, the city's premium apartments provide discerning travelers with space, privacy, and an authentic Athenian lifestyle that hotels simply cannot match.",
-    highlights: [
-      "Panoramic Acropolis and Parthenon views from private terraces and floor-to-ceiling windows",
-      "Prime locations in Plaka, Kolonaki, and Syntagma—steps from world-class dining, boutiques, and ancient sites",
-      "Full kitchens, designer furnishings, and high-end amenities including marble bathrooms and smart home technology",
-      "Personalized concierge services, from private chefs to yacht arrangements and archaeological tours"
+  const guide = {
+    destination: "Athens",
+    country: "Greece",
+    type: "Apartments",
+    audience: "Luxury Travelers",
+    hook: "Athens' luxury apartment scene combines classical grandeur with contemporary elegance, offering discerning travelers private sanctuaries in one of Europe's most storied capitals.",
+    why_stay: [
+      "Spacious accommodations with designer furnishings, marble bathrooms, private terraces, and often rooftop access with Acropolis views that hotels simply cannot match",
+      "Prime locations in Kolonaki, Plaka, and Thissio place you steps from Michelin-starred dining, boutique shopping, and archaeological wonders while maintaining residential tranquility",
+      "Personalized concierge services arrange private yacht charters, exclusive museum tours, personal chefs, and curated experiences tailored to sophisticated tastes"
     ],
     considerations: [
-      "Book well in advance for summer season (June-September) when demand peaks and prices increase significantly",
-      "Many historic buildings lack elevators; verify accessibility if staying in renovated neoclassical properties"
+      "Elevator availability varies in historic buildings; confirm accessibility if climbing multiple flights of marble stairs concerns you",
+      "August heat can be intense; ensure your apartment features powerful air conditioning and consider properties with pools or proximity to private beach clubs"
     ],
-    location_context: "Athens' luxury apartments cluster in prestigious neighborhoods like Kolonaki, known for upscale shopping and embassy row elegance, and Plaka, where ancient streets meet boutique charm. The revitalized downtown areas near Syntagma Square offer walkability to museums, rooftop bars, and the Acropolis archaeological site.",
-    cta: "Experience Athens like a local aristocrat—browse our curated collection of luxury apartments and secure your exclusive Athenian retreat today."
-  };
+    neighborhood_tips: "Kolonaki delivers upscale shopping and café culture with mountain breezes. Plaka offers romantic cobblestone charm near major sites. Thissio balances authentic neighborhood life with walkability to the Acropolis. Avoid Syntagma for residential stays—too touristy.",
+    booking_advice: "Reserve 3-6 months ahead for summer and shoulder seasons. Verify amenities like kitchen equipment quality, wifi speed, and whether daily housekeeping is included. Request recent photos and read reviews mentioning noise levels and actual views."
+  }
 
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
-    </article>
-  );
+  return <GuideLayout guide={guide} />
 }

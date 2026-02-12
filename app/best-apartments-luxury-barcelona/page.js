@@ -1,61 +1,29 @@
+import GuideLayout from '@/components/GuideLayout'
+
 export const metadata = {
-  title: "Best Luxury Apartments in Barcelona 2026 | Designer Stays in Gothic Quarter & Eixample",
-  description: "Discover Barcelona's finest luxury apartments. Spacious designer accommodations in prime locations with rooftop terraces, concierge service, and authentic Catalan charm.",
-};
+  title: "Best Luxury Apartments in Barcelona: Your Ultimate Guide for Discerning Travelers",
+  description: "Discover Barcelona's finest luxury apartments with private terraces, designer interiors, and prime locations. Your guide to upscale accommodation in Spain's most captivating city."
+}
 
 export default function Page() {
-  const content = {
-    hook: "Barcelona's luxury apartment scene offers discerning travelers an intimate alternative to five-star hotels, combining the space and privacy of a private residence with world-class amenities. From Gothic Quarter penthouses with medieval stone walls to modernist Eixample flats featuring Gaudí-era details, these handpicked properties deliver authentic Catalan sophistication with contemporary comfort.",
-    highlights: [
-      "Spacious living areas with full kitchens, designer furnishings, and private terraces overlooking iconic Barcelona landmarks",
-      "Prime locations in Eixample, Born, and Gothic Quarter—walk to Sagrada Família, La Rambla, and beach clubs in minutes",
-      "Dedicated concierge service arranging private chefs, wine tours, yacht charters, and skip-the-line museum access",
-      "Authentic architectural character: exposed brick, hydraulic tile floors, and original 19th-century features"
+  const guide = {
+    destination: "Barcelona",
+    country: "Spain",
+    type: "Apartments",
+    audience: "Luxury Travelers",
+    hook: "Barcelona's luxury apartment scene offers sophisticated travelers an unmatched blend of privacy, space, and authentic Catalan living. From modernist penthouses in Eixample to beachfront sanctuaries in Barceloneta, these curated residences deliver five-star amenities with the intimacy of a private home.",
+    why_stay: [
+      "Exclusive amenities including private rooftop terraces, infinity pools, wine cellars, and concierge services that rival luxury hotels while maintaining residential privacy and space",
+      "Prime locations in prestigious neighborhoods like Passeig de Gràcia and Gothic Quarter, placing Gaudí's masterpieces, Michelin-starred dining, and designer boutiques at your doorstep",
+      "Authentic living experience with fully-equipped gourmet kitchens, allowing you to shop at La Boqueria market and enjoy private chef services in your own elegant space"
     ],
     considerations: [
-      "Elevator access varies in historic buildings—confirm accessibility needs when booking older Gothic Quarter properties",
-      "Minimum stay requirements (typically 3-7 nights) are common for luxury apartments, especially during peak season"
+      "Book 3-6 months ahead for peak season (May-September) as premium properties with sought-after features like terraces overlooking Sagrada Familia fill quickly",
+      "Verify building amenities and elevator access, particularly in Gothic Quarter's historic buildings where charming medieval architecture may mean walk-up apartments"
     ],
-    location_context: "Barcelona's luxury apartments cluster in three prime zones: the elegant Eixample district with its wide boulevards and modernist architecture, the atmospheric Gothic Quarter where medieval charm meets boutique shopping, and the trendy Born neighborhood offering proximity to beaches and cutting-edge restaurants.",
-    cta: "Ready to experience Barcelona like a local? Browse our curated collection of luxury apartments and secure your perfect home base in Catalunya's captivating capital."
-  };
+    neighborhood_tips: "Eixample offers sophisticated boulevards and architectural gems, while Born provides boutique charm near cultural sites. Barceloneta delivers beachfront luxury, and Gràcia neighborhood presents authentic local character with upscale residential appeal.",
+    booking_advice: "Use specialized luxury rental platforms, confirm dedicated concierge availability, and request virtual tours. Negotiate extended-stay rates for month-long bookings, and verify proximity to metro stations for effortless exploration beyond your refined Barcelona sanctuary."
+  }
 
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
-    </article>
-  );
+  return <GuideLayout guide={guide} />
 }
