@@ -1,61 +1,29 @@
+import GuideLayout from '@/components/GuideLayout'
+
 export const metadata = {
-  title: "Best Luxury Apartments in Edinburgh: Stay in Style in Scotland's Capital",
-  description: "Discover Edinburgh's finest luxury apartments. Spacious elegance in the Old Town, New Town, and West End with modern amenities and historic charm.",
-};
+  title: "Best Apartments for Luxury Travelers in Edinburgh",
+  description: "Discover Edinburgh's finest luxury apartments offering Georgian elegance, modern amenities, and prime locations near historic attractions and upscale dining."
+}
 
 export default function Page() {
-  const content = {
-    hook: "Edinburgh's luxury apartment scene offers discerning travelers the perfect blend of historic grandeur and contemporary comfort. From Georgian townhouses in the New Town to converted warehouses near the Royal Mile, these high-end serviced apartments provide more space, privacy, and authentic local living than traditional hotels—without sacrificing five-star amenities.",
-    highlights: [
-      "Prime locations in the Old Town, New Town, and West End—steps from Edinburgh Castle, Princes Street, and world-class dining",
-      "Spacious layouts with fully-equipped designer kitchens, separate living areas, and often multiple bedrooms for families or groups",
-      "High-end amenities including concierge services, premium linens, rainfall showers, and smart home technology",
-      "Character-filled properties featuring original Georgian architecture, exposed stone walls, and period features with modern luxuries"
+  const guide = {
+    destination: "Edinburgh",
+    country: "Scotland",
+    type: "Apartments",
+    audience: "Luxury Travelers",
+    hook: "Edinburgh's luxury apartment scene combines Georgian grandeur with contemporary sophistication, offering discerning travelers private sanctuaries in one of Europe's most captivating cities.",
+    why_stay: [
+      "Privacy and space: Enjoy full apartments with gourmet kitchens, spacious living areas, and often multiple bedrooms—ideal for extended stays or traveling with family while maintaining five-star standards.",
+      "Authentic neighborhood living: Experience Edinburgh like a local in prestigious areas like New Town's Georgian terraces or trendy Stockbridge, with exclusive access to resident-only gardens and proximity to artisan shops.",
+      "Premium amenities: Expect concierge services, underfloor heating, luxury linens, smart home technology, and often stunning views of Edinburgh Castle, Arthur's Seat, or the Firth of Forth."
     ],
     considerations: [
-      "Edinburgh's historic buildings often lack elevators—confirm accessibility if stairs are a concern, especially in Old Town properties",
-      "Peak season (August Festival, Hogmanay) requires booking 6-12 months ahead, with rates doubling during major events"
+      "Edinburgh's Old Town features charming but steep cobblestone streets—New Town offers flatter, equally elegant alternatives with better vehicle access for those with mobility concerns.",
+      "Peak season (August Festival) sees prices triple and requires booking 6-9 months advance; consider shoulder seasons (May-June, September) for better value and availability."
     ],
-    location_context: "Edinburgh's luxury apartments cluster in three prime areas: the UNESCO-listed Old Town offers medieval charm near major attractions; the elegant Georgian New Town provides refined sophistication; and the leafy West End delivers village-like tranquility with easy city access.",
-    cta: "Ready to experience Edinburgh like a local? Browse our curated collection of luxury apartments and book your perfect Scottish retreat today."
-  };
+    neighborhood_tips: "New Town's Moray Place and Heriot Row offer quintessential Georgian elegance near galleries and restaurants. Stockbridge provides village charm with delis and Sunday markets. Dean Village combines tranquil riverside setting with central proximity.",
+    booking_advice: "Use specialist platforms like Airbnb Luxe, Plum Guide, or local agencies like Edinburgh Collection for vetted properties. Verify historical building quirks (narrow stairs, no elevators) and confirm parking availability—city center permits are restricted."
+  }
 
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
-    </article>
-  );
+  return <GuideLayout guide={guide} />
 }
