@@ -1,61 +1,28 @@
 export const metadata = {
-  title: "Best Villas for Groups in Edinburgh: Spacious Stays for Your Scottish Getaway",
-  description: "Discover the best villas for groups in Edinburgh. From Old Town charm to New Town elegance, find spacious accommodations perfect for families and friends.",
+  title: "Best Villas for Groups in Edinburgh | Scotland Group Stays",
+  description: "Discover top villas for groups in Edinburgh. Spacious, cost-effective accommodation in Old Town, New Town & Leith. Book your perfect Scottish group getaway."
 };
 
 export default function Page() {
-  const content = {
-    hook: "Edinburgh's stunning architecture and rich history make it an ideal destination for group travel, and nothing beats the comfort and privacy of a villa. Whether you're planning a family reunion, friends' getaway, or celebration, Edinburgh's villas offer spacious living areas, multiple bedrooms, and fully-equipped kitchens that hotels simply can't match. Stay together under one roof while exploring the Scottish capital's castles, festivals, and dramatic landscapes.",
-    highlights: [
-      "Space and privacy for 6-12+ guests with multiple bedrooms and shared living areas perfect for group bonding",
-      "Cost-effective accommodation when split among travelers, often cheaper per person than hotels",
-      "Self-catering kitchens allow flexible dining schedules and accommodate dietary needs easily",
-      "Prime locations from historic Old Town to elegant Georgian New Town, many with views of Arthur's Seat or Edinburgh Castle"
-    ],
-    considerations: [
-      "Book well in advance during Edinburgh Festival season (August) when demand peaks and prices rise significantly",
-      "Many historic villas feature stairs and period features; confirm accessibility needs and parking availability before booking"
-    ],
-    location_context: "Edinburgh offers diverse neighborhoods for villa stays. The cobbled Old Town places you near the Royal Mile and castle, while the New Town provides Georgian elegance and upscale dining. Leith offers waterfront character, and Stockbridge combines village charm with proximity to botanic gardens and city center attractions.",
-    cta: "Browse our curated selection of group villas in Edinburgh and start planning your unforgettable Scottish adventure today."
-  };
-
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
+    <article>
+      <h1>Best Villas for Groups in Edinburgh</h1>
       
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
+      <p>Edinburgh's villa rentals offer groups the perfect blend of space, privacy, and authentic Scottish living. Whether you're planning a family reunion, friends' getaway, or celebration trip, villas provide the flexibility and comfort that hotels simply can't match in this historic city.</p>
+      
+      <h2>Why Choose Villas</h2>
+      <p>Villas give groups the freedom to spread out with multiple bedrooms, shared living spaces, and fully-equipped kitchens. Split between 6-12 guests, they're often more cost-effective than booking multiple hotel rooms, while offering privacy and the ability to set your own schedule without disrupting other guests.</p>
+      
+      <h2>Best Areas</h2>
+      <p>Old Town villas place you steps from Edinburgh Castle and the Royal Mile, perfect for sightseers. New Town offers Georgian elegance with easy access to Princes Street shopping. Leith provides trendy waterfront vibes with excellent restaurants and lower prices. Stockbridge combines village charm with proximity to the Botanic Gardens, ideal for a quieter base.</p>
+      
+      <h2>What to Expect</h2>
+      <p>Expect to pay £200-500 per night for quality villas sleeping 6-10 people, though prices surge during August's Festival season. Most include modern kitchens, multiple bathrooms, Wi-Fi, and washing facilities. Luxury options feature gardens, parking, and period features in converted Georgian townhouses.</p>
+      
+      <h2>Booking Tips</h2>
+      <p>Book 6-12 months ahead for Festival dates (August) or Hogmanay (New Year). Verify maximum occupancy and bedroom configurations carefully. Check parking availability if driving, as Edinburgh's city center has limited street parking and resident-only zones.</p>
+      
+      <p>Edinburgh's villas transform group trips into memorable experiences where everyone has space to relax together. Start your search early to secure the best properties in your preferred neighborhood and watch your Scottish adventure come to life.</p>
     </article>
   );
 }

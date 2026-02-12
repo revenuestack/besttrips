@@ -1,61 +1,28 @@
 export const metadata = {
-  title: "Best Resorts for Adventure Seekers in Athens, Greece | 2026 Guide",
-  description: "Discover top Athens resorts perfect for adventure travelers. From coastal water sports to mountain hiking bases, find your ideal active getaway in Greece.",
+  title: "Best Adventure Resorts in Athens, Greece | 2026 Guide",
+  description: "Discover Athens' top adventure resorts. From Vouliagmeni coast to Sounion, find the perfect base for hiking, diving, and ancient site exploration."
 };
 
 export default function Page() {
-  const content = {
-    hook: "Athens isn't just ancient ruins and museums—it's an adventure playground where history meets adrenaline. The best resorts for adventure seekers position you perfectly between the azure Aegean Sea and rugged mountain trails, offering luxury relaxation after days filled with rock climbing, diving, and coastal exploration.",
-    highlights: [
-      "Direct access to Athens Riviera water sports including kitesurfing, scuba diving, and sea kayaking to hidden coves",
-      "Proximity to Mount Parnitha and Hymettus for hiking, mountain biking, and rock climbing expeditions",
-      "Organized adventure packages including day trips to Cape Sounion cliff diving spots and Saronic Gulf island hopping",
-      "On-site facilities like climbing walls, bike rentals, and partnerships with local adventure tour operators"
-    ],
-    considerations: [
-      "Summer months (June-August) offer best water conditions but higher prices; shoulder seasons provide ideal hiking temperatures",
-      "Resorts in Vouliagmeni and Glyfada areas offer better adventure access than central Athens locations"
-    ],
-    location_context: "Athens' coastal suburbs stretch along the Apollo Coast, where dramatic cliffs meet crystalline waters. Within 30-60 minutes, you'll reach everything from wreck diving sites to mountain trails with Acropolis views, making resort-based adventure touring incredibly efficient.",
-    cta: "Ready to combine ancient exploration with modern adventure? Book your Athens resort base camp today and start planning your action-packed Greek getaway."
-  };
-
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
+    <article>
+      <h1>Best Resorts for Adventure in Athens</h1>
       
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
+      <p>Athens isn't just ancient ruins—it's an adventure playground where coastal resorts offer the perfect launchpad for thrill-seekers. Combining luxury amenities with proximity to hiking trails, dive sites, and water sports, these resorts let you recover in comfort after days exploring Greece's rugged beauty.</p>
+      
+      <h2>Why Choose Resorts</h2>
+      <p>Adventure resorts in Athens provide all-inclusive convenience that solo travelers and groups crave after intense activities. Many offer guided excursions, equipment rentals, and spa facilities to soothe tired muscles. You'll find multilingual staff who can arrange everything from rock climbing in Mount Parnitha to kitesurfing lessons, letting you focus on the thrill rather than logistics.</p>
+      
+      <h2>Best Locations</h2>
+      <p>The Athenian Riviera (Vouliagmeni to Sounion) dominates with beachfront resorts offering diving, sailing, and coastal hiking access. Cape Sounion resorts sit near the Temple of Poseidon with dramatic cliff trails. Glyfada combines urban convenience with water sports, while Lagonisi offers secluded coves perfect for kayaking and snorkeling. For mountain adventures, look toward resorts near Marathon or Penteli with direct trail access.</p>
+      
+      <h2>What to Expect</h2>
+      <p>Mid-range adventure resorts start at €120-180 per night with basic amenities and activity desks. Premium options (€250-400+) include equipment storage, on-site instructors, private beach access, and adventure concierge services. Peak season (May-September) commands higher rates. Many offer half-board packages ideal for early-morning departures and late returns from excursions.</p>
+      
+      <h2>Adventure Tips</h2>
+      <p>Book resorts offering free shuttle services to trailheads and archaeological sites to maximize your time. Check if equipment rental or storage is included—crucial for multi-day hiking or diving trips. Choose properties with late checkout options, since many adventures start at dawn and you'll want afternoon recovery time before departure.</p>
+      
+      <p>Athens' adventure resorts strike the perfect balance between adrenaline and relaxation. Whether you're scaling Mount Hymettus at sunrise or diving Aegean wrecks, you'll return to world-class comfort and cuisine. Start planning your Athens adventure escape today and discover why Greece is Europe's ultimate playground for active travelers.</p>
     </article>
   );
 }

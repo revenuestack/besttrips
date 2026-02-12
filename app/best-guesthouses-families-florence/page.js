@@ -1,61 +1,28 @@
 export const metadata = {
-  title: "Best Guesthouses for Families in Florence: Top Family-Friendly Stays 2026",
-  description: "Discover the best family-friendly guesthouses in Florence. Spacious rooms, authentic Italian charm, and perfect locations near top attractions for your family trip.",
+  title: "Best Family Guesthouses in Florence: Top Picks 2026",
+  description: "Discover the best family-friendly guesthouses in Florence. Expert neighborhood picks, pricing insights, and tips for an authentic Italian stay with kids."
 };
 
 export default function Page() {
-  const content = {
-    hook: "Florence's guesthouses offer families an authentic alternative to hotels, combining the warmth of Italian hospitality with the space and flexibility growing families need. These carefully selected accommodations provide home-away-from-home comfort while keeping you connected to the city's Renaissance treasures.",
-    highlights: [
-      "Spacious multi-room suites and apartments perfect for families with children of all ages",
-      "Personalized local recommendations from hosts who know the best family-friendly restaurants and gelaterias",
-      "Kitchen facilities in many properties, ideal for preparing snacks and accommodating picky eaters",
-      "Prime locations in residential neighborhoods offering authentic Florentine life while staying walkable to major sites like the Duomo and Uffizi Gallery"
-    ],
-    considerations: [
-      "Many historic guesthouses lack elevators, so families with strollers should confirm accessibility before booking",
-      "Summer temperatures can soar, so prioritize accommodations with air conditioning for comfortable family stays"
-    ],
-    location_context: "Florence's guesthouse scene thrives in charming neighborhoods like Santo Spirito and San Frediano, where families can experience local markets, artisan workshops, and neighborhood parks. These areas offer playgrounds, family trattorias, and quieter streets compared to the tourist-heavy center, while remaining within a 15-minute walk of major attractions.",
-    cta: "Ready to experience Florence like a local family? Browse our curated selection of family-friendly guesthouses and book your authentic Tuscan adventure today."
-  };
-
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
+    <article>
+      <h1>Best Guesthouses for Families in Florence</h1>
       
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
+      <p>Florence's guesthouses offer families the perfect blend of authentic Italian hospitality and practical comfort. Unlike hotels, these smaller accommodations provide personalized service, home-cooked breakfasts, and the space families need to relax after exploring Renaissance treasures.</p>
+      
+      <h2>Why Choose Guesthouses</h2>
+      <p>Guesthouses give families the warmth of a home away from home with hosts who often provide insider tips on kid-friendly restaurants and gelaterias. Many feature apartment-style rooms with kitchenettes, perfect for preparing snacks or storing baby supplies. The intimate atmosphere means owners genuinely care about your family's comfort and can accommodate special requests like cribs or high chairs.</p>
+      
+      <h2>Best Neighborhoods</h2>
+      <p>Oltrarno offers authentic charm with artisan workshops and fewer crowds, ideal for stroller-friendly exploring. San Frediano provides local trattorias and proximity to Boboli Gardens' playgrounds. Santo Spirito combines residential tranquility with easy access to major sites, while San Niccolo features riverside walks and family-run pizzerias. For central convenience, Santa Croce offers spacious piazzas where children can run freely.</p>
+      
+      <h2>What to Expect</h2>
+      <p>Family rooms in Florence guesthouses typically range €80-150 per night, significantly less than hotels. Expect complimentary breakfast, air conditioning, and WiFi as standard. Many include small kitchens, washing machines, and multiple bedrooms. Book directly for better rates and flexibility with children's needs.</p>
+      
+      <h2>Family Tips</h2>
+      <p>Request ground-floor rooms to avoid Florence's historic buildings' numerous stairs. Ask hosts about nearby playgrounds and the best times to visit attractions with minimal lines. Most guesthouses happily store strollers and provide restaurant recommendations with kids' menus.</p>
+      
+      <p>Choosing a guesthouse in Florence means your family experiences the city like locals while enjoying the flexibility and personal touches that make traveling with children genuinely enjoyable. Book early for summer stays to secure the best family-friendly options.</p>
     </article>
   );
 }
