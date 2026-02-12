@@ -1,40 +1,28 @@
 export const metadata = {
-  title: "Best Guesthouses for Groups in Florence: Affordable Shared Stays",
-  description: "Discover top-rated guesthouses in Florence perfect for groups. Budget-friendly accommodations with authentic charm near major attractions."
+  title: "Best Guesthouses for Groups in Florence | 2026 Guide",
+  description: "Discover top guesthouses for groups in Florence. Find budget-friendly stays in historic neighborhoods with spacious rooms, shared kitchens & authentic charm."
 };
 
 export default function Page() {
   return (
-    <article className="guide-content">
-      <h1>Best Guesthouses for Groups in Florence: Affordable Shared Stays</h1>
+    <article>
+      <h1>Best Guesthouses for Groups in Florence</h1>
       
-      <p className="hook">Florence's best guesthouses combine affordability, local charm, and strategic locations—perfect for groups exploring the Renaissance capital together.</p>
+      <p>Florence's guesthouses offer groups an authentic, budget-friendly alternative to hotels, combining the intimacy of local hospitality with the space and flexibility traveling parties need. These family-run accommodations provide a genuine Tuscan experience while keeping groups together under one roof.</p>
       
-      <section className="why-choose">
-        <h2>Why Choose These Accommodations</h2>
-        <ul>
-          <li>Budget-friendly rates with shared spaces that keep group costs low while maintaining comfort and authentic Florentine character</li>
-          <li>Central locations in walkable neighborhoods place you minutes from the Duomo, Uffizi Gallery, and Ponte Vecchio without expensive taxi rides</li>
-          <li>Common areas and shared kitchens foster group bonding while providing flexibility for different schedules and dietary preferences</li>
-        </ul>
-      </section>
+      <h2>Why Choose Guesthouses</h2>
+      <p>Guesthouses excel for groups seeking communal spaces, flexible meal times, and personalized local recommendations from hosts who know Florence intimately. Unlike hotels, they often feature shared kitchens and living areas that encourage bonding, plus the cost-per-person typically beats booking multiple hotel rooms.</p>
       
-      <section className="considerations">
-        <h2>Important Considerations</h2>
-        <ul>
-          <li>Book early during peak season (April-October) as popular guesthouses fill quickly, especially those accommodating larger groups of 6-10 people</li>
-          <li>Confirm room configurations and bathroom access—some guesthouses offer private group floors while others have shared facilities across multiple guests</li>
-        </ul>
-      </section>
+      <h2>Best Neighborhoods</h2>
+      <p>San Lorenzo places groups near the central market and major attractions with excellent value. Oltrarno offers artisan charm and authentic trattorias away from tourist crowds. Santa Croce combines walkability to the Duomo with neighborhood cafes and piazzas. Santo Spirito provides bohemian vibes and evening gathering spots perfect for groups wanting a local scene.</p>
       
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>San Lorenzo offers excellent value near the Central Market with authentic trattorias and easy access to major sites. Oltrarno provides a local vibe across the Arno River, with artisan workshops and fewer tourists. Santa Croce combines central location with neighborhood authenticity, featuring excellent markets and nightlife. Santo Spirito delivers bohemian charm with piazzas perfect for group evening gatherings.</p>
-      </section>
+      <h2>What to Expect</h2>
+      <p>Group-friendly guesthouses range from €25-50 per person nightly, depending on season and amenities. Most offer private group rooms sleeping 4-8, shared bathrooms, basic breakfast, and communal kitchens. Expect simple but clean accommodations with character—exposed beams, terracotta floors, and family heirlooms rather than luxury finishes.</p>
       
-      <section className="cta">
-        <p><strong>Browse our curated selection of group-friendly guesthouses in Florence and secure your Renaissance adventure with instant booking confirmation.</strong></p>
-      </section>
+      <h2>Group Tips</h2>
+      <p>Book 3-6 months ahead for summer travel, as guesthouses have limited rooms. Communicate group size and ages upfront—some properties have quiet hours or age restrictions. Ask about private floor rentals or connecting rooms to keep your party together while respecting other guests.</p>
+      
+      <p>Florence's guesthouses transform group travel from logistical challenge to cultural immersion. Start your search now to secure the perfect home base for your Tuscan adventure, where affordability meets authentic Italian hospitality in the Renaissance heart of Italy.</p>
     </article>
   );
 }

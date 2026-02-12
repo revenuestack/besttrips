@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Best B&Bs for Couples in Rome",
-  description: "Discover charming bed and breakfasts perfect for couples in Rome. From historic Trastevere to romantic hideaways near the Colosseum, find your ideal romantic retreat."
+  title: "Best B&Bs for Couples in Rome: Romantic Stays Guide 2026",
+  description: "Discover intimate B&Bs perfect for couples in Rome. From Trastevere to Monti, find romantic rooms, local charm, and authentic Italian hospitality."
 };
 
 export default function Page() {
@@ -8,25 +8,21 @@ export default function Page() {
     <article>
       <h1>Best B&Bs for Couples in Rome</h1>
       
-      <p className="hook">Rome's intimate bed and breakfasts offer couples a unique blend of local hospitality, authentic charm, and romantic atmosphere that hotels simply can't match. Wake up to fresh cornetti and espresso before exploring the Eternal City hand-in-hand.</p>
+      <p>Rome's bed and breakfasts offer couples an intimate alternative to impersonal hotels, combining authentic Italian hospitality with romantic charm. These boutique accommodations provide personalized service, homemade breakfasts, and the perfect home base for exploring the Eternal City together.</p>
       
       <h2>Why Choose B&Bs</h2>
-      <ul>
-        <li>Personalized service from local hosts who can recommend hidden romantic spots, authentic trattorias, and quiet piazzas away from tourist crowds</li>
-        <li>Unique character with rooms featuring original frescoes, terrace views of Roman rooftops, and cozy atmospheres perfect for couples seeking intimacy</li>
-        <li>Better value than hotels with complimentary breakfasts, often served in charming courtyards or rooms with views of historic fountains and churches</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book well in advance for peak seasons (April-June, September-October) as the best romantic B&Bs fill up quickly</li>
-        <li>Many B&Bs are located in historic buildings with narrow staircases and no elevators—confirm accessibility if needed</li>
-      </ul>
+      <p>B&Bs in Rome deliver unmatched intimacy and character that couples adore. Hosts often share insider tips on hidden trattorias and secret viewpoints, while the cozy atmosphere creates a romantic home-away-from-home experience that generic hotels simply can't match.</p>
       
       <h2>Best Neighborhoods</h2>
-      <p>Trastevere offers cobblestone charm and evening romance with its medieval streets and lively piazzas. Monti provides a bohemian vibe near the Colosseum with artisan shops and wine bars. For ultimate romance, consider B&Bs near Villa Borghese gardens or the Spanish Steps area.</p>
+      <p>Trastevere captivates with cobblestone streets and candlelit restaurants, ideal for evening strolls. Monti offers bohemian charm near the Colosseum with artisan shops and wine bars. Centro Storico places you steps from the Trevi Fountain and Pantheon, while Prati provides quiet elegance near Vatican City with local markets and authentic cafés.</p>
       
-      <p className="cta">Start planning your romantic Roman escape today—browse our curated selection of couple-friendly B&Bs and book your perfect retreat in the heart of Italy's most enchanting city.</p>
+      <h2>What to Expect</h2>
+      <p>Expect to pay €80-150 per night for quality B&Bs with private bathrooms, air conditioning, and homemade breakfast featuring fresh pastries and Italian coffee. Mid-range options (€120-180) often include rooftop terraces, in-room champagne, and prime locations. Many feature romantic touches like antique furnishings, frescoed ceilings, and flower-filled balconies.</p>
+      
+      <h2>Romantic Tips</h2>
+      <p>Request a room with a terrace for sunrise coffee together. Ask your host for dinner recommendations—they'll steer you toward authentic spots locals love. Book B&Bs near quieter piazzas for peaceful mornings before tackling tourist sites.</p>
+      
+      <p>Ready to fall in love with Rome together? Browse our curated collection of romantic B&Bs and book your perfect couple's retreat. Each property is personally vetted for ambiance, location, and that special something that makes memories last.</p>
     </article>
   );
 }

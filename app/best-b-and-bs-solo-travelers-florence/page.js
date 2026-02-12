@@ -1,40 +1,28 @@
 export const metadata = {
-  title: "Best B&Bs for Solo Travelers in Florence",
-  description: "Discover Florence's top B&Bs perfect for solo travelers. Intimate stays, local insights, and social atmospheres in the heart of Renaissance Italy."
+  title: "Best B&Bs for Solo Travelers in Florence (2026 Guide)",
+  description: "Discover Florence's best B&Bs for solo travelers. Safety tips, neighborhood guides, and budget-friendly options in the heart of Tuscany."
 };
 
 export default function Page() {
   return (
-    <article className="guide-content">
+    <article>
       <h1>Best B&Bs for Solo Travelers in Florence</h1>
       
-      <p className="hook">Florence's charming B&Bs offer solo travelers the perfect blend of independence and connection in one of Italy's most enchanting cities.</p>
+      <p>Florence's B&Bs offer solo travelers the perfect blend of affordability, local charm, and built-in social opportunities. Unlike hotels, these intimate guesthouses provide genuine connections with hosts who share insider knowledge and often facilitate introductions between guests. For travelers exploring Renaissance art and Tuscan culture alone, B&Bs create a home away from home.</p>
       
-      <section className="why-choose">
-        <h2>Why Choose These Accommodations</h2>
-        <ul>
-          <li>Intimate settings where hosts provide personalized local recommendations and insider tips that guidebooks miss</li>
-          <li>Social breakfast tables that create natural opportunities to meet fellow travelers while maintaining your privacy</li>
-          <li>Better value than hotels with authentic Florentine character in residential neighborhoods close to major attractions</li>
-        </ul>
-      </section>
+      <h2>Why Choose B&Bs</h2>
+      <p>B&Bs in Florence naturally foster community through shared breakfast spaces where solo travelers meet fellow explorers. Hosts act as personal concierges, offering restaurant recommendations and walking routes tourists miss. The smaller scale means you're never anonymous, adding an extra layer of security and belonging.</p>
       
-      <section className="considerations">
-        <h2>Important Considerations</h2>
-        <ul>
-          <li>Book well in advance during peak season (April-October) as the best solo-friendly B&Bs have limited rooms</li>
-          <li>Confirm whether your room has a private bathroom, as some historic properties offer shared facilities at lower rates</li>
-        </ul>
-      </section>
+      <h2>Best Neighborhoods</h2>
+      <p>Santo Spirito offers authentic Florentine life with artisan workshops and fewer crowds. San Marco provides quiet elegance near museums with easy transit access. Oltrarno delivers bohemian charm, local trattorias, and the best sunset views from Piazzale Michelangelo. Santa Croce balances central location with genuine neighborhood character and vibrant evening markets.</p>
       
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>San Niccolò offers a local vibe south of the Arno with artisan workshops and sunset views from Piazzale Michelangelo. Santo Spirito provides authentic trattorias and a bohemian atmosphere while staying walkable to the Duomo. For first-timers, Santa Croce balances central location with residential charm, placing you near leather markets and the Basilica. Oltrarno's quieter streets give solo travelers breathing room from tourist crowds while remaining a 10-minute walk from Ponte Vecchio.</p>
-      </section>
+      <h2>What to Expect</h2>
+      <p>Solo travelers can find quality B&Bs from €45-85 per night, with breakfast included. Expect 4-8 room properties with shared common areas, private or ensuite bathrooms, and WiFi. Many offer discounts for longer stays and can arrange cooking classes or wine tours at local rates.</p>
       
-      <section className="cta">
-        <p><strong>Browse Florence B&Bs with high solo traveler ratings and book your home base for exploring Renaissance treasures.</strong></p>
-      </section>
+      <h2>Solo Travel Tips</h2>
+      <p>Book properties with communal breakfast times to meet other guests naturally. Ask hosts about women-only walking tours or group activities if traveling solo as a woman. Always share your daily plans with your host—they'll check in if you need anything and provide emergency contacts.</p>
+      
+      <p>Florence's B&Bs transform solo travel from lonely to liberating, offering authentic experiences and instant community. Ready to explore the Cradle of the Renaissance with local friends? Browse verified solo-friendly B&Bs and start your Florentine adventure today.</p>
     </article>
   );
 }

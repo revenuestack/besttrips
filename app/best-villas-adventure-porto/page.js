@@ -1,40 +1,28 @@
 export const metadata = {
-  title: "Best Villas for Adventure Seekers in Porto, Portugal",
-  description: "Discover top villas in Porto perfect for adventure seekers. Explore the Douro Valley, surf Atlantic waves, and return to your private retreat."
+  title: "Best Villas for Adventure Seekers in Porto | 2026 Guide",
+  description: "Discover Porto's top villas perfect for adventure travelers. From Douro Valley to Atlantic coast, find your base for hiking, surfing & wine tours."
 };
 
 export default function Page() {
   return (
-    <article className="guide-content">
-      <h1>Best Villas for Adventure Seekers in Porto, Portugal</h1>
+    <article>
+      <h1>Best Villas for Adventure Seekers in Porto</h1>
       
-      <p className="hook">Porto's rugged coastline, dramatic river valleys, and thrilling outdoor activities make it the ultimate playground for adventure seekers craving both adrenaline and comfort.</p>
+      <p>Porto's rugged coastline, dramatic river valleys, and proximity to Portugal's best outdoor destinations make it ideal for adventure seekers. Renting a villa gives you the freedom to explore at your own pace while enjoying private amenities perfect for post-adventure recovery.</p>
       
-      <section className="why-choose">
-        <h2>Why Choose These Accommodations</h2>
-        <ul>
-          <li>Private villas offer the perfect base camp for daily adventures—kayaking the Douro River, surfing at Matosinhos Beach, hiking Peneda-Gerês National Park, or rock climbing in Valongo—with the luxury of returning to your own pool and terrace each evening</li>
-          <li>Vila accommodations provide spacious gear storage, outdoor spaces for post-adventure relaxation, and often include kitchens where you can fuel up with local ingredients from Porto's markets before dawn surf sessions or day-long cycling tours</li>
-          <li>Many villas are strategically located near adventure hotspots while maintaining privacy, giving you quick access to paragliding launch points, mountain biking trails, and coastal paths without sacrificing the tranquility needed to recharge between excursions</li>
-        </ul>
-      </section>
+      <h2>Why Choose Villas</h2>
+      <p>Villas offer adventure travelers unmatched flexibility with early starts for sunrise hikes and late returns from coastal excursions. Private pools, outdoor spaces, and full kitchens mean you can refuel properly between activities while enjoying independence that hotels can't match.</p>
       
-      <section className="considerations">
-        <h2>Important Considerations</h2>
-        <ul>
-          <li>Adventure seekers should prioritize villas with secure storage for equipment like surfboards, bikes, and climbing gear, as well as outdoor shower facilities for post-beach or trail cleanup</li>
-          <li>Transportation is essential—most villas require a rental car to access prime adventure locations, though this provides flexibility for exploring hidden surf breaks, remote hiking trails, and the stunning Douro wine region</li>
-        </ul>
-      </section>
+      <h2>Best Locations</h2>
+      <p>Foz do Douro positions you steps from Atlantic surf breaks and coastal trails. Vila Nova de Gaia offers Douro River access for kayaking with stunning Porto views across the water. Matosinhos combines beach proximity with authentic local culture, while hillside Ribeira villas put medieval streets and riverside adventures at your doorstep.</p>
       
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Foz do Douro offers beachfront villas with immediate ocean access for surfers and coastal hikers. Vila Nova de Gaia provides stunning Douro River views and proximity to wine valley adventures. For mountain enthusiasts, villas in Gondomar or Valongo place you near climbing crags and trail networks while remaining under 30 minutes from Porto's historic center.</p>
-      </section>
+      <h2>What to Expect</h2>
+      <p>Budget villas start around €80-120 per night for 2-4 guests with basic amenities. Mid-range options (€150-250) feature pools, terraces, and modern kitchens. Luxury properties (€300+) offer panoramic views, private gardens, and premium finishes. Most include Wi-Fi, parking, and washing machines—essential for multi-day adventure stays.</p>
       
-      <section className="cta">
-        <p><strong>Book your adventure-ready villa in Porto today and experience Portugal's most dynamic destination where Atlantic waves, mountain trails, and river valleys await just beyond your private retreat.</strong></p>
-      </section>
+      <h2>Adventure Tips</h2>
+      <p>Book villas near Metro lines for easy access to Peneda-Gerês National Park trailheads. Pack a cooler for beach days and wine region excursions. Consider late spring or early autumn when temperatures suit both hiking and surfing without peak summer crowds.</p>
+      
+      <p>Ready to base your Porto adventure in your own private retreat? Browse our curated selection of villas perfectly positioned for exploring Portugal's most thrilling landscapes and coastal playgrounds.</p>
     </article>
   );
 }
