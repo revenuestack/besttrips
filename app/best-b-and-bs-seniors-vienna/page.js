@@ -1,40 +1,28 @@
 export const metadata = {
-  title: "Best B&Bs for Seniors in Vienna: Comfort, Charm & Accessibility",
-  description: "Discover Vienna's finest B&Bs perfect for seniors. Enjoy personalized service, accessible rooms, and central locations near top attractions."
+  title: "Best B&Bs for Seniors in Vienna: Comfort & Accessibility",
+  description: "Discover Vienna's top B&Bs perfect for senior travelers. Personalized service, accessible rooms, and central locations in the best districts. Plan your stay."
 };
 
 export default function Page() {
   return (
-    <article className="guide-content">
-      <h1>Best B&Bs for Seniors in Vienna: Comfort, Charm & Accessibility</h1>
+    <article>
+      <h1>Best B&Bs for Seniors in Vienna</h1>
       
-      <p className="hook">Vienna's welcoming B&Bs offer seniors the perfect blend of homey comfort, personalized attention, and easy access to the city's imperial splendor.</p>
+      <p>Vienna's bed and breakfasts offer senior travelers the perfect blend of personalized attention, home-like comfort, and affordability. Unlike large hotels, B&Bs provide intimate settings where hosts anticipate your needs, offer local insights, and create a welcoming atmosphere ideal for a relaxed Austrian getaway.</p>
       
-      <section className="why-choose">
-        <h2>Why Choose These Accommodations</h2>
-        <ul>
-          <li>Personalized service with hosts who provide local insights, help with transportation, and cater to dietary needs—creating a home-away-from-home atmosphere that hotels rarely match.</li>
-          <li>Ground-floor or elevator-equipped accommodations in historic buildings, often featuring accessible bathrooms, comfortable bedding, and quiet rooms for restful stays.</li>
-          <li>Strategic locations in walkable neighborhoods near public transport, allowing easy exploration without exhausting distances, plus hearty Viennese breakfasts to start each day right.</li>
-        </ul>
-      </section>
+      <h2>Why Choose B&Bs</h2>
+      <p>B&Bs in Vienna excel at providing the personal touch seniors appreciate—attentive hosts who remember your breakfast preferences, help arrange transportation, and recommend less crowded attractions. The smaller scale means fewer stairs to navigate, quieter environments for restful sleep, and flexible meal times that accommodate your schedule rather than rigid hotel dining hours.</p>
       
-      <section className="considerations">
-        <h2>Important Considerations</h2>
-        <ul>
-          <li>Book B&Bs with confirmed elevator access or ground-floor rooms, as many charming Viennese buildings lack modern accessibility features—always communicate mobility needs in advance.</li>
-          <li>Peak season (April-October) requires early reservations, and some family-run B&Bs have limited availability, so plan at least 2-3 months ahead for best selection.</li>
-        </ul>
-      </section>
+      <h2>Best Districts</h2>
+      <p>The 1st District (Innere Stadt) places you within walking distance of major sights with excellent public transport. The 4th District (Wieden) offers charming residential streets near Karlsplatz with easier parking. The 7th District (Neubau) provides artistic flair and local cafés in a quieter setting. The 9th District (Alsergrund) near the Votivkirche combines central access with peaceful, tree-lined boulevards perfect for leisurely strolls.</p>
       
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>The Inner Stadt (1st District) places you within walking distance of St. Stephen's Cathedral and the Hofburg Palace, with excellent public transport connections. Alternatively, the quieter Wieden (4th District) and Margareten (5th District) offer authentic Viennese atmosphere, local markets, cozy cafés, and easier parking, while remaining just minutes from major attractions via Vienna's senior-friendly tram system.</p>
-      </section>
+      <h2>What to Expect</h2>
+      <p>Quality B&Bs in Vienna typically range from €70-120 per night for double occupancy, including generous Austrian breakfasts with fresh pastries, cold cuts, and coffee. Most feature ground-floor or elevator-accessible rooms, private bathrooms, complimentary Wi-Fi, and common areas for relaxing. Many hosts speak English and provide insider tips on senior-friendly attractions, accessible restaurants, and transportation options.</p>
       
-      <section className="cta">
-        <p><strong>Start planning your Vienna B&B experience today—compare options, read reviews, and book accommodations that prioritize your comfort and convenience.</strong></p>
-      </section>
+      <h2>Senior Travel Tips</h2>
+      <p>Book B&Bs that explicitly mention elevator access or ground-floor rooms in their descriptions. Request rooms away from street noise for better sleep quality. Ask hosts about proximity to pharmacies and medical facilities. Vienna's public transport offers senior discounts, and many B&B owners can help you navigate the system or arrange comfortable taxi services for day trips.</p>
+      
+      <p>Vienna's B&Bs combine the warmth of Austrian hospitality with the practical comforts senior travelers value most. Ready to experience Vienna at your own pace? Browse our curated selection of senior-friendly B&Bs and start planning your memorable Austrian adventure today.</p>
     </article>
   );
 }

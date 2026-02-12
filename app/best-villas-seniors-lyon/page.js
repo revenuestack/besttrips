@@ -1,61 +1,28 @@
 export const metadata = {
-  title: "Best Villas for Seniors in Lyon, France | Comfortable & Accessible Stays",
-  description: "Discover senior-friendly villas in Lyon offering accessibility, comfort, and proximity to healthcare. Enjoy France's gastronomic capital at your own pace.",
+  title: "Best Senior-Friendly Villas in Lyon: Comfort & Style",
+  description: "Discover top villas for seniors in Lyon. Accessible stays in Presqu'île, Confluence & Croix-Rousse. Comfort, culture & convenience for mature travelers."
 };
 
 export default function Page() {
-  const content = {
-    hook: "Lyon offers the perfect blend of French elegance and accessible comfort for senior travelers seeking a villa retreat. This historic city combines world-class gastronomy, rich Renaissance architecture, and a more relaxed pace than Paris, making it ideal for those who want to savor France without the hustle. Private villas provide the space, privacy, and amenities that make extended stays truly comfortable.",
-    highlights: [
-      "Single-level villas with accessible layouts, grab bars, and walk-in showers designed for mobility and safety",
-      "Proximity to excellent healthcare facilities including modern hospitals and English-speaking medical services",
-      "Easy access to Lyon's UNESCO-listed Old Town, riverside walks, and cultural sites without overwhelming tourist crowds",
-      "Full kitchens allowing dietary control, plus proximity to fresh markets and world-renowned local cuisine"
-    ],
-    considerations: [
-      "Lyon's historic Vieux Lyon has charming cobblestone streets that may be challenging for those with limited mobility; opt for villas in flatter neighborhoods like Confluence or Part-Dieu",
-      "Summer temperatures can reach 30°C (86°F); ensure your villa has air conditioning and book spring or fall for milder weather"
-    ],
-    location_context: "Lyon sits at the confluence of the Rhône and Saône rivers in east-central France. The third-largest city offers excellent public transport, walkable neighborhoods, and a culinary scene that rivals Paris without the stress.",
-    cta: "Browse our curated selection of senior-friendly villas in Lyon and start planning your comfortable French getaway today."
-  };
-
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
+    <article>
+      <h1>Best Villas for Seniors in Lyon</h1>
       
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
+      <p>Lyon offers an ideal blend of French culture, culinary excellence, and manageable city exploration for senior travelers. Private villas provide the perfect combination of independence, space, and comfort that hotels often lack, with ground-floor accessibility and homey amenities that make extended stays truly relaxing.</p>
+      
+      <h2>Why Choose Villas</h2>
+      <p>Villas offer seniors the freedom to maintain their own schedule without hotel noise or rigid meal times. Many feature single-level layouts, private gardens, and full kitchens for dietary needs. The extra space means room for mobility aids and comfortable living areas for rest between sightseeing.</p>
+      
+      <h2>Best Areas</h2>
+      <p>Presqu'île offers walkable access to museums and restaurants with excellent public transport. Confluence features modern, accessible properties near the waterfront with elevator-equipped buildings. Croix-Rousse provides quieter hillside charm with panoramic views, ideal for those seeking tranquility. Vieux Lyon delivers historic character with renovated villas offering modern accessibility features.</p>
+      
+      <h2>What to Expect</h2>
+      <p>Senior-friendly villas range from €800-€2,000 weekly depending on season and location. Expect amenities like walk-in showers, handrails, ground-floor bedrooms, and proximity to pharmacies and medical facilities. Many include housekeeping services and accessible bathrooms with non-slip surfaces.</p>
+      
+      <h2>Senior Travel Tips</h2>
+      <p>Book villas near metro stations for easy exploration without excessive walking. Confirm accessibility features like step-free entrances and bathroom grab bars before booking. Consider spring or fall visits for milder weather and fewer crowds, making navigation more comfortable.</p>
+      
+      <p>Lyon's villa rentals provide seniors with comfortable, accessible bases for exploring this magnificent city at their own pace. Start planning your perfect Lyon villa getaway today and experience French culture with the comfort and independence you deserve.</p>
     </article>
   );
 }

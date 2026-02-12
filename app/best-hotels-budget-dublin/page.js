@@ -1,40 +1,28 @@
 export const metadata = {
-  title: "Best Hotels for Budget Travelers in Dublin",
-  description: "Discover affordable hotels in Dublin that don't compromise on comfort. Find budget-friendly stays near top attractions and vibrant neighborhoods."
+  title: "Best Budget Hotels in Dublin: Top Picks for Savvy Travelers",
+  description: "Discover the best budget hotels in Dublin with our guide. Find affordable stays in top neighborhoods, price ranges, and money-saving tips for your Irish adventure."
 };
 
 export default function Page() {
   return (
-    <article className="guide-content">
+    <article>
       <h1>Best Hotels for Budget Travelers in Dublin</h1>
       
-      <p className="hook">Dublin's charm doesn't have to break the bank, with numerous budget hotels offering excellent value in the heart of Ireland's capital.</p>
+      <p>Dublin offers exceptional budget hotel options that prove you don't need to break the bank for a comfortable stay in Ireland's vibrant capital. From cozy rooms in historic Georgian buildings to modern chain hotels with unbeatable amenities, budget-conscious travelers can find quality accommodations that serve as the perfect home base for exploring Temple Bar, Trinity College, and beyond.</p>
       
-      <section className="why-choose">
-        <h2>Why Choose These Accommodations</h2>
-        <ul>
-          <li>Strategic locations near public transport let you explore Temple Bar, Trinity College, and Phoenix Park without expensive taxis</li>
-          <li>Many budget hotels include free breakfast and Wi-Fi, helping you save on daily expenses while staying connected</li>
-          <li>Clean, comfortable rooms with essential amenities mean you can spend more on experiencing Dublin's legendary pubs and cultural sites</li>
-        </ul>
-      </section>
+      <h2>Why Choose Budget Hotels</h2>
+      <p>Budget hotels in Dublin strike the ideal balance between affordability and comfort, offering private rooms with ensuite bathrooms—a step up from hostels without the luxury price tag. You'll enjoy daily housekeeping, 24-hour reception, and often complimentary breakfast, letting you save money while maintaining privacy and convenience for your Dublin adventure.</p>
       
-      <section className="considerations">
-        <h2>Important Considerations</h2>
-        <ul>
-          <li>Book well in advance during peak tourist season (June-August) and St. Patrick's Day festivities when prices spike significantly</li>
-          <li>Some budget properties are located in converted Georgian buildings with narrow staircases and no elevators, which may not suit travelers with mobility concerns</li>
-        </ul>
-      </section>
+      <h2>Best Neighborhoods</h2>
+      <p>Smithfield and Stoneybatter offer excellent value with authentic local character and easy tram access to the city center. The Liberties provides budget-friendly options near the Guinness Storehouse and vibrant markets. Parnell Street and North City Center feature numerous affordable chains within walking distance of O'Connell Street. Rathmines, just south of the center, combines lower prices with a residential feel and great pub culture.</p>
       
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Smithfield and the Liberties offer authentic Dublin experiences with lower accommodation costs than Temple Bar. O'Connell Street area provides excellent value with direct access to buses and the Luas tram system. For a quieter stay, consider Phibsborough or Drumcondra north of the city center—both well-connected neighborhoods where your budget stretches further while maintaining easy access to central attractions within 15-20 minutes.</p>
-      </section>
+      <h2>What to Expect</h2>
+      <p>Expect to pay €60-€90 per night for double rooms in budget hotels, with prices rising to €100-€120 during peak summer months and holidays. Most include free Wi-Fi, tea/coffee facilities, and comfortable beds. While rooms may be compact, you'll find clean, functional spaces with essentials like hairdryers, TVs, and work desks—everything needed for a comfortable Dublin stay.</p>
       
-      <section className="cta">
-        <p><strong>Start comparing Dublin's best budget hotels today and secure your affordable Irish adventure before prices rise.</strong></p>
-      </section>
+      <h2>Budget Tips</h2>
+      <p>Book directly through hotel websites to avoid third-party fees and access exclusive deals. Travel during shoulder seasons (March-April or September-October) for 30-40% savings on room rates. Consider hotels slightly outside the city center near LUAS tram lines—you'll save significantly while maintaining easy 15-minute access to major attractions.</p>
+      
+      <p>Dublin's budget hotel scene offers smart travelers the perfect blend of comfort, value, and location. Start comparing rates today and secure your affordable Dublin base for an unforgettable Irish experience without the premium price tag.</p>
     </article>
   );
 }
