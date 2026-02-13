@@ -1,4 +1,12 @@
+import { getFeaturedDestinations, getAllGuides } from '../lib/getGuides'
+
+export const dynamic = 'force-static'
+export const revalidate = 3600 // Rebuild every hour
+
 export default function HomePage() {
+  const featured = getFeaturedDestinations()
+  const totalGuides = getAllGuides().length
+  
   return (
     <div>
       <section style={{ marginBottom: '3rem' }}>
@@ -7,7 +15,7 @@ export default function HomePage() {
         </h1>
         <p style={{ fontSize: '1.2rem', color: '#666', lineHeight: 1.8 }}>
           Discover expertly curated travel guides for families, couples, and adventurers. 
-          We help you find the best hotels, restaurants, and attractions for unforgettable experiences.
+          We have <strong>{totalGuides} guides</strong> covering the best hotels, apartments, and B&Bs across Europe.
         </p>
       </section>
 
@@ -20,23 +28,14 @@ export default function HomePage() {
           gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '1.5rem'
         }}>
-          <DestinationCard
-            title="Lyon, France"
-            description="Gastronomic capital perfect for family adventures"
-            link="/best-hotels-families-lyon"
-          />
-          <DestinationCard
-            title="Barcelona, Spain"
-            description="Family-friendly beaches and culture"
-            link="#"
-            comingSoon
-          />
-          <DestinationCard
-            title="Paris, France"
-            description="Romantic escapes and world-class dining"
-            link="#"
-            comingSoon
-          />
+          {featured.map(({ destination, count, guides }) => (
+            <DestinationCard
+              key={destination}
+              title={destination}
+              count={count}
+              guides={guides}
+            />
+          ))}
         </div>
       </section>
 
@@ -71,7 +70,7 @@ export default function HomePage() {
   )
 }
 
-function DestinationCard({ title, description, link, comingSoon }) {
+function DestinationCard({ title, count, guides }) {
   const cardStyle = {
     border: '1px solid #e5e7eb',
     borderRadius: '8px',
@@ -79,43 +78,36 @@ function DestinationCard({ title, description, link, comingSoon }) {
     background: 'white',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     transition: 'transform 0.2s, box-shadow 0.2s',
-    textDecoration: 'none',
-    color: 'inherit',
     display: 'block',
-    position: 'relative'
   }
 
-  const content = (
-    <>
+  return (
+    <div style={cardStyle}>
       <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#2563eb' }}>
         {title}
       </h3>
-      <p style={{ color: '#666', margin: 0 }}>
-        {description}
+      <p style={{ color: '#666', marginBottom: '1rem', fontSize: '0.9rem' }}>
+        {count} travel guides available
       </p>
-      {comingSoon && (
-        <span style={{
-          position: 'absolute',
-          top: '1rem',
-          right: '1rem',
-          background: '#fbbf24',
-          color: '#78350f',
-          padding: '0.25rem 0.75rem',
-          borderRadius: '4px',
-          fontSize: '0.75rem',
-          fontWeight: 'bold'
-        }}>
-          Coming Soon
-        </span>
-      )}
-    </>
+      <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
+        {guides.map(guide => (
+          <li key={guide.slug} style={{ marginBottom: '0.5rem' }}>
+            <a 
+              href={guide.url}
+              style={{ 
+                color: '#2563eb', 
+                textDecoration: 'none',
+                fontSize: '0.9rem',
+                display: 'block'
+              }}
+            >
+              → {guide.type} for {guide.audience}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
-
-  if (comingSoon) {
-    return <div style={cardStyle}>{content}</div>
-  }
-
-  return <a href={link} style={cardStyle}>{content}</a>
 }
 
 function FeatureCard({ icon, title, description }) {
