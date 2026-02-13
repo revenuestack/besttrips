@@ -1,6 +1,48 @@
 export const metadata = {
-  title: 'BestTrips.org - Travel Guides & Destination Recommendations',
-  description: 'Discover the best hotels, restaurants, and attractions for your next trip. Expert travel guides for families, couples, and adventurers.',
+  metadataBase: new URL('https://besttrips.org'),
+  title: {
+    default: 'BestTrips.org - Travel Guides & Destination Recommendations',
+    template: '%s | BestTrips.org'
+  },
+  description: 'Discover the best hotels, apartments, and B&Bs for your next trip. Expert travel guides for families, couples, and adventurers across Europe.',
+  keywords: ['travel guides', 'hotel recommendations', 'apartments', 'Europe travel', 'family hotels', 'budget accommodation'],
+  authors: [{ name: 'BestTrips.org' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://besttrips.org',
+    siteName: 'BestTrips.org',
+    title: 'BestTrips.org - Travel Guides & Destination Recommendations',
+    description: 'Discover the best hotels, apartments, and B&Bs for your next trip. Expert travel guides for families, couples, and adventurers across Europe.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'BestTrips.org - Your trusted travel guide'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BestTrips.org - Travel Guides & Destination Recommendations',
+    description: 'Discover the best hotels, apartments, and B&Bs for your next trip.',
+    images: ['/og-image.png']
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  },
+  verification: {
+    // google: 'your-google-site-verification-code',
+  }
 }
 
 export default function RootLayout({ children }) {
@@ -9,8 +51,9 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://besttrips.org" />
       </head>
-      <body style={{ 
+      <body style={{
         fontFamily: 'system-ui, -apple-system, sans-serif',
         margin: 0,
         padding: 0,
@@ -32,9 +75,15 @@ export default function RootLayout({ children }) {
             Your trusted travel guide
           </p>
         </header>
-        <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem' }}>
+
+        <main style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
+          padding: '2rem'
+        }}>
           {children}
         </main>
+
         <footer style={{
           background: '#f5f5f5',
           padding: '2rem',
@@ -44,6 +93,11 @@ export default function RootLayout({ children }) {
           color: '#666'
         }}>
           <p>© 2026 BestTrips.org - Travel guides and destination recommendations</p>
+          <p style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
+            <a href="/privacy" style={{ color: '#2563eb', marginRight: '1rem' }}>Privacy Policy</a>
+            <a href="/terms" style={{ color: '#2563eb', marginRight: '1rem' }}>Terms of Service</a>
+            <a href="/contact" style={{ color: '#2563eb' }}>Contact</a>
+          </p>
         </footer>
       </body>
     </html>

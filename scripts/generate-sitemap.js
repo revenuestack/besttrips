@@ -1,145 +1,85 @@
 #!/usr/bin/env node
-/**
- * Generate XML sitemaps for BestTrips.org
- * Follows Google best practices:
- * - <50K URLs per sitemap
- * - lastmod, changefreq, priority tags
- * - Sitemap index for organization
- */
+// Generate XML sitemap for all BestTrips pages
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs')
+const path = require('path')
 
-const SITE_URL = 'https://besttrips.org';
-const OUTPUT_DIR = path.join(__dirname, '../public');
-const GUIDES_DIR = path.join(__dirname, '../app');
+const SITE_URL = 'https://besttrips.org'
 
-// Ensure public directory exists
-if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-}
-
-/**
- * Get lastmod date from directory stat
- */
-function getLastMod(dirPath) {
-  try {
-    const stats = fs.statSync(dirPath);
-    return stats.mtime.toISOString().split('T')[0]; // YYYY-MM-DD format
-  } catch (e) {
-    return new Date().toISOString().split('T')[0];
-  }
-}
-
-/**
- * Generate guides sitemap
- */
-function generateGuidesSitemap() {
-  const guides = fs.readdirSync(GUIDES_DIR)
-    .filter(dir => {
-      // Skip special Next.js directories
-      if (['api', 'fonts', 'layout.js', 'page.js', 'globals.css'].includes(dir)) {
-        return false;
-      }
-      
-      const dirPath = path.join(GUIDES_DIR, dir);
-      return fs.statSync(dirPath).isDirectory() && 
-             fs.existsSync(path.join(dirPath, 'page.js'));
-    });
-
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`;
-
-  guides.forEach(slug => {
-    const dirPath = path.join(GUIDES_DIR, slug);
-    const lastmod = getLastMod(dirPath);
-    
-    xml += `  <url>
-    <loc>${SITE_URL}/${slug}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-`;
-  });
-
-  xml += `</urlset>`;
-
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap-guides.xml'), xml);
-  console.log(`✅ Generated sitemap-guides.xml (${guides.length} guides)`);
+function getAllPages() {
+  const appDir = path.join(__dirname, '../app')
+  const pages = []
   
-  return guides.length;
+  // Get all directories in app/
+  const entries = fs.readdirSync(appDir, { withFileTypes: true })
+  
+  entries.forEach(entry => {
+    if (entry.isDirectory() && entry.name.startsWith('best-')) {
+      // Check if page.js exists
+      const pagePath = path.join(appDir, entry.name, 'page.js')
+      if (fs.existsSync(pagePath)) {
+        pages.push({
+          url: `${SITE_URL}/${entry.name}`,
+          lastmod: new Date().toISOString().split('T')[0],
+          changefreq: 'weekly',
+          priority: '0.8'
+        })
+      }
+    }
+  })
+  
+  // Add hotel pages
+  const hotelDirs = entries.filter(e => e.isDirectory() && (
+    e.name.startsWith('hotel') || 
+    e.name.startsWith('park-inn') ||
+    e.name.startsWith('radisson') ||
+    e.name.startsWith('palace')
+  ))
+  
+  hotelDirs.forEach(entry => {
+    const pagePath = path.join(appDir, entry.name, 'page.js')
+    if (fs.existsSync(pagePath)) {
+      pages.push({
+        url: `${SITE_URL}/${entry.name}`,
+        lastmod: new Date().toISOString().split('T')[0],
+        changefreq: 'monthly',
+        priority: '0.6'
+      })
+    }
+  })
+  
+  // Add homepage
+  pages.unshift({
+    url: SITE_URL,
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'daily',
+    priority: '1.0'
+  })
+  
+  return pages
 }
 
-/**
- * Generate static pages sitemap
- */
-function generateStaticSitemap() {
-  const staticPages = [
-    { url: '/', changefreq: 'daily', priority: '1.0' },
-    { url: '/about', changefreq: 'monthly', priority: '0.5' },
-  ];
-
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>
+function generateSitemap(pages) {
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`;
-
-  const today = new Date().toISOString().split('T')[0];
-
-  staticPages.forEach(page => {
-    xml += `  <url>
-    <loc>${SITE_URL}${page.url}</loc>
-    <lastmod>${today}</lastmod>
+${pages.map(page => `  <url>
+    <loc>${page.url}</loc>
+    <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
-  </url>
-`;
-  });
-
-  xml += `</urlset>`;
-
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap-static.xml'), xml);
-  console.log(`✅ Generated sitemap-static.xml (${staticPages.length} pages)`);
-}
-
-/**
- * Generate sitemap index
- */
-function generateSitemapIndex(guideCount) {
-  const today = new Date().toISOString().split('T')[0];
-
-  let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${SITE_URL}/sitemap-static.xml</loc>
-    <lastmod>${today}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${SITE_URL}/sitemap-guides.xml</loc>
-    <lastmod>${today}</lastmod>
-  </sitemap>
-</sitemapindex>`;
-
-  fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), xml);
-  console.log(`✅ Generated sitemap.xml (index)`);
-  console.log(`\n📊 Total URLs: ${guideCount + 2}`);
-  console.log(`\n🔗 Submit to Google Search Console:`);
-  console.log(`   ${SITE_URL}/sitemap.xml`);
-}
-
-/**
- * Main execution
- */
-function main() {
-  console.log('🗺️  Generating sitemaps for BestTrips.org...\n');
+  </url>`).join('\n')}
+</urlset>`
   
-  const guideCount = generateGuidesSitemap();
-  generateStaticSitemap();
-  generateSitemapIndex(guideCount);
-  
-  console.log('\n✅ All sitemaps generated successfully!');
-  console.log(`📁 Location: ${OUTPUT_DIR}/`);
+  return xml
 }
 
-main();
+// Generate and save sitemap
+const pages = getAllPages()
+const sitemap = generateSitemap(pages)
+const outputPath = path.join(__dirname, '../public/sitemap.xml')
+
+fs.writeFileSync(outputPath, sitemap, 'utf8')
+
+console.log(`✅ Generated sitemap with ${pages.length} pages`)
+console.log(`📝 Saved to: ${outputPath}`)
+console.log(`🔗 URL: ${SITE_URL}/sitemap.xml`)
