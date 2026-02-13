@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Lyon',
   description: 'Discover top Lyon apartments perfectly positioned for adventure seekers, with easy access to Alps skiing, cycling trails, and outdoor activities.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Book your Lyon adventure apartment today and unlock access to both urban thrills and Alpine expeditions from France's ultimate outdoor basecamp."
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Lyon" />
 }

@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Rome',
   description: 'Rome\'s apartments offer adventure seekers the perfect base to explore ancient ruins, cobblestone streets, and hidden treasures at their own pace.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Book your Roman apartment today and unlock the Eternal City's adventures with the freedom only local living provides."
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Rome" />
 }

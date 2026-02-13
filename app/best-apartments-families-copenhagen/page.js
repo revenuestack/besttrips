@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Family Apartments in Copenhagen: Your Perfect Stay',
   description: 'Discover the best family apartments in Copenhagen. From spacious Vesterbro flats to cozy Nørrebro homes, find your ideal base for exploring Denmark\'s capital with kids.'
@@ -49,5 +51,5 @@ export default function Page() {
   "cta": "Ready to experience Copenhagen like a local? Browse family-friendly apartments across the city's best neighborhoods and discover the perfect home base for your Danish adventure. With space to spread out, kitchens to ease budgets, and authentic neighborhood experiences, your Copenhagen family holiday starts with the right apartment."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Family Apartments in Copenhagen: Your Perfect Stay" />
 }

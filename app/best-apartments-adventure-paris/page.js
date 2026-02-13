@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Paris',
   description: 'Paris isn\'t just museums and cafés—it\'s an adventure playground for thrill-seekers.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Find your Paris adventure base today and unlock the city's wild side from your own apartment!"
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Paris" />
 }

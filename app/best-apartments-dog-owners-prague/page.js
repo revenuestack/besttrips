@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Prague',
   description: 'Prague welcomes four-legged travelers with open arms, offering spacious apartments perfect for dog owners.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Book your Prague apartment today and discover why this enchanting city is Central Europe's most dog-friendly destination for extended stays."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Prague" />
 }

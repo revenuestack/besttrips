@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Families in London: Your Guide',
   description: 'Discover the best family apartments in London. From spacious flats in South Kensington to budget-friendly options in Greenwich, find your perfect home away from home.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to discover London with your family? Browse our curated selection of family-friendly apartments across London's best neighborhoods. From budget-conscious options to luxury flats, find the perfect space where your family can create unforgettable memories in one of the world's most exciting cities. Start planning your London adventure today."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Families in London: Your Guide" />
 }

@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Couples in Barcelona',
   description: 'Barcelona offers couples an enchanting blend of Mediterranean charm, architectural wonders, and vibrant culture.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect Barcelona apartment today and start planning an unforgettable romantic escape in Spain's most enchanting city."
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Couples in Barcelona" />
 }

@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Family Apartments in Lisbon: Where to Stay in 2026',
   description: 'Discover the best family apartments in Lisbon. From Alfama\'s charm to Parque das Nações\' modern amenities, find your perfect home base for exploring Portugal\'s capital.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Lisbon like a local? Browse our curated selection of family-friendly apartments across Lisbon's best neighborhoods. With verified reviews, transparent pricing, and instant booking, your perfect Portuguese home away from home is just a click away. Start planning your unforgettable family adventure today."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Family Apartments in Lisbon: Where to Stay in 2026" />
 }

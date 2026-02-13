@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Groups in Athens: Top Picks 2026',
   description: 'Discover the best group apartments in Athens. From Plaka to Monastiraki, find spacious accommodations perfect for families and friends exploring Greece\'s capital.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to discover Athens with your group? Start exploring apartments in your preferred neighborhood today. Whether you choose historic Plaka's ancient charm or trendy Koukaki's local flavor, the perfect group accommodation awaits. Book now and prepare for an unforgettable Greek adventure where everyone has space to relax and memories to share."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Groups in Athens: Top Picks 2026" />
 }

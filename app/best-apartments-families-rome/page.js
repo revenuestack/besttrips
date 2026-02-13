@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Families in Rome: Your Guide',
   description: 'Discover the best family apartments in Rome. From spacious Trastevere rentals to historic Monti stays, find perfect accommodation for your Roman holiday with kids.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Rome like a local family? Browse trusted rental platforms like Vrbo, Airbnb, or specialized Rome rental agencies to find your perfect apartment. Book early for summer and Easter week, confirm all family-specific needs in writing, and prepare for an unforgettable Roman adventure with space to call home."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Families in Rome: Your Guide" />
 }

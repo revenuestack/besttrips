@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in Dublin: Comfort Meets Irish Charm',
   description: 'Discover senior-friendly apartments in Dublin offering accessibility, convenience, and proximity to Ireland\'s rich culture, healthcare facilities, and vibrant neighborhoods.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Start your Dublin apartment search today and discover why Ireland's capital is becoming a top choice for discerning seniors seeking culture, comfort, and community."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in Dublin: Comfort Meets Irish Charm" />
 }

@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Porto',
   description: 'Porto welcomes four-legged travelers with open arms, offering a growing selection of pet-friendly apartments perfect for extended stays.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Discover your perfect Porto apartment today and start planning an unforgettable Portuguese adventure with your furry best friend!"
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Porto" />
 }

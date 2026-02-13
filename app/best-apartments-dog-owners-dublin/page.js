@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Dublin',
   description: 'Dublin offers exceptional apartment living for dog owners, combining urban convenience with abundant green spaces.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Discover your perfect dog-friendly Dublin apartment today and experience Ireland's capital with your furry best friend by your side!"
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Dublin" />
 }

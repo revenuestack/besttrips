@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Madrid',
   description: 'Madrid offers adventure seekers the perfect blend of urban exploration and outdoor thrills.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Book your Madrid adventure apartment today and transform your trip into an unforgettable base camp for urban and mountain exploration."
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Madrid" />
 }

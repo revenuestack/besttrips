@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Families in Barcelona',
   description: 'Barcelona offers families the perfect blend of beach life, cultural richness, and urban convenience.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Start planning your Barcelona family adventure today and discover why apartment living transforms city breaks into unforgettable experiences!"
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Families in Barcelona" />
 }

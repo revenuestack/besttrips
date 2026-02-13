@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Barcelona',
   description: 'Barcelona offers dog-friendly apartments in vibrant neighborhoods where your furry companion is genuinely welcome.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Discover Barcelona's best dog-friendly apartments today and create unforgettable Mediterranean memories with your beloved companion!"
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Barcelona" />
 }

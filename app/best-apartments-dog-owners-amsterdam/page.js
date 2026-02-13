@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Amsterdam',
   description: 'Amsterdam is a dog lover\'s paradise, with sprawling parks, canal-side walks, and a welcoming attitude toward four-legged friends.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Discover dog-friendly apartments in Amsterdam today and start planning unforgettable adventures with your furry companion!"
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Amsterdam" />
 }

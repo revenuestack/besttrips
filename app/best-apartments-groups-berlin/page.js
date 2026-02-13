@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Groups in Berlin: Your Perfect Stay',
   description: 'Discover the best group apartments in Berlin. From trendy Kreuzberg to historic Mitte, find spacious accommodations perfect for friends, families, and travelers.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Berlin your way? Start searching for the perfect group apartment today and unlock the freedom, space, and authentic local living that will make your Berlin adventure truly unforgettable. Your group's ideal home base in Germany's most exciting city awaits."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Groups in Berlin: Your Perfect Stay" />
 }

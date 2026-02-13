@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Venice',
   description: 'Venice apartments offer adventure seekers the perfect base for exploring hidden canals, secret passages, and authentic neighborhoods beyond tourist crowds.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Book your Venice apartment today and unlock the city's adventurous soul beyond the crowded squares."
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Venice" />
 }

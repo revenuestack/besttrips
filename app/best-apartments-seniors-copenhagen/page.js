@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in Copenhagen: Comfort Meets Scandinavian Charm',
   description: 'Discover the best senior-friendly apartments in Copenhagen. Find accessible, centrally-located accommodations perfect for exploring Denmark\'s vibrant capital in comfort and style.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Ready to experience Danish living at its finest? Browse our curated selection of senior-friendly Copenhagen apartments and start planning your Scandinavian adventure today."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in Copenhagen: Comfort Meets Scandinavian Charm" />
 }

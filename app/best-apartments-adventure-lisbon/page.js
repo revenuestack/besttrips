@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Lisbon',
   description: 'Lisbon offers adventure seekers the perfect base for exploring Portugal\'s dramatic coastline, historic hills, and vibrant outdoor culture.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Find your Lisbon adventure apartment today and unlock Portugal's most thrilling outdoor experiences from your doorstep."
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Lisbon" />
 }

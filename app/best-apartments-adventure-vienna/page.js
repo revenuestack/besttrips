@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Vienna',
   description: 'Vienna isn\'t just classical music and coffee houses—it\'s an adventure seeker\'s playground with the Danube River, Vienna Woods, and countless cycling routes at your doorstep.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Book your Vienna adventure apartment today and discover why Austria's capital is the perfect base for thrill-seekers who crave culture and adrenaline in equal measure!"
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Vienna" />
 }

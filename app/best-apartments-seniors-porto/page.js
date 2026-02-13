@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in Porto: Comfort Meets Portuguese Charm',
   description: 'Discover senior-friendly apartments in Porto, Portugal. Find accessible, comfortable accommodations in this UNESCO-listed city with stunning river views, walkable neighborhoods, and warm hospitality.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Browse our curated selection of elevator-equipped, senior-friendly apartments in Porto's safest neighborhoods and start planning your Portuguese adventure today."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in Porto: Comfort Meets Portuguese Charm" />
 }

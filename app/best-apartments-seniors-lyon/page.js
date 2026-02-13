@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in Lyon: Comfort Meets French Elegance',
   description: 'Discover senior-friendly apartments in Lyon, France. From Presqu\'île charm to Croix-Rousse hillside living, find your perfect retirement haven in France\'s gastronomic capital.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Begin your Lyon apartment search today and discover why France's third-largest city is becoming a premier retirement destination for discerning seniors."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in Lyon: Comfort Meets French Elegance" />
 }

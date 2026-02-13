@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Family Apartments in Vienna: Your Complete Guide',
   description: 'Discover the best family apartments in Vienna, Austria. Expert guide covering top neighborhoods, booking tips, and why apartments beat hotels for families traveling to Vienna.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Vienna like a local family? Start browsing Vienna apartments today and secure your perfect home base for exploring this magnificent city. With the right apartment, your family won't just visit Vienna—you'll live it, creating memories that last far beyond your stay."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Family Apartments in Vienna: Your Complete Guide" />
 }

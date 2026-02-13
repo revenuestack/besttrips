@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Edinburgh',
   description: 'Edinburgh welcomes four-legged travelers with open arms, offering numerous dog-friendly apartments perfect for exploring Scotland\'s historic capital.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Find your perfect dog-friendly Edinburgh apartment today and discover why Scotland's capital is a paradise for pups and their owners!"
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Edinburgh" />
 }

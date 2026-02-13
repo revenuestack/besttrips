@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Family Apartments in Madrid: Your Perfect Stay',
   description: 'Discover the best family apartments in Madrid with spacious accommodations, kitchens, and prime locations near parks and attractions. Find your ideal home base.'
@@ -49,5 +51,5 @@ export default function Page() {
   "cta": "Ready to discover Madrid with your family? Browse our curated selection of family apartments offering the perfect combination of space, location, and value. Book your Madrid home base today and create unforgettable Spanish memories with room for everyone to thrive."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Family Apartments in Madrid: Your Perfect Stay" />
 }

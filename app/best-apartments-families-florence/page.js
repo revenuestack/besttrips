@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Families in Florence, Italy (2026)',
   description: 'Discover the best family-friendly apartments in Florence. From spacious Oltrarno rentals to Santo Spirito hideaways, find perfect home bases for your Italian adventure.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Florence like a local family? Browse our curated selection of family-friendly apartments and start planning your unforgettable Tuscan adventure. From budget-friendly studios to luxury penthouses with Duomo views, your perfect Florentine home awaits. Book today and give your family the gift of authentic Italian living."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Families in Florence, Italy (2026)" />
 }

@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Family Apartments in Edinburgh: Your Perfect Stay',
   description: 'Discover the best family apartments in Edinburgh. From spacious accommodations to kid-friendly neighborhoods, find your ideal home base for exploring Scotland\'s capital.'
@@ -49,5 +51,5 @@ export default function Page() {
   "cta": "Ready to discover Edinburgh your way? Family apartments offer the perfect foundation for creating unforgettable Scottish memories. Browse available properties in your preferred neighborhood, compare amenities that matter to your family, and book the space where your Edinburgh adventure begins. Your home away from home awaits in Scotland's magnificent capital."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Family Apartments in Edinburgh: Your Perfect Stay" />
 }

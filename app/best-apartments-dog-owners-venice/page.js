@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Venice',
   description: 'Venice offers dog-friendly apartment rentals perfect for travelers exploring this enchanting canal city with their four-legged companions.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Book your dog-friendly Venetian apartment today and discover why this car-free city is a canine paradise waiting to be explored together."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Venice" />
 }

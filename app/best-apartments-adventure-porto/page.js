@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Porto',
   description: 'Porto offers adventure seekers the perfect blend of urban exploration and outdoor thrills.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Start your Porto adventure today—book an apartment that puts you steps away from rivers, trails, and Atlantic waves!"
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Porto" />
 }

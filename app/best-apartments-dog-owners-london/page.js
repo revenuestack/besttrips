@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in London',
   description: 'London offers exceptional apartment living for dog owners, with numerous pet-friendly accommodations near sprawling parks and green spaces.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Book your dog-friendly London apartment today and discover why this vibrant city is a paradise for pets and their owners alike!"
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in London" />
 }

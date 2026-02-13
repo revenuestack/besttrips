@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Families in Berlin',
   description: 'Discover spacious family apartments in Berlin with kitchens, multiple bedrooms, and easy access to parks, museums, and kid-friendly attractions.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Start planning your unforgettable Berlin family adventure today by booking a spacious apartment that gives your family the comfort, space, and local experience you deserve."
   }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Families in Berlin" />
 }

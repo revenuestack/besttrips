@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in London: Comfort Meets Culture',
   description: 'Discover senior-friendly apartments in London offering accessibility, convenience, and proximity to healthcare, parks, and cultural attractions. Your perfect London home awaits.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Start your London apartment search today and discover the perfect blend of independence, safety, and cultural richness tailored for your golden years."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in London: Comfort Meets Culture" />
 }

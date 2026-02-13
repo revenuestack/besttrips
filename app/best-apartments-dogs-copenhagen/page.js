@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Copenhagen',
   description: 'Copenhagen stands out as one of Europe\'s most dog-friendly cities, where apartments welcome four-legged residents with open arms.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Book your dog-friendly Copenhagen apartment today and discover why Danish living puts tails wagging across the city!"
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Copenhagen" />
 }

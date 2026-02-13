@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Families in Amsterdam',
   description: "Amsterdam's family-friendly apartments offer the perfect home base for exploring this enchanting Dutch city with children."
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect Amsterdam family apartment today and create unforgettable memories in this magical, bike-friendly city!"
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Families in Amsterdam" />
 }

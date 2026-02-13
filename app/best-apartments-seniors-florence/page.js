@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in Florence: Comfort Meets Renaissance Charm',
   description: 'Discover senior-friendly apartments in Florence, Italy. Find accessible, comfortable accommodations near attractions, with modern amenities in historic settings perfect for mature travelers.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Start planning your Florence apartment stay today and experience la dolce vita with the comfort and independence you deserve."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in Florence: Comfort Meets Renaissance Charm" />
 }

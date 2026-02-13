@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Dog Owners in Lyon',
   description: 'Lyon offers exceptional apartments for dog owners, combining urban sophistication with abundant green spaces and a genuinely pet-welcoming culture.'
@@ -23,5 +25,5 @@ export default function Page() {
     "cta": "Find your perfect dog-friendly Lyon apartment today and discover why this Rhône-Alps gem is a tail-wagging paradise for traveling pet owners."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Lyon" />
 }

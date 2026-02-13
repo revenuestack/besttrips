@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Couples in Paris',
   description: 'Paris apartments offer couples an intimate home base for romance, combining local charm with privacy.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect Parisian love nest today and create unforgettable memories in the world's most romantic city!"
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Couples in Paris" />
 }

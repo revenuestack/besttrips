@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Family Apartments in Dublin: Your Home Away from Home',
   description: 'Discover the best family-friendly apartments in Dublin. From spacious Temple Bar flats to cozy Ballsbridge rentals, find your perfect Irish home base with our guide.'
@@ -48,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Dublin like a local family? Browse our curated selection of family-friendly apartments across Dublin's best neighborhoods. Each listing includes detailed photos, honest reviews from traveling families, and transparent pricing. Start planning your perfect Dublin family adventure today and discover why apartment living transforms good trips into great ones."
 }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Family Apartments in Dublin: Your Home Away from Home" />
 }

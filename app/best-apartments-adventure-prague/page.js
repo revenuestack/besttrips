@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Adventure Seekers in Prague',
   description: 'Prague\'s historic heart beats with adventure opportunities, from rock climbing limestone cliffs to kayaking the Vltava River.'
@@ -23,5 +25,5 @@ export default function Page() {
   "cta": "Find your Prague adventure basecamp today and discover why this medieval city is Central Europe's outdoor playground."
 }
 
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Prague" />
 }

@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in Lisbon: Comfort Meets Culture in Portugal\'s Capital',
   description: 'Discover senior-friendly apartments in Lisbon offering accessibility, comfort, and proximity to healthcare. Your guide to safe, convenient retirement living in Portugal\'s sunny capital.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Ready to embrace Lisbon's golden years? Browse verified senior-friendly apartments and start your Portuguese adventure today."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in Lisbon: Comfort Meets Culture in Portugal" />
 }

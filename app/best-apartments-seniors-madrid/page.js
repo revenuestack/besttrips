@@ -1,3 +1,5 @@
+import SimpleGuide from '@/components/SimpleGuide'
+
 export const metadata = {
   title: 'Best Apartments for Seniors in Madrid: Comfort Meets Culture',
   description: 'Discover senior-friendly apartments in Madrid offering accessibility, healthcare proximity, and vibrant cultural experiences in Spain\'s welcoming capital.'
@@ -19,5 +21,5 @@ export default function Page() {
     "cta": "Start your Madrid apartment search today and discover why thousands of international seniors have made Spain's capital their home."
   }
   
-  return <div>{JSON.stringify(content)}</div>
+  return <SimpleGuide content={content} title="Best Apartments for Seniors in Madrid: Comfort Meets Culture" />
 }
