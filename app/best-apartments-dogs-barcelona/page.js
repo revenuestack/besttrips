@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Start searching for your perfect dog-friendly Barcelona apartment today and discover why this vibrant city is a tail-wagging paradise for traveling pets!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Barcelona" />
+  return <SimpleGuide content={content} destination="Barcelona" slug="best-apartments-dogs-barcelona" title="Best Apartments for Dog Owners in Barcelona" />
 }

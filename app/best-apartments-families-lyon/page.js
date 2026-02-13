@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Lyon like a local family? Browse our curated selection of family-friendly apartments across Lyon's best neighborhoods. With flexible spaces, full kitchens, and locations near parks and attractions, your perfect Lyon home base awaits. Book today and create unforgettable family memories in France's most livable city."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Families in Lyon: Top Picks 2026" />
+  return <SimpleGuide content={content} destination="Lyon" slug="best-apartments-families-lyon" title="Best Apartments for Families in Lyon: Top Picks 2026" />
 }

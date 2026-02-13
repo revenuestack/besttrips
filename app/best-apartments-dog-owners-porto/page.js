@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Discover your perfect Porto apartment today and start planning an unforgettable Portuguese adventure with your furry best friend!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Porto" />
+  return <SimpleGuide content={content} destination="Porto" slug="best-apartments-dog-owners-porto" title="Best Apartments for Dog Owners in Porto" />
 }

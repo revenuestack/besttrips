@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Start your Porto adventure today—book an apartment that puts you steps away from rivers, trails, and Atlantic waves!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Porto" />
+  return <SimpleGuide content={content} destination="Porto" slug="best-apartments-adventure-porto" title="Best Apartments for Adventure Seekers in Porto" />
 }

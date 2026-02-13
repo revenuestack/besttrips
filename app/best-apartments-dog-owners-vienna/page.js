@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Book your dog-friendly Vienna apartment today and discover why this imperial city is a canine paradise!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Vienna" />
+  return <SimpleGuide content={content} destination="Vienna" slug="best-apartments-dog-owners-vienna" title="Best Apartments for Dog Owners in Vienna" />
 }

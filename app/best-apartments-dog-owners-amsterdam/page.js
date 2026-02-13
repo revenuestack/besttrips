@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Discover dog-friendly apartments in Amsterdam today and start planning unforgettable adventures with your furry companion!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Amsterdam" />
+  return <SimpleGuide content={content} destination="Amsterdam" slug="best-apartments-dog-owners-amsterdam" title="Best Apartments for Dog Owners in Amsterdam" />
 }

@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Barcelona your way? Browse our curated selection of group apartments across the city's most desirable neighborhoods. From beachfront Barceloneta to artistic Gràcia, find the perfect home base for your group adventure. Book now and start planning unforgettable Catalan memories together."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Groups in Barcelona: Top Stays 2026" />
+  return <SimpleGuide content={content} destination="Barcelona" slug="best-apartments-groups-barcelona" title="Best Apartments for Groups in Barcelona: Top Stays 2026" />
 }

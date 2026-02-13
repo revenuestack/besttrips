@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Book your dog-friendly Copenhagen apartment today and discover why Danish living puts tails wagging across the city!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Copenhagen" />
+  return <SimpleGuide content={content} destination="Copenhagen" slug="best-apartments-dogs-copenhagen" title="Best Apartments for Dog Owners in Copenhagen" />
 }

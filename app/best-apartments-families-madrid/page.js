@@ -51,5 +51,5 @@ export default function Page() {
   "cta": "Ready to discover Madrid with your family? Browse our curated selection of family apartments offering the perfect combination of space, location, and value. Book your Madrid home base today and create unforgettable Spanish memories with room for everyone to thrive."
 }
   
-  return <SimpleGuide content={content} title="Best Family Apartments in Madrid: Your Perfect Stay" />
+  return <SimpleGuide content={content} destination="Madrid" slug="best-apartments-families-madrid" title="Best Family Apartments in Madrid: Your Perfect Stay" />
 }

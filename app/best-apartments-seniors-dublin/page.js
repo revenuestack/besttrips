@@ -21,5 +21,5 @@ export default function Page() {
     "cta": "Start your Dublin apartment search today and discover why Ireland's capital is becoming a top choice for discerning seniors seeking culture, comfort, and community."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Seniors in Dublin: Comfort Meets Irish Charm" />
+  return <SimpleGuide content={content} destination="Dublin" slug="best-apartments-seniors-dublin" title="Best Apartments for Seniors in Dublin: Comfort Meets Irish Charm" />
 }

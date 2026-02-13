@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Porto's family-friendly apartments offer the perfect foundation for an unforgettable Portuguese adventure. With the right neighborhood, thoughtful amenities, and space to spread out, your family can experience Porto's magic at your own pace. Start exploring apartment options today and discover why families fall in love with Porto's perfect blend of culture, cuisine, and coastal charm."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Families in Porto: Complete Guide" />
+  return <SimpleGuide content={content} destination="Porto" slug="best-apartments-families-porto" title="Best Apartments for Families in Porto: Complete Guide" />
 }

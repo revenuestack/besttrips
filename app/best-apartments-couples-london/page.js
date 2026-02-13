@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect London love nest today and create unforgettable memories in one of the world's most romantic cities."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Couples in London" />
+  return <SimpleGuide content={content} destination="London" slug="best-apartments-couples-london" title="Best Apartments for Couples in London" />
 }

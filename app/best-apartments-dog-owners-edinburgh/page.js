@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Find your perfect dog-friendly Edinburgh apartment today and discover why Scotland's capital is a paradise for pups and their owners!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Edinburgh" />
+  return <SimpleGuide content={content} destination="Edinburgh" slug="best-apartments-dog-owners-edinburgh" title="Best Apartments for Dog Owners in Edinburgh" />
 }

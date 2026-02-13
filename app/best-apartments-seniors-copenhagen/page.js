@@ -21,5 +21,5 @@ export default function Page() {
     "cta": "Ready to experience Danish living at its finest? Browse our curated selection of senior-friendly Copenhagen apartments and start planning your Scandinavian adventure today."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Seniors in Copenhagen: Comfort Meets Scandinavian Charm" />
+  return <SimpleGuide content={content} destination="Copenhagen" slug="best-apartments-seniors-copenhagen" title="Best Apartments for Seniors in Copenhagen: Comfort Meets Scandinavian Charm" />
 }

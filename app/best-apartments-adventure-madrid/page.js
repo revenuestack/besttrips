@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Book your Madrid adventure apartment today and transform your trip into an unforgettable base camp for urban and mountain exploration."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Madrid" />
+  return <SimpleGuide content={content} destination="Madrid" slug="best-apartments-adventure-madrid" title="Best Apartments for Adventure Seekers in Madrid" />
 }

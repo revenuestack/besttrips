@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Discover your perfect dog-friendly Berlin apartment today and experience the city's unmatched pet-welcoming hospitality!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Berlin" />
+  return <SimpleGuide content={content} destination="Berlin" slug="best-apartments-dog-owners-berlin" title="Best Apartments for Dog Owners in Berlin" />
 }

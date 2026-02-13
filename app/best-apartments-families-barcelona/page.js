@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Start planning your Barcelona family adventure today and discover why apartment living transforms city breaks into unforgettable experiences!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Families in Barcelona" />
+  return <SimpleGuide content={content} destination="Barcelona" slug="best-apartments-families-barcelona" title="Best Apartments for Families in Barcelona" />
 }

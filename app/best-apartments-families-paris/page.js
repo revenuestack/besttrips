@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Paris like a local family? Browse our curated selection of the best family apartments in Paris, featuring verified reviews, detailed photos, and honest descriptions from parents who have stayed there. Start planning your unforgettable Parisian adventure today and discover why apartment living transforms family travel."
 }
   
-  return <SimpleGuide content={content} title="Best Family Apartments in Paris: Top Stays for 2026" />
+  return <SimpleGuide content={content} destination="Paris" slug="best-apartments-families-paris" title="Best Family Apartments in Paris: Top Stays for 2026" />
 }

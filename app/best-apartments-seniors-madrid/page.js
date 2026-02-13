@@ -21,5 +21,5 @@ export default function Page() {
     "cta": "Start your Madrid apartment search today and discover why thousands of international seniors have made Spain's capital their home."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Seniors in Madrid: Comfort Meets Culture" />
+  return <SimpleGuide content={content} destination="Madrid" slug="best-apartments-seniors-madrid" title="Best Apartments for Seniors in Madrid: Comfort Meets Culture" />
 }

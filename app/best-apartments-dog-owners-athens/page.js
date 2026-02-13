@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Discover your perfect dog-friendly Athens apartment today and create unforgettable Mediterranean memories with your four-legged travel companion!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Athens" />
+  return <SimpleGuide content={content} destination="Athens" slug="best-apartments-dog-owners-athens" title="Best Apartments for Dog Owners in Athens" />
 }

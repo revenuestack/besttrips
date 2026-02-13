@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to discover Athens with your group? Start exploring apartments in your preferred neighborhood today. Whether you choose historic Plaka's ancient charm or trendy Koukaki's local flavor, the perfect group accommodation awaits. Book now and prepare for an unforgettable Greek adventure where everyone has space to relax and memories to share."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Groups in Athens: Top Picks 2026" />
+  return <SimpleGuide content={content} destination="Athens" slug="best-apartments-groups-athens" title="Best Apartments for Groups in Athens: Top Picks 2026" />
 }

@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Start your Roman holiday by browsing dog-friendly apartment rentals today and experience la dolce vita with your beloved pet!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Rome" />
+  return <SimpleGuide content={content} destination="Rome" slug="best-apartments-dog-owners-rome" title="Best Apartments for Dog Owners in Rome" />
 }

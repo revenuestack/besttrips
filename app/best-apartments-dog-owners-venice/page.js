@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Book your dog-friendly Venetian apartment today and discover why this car-free city is a canine paradise waiting to be explored together."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Venice" />
+  return <SimpleGuide content={content} destination="Venice" slug="best-apartments-dog-owners-venice" title="Best Apartments for Dog Owners in Venice" />
 }

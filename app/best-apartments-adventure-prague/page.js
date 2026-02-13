@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Find your Prague adventure basecamp today and discover why this medieval city is Central Europe's outdoor playground."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Prague" />
+  return <SimpleGuide content={content} destination="Prague" slug="best-apartments-adventure-prague" title="Best Apartments for Adventure Seekers in Prague" />
 }

@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Book your Prague apartment today and discover why this enchanting city is Central Europe's most dog-friendly destination for extended stays."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Prague" />
+  return <SimpleGuide content={content} destination="Prague" slug="best-apartments-dog-owners-prague" title="Best Apartments for Dog Owners in Prague" />
 }

@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Book your Venice apartment today and unlock the city's adventurous soul beyond the crowded squares."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Venice" />
+  return <SimpleGuide content={content} destination="Venice" slug="best-apartments-adventure-venice" title="Best Apartments for Adventure Seekers in Venice" />
 }

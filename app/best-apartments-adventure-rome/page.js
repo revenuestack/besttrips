@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Book your Roman apartment today and unlock the Eternal City's adventures with the freedom only local living provides."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Rome" />
+  return <SimpleGuide content={content} destination="Rome" slug="best-apartments-adventure-rome" title="Best Apartments for Adventure Seekers in Rome" />
 }

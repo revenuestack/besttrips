@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Florence like a local family? Browse our curated selection of family-friendly apartments and start planning your unforgettable Tuscan adventure. From budget-friendly studios to luxury penthouses with Duomo views, your perfect Florentine home awaits. Book today and give your family the gift of authentic Italian living."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Families in Florence, Italy (2026)" />
+  return <SimpleGuide content={content} destination="Florence" slug="best-apartments-families-florence" title="Best Apartments for Families in Florence, Italy (2026)" />
 }

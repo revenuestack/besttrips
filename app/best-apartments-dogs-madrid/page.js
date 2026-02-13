@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect dog-friendly apartment in Madrid and experience Spain's vibrant capital with your best friend by your side."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Madrid" />
+  return <SimpleGuide content={content} destination="Madrid" slug="best-apartments-dogs-madrid" title="Best Apartments for Dog Owners in Madrid" />
 }

@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Find your Paris adventure base today and unlock the city's wild side from your own apartment!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Paris" />
+  return <SimpleGuide content={content} destination="Paris" slug="best-apartments-adventure-paris" title="Best Apartments for Adventure Seekers in Paris" />
 }

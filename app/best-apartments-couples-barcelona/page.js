@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect Barcelona apartment today and start planning an unforgettable romantic escape in Spain's most enchanting city."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Couples in Barcelona" />
+  return <SimpleGuide content={content} destination="Barcelona" slug="best-apartments-couples-barcelona" title="Best Apartments for Couples in Barcelona" />
 }

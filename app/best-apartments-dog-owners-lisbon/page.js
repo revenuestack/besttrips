@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Start your Lisbon adventure today—find the perfect dog-friendly apartment and discover why this sunny city is a tail-wagging paradise!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Lisbon" />
+  return <SimpleGuide content={content} destination="Lisbon" slug="best-apartments-dog-owners-lisbon" title="Best Apartments for Dog Owners in Lisbon" />
 }

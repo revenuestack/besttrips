@@ -21,5 +21,5 @@ export default function Page() {
     "cta": "Ready to embrace Lisbon's golden years? Browse verified senior-friendly apartments and start your Portuguese adventure today."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Seniors in Lisbon: Comfort Meets Culture in Portugal" />
+  return <SimpleGuide content={content} destination="Lisbon" slug="best-apartments-seniors-lisbon" title="Best Apartments for Seniors in Lisbon: Comfort Meets Culture in Portugal" />
 }

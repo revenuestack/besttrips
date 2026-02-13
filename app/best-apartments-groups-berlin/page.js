@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Berlin your way? Start searching for the perfect group apartment today and unlock the freedom, space, and authentic local living that will make your Berlin adventure truly unforgettable. Your group's ideal home base in Germany's most exciting city awaits."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Groups in Berlin: Your Perfect Stay" />
+  return <SimpleGuide content={content} destination="Berlin" slug="best-apartments-groups-berlin" title="Best Apartments for Groups in Berlin: Your Perfect Stay" />
 }

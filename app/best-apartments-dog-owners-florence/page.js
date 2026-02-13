@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Find your perfect dog-friendly Florence apartment today and create unforgettable memories exploring Renaissance beauty with your loyal companion by your side."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Florence" />
+  return <SimpleGuide content={content} destination="Florence" slug="best-apartments-dog-owners-florence" title="Best Apartments for Dog Owners in Florence" />
 }

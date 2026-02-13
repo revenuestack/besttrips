@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Book your dog-friendly London apartment today and discover why this vibrant city is a paradise for pets and their owners alike!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in London" />
+  return <SimpleGuide content={content} destination="London" slug="best-apartments-dogs-london" title="Best Apartments for Dog Owners in London" />
 }

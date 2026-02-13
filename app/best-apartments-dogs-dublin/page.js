@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect dog-friendly Dublin apartment today and experience Ireland's capital with your furry best friend by your side!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Dublin" />
+  return <SimpleGuide content={content} destination="Dublin" slug="best-apartments-dogs-dublin" title="Best Apartments for Dog Owners in Dublin" />
 }

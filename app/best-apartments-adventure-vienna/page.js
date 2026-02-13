@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Book your Vienna adventure apartment today and discover why Austria's capital is the perfect base for thrill-seekers who crave culture and adrenaline in equal measure!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Vienna" />
+  return <SimpleGuide content={content} destination="Vienna" slug="best-apartments-adventure-vienna" title="Best Apartments for Adventure Seekers in Vienna" />
 }

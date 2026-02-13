@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Find your perfect dog-friendly apartment in Lyon today and experience French culture with your best friend by your side!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Lyon" />
+  return <SimpleGuide content={content} destination="Lyon" slug="best-apartments-dogs-lyon" title="Best Apartments for Dog Owners in Lyon" />
 }

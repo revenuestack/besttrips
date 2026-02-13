@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Lisbon like a local? Browse our curated selection of family-friendly apartments across Lisbon's best neighborhoods. With verified reviews, transparent pricing, and instant booking, your perfect Portuguese home away from home is just a click away. Start planning your unforgettable family adventure today."
 }
   
-  return <SimpleGuide content={content} title="Best Family Apartments in Lisbon: Where to Stay in 2026" />
+  return <SimpleGuide content={content} destination="Lisbon" slug="best-apartments-families-lisbon" title="Best Family Apartments in Lisbon: Where to Stay in 2026" />
 }

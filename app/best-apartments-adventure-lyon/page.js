@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Book your Lyon adventure apartment today and unlock access to both urban thrills and Alpine expeditions from France's ultimate outdoor basecamp."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Lyon" />
+  return <SimpleGuide content={content} destination="Lyon" slug="best-apartments-adventure-lyon" title="Best Apartments for Adventure Seekers in Lyon" />
 }

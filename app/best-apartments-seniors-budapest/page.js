@@ -21,5 +21,5 @@ export default function Page() {
     cta: "Start your Budapest apartment search today and discover why thousands of seniors have chosen Hungary's stunning capital for comfortable, cultured retirement living."
   }
   
-  return <SimpleGuide content={content} />
+  return <SimpleGuide content={content} destination="Budapest" slug="best-apartments-seniors-budapest" />
 }

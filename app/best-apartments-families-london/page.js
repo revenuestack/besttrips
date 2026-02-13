@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to discover London with your family? Browse our curated selection of family-friendly apartments across London's best neighborhoods. From budget-conscious options to luxury flats, find the perfect space where your family can create unforgettable memories in one of the world's most exciting cities. Start planning your London adventure today."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Families in London: Your Guide" />
+  return <SimpleGuide content={content} destination="London" slug="best-apartments-families-london" title="Best Apartments for Families in London: Your Guide" />
 }

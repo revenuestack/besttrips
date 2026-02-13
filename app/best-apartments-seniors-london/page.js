@@ -21,5 +21,5 @@ export default function Page() {
     "cta": "Start your London apartment search today and discover the perfect blend of independence, safety, and cultural richness tailored for your golden years."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Seniors in London: Comfort Meets Culture" />
+  return <SimpleGuide content={content} destination="London" slug="best-apartments-seniors-london" title="Best Apartments for Seniors in London: Comfort Meets Culture" />
 }

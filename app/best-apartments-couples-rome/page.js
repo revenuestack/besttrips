@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect Roman apartment today and create unforgettable romantic memories together in the heart of Italy's most enchanting and timeless city."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Couples in Rome" />
+  return <SimpleGuide content={content} destination="Rome" slug="best-apartments-couples-rome" title="Best Apartments for Couples in Rome" />
 }

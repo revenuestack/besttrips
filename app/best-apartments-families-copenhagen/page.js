@@ -51,5 +51,5 @@ export default function Page() {
   "cta": "Ready to experience Copenhagen like a local? Browse family-friendly apartments across the city's best neighborhoods and discover the perfect home base for your Danish adventure. With space to spread out, kitchens to ease budgets, and authentic neighborhood experiences, your Copenhagen family holiday starts with the right apartment."
 }
   
-  return <SimpleGuide content={content} title="Best Family Apartments in Copenhagen: Your Perfect Stay" />
+  return <SimpleGuide content={content} destination="Copenhagen" slug="best-apartments-families-copenhagen" title="Best Family Apartments in Copenhagen: Your Perfect Stay" />
 }

@@ -21,5 +21,5 @@ export default function Page() {
     "cta": "Begin your Lyon apartment search today and discover why France's third-largest city is becoming a premier retirement destination for discerning seniors."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Seniors in Lyon: Comfort Meets French Elegance" />
+  return <SimpleGuide content={content} destination="Lyon" slug="best-apartments-seniors-lyon" title="Best Apartments for Seniors in Lyon: Comfort Meets French Elegance" />
 }

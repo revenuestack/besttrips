@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Start planning your unforgettable Berlin family adventure today by booking a spacious apartment that gives your family the comfort, space, and local experience you deserve."
   }
 
-  return <SimpleGuide content={content} title="Best Apartments for Families in Berlin" />
+  return <SimpleGuide content={content} destination="Berlin" slug="best-apartments-families-berlin" title="Best Apartments for Families in Berlin" />
 }

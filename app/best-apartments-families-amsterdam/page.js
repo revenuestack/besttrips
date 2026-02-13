@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect Amsterdam family apartment today and create unforgettable memories in this magical, bike-friendly city!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Families in Amsterdam" />
+  return <SimpleGuide content={content} destination="Amsterdam" slug="best-apartments-families-amsterdam" title="Best Apartments for Families in Amsterdam" />
 }

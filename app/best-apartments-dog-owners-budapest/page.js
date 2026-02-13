@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Find your perfect dog-friendly Budapest apartment today and experience Central Europe's most welcoming city for pet owners."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Budapest" />
+  return <SimpleGuide content={content} destination="Budapest" slug="best-apartments-dog-owners-budapest" title="Best Apartments for Dog Owners in Budapest" />
 }

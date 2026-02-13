@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Dublin like a local family? Browse our curated selection of family-friendly apartments across Dublin's best neighborhoods. Each listing includes detailed photos, honest reviews from traveling families, and transparent pricing. Start planning your perfect Dublin family adventure today and discover why apartment living transforms good trips into great ones."
 }
   
-  return <SimpleGuide content={content} title="Best Family Apartments in Dublin: Your Home Away from Home" />
+  return <SimpleGuide content={content} destination="Dublin" slug="best-apartments-families-dublin" title="Best Family Apartments in Dublin: Your Home Away from Home" />
 }

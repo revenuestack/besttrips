@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Start planning your Parisian adventure today and discover why Paris is one of Europe's most dog-friendly destinations for apartment stays!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Paris" />
+  return <SimpleGuide content={content} destination="Paris" slug="best-apartments-dog-owners-paris" title="Best Apartments for Dog Owners in Paris" />
 }

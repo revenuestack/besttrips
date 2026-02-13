@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Find your Lisbon adventure apartment today and unlock Portugal's most thrilling outdoor experiences from your doorstep."
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Adventure Seekers in Lisbon" />
+  return <SimpleGuide content={content} destination="Lisbon" slug="best-apartments-adventure-lisbon" title="Best Apartments for Adventure Seekers in Lisbon" />
 }

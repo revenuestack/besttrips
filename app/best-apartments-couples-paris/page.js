@@ -25,5 +25,5 @@ export default function Page() {
   "cta": "Discover your perfect Parisian love nest today and create unforgettable memories in the world's most romantic city!"
 }
 
-  return <SimpleGuide content={content} title="Best Apartments for Couples in Paris" />
+  return <SimpleGuide content={content} destination="Paris" slug="best-apartments-couples-paris" title="Best Apartments for Couples in Paris" />
 }

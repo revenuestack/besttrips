@@ -21,5 +21,5 @@ export default function Page() {
     "cta": "Start planning your Florence apartment stay today and experience la dolce vita with the comfort and independence you deserve."
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Seniors in Florence: Comfort Meets Renaissance Charm" />
+  return <SimpleGuide content={content} destination="Florence" slug="best-apartments-seniors-florence" title="Best Apartments for Seniors in Florence: Comfort Meets Renaissance Charm" />
 }

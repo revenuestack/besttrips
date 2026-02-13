@@ -51,5 +51,5 @@ export default function Page() {
   "cta": "Ready to discover Edinburgh your way? Family apartments offer the perfect foundation for creating unforgettable Scottish memories. Browse available properties in your preferred neighborhood, compare amenities that matter to your family, and book the space where your Edinburgh adventure begins. Your home away from home awaits in Scotland's magnificent capital."
 }
   
-  return <SimpleGuide content={content} title="Best Family Apartments in Edinburgh: Your Perfect Stay" />
+  return <SimpleGuide content={content} destination="Edinburgh" slug="best-apartments-families-edinburgh" title="Best Family Apartments in Edinburgh: Your Perfect Stay" />
 }

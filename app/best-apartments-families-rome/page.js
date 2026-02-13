@@ -50,5 +50,5 @@ export default function Page() {
   "cta": "Ready to experience Rome like a local family? Browse trusted rental platforms like Vrbo, Airbnb, or specialized Rome rental agencies to find your perfect apartment. Book early for summer and Easter week, confirm all family-specific needs in writing, and prepare for an unforgettable Roman adventure with space to call home."
 }
   
-  return <SimpleGuide content={content} title="Best Apartments for Families in Rome: Your Guide" />
+  return <SimpleGuide content={content} destination="Rome" slug="best-apartments-families-rome" title="Best Apartments for Families in Rome: Your Guide" />
 }

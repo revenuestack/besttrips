@@ -25,5 +25,5 @@ export default function Page() {
     "cta": "Find your perfect dog-friendly apartment in Brussels today and experience Belgium's capital with your best friend by your side!"
   }
   
-  return <SimpleGuide content={content} title="Best Apartments for Dog Owners in Brussels" />
+  return <SimpleGuide content={content} destination="Brussels" slug="best-apartments-dog-owners-brussels" title="Best Apartments for Dog Owners in Brussels" />
 }
