@@ -1,9 +1,10 @@
 // Simple guide component for apartment/hotel pages with intro/why_stay/neighborhoods/tips format
 import { getDestinationImage } from '../lib/getDestinationImage'
 import { getRelatedGuides } from '../lib/getGuides'
+import RecommendationCard from './RecommendationCard'
 
 export default function SimpleGuide({ content, title, destination, slug }) {
-  const { intro, why_stay = [], neighborhoods = [], tips = [], cta } = content
+  const { intro, why_stay = [], neighborhoods = [], tips = [], cta, recommendations = [] } = content
   const heroImage = destination ? getDestinationImage(destination) : null
   const relatedGuides = slug ? getRelatedGuides(slug) : []
 
@@ -82,6 +83,18 @@ export default function SimpleGuide({ content, title, destination, slug }) {
           <p style={{ fontSize: '1.1rem', margin: 0, lineHeight: 1.8, color: '#1e40af' }}>
             {intro}
           </p>
+        </section>
+      )}
+
+      {/* Recommendations */}
+      {recommendations.length > 0 && (
+        <section style={{ marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', color: '#333' }}>
+            Our Top Recommendations
+          </h2>
+          {recommendations.map((rec, i) => (
+            <RecommendationCard key={i} recommendation={rec} rank={i + 1} />
+          ))}
         </section>
       )}
 
