@@ -2,6 +2,7 @@
 // Handles both old and new content formats
 
 import { getDestinationImage } from '@/lib/destination-images';
+import { getAccommodationImage } from '@/lib/accommodation-images';
 
 export default function AccommodationGuide({ 
   // New format (guide + content objects)
@@ -130,11 +131,20 @@ export default function AccommodationGuide({
                 <div className="picks-grid">
                   {topPicks.map((pick, i) => (
                     <div key={i} className="pick-card">
-                      <h3>{pick.name}</h3>
-                      <p>{pick.description}</p>
-                      {pick.highlight && (
-                        <span className="highlight">✨ {pick.highlight}</span>
-                      )}
+                      <div className="pick-image">
+                        <img 
+                          src={pick.image || getAccommodationImage(accType)} 
+                          alt={pick.name}
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="pick-content">
+                        <h3>{pick.name}</h3>
+                        <p>{pick.description}</p>
+                        {pick.highlight && (
+                          <span className="highlight">✨ {pick.highlight}</span>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -233,13 +243,38 @@ export default function AccommodationGuide({
         }
         .pick-card {
           background: #f8f9fa;
-          padding: 20px;
           border-radius: 10px;
+          overflow: hidden;
           border-left: 4px solid #667eea;
+          display: flex;
+          flex-direction: row;
+        }
+        .pick-image {
+          width: 200px;
+          min-height: 150px;
+          flex-shrink: 0;
+        }
+        .pick-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .pick-content {
+          padding: 20px;
+          flex: 1;
         }
         .pick-card h3 {
           margin: 0 0 10px;
           color: #333;
+        }
+        @media (max-width: 600px) {
+          .pick-card {
+            flex-direction: column;
+          }
+          .pick-image {
+            width: 100%;
+            height: 150px;
+          }
         }
         .highlight {
           display: inline-block;
