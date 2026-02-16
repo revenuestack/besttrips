@@ -1,6 +1,8 @@
 // AccommodationGuide component with Schema.org markup for SEO
 // Handles both old and new content formats
 
+import { getDestinationImage } from '@/lib/destination-images';
+
 export default function AccommodationGuide({ 
   // New format (guide + content objects)
   guide = null,
@@ -15,7 +17,9 @@ export default function AccommodationGuide({
   considerations = [],
   neighborhoodTips = '',
   bookingAdvice = '',
-  recommendations = []
+  recommendations = [],
+  // Image override (optional)
+  heroImage = null
 }) {
   // Use new format if available, otherwise use legacy
   const dest = guide?.destination || destination;
@@ -28,6 +32,9 @@ export default function AccommodationGuide({
   const topPicks = content?.topPicks || recommendations;
   const tips = content?.tips || neighborhoodTips;
   const conclusion = content?.conclusion || bookingAdvice;
+  
+  // Get hero image for destination
+  const bgImage = heroImage || getDestinationImage(dest);
 
   // Schema.org TravelAction markup for SEO
   const schemaData = {
@@ -35,6 +42,7 @@ export default function AccommodationGuide({
     "@type": "TravelAction",
     "name": `Best ${accType} for ${aud} in ${dest}`,
     "description": intro,
+    "image": bgImage,
     "location": {
       "@type": "Place",
       "name": dest,
@@ -86,7 +94,7 @@ export default function AccommodationGuide({
       />
       
       <article className="accommodation-guide">
-        <header className="guide-header">
+        <header className="guide-header" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(${bgImage})` }}>
           <div className="container">
             <nav className="breadcrumb">
               <a href="/">Home</a> / <a href={`/${accType?.toLowerCase()}`}>{accType}</a> / <span>{dest}</span>
@@ -183,9 +191,13 @@ export default function AccommodationGuide({
           padding: 0 20px;
         }
         .guide-header {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background-size: cover;
+          background-position: center;
           color: white;
-          padding: 60px 0 40px;
+          padding: 80px 0 60px;
+          min-height: 300px;
+          display: flex;
+          align-items: flex-end;
         }
         .breadcrumb {
           font-size: 0.9em;
