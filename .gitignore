@@ -33,3 +33,4 @@ yarn-error.log*
 
 # Generation queue (completed)
 .generation-queue/completed/*.json
+credentials.json
