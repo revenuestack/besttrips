@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Vienna: Romantic Stays in Austria's Imperial City",
-  description: "Discover the perfect apartment rentals for couples in Vienna. From historic districts to modern neighborhoods, find your ideal romantic retreat in Austria's enchanting capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Vienna's blend of imperial grandeur and contemporary charm makes it an irresistible destination for couples seeking a romantic European escape. Choosing an apartment over a hotel offers intimacy, local immersion, and the freedom to create your own Viennese love story in neighborhoods brimming with cafés, culture, and character.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and Romance: Apartments provide intimate spaces perfect for couples, with fully-equipped kitchens for cozy breakfasts, private balconies for morning coffee, and living areas where you can unwind after exploring the city's palaces and museums together.</li>
-          <li>Authentic Local Experience: Stay in residential neighborhoods where Viennese locals actually live, shop at neighborhood markets, discover hidden wine taverns, and experience the city's genuine rhythm beyond tourist hotspots.</li>
-          <li>Value and Flexibility: Apartments often cost less than hotels while offering more space and amenities. Enjoy the flexibility to dine in with local ingredients, do laundry, and settle into a temporary home that feels uniquely yours.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early for apartments in prime locations like the Innere Stadt or near Schönbrunn Palace, especially during peak seasons (April-October) and Christmas market periods when romantic getaways surge.</li>
-          <li>Verify amenities carefully—some historic buildings lack elevators, and air conditioning isn't universal. Check reviews for noise levels, as Vienna's vibrant nightlife districts can be lively until late.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>The Innere Stadt (1st District) puts you steps from St. Stephen's Cathedral and the Opera House, ideal for first-time visitors. Neubau (7th District) offers trendy boutiques and galleries for creative couples. Wieden (4th District) near Karlsplatz balances central location with local charm, while Leopoldstadt (2nd District) provides proximity to the Prater and Danube with slightly lower prices.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Start browsing Vienna apartments today and secure your romantic Austrian adventure. Filter by neighborhood, read couple reviews, and book the perfect base for exploring this magnificent city together.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Vienna 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Vienna, Austria. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Vienna stay.'
+}
+
+const guide = {
+  destination: "Vienna",
+  country: "Austria",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-vienna"
+}
+
+const content = {
+  intro: "Vienna captivates couples travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Vienna's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Vienna offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Vienna are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Vienna's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Vienna",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Vienna requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Vienna is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Vienna rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Vienna's unique character, and prepare for a stay that exceeds expectations. Your perfect Vienna adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

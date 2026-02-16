@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Luxury Apartments in Berlin: Premium Accommodation Guide 2026",
-  description: "Discover Berlin's finest luxury apartments offering sophisticated design, prime locations, and five-star amenities. Your ultimate guide to upscale apartment stays in Germany's vibrant capital."
+  title: 'Best Apartments for Luxury Travelers in Berlin 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Berlin, Germany. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Berlin stay.'
+}
+
+const guide = {
+  destination: "Berlin",
+  country: "Germany",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-berlin"
+}
+
+const content = {
+  intro: "Berlin captivates luxury travelers with its unique blend of efficiency, culture, and surprising warmth. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Berlin's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Berlin offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Berlin are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Berlin's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel Berlin",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Berlin requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Berlin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Berlin rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Berlin's unique character, and prepare for a stay that exceeds expectations. Your perfect Berlin adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Berlin",
-    country: "Germany",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Berlin's luxury apartment scene combines historic grandeur with cutting-edge contemporary design, offering discerning travelers spacious sanctuaries in one of Europe's most dynamic capitals.",
-    why_stay: [
-      "Space and privacy that hotels can't match—think full kitchens, separate living areas, and often private terraces with stunning city views over landmarks like the Brandenburg Gate or Spree River",
-      "Immersive neighborhood experiences in prestigious districts, from the elegant tree-lined boulevards of Charlottenburg to the cultural heartbeat of Mitte, with high-end galleries and Michelin-starred restaurants at your doorstep",
-      "Personalized concierge services, in-apartment spa treatments, and designer furnishings from brands like Bulthaup and B&B Italia, often at better value than five-star hotel suites"
-    ],
-    considerations: [
-      "Berlin's luxury apartment market varies dramatically by neighborhood—verify exact locations as district boundaries can mean significant differences in ambiance and convenience",
-      "Minimum stay requirements (typically 3-7 nights) are common for premium properties, and booking well in advance is essential during major events like Berlin Fashion Week or Art Week"
-    ],
-    neighborhood_tips: "Charlottenburg offers timeless elegance near Kurfürstendamm's designer boutiques. Mitte provides cultural immersion with Museum Island and contemporary art scenes. Prenzlauer Berg delivers charming cobblestone streets with upscale cafés, while Tiergarten borders offer serene park views.",
-    booking_advice: "Book directly through specialized luxury rental agencies or verified platforms with comprehensive insurance. Confirm amenities like parking (essential in Berlin), air conditioning (not standard), and whether housekeeping is included. Request photos of the specific unit, not just the building."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

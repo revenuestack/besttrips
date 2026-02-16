@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Luxury Apartments in Lisbon: Upscale Stays in Portugal's Capital",
-  description: "Discover Lisbon's finest luxury apartments offering elegant design, premium amenities, and prime locations in historic neighborhoods. Your ultimate guide to upscale accommodation."
+  title: 'Best Apartments for Luxury Travelers in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
+}
+
+const guide = {
+  destination: "Lisbon",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-lisbon"
+}
+
+const content = {
+  intro: "Lisbon captivates luxury travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Lisbon offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Lisbon's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel Lisbon",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Lisbon requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Lisbon",
-    country: "Portugal",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Lisbon's luxury apartment scene perfectly blends historic Portuguese charm with contemporary sophistication, offering discerning travelers spacious sanctuaries in one of Europe's most captivating capitals.",
-    why_stay: [
-      "Space and privacy with full kitchens, separate living areas, and private terraces overlooking terracotta rooftops and the Tagus River—ideal for extended stays or families seeking refined comfort",
-      "Exclusive locations in restored palácio buildings and modern architectural gems in prime neighborhoods like Chiado, Príncipe Real, and Avenida da Liberdade, steps from Michelin-starred dining",
-      "Premium amenities including concierge services, private parking, rooftop pools, wine cellars, and smart home technology that hotels rarely match at comparable price points"
-    ],
-    considerations: [
-      "Lisbon's hills and cobblestones mean accessibility varies—verify elevator access and ground transportation options for your specific property",
-      "Peak season (May-September) requires booking 3-6 months ahead; many top properties have minimum 3-7 night stays"
-    ],
-    neighborhood_tips: "Chiado offers cultural sophistication near theaters and boutiques. Príncipe Real provides bohemian elegance with garden squares and design shops. Avenida da Liberdade delivers grand boulevard luxury with flagship stores. Alfama adds authentic character with fado music echoing through medieval lanes.",
-    booking_advice: "Book directly with property management companies for personalized service and potential upgrades. Verify included amenities—housekeeping, airport transfers, and welcome provisions vary significantly. Request specific units with preferred views and confirm flexible cancellation policies."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

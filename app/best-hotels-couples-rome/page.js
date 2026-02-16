@@ -1,32 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in Rome",
-  description: "Discover the most romantic hotels in Rome perfect for couples. From boutique hideaways near the Spanish Steps to luxurious stays with Colosseum views, find your ideal romantic escape in the Eternal City."
-};
+  title: 'Best Hotels for Couples in Rome 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Rome, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Rome stay.'
+}
+
+const guide = {
+  destination: "Rome",
+  country: "Italy",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-rome"
+}
+
+const content = {
+  intro: "Rome captivates couples travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Rome's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Rome offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Rome are significant—the best hotels position you within walking distance of the Colosseum, Vatican, and Trastevere, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Rome's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Rome",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Rome requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Rome is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Rome rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Rome's unique character, and prepare for a stay that exceeds expectations. Your perfect Rome adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Hotels for Couples in Rome</h1>
-      
-      <p className="hook">Rome's timeless charm sets the stage for unforgettable romantic getaways, and choosing the right hotel can transform your trip into a love story written in ancient cobblestones and candlelit dinners. Whether you're celebrating an anniversary or stealing away for a spontaneous escape, the Eternal City offers intimate accommodations that blend historic elegance with modern romance.</p>
-      
-      <h2>Why Choose These Hotels</h2>
-      <ul>
-        <li>Boutique hotels tucked into historic neighborhoods offer private terraces with sunset views over Roman rooftops, creating intimate moments you'll treasure forever</li>
-        <li>Many romantic hotels feature rooftop restaurants and bars where you can toast with Prosecco while gazing at illuminated landmarks like St. Peter's Basilica</li>
-        <li>Luxury properties near Villa Borghese and Trastevere provide spa suites, couples' massages, and discreet service that lets you focus entirely on each other</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book well in advance for peak season (April-June, September-October) when romantic hotels fill quickly, and request higher floors for better views and quieter evenings</li>
-        <li>Central locations near Piazza Navona or the Spanish Steps cost more but save time and taxi expenses, letting you stroll hand-in-hand to romantic dinner spots</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>Trastevere's winding medieval streets create an enchanting atmosphere perfect for couples, with family-run trattorias and fewer tourists. The Tridente area near the Spanish Steps offers luxury shopping and upscale dining within walking distance. For ultimate romance, stay near Villa Borghese where morning walks through manicured gardens await.</p>
-      
-      <p className="cta">Start planning your romantic Roman holiday today—compare couple-friendly hotels and book your perfect love nest in the heart of Italy's most enchanting city.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

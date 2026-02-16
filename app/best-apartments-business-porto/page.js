@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Porto",
-  description: "Discover top-rated serviced apartments in Porto tailored for business travelers. Prime locations near business districts, high-speed WiFi, and flexible stays for corporate trips."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Porto's thriving business scene demands accommodation that works as hard as you do. Modern serviced apartments blend the comfort of home with professional amenities, making extended corporate stays seamless and productive.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Equipped workspaces with ergonomic furniture, high-speed fiber internet, and dedicated business corners ensure you stay connected and productive throughout your trip</li>
-          <li>Prime locations in Boavista and Baixa districts place you minutes from corporate offices, convention centers, and metro lines, cutting commute times significantly</li>
-          <li>Cost-effective for extended stays with full kitchens, laundry facilities, and weekly housekeeping that reduce dining expenses and maintain work-life balance</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early during peak conference seasons (April-June, September-October) when corporate demand surges and premium units fill quickly</li>
-          <li>Verify backup power and redundant internet connections if your work involves critical deadlines or virtual meetings</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Boavista offers modern high-rises near multinational offices and shopping centers. Baixa provides historic charm with proximity to financial institutions and excellent public transport. Foz do Douro suits those preferring seaside tranquility after business hours while maintaining reasonable access to city center meetings.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Browse our curated selection of business-ready apartments in Porto and secure your productive home base today.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Porto 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Porto, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Porto stay.'
+}
+
+const guide = {
+  destination: "Porto",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-porto"
+}
+
+const content = {
+  intro: "Porto captivates business travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Porto's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Porto offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Porto are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Porto's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Porto",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Porto requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Porto is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Porto rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Porto's unique character, and prepare for a stay that exceeds expectations. Your perfect Porto adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

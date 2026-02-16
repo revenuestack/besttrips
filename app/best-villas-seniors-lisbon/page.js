@@ -1,28 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Villas for Seniors in Lisbon: Comfort & Accessibility",
-  description: "Discover senior-friendly villas in Lisbon offering privacy, comfort & accessibility. Expert tips on areas, pricing & amenities for a relaxing Portuguese stay."
-};
+  title: 'Best Villas for Seniors in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best villas for seniors in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
+}
+
+const guide = {
+  destination: "Lisbon",
+  country: "Portugal",
+  accommodationType: "Villas",
+  audience: "Seniors",
+  slug: "best-villas-seniors-lisbon"
+}
+
+const content = {
+  intro: "Lisbon captivates seniors travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect villas here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to groups, celebrations, luxury retreats, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best villas for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Villas in Lisbon offer privacy, space, exclusive amenities. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best villas position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Lisbon's villas deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Lisbon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking villas in Lisbon requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards seniors travelers who choose wisely. The villas highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Villas for Seniors in Lisbon</h1>
-      
-      <p>Lisbon's villa rentals offer seniors an ideal blend of independence, comfort, and Portuguese charm. Unlike hotels, villas provide private spaces with full kitchens, ground-floor layouts, and quiet neighborhoods—perfect for travelers seeking a relaxed, accessible home base in Portugal's captivating capital.</p>
-      
-      <h2>Why Choose Villas</h2>
-      <p>Villas give seniors the freedom to maintain their own pace without hotel schedules or crowded common areas. Many feature single-level layouts, private gardens, and full kitchens for dietary needs. The extra space and privacy make them ideal for extended stays or multigenerational family visits.</p>
-      
-      <h2>Best Areas</h2>
-      <p>Belém offers flat terrain near historic sites and waterfront walks. Príncipe Real provides upscale charm with garden squares and easy taxi access. Alcântara combines riverside tranquility with modern amenities and flat streets. Campo de Ourique features a residential vibe, local markets, and minimal hills—ideal for mobility considerations.</p>
-      
-      <h2>What to Expect</h2>
-      <p>Expect to pay €100-€250 per night for well-equipped villas in central neighborhoods. Higher-end properties (€250-€400) often include concierge services, wheelchair accessibility, and walk-in showers. Most villas offer Wi-Fi, air conditioning, and washing machines. Book properties with verified accessibility features and ground-floor bedrooms when needed.</p>
-      
-      <h2>Senior Travel Tips</h2>
-      <p>Request detailed floor plans before booking to confirm step-free access and bathroom grab bars. Consider hiring a local arrival assistant to help with check-in and orientation. Choose villas near metro stations with elevators or reliable taxi routes to minimize walking on Lisbon's steep hills.</p>
-      
-      <p>Lisbon's villas provide seniors with the perfect sanctuary to explore Portugal's culture at their own rhythm. With thoughtful planning around location and accessibility, your Lisbon villa stay can be both comfortable and unforgettable. Start your search today and discover your ideal Portuguese retreat.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

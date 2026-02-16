@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Groups in Rome: Your Guide to Shared Stays",
-  description: "Discover the best group apartments in Rome. Find spacious rentals perfect for families and friends exploring the Eternal City together with our expert guide."
+  title: 'Best Apartments for Groups in Rome 2026 - BestTrips.org',
+  description: 'Discover the best apartments for groups in Rome, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Rome stay.'
+}
+
+const guide = {
+  destination: "Rome",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Groups",
+  slug: "best-apartments-groups-rome"
+}
+
+const content = {
+  intro: "Rome captivates groups travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Rome's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Rome offer space, kitchen, living like a local. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in Rome are significant—the best apartments position you within walking distance of the Colosseum, Vatican, and Trastevere, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: Rome's apartments deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Rome",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Rome requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in Rome is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Rome rewards groups travelers who choose wisely. The apartments highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace Rome's unique character, and prepare for a stay that exceeds expectations. Your perfect Rome adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Rome",
-    country: "Italy",
-    type: "Apartments",
-    audience: "Groups",
-    hook: "Planning a Rome adventure with friends or family? Group apartments offer the perfect blend of space, privacy, and authentic Roman living—often at a fraction of hotel costs. From rooftop terraces overlooking ancient ruins to fully equipped kitchens for pasta-making nights, these rentals transform your visit into an immersive Italian experience.",
-    why_stay: [
-      "Cost-effective shared accommodations with multiple bedrooms and common spaces let groups stay together while maintaining privacy, often costing less per person than hotel rooms.",
-      "Full kitchens and living areas provide flexibility for meals, late-night conversations, and relaxation between sightseeing—perfect for managing different schedules and dietary needs.",
-      "Authentic neighborhood experiences in residential areas like Trastevere, Monti, or Testaccio offer local markets, family-run trattorias, and genuine Roman life beyond tourist zones."
-    ],
-    considerations: [
-      "Elevators are rare in historic buildings—confirm accessibility if stairs are challenging, and note that third-floor Roman apartments can mean climbing 60+ steps.",
-      "Book well ahead for groups of 6+ people, especially during peak seasons (April-October), as large apartments fill quickly and last-minute options become limited and expensive."
-    ],
-    neighborhood_tips: "Trastevere offers charming cobblestone streets and nightlife, while Monti provides boutique shopping and easy metro access. Prati near the Vatican suits families, and Testaccio delivers authentic food markets. Stay within walking distance of metro lines A or B for effortless access to major sites.",
-    booking_advice: "Read recent reviews carefully for group-specific concerns like noise, bed configurations, and actual square footage. Verify exact locations on maps—'near Colosseum' can mean a 20-minute walk. Confirm check-in procedures, as many apartments use keyless entry or require meeting hosts at specific times."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

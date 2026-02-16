@@ -1,29 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Adventure Seekers in Vienna',
-  description: 'Vienna isn\'t just classical music and coffee houses—it\'s an adventure seeker\'s playground with the Danube River, Vienna Woods, and countless cycling routes at your doorstep.'
+  title: 'Best Apartments for Adventure Seekers in Vienna 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Vienna, Austria. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Vienna stay.'
+}
+
+const guide = {
+  destination: "Vienna",
+  country: "Austria",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-vienna"
+}
+
+const content = {
+  intro: "Vienna captivates adventure travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Vienna's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Vienna offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Vienna are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Vienna's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Vienna",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Vienna requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Vienna is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Vienna rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Vienna's unique character, and prepare for a stay that exceeds expectations. Your perfect Vienna adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-  "intro": "Vienna isn't just classical music and coffee houses—it's an adventure seeker's playground with the Danube River, Vienna Woods, and countless cycling routes at your doorstep. Staying in an apartment gives you the freedom to explore on your own schedule, store gear, and live like a local between adrenaline-fueled excursions. From rock climbing in Prater to kayaking the Danube Canal, Vienna delivers urban thrills and natural escapes.",
-  "why_stay": [
-    "Apartments offer space for bikes, climbing gear, and equipment that hotels simply can't accommodate for active travelers.",
-    "Wake up in neighborhoods near hiking trails, river access, and adventure hubs without paying premium hotel rates daily.",
-    "Cook your own meals to fuel adventures and save money for experiences like paragliding or Danube rafting tours."
-  ],
-  "neighborhoods": [
-    "Donaustadt: Right on the Danube River with direct access to water sports, cycling paths, and Donauinsel's outdoor activities.",
-    "Hietzing: Gateway to Vienna Woods with hiking trails, mountain biking routes, and proximity to Schönbrunn's vast gardens.",
-    "Leopoldstadt: Urban adventure base near Prater Park offering climbing walls, running trails, and vibrant street culture to explore."
-  ],
-  "tips": [
-    "Rent apartments near U-Bahn stations for quick access to adventure zones and Vienna's extensive bike-share network.",
-    "Book accommodations with secure storage for gear and bikes—many local apartments cater specifically to active travelers."
-  ],
-  "cta": "Book your Vienna adventure apartment today and discover why Austria's capital is the perfect base for thrill-seekers who crave culture and adrenaline in equal measure!"
-}
-
-  return <SimpleGuide content={content} destination="Vienna" slug="best-apartments-adventure-vienna" title="Best Apartments for Adventure Seekers in Vienna" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

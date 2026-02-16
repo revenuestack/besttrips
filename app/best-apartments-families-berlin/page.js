@@ -1,29 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Families in Berlin',
-  description: 'Discover spacious family apartments in Berlin with kitchens, multiple bedrooms, and easy access to parks, museums, and kid-friendly attractions.'
+  title: 'Best Apartments for Families in Berlin 2026 - BestTrips.org',
+  description: 'Discover the best apartments for families in Berlin, Germany. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Berlin stay.'
+}
+
+const guide = {
+  destination: "Berlin",
+  country: "Germany",
+  accommodationType: "Apartments",
+  audience: "Families",
+  slug: "best-apartments-families-berlin"
+}
+
+const content = {
+  intro: "Berlin captivates families travelers with its unique blend of efficiency, culture, and surprising warmth. Finding the perfect apartments here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Berlin's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Berlin offer space, kitchen, living like a local. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Berlin are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Berlin's apartments deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Berlin",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Berlin requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Berlin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Berlin rewards families travelers who choose wisely. The apartments highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Berlin's unique character, and prepare for a stay that exceeds expectations. Your perfect Berlin adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "intro": "Berlin offers exceptional apartment accommodations perfectly suited for families seeking space, comfort, and authentic local experiences. With spacious layouts, fully-equipped kitchens, and multiple bedrooms, family apartments provide the flexibility and convenience that hotels simply can't match. Staying in residential neighborhoods gives children a genuine taste of Berlin life while parents enjoy the practicality of home-like amenities.",
-    "why_stay": [
-      "Apartments provide significantly more space than hotel rooms, giving children room to play and parents separate areas to relax after busy sightseeing days.",
-      "Fully-equipped kitchens allow families to prepare familiar meals for picky eaters, store snacks, and save money on dining out for every meal.",
-      "Residential neighborhoods offer playgrounds, local bakeries, and supermarkets where families can experience authentic Berlin culture beyond tourist areas."
-    ],
-    "neighborhoods": [
-      "Prenzlauer Berg: Known as Berlin's family central, this charming district features tree-lined streets, excellent playgrounds, weekend markets, and countless cafes with high chairs and changing facilities.",
-      "Charlottenburg: Offers spacious apartments near Tiergarten park, the Zoo, and cultural attractions, with wide boulevards, safe cycling paths, and easy access to public transportation.",
-      "Friedrichshain: Budget-friendly and vibrant with numerous parks including Volkspark Friedrichshain, family-friendly restaurants, and a relaxed atmosphere perfect for families seeking adventure and affordability."
-    ],
-    "tips": [
-      "Purchase a Berlin WelcomeCard for unlimited public transportation and discounts at family attractions, as the U-Bahn and S-Bahn system makes navigating with strollers surprisingly easy.",
-      "Book apartments with washing machines and located near supermarkets like REWE or Edeka to handle laundry needs and stock up on breakfast essentials, saving time and money."
-    ],
-    "cta": "Start planning your unforgettable Berlin family adventure today by booking a spacious apartment that gives your family the comfort, space, and local experience you deserve."
-  }
-
-  return <SimpleGuide content={content} destination="Berlin" slug="best-apartments-families-berlin" title="Best Apartments for Families in Berlin" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

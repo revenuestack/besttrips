@@ -1,32 +1,46 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Business Hotels in Barcelona",
-  description: "Discover Barcelona's top business hotels offering premium meeting facilities, high-speed connectivity, and prime locations near major commercial districts and conference venues."
-};
+  title: 'Best Hotels for Business Travelers in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best hotels for business travelers in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Hotels",
+  audience: "Business Travelers",
+  slug: "best-hotels-business-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates business travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect hotels here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Barcelona offer service, amenities, convenience. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best hotels position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Barcelona's hotels deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hotel Brummell",
+        "description": "Located in Poble Sec, this property offers Rooftop pool, local neighborhood vibe. Prices range €150-280 with consistent 8.9+ ratings from guests.",
+        "highlight": "Rooftop pool, local neighborhood vibe"
+    },
+    {
+        "name": "Casa Camper Barcelona",
+        "description": "Located in El Raval, this property offers Free 24h snack bar, minimalist design. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Free 24h snack bar, minimalist design"
+    },
+    {
+        "name": "Hotel Neri",
+        "description": "Located in Gothic Quarter, this property offers Medieval palace with rooftop terrace. Prices range €250-450 with consistent 9+ ratings from guests.",
+        "highlight": "Medieval palace with rooftop terrace"
+    }
+],
+  tips: "Booking hotels in Barcelona requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards business travelers who choose wisely. The hotels highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Business Hotels in Barcelona</h1>
-      
-      <p className="hook">Barcelona seamlessly blends Mediterranean charm with world-class business infrastructure, making it an ideal destination for corporate travelers. The city's best business hotels deliver everything from cutting-edge conference facilities to strategic locations near key commercial hubs.</p>
-      
-      <h2>Why Choose Business Hotels</h2>
-      <ul>
-        <li>Strategic locations in business districts like Diagonal, Zona Franca, and the revitalized 22@ tech district, ensuring you're minutes from major corporate offices and convention centers</li>
-        <li>State-of-the-art meeting rooms, high-speed fiber connectivity, and dedicated business lounges that cater to executives who need to work seamlessly between meetings</li>
-        <li>Exceptional dining and wellness amenities including rooftop bars, executive gyms, and Michelin-starred restaurants perfect for client entertainment</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book early during major trade shows like Mobile World Congress, when premium business hotels fill months in advance and rates surge significantly</li>
-        <li>Consider proximity to your specific venue—Barcelona's sprawling layout means a hotel near Las Ramblas may require 45+ minutes to reach conference centers in Gran Via</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>The Eixample district offers the densest concentration of upscale business hotels with excellent metro connections. Port Vell provides waterfront luxury with easy access to the cruise terminal and convention centers, while the 22@ Innovation District is perfect for tech sector meetings.</p>
-      
-      <p className="cta">Compare Barcelona's premier business hotels and secure your corporate accommodation today.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

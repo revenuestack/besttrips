@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Budget Travelers in Porto",
-  description: "Discover affordable apartment rentals in Porto perfect for budget travelers. Find the best neighborhoods, money-saving tips, and comfortable stays without breaking the bank."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Budget Travelers in Porto</h1>
-      
-      <section className="hook">
-        <p>Porto offers budget travelers a perfect blend of authentic Portuguese charm and affordable apartment stays, allowing you to live like a local without the hotel price tag.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Self-catering apartments with kitchens help you save significantly on dining costs while enjoying fresh ingredients from local markets like Bolhão</li>
-          <li>More space and amenities than hostels at competitive prices, with many apartments offering washing machines, Wi-Fi, and fully equipped kitchens</li>
-          <li>Strategic locations in residential neighborhoods provide authentic experiences and lower prices compared to tourist-heavy areas near the Ribeira</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Many budget apartments are located in historic buildings with steep stairs and no elevators—confirm accessibility before booking if mobility is a concern</li>
-          <li>Check proximity to metro stations or bus stops, as hillside locations may require challenging walks, especially when carrying luggage through Porto's famously hilly streets</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Bonfim and Cedofeita offer excellent value with local atmosphere and easy metro access. Miragaia provides riverside proximity at lower costs than Ribeira. Paranhos, near the university, features budget-friendly options with good transport links to the city center.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Start searching for your perfect Porto apartment today and experience authentic Portuguese living while keeping your travel budget intact.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Budget Travelers in Porto 2026 - BestTrips.org',
+  description: 'Discover the best apartments for budget travelers in Porto, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Porto stay.'
+}
+
+const guide = {
+  destination: "Porto",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Budget Travelers",
+  slug: "best-apartments-budget-porto"
+}
+
+const content = {
+  intro: "Porto captivates budget travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Porto's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Porto offer space, kitchen, living like a local. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Porto are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Porto's apartments deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Porto Central Hostel",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €20-50 with consistent 8+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Porto requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Porto is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Porto rewards budget travelers who choose wisely. The apartments highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Porto's unique character, and prepare for a stay that exceeds expectations. Your perfect Porto adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

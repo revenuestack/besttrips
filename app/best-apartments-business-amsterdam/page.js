@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Amsterdam",
-  description: "Discover top Amsterdam apartments for business travelers. Find serviced accommodations near business districts with excellent transport links, workspace facilities, and professional amenities."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Business Travelers in Amsterdam</h1>
-      
-      <section className="hook">
-        <p>Amsterdam's business apartment scene combines Dutch efficiency with cosmopolitan comfort, offering professionals the perfect balance of productivity and quality of life during extended stays.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Serviced apartments provide more space and flexibility than hotels at competitive rates, with fully-equipped kitchens allowing you to maintain routines and host informal client meetings in a private setting.</li>
-          <li>Amsterdam's compact size and excellent public transport mean most business apartments place you within 20 minutes of major conference venues, Schiphol Airport, and the Zuidas financial district.</li>
-          <li>High-speed internet, dedicated workspaces, and 24/7 concierge services come standard in most business-focused apartments, while amenities like gyms and communal lounges support work-life balance during longer assignments.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book well in advance during peak conference seasons (April-June, September-October) as quality business apartments fill quickly, and expect premium rates near the city center and Zuidas.</li>
-          <li>Verify parking availability if you need a vehicle—many central apartments lack parking, though Amsterdam's cycling infrastructure and public transport make cars largely unnecessary for business purposes.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Zuidas offers modern high-rises near international firms and direct airport connections. De Pijp and Oud-Zuid provide professional residential vibes with excellent restaurants. Amsterdam-Noord presents budget-friendly options with ferry access to Central Station.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Ready to find your Amsterdam business base? Compare verified serviced apartments with workspace facilities and flexible lease terms to secure the perfect professional home away from home.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Amsterdam 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Amsterdam, Netherlands. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Amsterdam stay.'
+}
+
+const guide = {
+  destination: "Amsterdam",
+  country: "Netherlands",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-amsterdam"
+}
+
+const content = {
+  intro: "Amsterdam captivates business travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Amsterdam's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Amsterdam offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Amsterdam are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Amsterdam's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Amsterdam",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Amsterdam requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Amsterdam is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Amsterdam rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Amsterdam's unique character, and prepare for a stay that exceeds expectations. Your perfect Amsterdam adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

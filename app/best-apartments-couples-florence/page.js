@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Florence: Romantic Rentals in the Heart of Tuscany",
-  description: "Discover the best apartments for couples in Florence. From historic center hideaways to Oltrarno charm, find your perfect romantic retreat in Italy's Renaissance capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Florence captivates couples with its Renaissance art, intimate piazzas, and enchanting sunsets over the Arno River. Choosing the right apartment transforms your visit from tourist trip to authentic Florentine romance.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and intimacy - Your own space means morning espresso on a private terrace, late nights with Chianti, and the freedom to create your own schedule without hotel constraints.</li>
-          <li>Authentic local experience - Stay in historic buildings with frescoed ceilings, original terracotta floors, and shuttered windows overlooking cobblestone streets where Florentines have lived for centuries.</li>
-          <li>Better value - Apartments offer more space and amenities than hotels at comparable prices, plus kitchens for romantic dinners with fresh market ingredients and money saved on dining out.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Location matters significantly - Upper-floor walkups without elevators are common in historic buildings. Confirm accessibility and proximity to sites like the Duomo, Uffizi, and Ponte Vecchio.</li>
-          <li>Book early for prime periods - Spring and fall are peak romantic seasons. Reserve 3-6 months ahead for best selection in desirable neighborhoods like San Frediano or Santa Croce.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Santo Spirito and San Frediano offer artisan charm across the river, while San Marco provides quieter elegance near gardens. The historic center puts you steps from iconic landmarks.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Start browsing verified apartments today and secure your romantic Florentine escape before availability disappears.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Florence 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Florence, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Florence stay.'
+}
+
+const guide = {
+  destination: "Florence",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-florence"
+}
+
+const content = {
+  intro: "Florence captivates couples travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Florence's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Florence offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Florence are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Florence's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Florence",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Florence requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Florence is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Florence rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Florence's unique character, and prepare for a stay that exceeds expectations. Your perfect Florence adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

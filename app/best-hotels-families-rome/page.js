@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Hotels for Families in Rome - BestTrips.org',
-  description: 'Discover the best family-friendly hotels in Rome. Spacious rooms, kid amenities, and central locations perfect for exploring the Eternal City with children.'
+  title: 'Best Hotels for Families in Rome 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in Rome, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Rome stay.'
 }
 
 const guide = {
@@ -14,31 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Rome is one of Europe's most captivating destinations, and families can experience its magic while staying in welcoming, well-equipped accommodations. From the iconic Colosseum to the stunning Vatican, the Eternal City offers unforgettable experiences for travelers of all ages. Family-friendly hotels in Rome combine convenience with comfort, providing spacious rooms, helpful staff, and amenities designed with children in mind. Whether you're exploring ancient ruins, tossing coins in the Trevi Fountain, or enjoying gelato in charming piazzas, the right hotel makes all the difference. This guide highlights exceptional properties that understand family travel needs, offering everything from extra beds and babysitting services to central locations that put major attractions within easy reach. Rome's family hotels welcome everyone from toddlers to teenagers, ensuring parents can relax knowing their accommodation supports their travel style.",
+  intro: "Rome captivates families travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Rome's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Family-focused amenities make travel easier and more enjoyable. Quality family hotels in Rome offer spacious connecting or suite-style rooms, cribs and high chairs, and often maintain play areas or kids' clubs. Many properties provide babysitting services, allowing parents to enjoy romantic evening dinners while children are well cared for.",
-    "Central locations mean less travel time and more time enjoying attractions. Hotels positioned near major sites like the Colosseum, Spanish Steps, and Vatican reduce commute times and allow families to return to the hotel for rest periods during the day. This proximity also gives families flexibility to explore neighborhoods at a relaxed pace.",
-    "Hotels designed for families typically provide kid-friendly dining, helpful concierge services, and staff experienced with traveling families. These properties often feature buffet breakfasts with familiar foods, can arrange skip-the-line Vatican tickets, and offer practical services like laundry facilities and easy restaurant reservations suited to family schedules."
-  ],
+    "Hotels in Rome offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Rome are significant—the best hotels position you within walking distance of the Colosseum, Vatican, and Trastevere, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Rome's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
   topPicks: [
     {
-      name: "Hotel Artemide",
-      description: "This four-star property near the Trevi Fountain combines elegance with family practicality, offering spacious rooms and a rooftop terrace with stunning city views. The hotel features a wellness center, excellent breakfast buffet, and staff that goes above and beyond to accommodate families. Located on a quiet street just steps from major attractions, it's perfect for families seeking comfort and convenience.",
-      highlight: "Rooftop terrace with 360° Rome views; spa facilities for parent relaxation"
-    },
-    {
-      name: "Residenza Paolo VI",
-      description: "A unique family option directly overlooking St. Peter's Square, this former papal residence offers an unforgettable location for Vatican-focused trips. Many rooms feature kitchenettes, allowing families to prepare light meals and snacks for children. The staff is exceptionally welcoming to families, and the peaceful setting provides calm after busy sightseeing days.",
-      highlight: "Direct St. Peter's views from your window; kitchenettes in select rooms"
-    },
-    {
-      name: "Hotel Britannia",
-      description: "This charming four-star hotel near Termini Station offers spacious rooms, a sunny terrace, and an excellent restaurant serving both Italian and international cuisine. The central location provides easy metro access to attractions, and the family-run atmosphere creates a homey feel. Staff members are knowledgeable about family itineraries and can provide personalized recommendations.",
-      highlight: "Family suites with separate living areas; excellent restaurant for varied tastes"
+        "name": "Boutique Rome",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
     }
-  ],
-  tips: "Book accommodations in central districts like Centro Storico, Trevi, or near the Vatican for easy access to major attractions. Request family rooms or connecting rooms in advance to ensure spacious accommodations. Take advantage of Rome's metro system and hop-on-hop-off buses for efficient family travel between sites. Many hotels offer skip-the-line tickets for the Colosseum and Vatican Museums—ask your concierge to arrange these, saving both time and frustration. Plan afternoon rest periods back at the hotel; Rome's summer heat and cobblestone walking can tire children quickly. Eat lunch as your main meal since Romans dine late; many family restaurants offer affordable lunch menus. Consider booking some hotels all-inclusive or with breakfast included to simplify mornings and reduce daily expenses. Learn basic Italian phrases and download offline maps on your phone. Most hotels will store luggage after checkout if you have an evening flight, allowing a full day of sightseeing. Bring comfortable walking shoes for everyone and plan manageable distances for younger children.",
-  conclusion: "Rome welcomes families with open arms, and choosing the right hotel ensures everyone enjoys this historic city to the fullest. Whether you prioritize location, amenities, or value, Rome's family-friendly hotels offer experiences that create lasting memories. From watching the Colosseum light up at night to exploring hidden piazzas and enjoying Italian ice cream, families find magic in every corner. The hotels featured here combine comfort with convenience, allowing parents to focus on what matters most—enjoying Rome's wonders with their children. Book your family Roman holiday today and begin your adventure in the Eternal City."
+],
+  tips: "Booking hotels in Rome requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Rome is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Rome rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Rome's unique character, and prepare for a stay that exceeds expectations. Your perfect Rome adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

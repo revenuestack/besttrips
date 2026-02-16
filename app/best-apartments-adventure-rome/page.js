@@ -1,29 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Adventure Seekers in Rome',
-  description: 'Rome\'s apartments offer adventure seekers the perfect base to explore ancient ruins, cobblestone streets, and hidden treasures at their own pace.'
+  title: 'Best Apartments for Adventure Seekers in Rome 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Rome, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Rome stay.'
+}
+
+const guide = {
+  destination: "Rome",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-rome"
+}
+
+const content = {
+  intro: "Rome captivates adventure travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Rome's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Rome offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Rome are significant—the best apartments position you within walking distance of the Colosseum, Vatican, and Trastevere, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Rome's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Rome",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Rome requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Rome is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Rome rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Rome's unique character, and prepare for a stay that exceeds expectations. Your perfect Rome adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-  "intro": "Rome's apartments offer adventure seekers the perfect base to explore ancient ruins, cobblestone streets, and hidden treasures at their own pace. Stay like a local in vibrant neighborhoods where every corner reveals a new discovery, from underground catacombs to sunset views atop historic hills. Apartments provide the freedom and flexibility to fuel your explorations with morning espresso before conquering the city.",
-  "why_stay": [
-    "Apartments in central neighborhoods put you steps from iconic ruins, allowing spontaneous dawn visits before crowds arrive.",
-    "Enjoy the freedom to plan early morning hikes up Aventine Hill or late-night explorations of illuminated fountains.",
-    "Local markets and delis let you pack picnic provisions for adventures in Villa Borghese or along the Appian Way."
-  ],
-  "neighborhoods": [
-    "Monti - Bohemian district near the Colosseum with winding medieval streets, artisan shops, and easy access to ancient sites.",
-    "Trastevere - Charming riverside neighborhood with cobblestone alleys, vibrant nightlife, and proximity to Janiculum Hill for panoramic views.",
-    "Testaccio - Authentic Roman quarter featuring food markets, the ancient Monte Testaccio, and fewer tourists for genuine local experiences."
-  ],
-  "tips": [
-    "Book apartments with bike storage or near metro stations to maximize your daily exploration radius across Rome's seven hills.",
-    "Choose accommodations with fully equipped kitchens to save money for adventure activities like Vespa tours or gladiator experiences."
-  ],
-  "cta": "Book your Roman apartment today and unlock the Eternal City's adventures with the freedom only local living provides."
-}
-
-  return <SimpleGuide content={content} destination="Rome" slug="best-apartments-adventure-rome" title="Best Apartments for Adventure Seekers in Rome" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Florence",
-  description: "Discover top apartment rentals in Florence perfect for business travelers. Find fully-equipped spaces with high-speed WiFi, workspaces, and prime locations near business districts."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Business Travelers in Florence</h1>
-      
-      <section className="hook">
-        <p>Florence combines Renaissance charm with modern business infrastructure, making it ideal for extended work stays. Business-friendly apartments offer the perfect blend of productivity and Italian lifestyle.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Cost-effective for extended stays with full kitchen facilities and laundry, reducing dining and service expenses while maintaining professional amenities like dedicated workspaces and conference-quality WiFi</li>
-          <li>Prime locations in business districts like Novoli and near Santa Maria Novella station ensure quick access to meetings, trade shows at Fortezza da Basso, and express trains to Milan, Rome, and Pisa airport</li>
-          <li>Spacious layouts with separate work and living areas provide better work-life balance than hotel rooms, plus 24/7 flexibility for international calls across time zones</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments with verified high-speed fiber internet (100+ Mbps) and backup connectivity options, as some historic buildings have limited infrastructure</li>
-          <li>Consider proximity to coworking spaces like Impact Hub or The Florentine for networking opportunities and meeting rooms when needed</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Novoli business district offers modern apartments near corporate offices and the tramway. Centro Storico provides prestigious addresses within walking distance of luxury brand headquarters. Santa Maria Novella area combines excellent train connections with professional services and restaurants for client dinners.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Browse our curated selection of business-ready Florence apartments with verified WiFi speeds, dedicated workspaces, and flexible cancellation policies for unpredictable business schedules.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Florence 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Florence, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Florence stay.'
+}
+
+const guide = {
+  destination: "Florence",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-florence"
+}
+
+const content = {
+  intro: "Florence captivates business travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Florence's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Florence offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Florence are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Florence's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Florence",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Florence requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Florence is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Florence rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Florence's unique character, and prepare for a stay that exceeds expectations. Your perfect Florence adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

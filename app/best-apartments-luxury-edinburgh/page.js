@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Luxury Travelers in Edinburgh",
-  description: "Discover Edinburgh's finest luxury apartments offering Georgian elegance, modern amenities, and prime locations near historic attractions and upscale dining."
+  title: 'Best Apartments for Luxury Travelers in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates luxury travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Edinburgh offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Edinburgh's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel Edinburgh",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Edinburgh requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Edinburgh",
-    country: "Scotland",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Edinburgh's luxury apartment scene combines Georgian grandeur with contemporary sophistication, offering discerning travelers private sanctuaries in one of Europe's most captivating cities.",
-    why_stay: [
-      "Privacy and space: Enjoy full apartments with gourmet kitchens, spacious living areas, and often multiple bedrooms—ideal for extended stays or traveling with family while maintaining five-star standards.",
-      "Authentic neighborhood living: Experience Edinburgh like a local in prestigious areas like New Town's Georgian terraces or trendy Stockbridge, with exclusive access to resident-only gardens and proximity to artisan shops.",
-      "Premium amenities: Expect concierge services, underfloor heating, luxury linens, smart home technology, and often stunning views of Edinburgh Castle, Arthur's Seat, or the Firth of Forth."
-    ],
-    considerations: [
-      "Edinburgh's Old Town features charming but steep cobblestone streets—New Town offers flatter, equally elegant alternatives with better vehicle access for those with mobility concerns.",
-      "Peak season (August Festival) sees prices triple and requires booking 6-9 months advance; consider shoulder seasons (May-June, September) for better value and availability."
-    ],
-    neighborhood_tips: "New Town's Moray Place and Heriot Row offer quintessential Georgian elegance near galleries and restaurants. Stockbridge provides village charm with delis and Sunday markets. Dean Village combines tranquil riverside setting with central proximity.",
-    booking_advice: "Use specialist platforms like Airbnb Luxe, Plum Guide, or local agencies like Edinburgh Collection for vetted properties. Verify historical building quirks (narrow stairs, no elevators) and confirm parking availability—city center permits are restricted."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

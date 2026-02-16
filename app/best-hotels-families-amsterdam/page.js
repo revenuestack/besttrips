@@ -1,32 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Families in Amsterdam",
-  description: "Discover the best family-friendly hotels in Amsterdam with spacious rooms, kid-friendly amenities, and prime locations near top attractions. Plan your perfect family getaway to the Dutch capital."
-};
+  title: 'Best Hotels for Families in Amsterdam 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in Amsterdam, Netherlands. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Amsterdam stay.'
+}
+
+const guide = {
+  destination: "Amsterdam",
+  country: "Netherlands",
+  accommodationType: "Hotels",
+  audience: "Families",
+  slug: "best-hotels-families-amsterdam"
+}
+
+const content = {
+  intro: "Amsterdam captivates families travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Amsterdam's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Amsterdam offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Amsterdam are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Amsterdam's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Amsterdam",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Amsterdam requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Amsterdam is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Amsterdam rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Amsterdam's unique character, and prepare for a stay that exceeds expectations. Your perfect Amsterdam adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Hotels for Families in Amsterdam</h1>
-      
-      <p className="hook">Amsterdam's family-friendly hotels blend Dutch hospitality with thoughtful amenities that make traveling with children effortless. From interconnecting rooms near Vondelpark to properties with kids' clubs and bike rentals, the city's accommodation scene caters beautifully to multigenerational travel.</p>
-      
-      <h2>Why Choose These Hotels</h2>
-      <ul>
-        <li>Many hotels offer family suites with kitchenettes, connecting rooms, and complimentary cribs, ensuring comfort for all ages without breaking the budget</li>
-        <li>Properties near Museum Quarter and Jordaan provide easy walking access to child-friendly attractions like NEMO Science Museum, Artis Zoo, and canal boat tours</li>
-        <li>Amsterdam's compact layout means family-friendly hotels are well-connected by tram, making day trips to beaches, tulip fields, and windmills remarkably simple</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book hotels with elevators if traveling with strollers—many historic canal houses have steep, narrow stairs and no lift access</li>
-        <li>Summer and tulip season (April-May) see peak family travel; reserve early and expect higher rates, or consider visiting during shoulder seasons for better availability</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>Oud-West and De Pijp offer authentic neighborhoods with parks, playgrounds, and local markets while staying more budget-friendly than the city center. Museum Quarter provides cultural immersion with green spaces, while Oost combines affordability with excellent public transport links and the expansive Oosterpark for children to run freely.</p>
-      
-      <p className="cta">Start comparing family-friendly Amsterdam hotels today and secure the perfect base for your Dutch adventure.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

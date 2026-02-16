@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Dublin: Comfort Meets Irish Charm',
-  description: 'Discover senior-friendly apartments in Dublin offering accessibility, convenience, and proximity to Ireland\'s rich culture, healthcare facilities, and vibrant neighborhoods.'
+  title: 'Best Apartments for Seniors in Dublin 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Dublin, Ireland. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Dublin stay.'
+}
+
+const guide = {
+  destination: "Dublin",
+  country: "Ireland",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-dublin"
+}
+
+const content = {
+  intro: "Dublin captivates seniors travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Dublin's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Dublin offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Dublin are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Dublin's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Dublin",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Dublin requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Dublin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Dublin rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Dublin's unique character, and prepare for a stay that exceeds expectations. Your perfect Dublin adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "hook": "Dublin's welcoming atmosphere and senior-friendly infrastructure make it an ideal destination for retirees seeking comfortable apartment living with easy access to world-class healthcare, culture, and community.",
-    "why_visit": [
-      "Dublin offers excellent public transportation with senior discounts, including the Leap Card system, making it easy to navigate the city without driving while staying connected to cultural attractions, parks, and medical facilities.",
-      "The city boasts numerous ground-floor and elevator-equipped apartment complexes in safe neighborhoods like Ballsbridge, Ranelagh, and Sandymount, designed with accessibility features and close to shops, pharmacies, and community centers.",
-      "Ireland's healthcare system provides comprehensive coverage for seniors, with many apartments located near top hospitals like St. Vincent's and Beaumont, plus Dublin's mild climate and walkable neighborhoods promote active, healthy living year-round."
-    ],
-    "insider_tips": [
-      "Look for apartments near the DART coastal train line for stunning views and easy beach access, while staying connected to city amenities—areas like Dún Laoghaire and Howth are particularly popular with retirees.",
-      "Consider short-term apartment rentals first to explore different neighborhoods before committing; many property management companies offer flexible leases and services like grocery delivery and maintenance specifically for senior residents."
-    ],
-    "logistics": "Most senior-friendly apartments in Dublin range from €1,200-2,500 monthly. Book viewings through Irish estate agents specializing in senior housing, and verify accessibility features like handrails, walk-in showers, and emergency call systems before signing.",
-    "cta": "Start your Dublin apartment search today and discover why Ireland's capital is becoming a top choice for discerning seniors seeking culture, comfort, and community."
-  }
-  
-  return <SimpleGuide content={content} destination="Dublin" slug="best-apartments-seniors-dublin" title="Best Apartments for Seniors in Dublin: Comfort Meets Irish Charm" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

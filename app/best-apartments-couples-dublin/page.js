@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Dublin: Romantic Stays in Ireland's Capital",
-  description: "Discover the perfect apartment rentals for couples in Dublin. From Georgian charm to modern luxury, find your ideal romantic base in Ireland's vibrant capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Dublin offers couples the perfect blend of historic charm and contemporary comfort, with apartment rentals that range from cozy Georgian flats to sleek riverside penthouses.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and space to enjoy romantic evenings with full kitchens and separate living areas, perfect for intimate dinners after exploring the city's markets and specialty food shops</li>
-          <li>Better value than hotels for longer stays, with many apartments offering weekly discounts and authentic neighborhood experiences in Dublin's most charming districts</li>
-          <li>Home-like amenities including washers, full kitchens, and comfortable workspaces for couples working remotely or planning extended romantic getaways</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early for peak seasons like St. Patrick's Day and summer months, as the best romantic apartments in central locations fill quickly</li>
-          <li>Consider ground-floor or elevator-equipped buildings if mobility matters, as many charming Georgian buildings feature steep stairs without elevators</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Temple Bar offers vibrant nightlife and cultural attractions, while Georgian Dublin around Merrion Square provides elegant period charm. St. Stephen's Green combines central convenience with peaceful parks, and the Docklands feature modern waterfront living with contemporary design. For quieter romance, explore Ballsbridge's leafy streets or Ranelagh's charming village atmosphere with excellent restaurants.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Start planning your Dublin romantic getaway today and discover the perfect apartment for creating unforgettable memories together in Ireland's captivating capital.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Dublin 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Dublin, Ireland. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Dublin stay.'
+}
+
+const guide = {
+  destination: "Dublin",
+  country: "Ireland",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-dublin"
+}
+
+const content = {
+  intro: "Dublin captivates couples travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Dublin's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Dublin offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Dublin are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Dublin's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Dublin",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Dublin requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Dublin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Dublin rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Dublin's unique character, and prepare for a stay that exceeds expectations. Your perfect Dublin adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

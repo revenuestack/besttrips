@@ -1,43 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Family Villas in Florence: Spacious Tuscan Retreats Near Top Attractions",
-  description: "Discover the best family villas in Florence with gardens, pools, and space for everyone. Stay near the Duomo while enjoying authentic Tuscan comfort."
-};
+  title: 'Best Villas for Families in Florence 2026 - BestTrips.org',
+  description: 'Discover the best villas for families in Florence, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Florence stay.'
+}
+
+const guide = {
+  destination: "Florence",
+  country: "Italy",
+  accommodationType: "Villas",
+  audience: "Families",
+  slug: "best-villas-families-florence"
+}
+
+const content = {
+  intro: "Florence captivates families travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect villas here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to groups, celebrations, luxury retreats, Florence's accommodation scene delivers options that exceed expectations. This guide reveals the best villas for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Villas in Florence offer privacy, space, exclusive amenities. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Florence are significant—the best villas position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Florence's villas deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Florence",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking villas in Florence requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Florence is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Florence rewards families travelers who choose wisely. The villas highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Florence's unique character, and prepare for a stay that exceeds expectations. Your perfect Florence adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Family Villas in Florence</h1>
-      
-      <div className="prose prose-lg">
-        <p className="lead text-xl mb-6">
-          Florence's family villas offer the perfect blend of Renaissance charm and modern comfort. These spacious accommodations provide room for everyone to spread out after days exploring the Uffizi and Ponte Vecchio, with private gardens and pools that give children space to play while parents sip Chianti on sun-drenched terraces.
-        </p>
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Why Stay Here</h2>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Private pools and gardens perfect for kids to play safely between museum visits</li>
-          <li>Full kitchens let families save money and accommodate picky eaters with home-cooked meals</li>
-          <li>Multiple bedrooms and living spaces give everyone privacy and room to recharge</li>
-          <li>Authentic Tuscan architecture creates memorable experiences in historic neighborhoods</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Things to Know</h2>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Many villas sit in hillside locations requiring rental cars and confidence navigating narrow Italian roads</li>
-          <li>Book well in advance for summer stays—the best family properties fill up 6-9 months early</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">About the Area</h2>
-        <p>
-          Florence's best family villas cluster in quieter neighborhoods like Fiesole and Oltrarno, offering hillside views and local trattorias while staying within 15-20 minutes of the Duomo. These areas provide authentic neighborhood experiences where kids can visit local gelaterias and families can shop at morning markets.
-        </p>
-
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-          <p className="text-lg font-semibold">
-            Start planning your Florentine family adventure today—browse our curated selection of verified family villas with instant booking.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

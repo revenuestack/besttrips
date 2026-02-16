@@ -1,29 +1,46 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Groups in Paris: Space, Style & Perfect Location",
-  description: "Discover the best group apartments in Paris. From Marais charm to Montmartre views, find spacious rentals with kitchens, multiple bedrooms, and authentic Parisian living for your crew."
+  title: 'Best Apartments for Groups in Paris 2026 - BestTrips.org',
+  description: 'Discover the best apartments for groups in Paris, France. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Paris stay.'
+}
+
+const guide = {
+  destination: "Paris",
+  country: "France",
+  accommodationType: "Apartments",
+  audience: "Groups",
+  slug: "best-apartments-groups-paris"
+}
+
+const content = {
+  intro: "Paris captivates groups travelers with its unique blend of art, cuisine, and timeless elegance. Finding the perfect apartments here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from Le Marais, Saint-Germain-des-Prés, Montmartre—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Paris's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Paris offer space, kitchen, living like a local. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in Paris are significant—the best apartments position you within walking distance of the Eiffel Tower, Louvre, and Montmartre, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: Paris's apartments deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hôtel Particulier Montmartre",
+        "description": "Located in Montmartre, this property offers Secret garden oasis in artistic quarter. Prices range €350-600 with consistent 9.1+ ratings from guests.",
+        "highlight": "Secret garden oasis in artistic quarter"
+    },
+    {
+        "name": "Pavillon de la Reine",
+        "description": "Located in Le Marais, this property offers Hidden courtyard on Place des Vosges. Prices range €300-550 with consistent 9+ ratings from guests.",
+        "highlight": "Hidden courtyard on Place des Vosges"
+    },
+    {
+        "name": "Hôtel Providence",
+        "description": "Located in République, this property offers Rock-and-roll chic with cocktail bar. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Rock-and-roll chic with cocktail bar"
+    }
+],
+  tips: "Booking apartments in Paris requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include Le Marais and Saint-Germain-des-Prés. Local insight: Skip the tourist cafés on Champs-Élysées - locals head to Canal Saint-Martin Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in Paris is excellent via Metro, so location flexibility depends on your priorities.",
+  conclusion: "Paris rewards groups travelers who choose wisely. The apartments highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace Paris's unique character, and prepare for a stay that exceeds expectations. Your perfect Paris adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Paris",
-    country: "France",
-    type: "Apartments",
-    audience: "Groups",
-    hook: "Paris shines brightest when shared with friends, and group apartments offer the perfect blend of space, privacy, and that coveted local living experience you can't get from hotel rooms.",
-    why_stay: [
-      "Cost-effective luxury: Split a stunning Haussmann apartment with original moldings and a full kitchen for less per person than cramped hotel rooms, with space to actually spread out and relax together.",
-      "Authentic neighborhood immersion: Shop at local fromageries, sip coffee at corner cafés, and live like Parisians in residential areas beyond the tourist bubble.",
-      "Group bonding headquarters: Cook market finds together, host wine nights on your private balcony, and gather around a real dining table to plan daily adventures without disturbing neighbors."
-    ],
-    considerations: [
-      "Elevator anxiety: Many charming older buildings lack lifts—confirm before booking if climbing 5+ flights with luggage sounds less romantic than exhausting.",
-      "Minimum stay requirements: Prime group apartments often require 4-7 night minimums, especially during peak seasons, so plan accordingly and book early for best selection."
-    ],
-    neighborhood_tips: "Le Marais offers walkability to major sites and vibrant nightlife. Montmartre provides village charm with breathtaking views. Saint-Germain delivers Left Bank sophistication. Latin Quarter suits budget-conscious groups near transit hubs.",
-    booking_advice: "Book 3-4 months ahead for summer or holidays. Verify exact bed configurations (not just sleeps 6) and read reviews mentioning noise levels. Confirm check-in procedures for late arrivals and ensure the listing has recent positive group reviews."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

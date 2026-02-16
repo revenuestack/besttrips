@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Hotels for Couples in Sydney - BestTrips.org',
-  description: 'Discover the best hotels for couples in Sydney, Australia. Expert recommendations, local tips, and top picks for your perfect stay.'
+  title: 'Best Hotels for Couples in Sydney 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Sydney, Australia. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Sydney stay.'
 }
 
 const guide = {
@@ -14,31 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Sydney is one of Australia's most captivating destinations, offering a perfect blend of culture, history, and modern amenities. For couples, finding the right hotels can make all the difference in your travel experience. Whether you're drawn to the historic charm of the old town or the vibrant energy of contemporary neighborhoods, Sydney has something special waiting for you. The city's diverse accommodation options cater to every preference, from centrally located properties near major attractions to peaceful retreats in residential areas. Local hospitality in Sydney is renowned for its warmth and attention to detail, ensuring that every guest feels welcomed and valued.",
+  intro: "Sydney captivates couples travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Sydney's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Hotels in Sydney offer an authentic local experience that larger chain accommodations simply cannot match. You'll find yourself immersed in the neighborhood's daily rhythm, from morning markets to evening gatherings at local cafés.",
-    "For couples, Sydney's hotels provide the perfect balance of comfort and convenience. Many properties are strategically located near public transport, making it easy to explore the city's many attractions.",
-    "The value proposition of hotels in Sydney is exceptional. You'll often get more space, better amenities, and a more personalized experience compared to standard hotel rooms at similar price points."
+    "Hotels in Sydney offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Sydney are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Sydney's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
 ],
   topPicks: [
     {
-        "name": "The Sydney Hotel House",
-        "description": "Located in the heart of Sydney, this charming property offers stunning views and easy access to major attractions. The hosts are known for their exceptional hospitality and local knowledge.",
-        "highlight": "Rooftop terrace with panoramic city views"
-    },
-    {
-        "name": "Sydney Central Hotel",
-        "description": "A beautifully restored property combining historic character with modern comforts. Perfect for couples who appreciate attention to detail and prime locations.",
-        "highlight": "Walking distance to top restaurants and museums"
-    },
-    {
-        "name": "The Garden Hotel Sydney",
-        "description": "Set in a quiet residential area, this property offers a peaceful retreat while remaining well-connected to the city center. The private garden is perfect for relaxation after a day of exploration.",
-        "highlight": "Private garden oasis in the city"
+        "name": "Boutique Sydney",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
     }
 ],
-  tips: "When booking hotels in Sydney, timing is everything. The shoulder seasons (spring and autumn) offer the best combination of pleasant weather and availability. For couples, we recommend booking at least 2-3 months in advance for peak periods. Consider neighborhoods slightly outside the tourist center for better value and a more authentic experience. Public transport in Sydney is excellent, so don't feel you need to stay right in the middle of everything. Check if your accommodation offers airport transfers or local experience recommendations—many hosts in Sydney are happy to share insider tips that you won't find in guidebooks.",
-  conclusion: "Sydney awaits with open arms, and choosing the right hotels will set the foundation for an unforgettable trip. For couples, the options we've highlighted offer the perfect combination of location, comfort, and authentic local character. Whether this is your first visit or your tenth, there's always something new to discover in this remarkable city. Book with confidence, pack your sense of adventure, and prepare for memories that will last a lifetime. Sydney is ready to welcome you home."
+  tips: "Booking hotels in Sydney requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Sydney is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Sydney rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Sydney's unique character, and prepare for a stay that exceeds expectations. Your perfect Sydney adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

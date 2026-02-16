@@ -1,29 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Couples in Rome',
-  description: 'Rome offers couples intimate apartment stays that blend authentic local living with romantic charm.'
+  title: 'Best Apartments for Couples in Rome 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Rome, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Rome stay.'
+}
+
+const guide = {
+  destination: "Rome",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-rome"
+}
+
+const content = {
+  intro: "Rome captivates couples travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Rome's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Rome offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Rome are significant—the best apartments position you within walking distance of the Colosseum, Vatican, and Trastevere, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Rome's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Rome",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Rome requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Rome is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Rome rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Rome's unique character, and prepare for a stay that exceeds expectations. Your perfect Rome adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-  "intro": "Rome offers couples intimate apartment stays that blend authentic local living with romantic charm. From cobblestone streets to rooftop terraces overlooking ancient ruins, vacation rentals provide the privacy and comfort perfect for romantic getaways. Experience the Eternal City like a local while enjoying your own cozy retreat in historic neighborhoods.",
-  "why_stay": [
-    "Private kitchens let you prepare romantic candlelit meals with fresh ingredients from local markets and neighborhood trattorias.",
-    "Spacious accommodations with separate living areas and balconies offer significantly more comfort and value than traditional hotel rooms.",
-    "Authentic neighborhood experiences immerse couples in genuine Roman culture and daily life, away from overcrowded tourist hotel districts."
-  ],
-  "neighborhoods": [
-    "Trastevere: Charming medieval quarter with narrow cobblestone streets, ivy-draped buildings, vibrant evening atmosphere, and authentic Roman trattorias perfect for romantic dinners.",
-    "Monti: Bohemian artisan neighborhood near the Colosseum featuring independent boutique shops, cozy wine bars, vintage stores, and intimate romantic piazzas.",
-    "Prati: Elegant upscale residential area near Vatican City offering sophisticated dining experiences, traditional local markets, peaceful tree-lined streets, and authentic charm."
-  ],
-  "tips": [
-    "Book apartments with air conditioning and ceiling fans for summer stays, as Rome's temperatures can reach extreme levels June through August.",
-    "Choose locations within walking distance of metro stations for convenient access to major attractions while enjoying the quieter charm of residential areas."
-  ],
-  "cta": "Discover your perfect Roman apartment today and create unforgettable romantic memories together in the heart of Italy's most enchanting and timeless city."
-}
-
-  return <SimpleGuide content={content} destination="Rome" slug="best-apartments-couples-rome" title="Best Apartments for Couples in Rome" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

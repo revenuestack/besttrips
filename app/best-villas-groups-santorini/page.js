@@ -1,61 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Villas for Groups in Santorini: Luxury Stays with Caldera Views",
-  description: "Discover the best group villas in Santorini with private pools, stunning caldera views, and spacious accommodations perfect for unforgettable Greek getaways.",
-};
+  title: 'Best Villas for Groups in Santorini 2026 - BestTrips.org',
+  description: 'Discover the best villas for groups in Santorini, Greece. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Santorini stay.'
+}
+
+const guide = {
+  destination: "Santorini",
+  country: "Greece",
+  accommodationType: "Villas",
+  audience: "Groups",
+  slug: "best-villas-groups-santorini"
+}
+
+const content = {
+  intro: "Santorini captivates groups travelers with its unique blend of mythology, beauty, and Mediterranean soul. Finding the perfect villas here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to groups, celebrations, luxury retreats, Santorini's accommodation scene delivers options that exceed expectations. This guide reveals the best villas for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Villas in Santorini offer privacy, space, exclusive amenities. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in Santorini are significant—the best villas position you within walking distance of major attractions and local favorites, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: Santorini's villas deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Santorini",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking villas in Santorini requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in Santorini is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Santorini rewards groups travelers who choose wisely. The villas highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace Santorini's unique character, and prepare for a stay that exceeds expectations. Your perfect Santorini adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  const content = {
-    hook: "Santorini's dramatic cliffside setting and legendary sunsets create the perfect backdrop for group getaways. The island's luxury villas offer expansive terraces, private infinity pools, and panoramic caldera views that transform any celebration into an extraordinary experience. Whether you're planning a friends' reunion, family vacation, or special celebration, Santorini's group villas combine traditional Cycladic architecture with modern amenities to accommodate your entire party in style.",
-    highlights: [
-      "Private infinity pools with unobstructed caldera and Aegean Sea views",
-      "Spacious layouts with multiple bedrooms, living areas, and outdoor entertaining spaces",
-      "Prime locations in Oia, Imerovigli, and Fira for easy access to restaurants and attractions",
-      "Concierge services, private chefs, and customized experiences for your group"
-    ],
-    considerations: [
-      "Book 6-12 months in advance for peak season (June-September) as premium villas fill quickly",
-      "Many properties require steep stair access due to cliffside locations; confirm accessibility for all guests"
-    ],
-    location_context: "Santorini's volcanic caldera creates one of the world's most photographed landscapes. The western villages of Oia, Fira, and Imerovigli perch dramatically on cliffs 300 meters above the sea, offering iconic sunset views. Most group villas occupy these prime positions, providing privacy while keeping you minutes from cosmopolitan dining, boutique shopping, and the island's famous blue-domed churches.",
-    cta: "Browse our curated selection of Santorini group villas and start planning your dream Greek island escape today."
-  };
-
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

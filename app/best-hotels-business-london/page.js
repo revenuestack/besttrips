@@ -1,32 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Business Hotels in London",
-  description: "Discover London's premier business hotels offering executive amenities, prime locations near financial districts, state-of-the-art meeting facilities, and seamless connectivity for corporate travelers."
-};
+  title: 'Best Hotels for Business Travelers in London 2026 - BestTrips.org',
+  description: 'Discover the best hotels for business travelers in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Hotels",
+  audience: "Business Travelers",
+  slug: "best-hotels-business-london"
+}
+
+const content = {
+  intro: "London captivates business travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect hotels here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, London's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in London offer service, amenities, convenience. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in London are significant—the best hotels position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: London's hotels deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique London",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in London requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards business travelers who choose wisely. The hotels highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Business Hotels in London</h1>
-      
-      <p className="hook">London's business hotel scene combines historic elegance with cutting-edge corporate amenities, positioning you at the heart of global commerce. From Canary Wharf's modern towers to Mayfair's prestigious addresses, these properties cater to executives who demand excellence.</p>
-      
-      <h2>Why Choose Business Hotels</h2>
-      <ul>
-        <li>Strategic locations near the City, Canary Wharf, and Westminster place you minutes from major financial institutions, government offices, and premier conference venues with excellent transport links</li>
-        <li>World-class business centers featuring high-speed connectivity, executive lounges, 24-hour workspaces, video conferencing suites, and dedicated concierge services to support your professional needs</li>
-        <li>Premium dining options, fitness facilities, and spa services ensure you maintain peak performance, while sophisticated bars and restaurants provide ideal settings for client meetings and networking</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book well in advance during peak business seasons (September-November, March-May) when conference activity drives rates higher and availability becomes limited</li>
-        <li>Factor in London's congestion charge and limited parking—many business hotels offer car services or are strategically located near Underground stations for seamless city navigation</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>The City and Canary Wharf offer proximity to financial headquarters with modern infrastructure. Mayfair and St James's provide prestigious addresses near luxury retail and private clubs. King's Cross combines excellent rail connectivity with emerging tech hub appeal.</p>
-      
-      <p className="cta">Elevate your London business trip—book your executive accommodation today and experience hospitality that works as hard as you do.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

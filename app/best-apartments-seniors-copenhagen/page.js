@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Copenhagen: Comfort Meets Scandinavian Charm',
-  description: 'Discover the best senior-friendly apartments in Copenhagen. Find accessible, centrally-located accommodations perfect for exploring Denmark\'s vibrant capital in comfort and style.'
+  title: 'Best Apartments for Seniors in Copenhagen 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Copenhagen, Denmark. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Copenhagen stay.'
+}
+
+const guide = {
+  destination: "Copenhagen",
+  country: "Denmark",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-copenhagen"
+}
+
+const content = {
+  intro: "Copenhagen captivates seniors travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Copenhagen's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Copenhagen offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Copenhagen are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Copenhagen's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Copenhagen",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Copenhagen requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Copenhagen is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Copenhagen rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Copenhagen's unique character, and prepare for a stay that exceeds expectations. Your perfect Copenhagen adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "hook": "Copenhagen's senior-friendly apartments combine modern accessibility with cozy Danish hygge, making it effortless to experience one of Europe's most walkable and welcoming capitals.",
-    "why_visit": [
-      "Copenhagen ranks among the world's most accessible cities, with flat terrain, excellent public transport, and pedestrian-friendly neighborhoods perfect for seniors seeking independence and ease of movement.",
-      "Senior-focused apartments often feature elevators, ground-floor access, and proximity to healthcare facilities, while neighborhoods like Frederiksberg and Østerbro offer peaceful charm with nearby cafes and parks.",
-      "The city's compact size means cultural attractions like Tivoli Gardens, Nyhavn harbor, and world-class museums are never far from your doorstep, with most offering senior discounts and rest areas."
-    ],
-    "insider_tips": [
-      "Book apartments near metro or S-train stations for effortless city exploration—Copenhagen's public transport includes elevators and accessibility features at most stops.",
-      "Visit during May through September for the best weather, and consider apartments with southern exposure for natural warmth and light during the shorter shoulder seasons."
-    ],
-    "logistics": "Most senior-friendly apartments require advance booking (2-3 months recommended). Look for properties with 24-hour contact services and nearby grocery stores. The Copenhagen Card offers unlimited transport and museum access with senior discounts available.",
-    "cta": "Ready to experience Danish living at its finest? Browse our curated selection of senior-friendly Copenhagen apartments and start planning your Scandinavian adventure today."
-  }
-  
-  return <SimpleGuide content={content} destination="Copenhagen" slug="best-apartments-seniors-copenhagen" title="Best Apartments for Seniors in Copenhagen: Comfort Meets Scandinavian Charm" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

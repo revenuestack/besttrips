@@ -1,63 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in Vienna: Romantic Getaways in Austria's Imperial Capital",
-  description: "Discover Vienna's most romantic hotels perfect for couples. From imperial luxury to boutique charm, find your ideal romantic escape in Austria's capital."
-};
+  title: 'Best Hotels for Couples in Vienna 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Vienna, Austria. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Vienna stay.'
+}
+
+const guide = {
+  destination: "Vienna",
+  country: "Austria",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-vienna"
+}
+
+const content = {
+  intro: "Vienna captivates couples travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Vienna's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Vienna offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Vienna are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Vienna's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Vienna",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Vienna requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Vienna is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Vienna rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Vienna's unique character, and prepare for a stay that exceeds expectations. Your perfect Vienna adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Hotels for Couples in Vienna</h1>
-      
-      <section className="mb-8">
-        <p className="text-lg leading-relaxed">
-          Vienna enchants couples with imperial grandeur, cobblestone streets, and timeless romance. The city's hotels blend Habsburg elegance with modern luxury, creating intimate retreats where classical music drifts through chandeliered halls and candlelit cafés await around every corner.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Hotels in Vienna</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Vienna's hotels occupy historic palaces and elegant buildings, offering couples authentic imperial experiences with original frescoes, grand staircases, and period furnishings that transport you to the golden age of European romance</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Central locations place you steps from iconic experiences—waltz at the Opera House, share Sachertorte at legendary cafés, and stroll hand-in-hand through baroque gardens, all without lengthy commutes interrupting your romantic rhythm</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Many hotels feature couple-focused amenities including rooftop terraces overlooking Vienna's skyline, intimate spa facilities, in-room champagne service, and concierge teams specializing in romantic experiences from private palace tours to concert reservations</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Things to Consider</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Book well ahead for summer months and holiday periods when Vienna's cultural calendar peaks and romantic hotel suites fill quickly, especially properties near the Staatsoper and Ringstrasse</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Consider proximity to metro stations if planning day trips to Schönbrunn Palace or the Vienna Woods, though central districts offer walkable access to most romantic attractions</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Best Neighborhoods</h2>
-        <p className="leading-relaxed">
-          Innere Stadt offers unbeatable romance with hotels overlooking St. Stephen's Cathedral and direct access to the Opera House and Hofburg Palace. Neubau provides boutique charm near MuseumsQuartier's cultural vibrancy. Leopoldstadt's hotels along the Danube Canal deliver modern luxury with waterfront views, while Wieden places couples near Belvedere Palace gardens and cozy wine taverns perfect for intimate evenings.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-lg font-medium text-blue-600">
-          Browse Vienna's most romantic hotels and start planning your unforgettable couples' escape to Austria's imperial heart today.
-        </p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

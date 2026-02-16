@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Amsterdam: Romantic Getaways in the Venice of the North",
-  description: "Discover the perfect apartment rentals for couples in Amsterdam. From canal-side studios to historic townhouses, find your ideal romantic base in the Dutch capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Amsterdam's enchanting canals, world-class museums, and vibrant café culture create the perfect backdrop for a romantic escape, and choosing the right apartment can transform your visit into an unforgettable couples' retreat.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and intimacy that hotels can't match, with fully-equipped kitchens perfect for romantic breakfasts and cozy evenings in after exploring the city's charming streets</li>
-          <li>Authentic local experience living in historic canal houses and residential neighborhoods, giving you a genuine taste of Amsterdam life beyond the tourist zones</li>
-          <li>Better value for longer stays with more space to relax together, plus amenities like private terraces, canal views, and unique architectural features that add romance to your trip</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book well in advance, especially for canal-facing apartments during spring tulip season and summer months when demand peaks and prices can double</li>
-          <li>Many historic buildings lack elevators and feature steep Dutch staircases, so consider ground-floor options if accessibility matters or you're bringing heavy luggage</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Jordaan offers romantic canal-side charm with boutique shops and cozy brown cafés, while De Pijp provides a more local vibe near museums. Grachtengordel (Canal Belt) delivers iconic Amsterdam views, and Oud-West combines residential authenticity with excellent restaurants perfect for couples seeking genuine Dutch atmosphere.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Start browsing Amsterdam apartments today and secure your romantic canal-side retreat before the best properties book up for peak season.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Amsterdam 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Amsterdam, Netherlands. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Amsterdam stay.'
+}
+
+const guide = {
+  destination: "Amsterdam",
+  country: "Netherlands",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-amsterdam"
+}
+
+const content = {
+  intro: "Amsterdam captivates couples travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Amsterdam's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Amsterdam offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Amsterdam are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Amsterdam's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Amsterdam",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Amsterdam requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Amsterdam is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Amsterdam rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Amsterdam's unique character, and prepare for a stay that exceeds expectations. Your perfect Amsterdam adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

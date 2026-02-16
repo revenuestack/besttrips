@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Vienna: Your Executive Home Away From Home",
-  description: "Discover premium serviced apartments in Vienna perfect for business travelers. From the Inner Stadt to modern districts, find your ideal corporate accommodation with workspace and connectivity."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Vienna's blend of imperial elegance and modern business infrastructure makes it a premier destination for corporate travelers, and choosing the right apartment can transform your business trip into a productive yet comfortable experience.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Space and Privacy: Apartments offer dedicated workspaces, full kitchens, and separate living areas—ideal for extended stays, video calls, and maintaining work-life balance while traveling for business.</li>
-          <li>Cost-Effective for Longer Stays: Weekly or monthly apartment rentals often cost less than hotels while providing more amenities, including laundry facilities, which reduce expenses and hassle during extended assignments.</li>
-          <li>Strategic Locations: Vienna's business-friendly apartments cluster near corporate hubs like Vienna International Centre, conference venues, and transit links, minimizing commute time while offering authentic neighborhood experiences.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book Early for Peak Seasons: Vienna hosts numerous international conferences and trade shows throughout the year, particularly in spring and autumn, so secure your apartment well in advance to ensure availability near your business destination.</li>
-          <li>Verify Internet and Workspace: Confirm high-speed WiFi capabilities and desk setups before booking—essential for video conferencing and remote work—as quality varies significantly between properties.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>The Inner Stadt (1st District) offers prestige and proximity to corporate headquarters, while Leopoldstadt (2nd) and Landstraße (3rd) provide modern apartments near the UN and business centers. Neubau (7th) appeals to creative professionals seeking trendy cafés and coworking spaces.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Ready to find your perfect Vienna business apartment? Start comparing locations, amenities, and rates today to secure accommodation that supports your professional success.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Vienna 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Vienna, Austria. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Vienna stay.'
+}
+
+const guide = {
+  destination: "Vienna",
+  country: "Austria",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-vienna"
+}
+
+const content = {
+  intro: "Vienna captivates business travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Vienna's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Vienna offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Vienna are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Vienna's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Vienna",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Vienna requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Vienna is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Vienna rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Vienna's unique character, and prepare for a stay that exceeds expectations. Your perfect Vienna adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

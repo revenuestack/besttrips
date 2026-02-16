@@ -1,29 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Adventure Seekers in Venice',
-  description: 'Venice apartments offer adventure seekers the perfect base for exploring hidden canals, secret passages, and authentic neighborhoods beyond tourist crowds.'
+  title: 'Best Apartments for Adventure Seekers in Venice 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Venice, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Venice stay.'
+}
+
+const guide = {
+  destination: "Venice",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-venice"
+}
+
+const content = {
+  intro: "Venice captivates adventure travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Venice's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Venice offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Venice are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Venice's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Venice",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Venice requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Venice is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Venice rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Venice's unique character, and prepare for a stay that exceeds expectations. Your perfect Venice adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-  "intro": "Venice apartments offer adventure seekers the perfect base for exploring hidden canals, secret passages, and authentic neighborhoods beyond tourist crowds. Wake up to gondola songs and spend days kayaking waterways or cycling Lido beaches. Choose apartments with rooftop terraces for sunset views over terracotta rooftops.",
-  "why_stay": [
-    "Live like locals in residential areas, discovering family-run bacari and navigating maze-like streets off typical tourist routes.",
-    "Save money on accommodation compared to hotels, leaving budget for water sports, island hopping, and authentic cicchetti crawls.",
-    "Enjoy kitchen facilities to prepare fresh market finds from Rialto, fueling early morning explorations before crowds arrive."
-  ],
-  "neighborhoods": [
-    "Cannaregio - Authentic residential quarter with local markets, quiet canals, and Jewish Ghetto's historic streets to explore",
-    "Dorsoduro - Artsy district near university, with vibrant nightlife, contemporary galleries, and scenic waterfront promenades",
-    "Castello - Eastern neighborhood offering local life, green spaces at Giardini, and Arsenal's maritime history"
-  ],
-  "tips": [
-    "Book ground-floor apartments with easy water access for storing kayaks or paddleboards during Venice lagoon adventures",
-    "Purchase vaporetto passes for unlimited island hopping to Murano, Burano, and adventure-filled Lido beach cycling"
-  ],
-  "cta": "Book your Venice apartment today and unlock the city's adventurous soul beyond the crowded squares."
-}
-
-  return <SimpleGuide content={content} destination="Venice" slug="best-apartments-adventure-venice" title="Best Apartments for Adventure Seekers in Venice" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

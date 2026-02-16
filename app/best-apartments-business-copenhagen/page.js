@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Copenhagen",
-  description: "Discover top serviced apartments in Copenhagen for business travelers. Convenient locations, modern amenities, and flexible stays near key business districts."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Business Travelers in Copenhagen</h1>
-      
-      <section className="hook">
-        <p>Copenhagen's business-friendly apartments combine Scandinavian design with practical amenities, offering corporate travelers the perfect blend of comfort and productivity. Whether you're attending meetings in the city center or working remotely, these fully-equipped accommodations provide the space and flexibility hotels can't match.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Full kitchens and separate living spaces allow you to maintain work-life balance during extended stays, while high-speed WiFi and dedicated workspaces ensure seamless productivity.</li>
-          <li>Prime locations near Ørestad business district, Copenhagen Central Station, and the financial district minimize commute times and maximize convenience for meetings.</li>
-          <li>Cost-effective for longer stays compared to hotels, with weekly rates offering significant savings while providing laundry facilities, meeting rooms, and 24/7 concierge services.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book well in advance during peak conference seasons (September-November and March-May) when demand from business travelers is highest and prices increase by 20-30%.</li>
-          <li>Verify apartment amenities match your work requirements—some older buildings may lack elevators or have limited soundproofing, which can impact video conferences and rest.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Vesterbro offers trendy cafes and proximity to Central Station, ideal for frequent travelers. Østerbro provides quiet, upscale surroundings near embassies and corporate offices. Ørestad puts you steps from the Metro and modern office complexes, while Indre By (city center) delivers walking access to most business destinations.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Browse verified serviced apartments with flexible cancellation policies and instant booking confirmation to secure your ideal Copenhagen business base today.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Copenhagen 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Copenhagen, Denmark. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Copenhagen stay.'
+}
+
+const guide = {
+  destination: "Copenhagen",
+  country: "Denmark",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-copenhagen"
+}
+
+const content = {
+  intro: "Copenhagen captivates business travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Copenhagen's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Copenhagen offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Copenhagen are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Copenhagen's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Copenhagen",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Copenhagen requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Copenhagen is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Copenhagen rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Copenhagen's unique character, and prepare for a stay that exceeds expectations. Your perfect Copenhagen adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

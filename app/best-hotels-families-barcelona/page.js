@@ -1,32 +1,46 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Families in Barcelona",
-  description: "Discover the best family-friendly hotels in Barcelona, from beachfront resorts to city-center accommodations with spacious rooms, pools, and kid-friendly amenities."
-};
+  title: 'Best Hotels for Families in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Hotels",
+  audience: "Families",
+  slug: "best-hotels-families-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates families travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Barcelona offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best hotels position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Barcelona's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hotel Brummell",
+        "description": "Located in Poble Sec, this property offers Rooftop pool, local neighborhood vibe. Prices range €150-280 with consistent 8.9+ ratings from guests.",
+        "highlight": "Rooftop pool, local neighborhood vibe"
+    },
+    {
+        "name": "Casa Camper Barcelona",
+        "description": "Located in El Raval, this property offers Free 24h snack bar, minimalist design. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Free 24h snack bar, minimalist design"
+    },
+    {
+        "name": "Hotel Neri",
+        "description": "Located in Gothic Quarter, this property offers Medieval palace with rooftop terrace. Prices range €250-450 with consistent 9+ ratings from guests.",
+        "highlight": "Medieval palace with rooftop terrace"
+    }
+],
+  tips: "Booking hotels in Barcelona requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Hotels for Families in Barcelona</h1>
-      
-      <p className="hook">Barcelona's family-friendly hotels combine Spanish hospitality with amenities designed for travelers of all ages. From beachside resorts with kids' clubs to central hotels near Gaudí's masterpieces, the city offers accommodations that keep everyone happy.</p>
-      
-      <h2>Why Choose These Hotels</h2>
-      <ul>
-        <li>Many hotels feature rooftop pools, family suites, and connecting rooms that provide space for everyone to relax after exploring the city's beaches and attractions</li>
-        <li>Prime locations near Park Güell, La Sagrada Familia, and Barcelona's beaches mean less transit time and more family fun</li>
-        <li>Kid-friendly dining options, babysitting services, and activity programs allow parents to enjoy Barcelona's renowned cuisine and nightlife</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Summer months (June-August) see peak prices and crowds; consider visiting in spring or early fall for better rates and pleasant weather</li>
-        <li>Hotels in Eixample and Gràcia offer quieter streets and more local atmosphere than bustling Gothic Quarter locations</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>Barceloneta puts you steps from the beach with resort-style hotels perfect for sand-loving families. Eixample offers elegant boulevards, larger accommodations, and easy metro access to major sights. Gràcia provides a village feel with parks, plazas, and authentic tapas spots where kids are always welcome.</p>
-      
-      <p className="cta">Start planning your Barcelona family adventure today and discover hotels that make traveling with kids effortless and enjoyable.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

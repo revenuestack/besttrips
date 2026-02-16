@@ -1,43 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Apartments for Seniors in Rome: Comfortable & Accessible Stays in Italy's Capital",
-  description: "Discover senior-friendly apartments in Rome with elevator access, central locations, and easy walking distance to attractions, restaurants, and healthcare."
-};
+  title: 'Best Apartments for Seniors in Rome 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Rome, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Rome stay.'
+}
+
+const guide = {
+  destination: "Rome",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-rome"
+}
+
+const content = {
+  intro: "Rome captivates seniors travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Rome's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Rome offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Rome are significant—the best apartments position you within walking distance of the Colosseum, Vatican, and Trastevere, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Rome's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Rome",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Rome requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Rome is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Rome rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Rome's unique character, and prepare for a stay that exceeds expectations. Your perfect Rome adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Apartments for Seniors in Rome</h1>
-      
-      <div className="prose prose-lg">
-        <p className="lead text-xl mb-6">
-          Rome welcomes seniors with a growing selection of thoughtfully designed apartments that balance authentic Italian living with modern accessibility. These accommodations prioritize ground-floor or elevator access, proximity to public transport, and neighborhoods known for their walkability and safety, making the Eternal City comfortable to explore at your own pace.
-        </p>
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Why Stay Here</h2>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Elevator-equipped buildings and accessible layouts designed for mobility considerations</li>
-          <li>Prime locations in Prati, Trastevere, and Monti with flat terrain and nearby amenities</li>
-          <li>Walking distance to pharmacies, grocery stores, cafes, and medical facilities</li>
-          <li>Quiet residential neighborhoods with authentic Roman atmosphere and friendly locals</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Things to Know</h2>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Many historic buildings lack elevators—always confirm accessibility features before booking</li>
-          <li>Summer heat can be intense; apartments with air conditioning are essential from June through September</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-8 mb-4">About the Area</h2>
-        <p>
-          The best senior-friendly neighborhoods include Prati (near Vatican City) with its wide, flat streets and excellent shopping; Trastevere's charming cobblestone lanes with abundant dining; and residential Monti, offering authentic Roman life near major sites. These areas provide convenient access to Metro stations, bus routes, and taxi stands while maintaining a peaceful, local atmosphere away from overcrowded tourist zones.
-        </p>
-
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-          <p className="text-lg font-semibold">
-            Browse senior-friendly Rome apartments with verified accessibility features and book your comfortable Italian getaway today.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

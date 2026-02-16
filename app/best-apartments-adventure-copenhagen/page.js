@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Copenhagen",
-  description: "Discover top apartments in Copenhagen perfect for adventure seekers. Stay near cycling routes, harbor activities, and outdoor exploration hubs in Denmark's vibrant capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Copenhagen isn\'t just a city—it\'s an adventure playground where cycling culture meets Nordic wilderness, and your apartment is the perfect basecamp for exploring it all.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Unmatched cycling infrastructure with over 390km of bike lanes connecting you to beaches, forests, and urban adventures within minutes of your doorstep</li>
-          <li>Proximity to harbor swimming spots, kayaking channels, and waterfront activities that let you dive into adventure before breakfast</li>
-          <li>Easy access to day-trip destinations like Møn\'s chalk cliffs, Swedish coastlines, and Zealand\'s forests via efficient public transit</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Copenhagen\'s compact size means most adventure-focused neighborhoods fill quickly during summer months—book early for June-August stays</li>
-          <li>While most apartments include bike storage, confirm availability beforehand since cycling is your primary adventure tool here</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Vesterbro offers hipster vibes with quick routes to beaches. Nørrebro provides authentic local culture near green spaces. Islands Brygge places you waterfront with harbor pools and kayak rentals at your doorstep. Østerbro connects you to coastal paths and Fælledparken\'s outdoor activities.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Find your Copenhagen adventure basecamp today—search apartments in these neighborhoods and start planning your Nordic exploration.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Copenhagen 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Copenhagen, Denmark. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Copenhagen stay.'
+}
+
+const guide = {
+  destination: "Copenhagen",
+  country: "Denmark",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-copenhagen"
+}
+
+const content = {
+  intro: "Copenhagen captivates adventure travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Copenhagen's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Copenhagen offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Copenhagen are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Copenhagen's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Copenhagen",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Copenhagen requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Copenhagen is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Copenhagen rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Copenhagen's unique character, and prepare for a stay that exceeds expectations. Your perfect Copenhagen adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

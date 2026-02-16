@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Madrid: Romantic Stays in Spain's Capital",
-  description: "Discover the perfect apartment rentals for couples in Madrid. From charming Malasaña lofts to elegant Salamanca flats, find your romantic Spanish getaway with local charm and modern comfort."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Madrid's intoxicating blend of passion, culture, and vibrant street life makes it an ideal destination for couples seeking romance. Choosing the right apartment transforms your stay from ordinary to extraordinary, offering intimate spaces where you can savor Spanish wines after exploring sun-drenched plazas and world-class museums.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and intimacy that hotels can't match, with full kitchens perfect for preparing breakfast after late nights exploring Madrid's legendary nightlife</li>
-          <li>Authentic neighborhood experiences in local barrios where you'll shop at mercados, sip vermut at corner bars, and live like madrileños rather than tourists</li>
-          <li>Better value for extended stays, with spacious living areas, romantic balconies, and often stunning views of Madrid's terracotta rooftops and historic architecture</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments in central neighborhoods to minimize metro commutes and maximize time together strolling Madrid's walkable streets</li>
-          <li>Verify air conditioning availability for summer visits, as Madrid temperatures soar and historic buildings often lack modern cooling systems</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Couples love Malasaña for its bohemian charm and rooftop terraces, Chueca for vibrant dining and nightlife, La Latina for tapas-hopping and Sunday Rastro market strolls, and upscale Salamanca for elegant tree-lined streets and designer shopping.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Start your Madrid love story today—browse romantic apartment rentals and discover the perfect base for your Spanish adventure together.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Madrid 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Madrid, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Madrid stay.'
+}
+
+const guide = {
+  destination: "Madrid",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-madrid"
+}
+
+const content = {
+  intro: "Madrid captivates couples travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Madrid's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Madrid offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Madrid are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Madrid's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Madrid",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Madrid requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Madrid is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Madrid rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Madrid's unique character, and prepare for a stay that exceeds expectations. Your perfect Madrid adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

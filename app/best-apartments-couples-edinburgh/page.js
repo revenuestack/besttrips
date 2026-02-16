@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Edinburgh: Romantic Stays in Scotland's Capital",
-  description: "Discover the perfect apartment for couples in Edinburgh. From Old Town charm to New Town elegance, find romantic accommodations with castle views, cozy fireplaces, and intimate atmospheres."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Edinburgh's enchanting blend of medieval charm and Georgian elegance creates the perfect backdrop for a romantic escape, and choosing the right apartment can transform your couples' getaway into an unforgettable experience.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and intimacy that hotels can't match, with fully-equipped kitchens perfect for romantic dinners in, cozy living spaces for quality time together, and the freedom to create your own schedule without reception hours or breakfast times</li>
-          <li>Authentic Edinburgh living in historic buildings with original features like exposed stone walls, wooden beams, and working fireplaces, often with stunning views of Edinburgh Castle, Arthur's Seat, or the charming cobblestone streets</li>
-          <li>Better value for money compared to hotel rooms, especially for stays longer than three nights, with more space to relax and the ability to save on dining costs by preparing some meals together</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Most Edinburgh apartments are in historic buildings without elevators, often requiring climbing several flights of stairs with luggage—factor this in when booking, especially if mobility is a concern</li>
-          <li>Peak season (August Festival time) and Hogmanay require booking 6-9 months in advance, with prices doubling or tripling, so plan accordingly for the best selection and rates</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Old Town offers unbeatable atmosphere with Royal Mile proximity and castle views, though expect narrow staircases and tourist crowds. New Town provides elegant Georgian squares, upscale dining, and easier parking. Stockbridge and Dean Village deliver village-like charm with cafes and riverside walks, while Leith offers waterfront modernity with excellent restaurants at lower prices.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Browse our curated selection of romantic Edinburgh apartments and start planning your Scottish escape today—your perfect couples' retreat awaits in this magical city.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates couples travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Edinburgh offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Edinburgh's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Edinburgh",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Edinburgh requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

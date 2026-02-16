@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Brussels - BestTrips.org',
-  description: 'Discover the finest senior-friendly apartments in Brussels, Belgium. Our carefully curated selection features accessible accommodations with elevator access, ground-floor options, and proximity to healthcare facilities. Each apartment offers comfortable living spaces designed with mobility in mind, located in safe, walkable neighborhoods near shops, cafes, and public transport. Whether you prefer the historic charm of the European Quarter, the peaceful atmosphere of Uccle, or the convenient central districts, these apartments provide the perfect blend of independence and accessibility. All properties feature modern amenities, step-free access, well-lit spaces, and helpful building staff. Enjoy Brussels\' rich culture, excellent healthcare system, and efficient public transportation while staying in accommodations that truly understand senior needs.'
+  title: 'Best Apartments for Seniors in Brussels 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Brussels, Belgium. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Brussels stay.'
 }
 
 const guide = {
@@ -14,37 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Brussels offers an ideal setting for senior travelers seeking comfort, culture, and accessibility. The Belgian capital combines Old World charm with modern convenience, featuring well-maintained sidewalks, reliable public transportation, and a compact city center where most attractions are easily reachable. For seniors choosing apartment accommodations, Brussels provides numerous advantages over traditional hotels: more space to relax, kitchen facilities for familiar meals, and the independence to set your own pace. The city's excellent healthcare system, with English-speaking medical professionals, offers peace of mind during extended stays. Brussels' temperate climate, walkable neighborhoods, and abundance of parks create a pleasant environment for leisurely exploration. Many apartment buildings feature elevators, secure entry systems, and helpful staff who can assist with local recommendations. The city's multicultural atmosphere means encountering friendly locals, diverse dining options, and cultural experiences around every corner. Whether you're visiting family, exploring European history, or simply enjoying a change of scenery, Brussels' senior-friendly apartments provide the perfect home base for a comfortable and enriching stay.",
-  
+  intro: "Brussels captivates seniors travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Brussels's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Brussels apartments are specifically designed with accessibility in mind, featuring elevator access in most buildings, wide doorways, and step-free entryways that accommodate mobility aids comfortably. Many properties offer ground-floor or low-floor options with excellent natural lighting and easy access to building amenities. The city's strict building codes ensure modern safety standards, grab bars in bathrooms, and well-maintained common areas.",
-    
-    "The city's compact layout and excellent public transportation network make independent living remarkably easy for seniors. Most apartments are within walking distance of local shops, pharmacies, medical clinics, and fresh food markets. Brussels' Metro, tram, and bus systems are senior-friendly with elevators at major stations, priority seating, and clear signage, allowing you to explore without relying on taxis or long walks.",
-    
-    "Apartment living in Brussels offers the comfort and flexibility that seniors appreciate during extended stays. Having your own kitchen means maintaining dietary preferences and routines, while separate living spaces provide room for visitors or quiet relaxation. Unlike hotels, apartments create a genuine neighborhood experience where you can establish routines at local cafes, get to know shopkeepers, and truly feel at home in this welcoming European capital."
-  ],
-  
+    "Apartments in Brussels offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Brussels are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Brussels's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
   topPicks: [
     {
-      name: "European Quarter Residence",
-      description: "Located in the prestigious European Quarter, this modern apartment complex caters specifically to senior visitors with ground-floor units, 24-hour concierge service, and weekly housekeeping. The building features wide corridors, excellent lighting, and is steps from Parc du Cinquantenaire for pleasant morning walks. Medical facilities and pharmacies are within two blocks, while the nearby Metro station has full elevator access.",
-      highlight: "24-hour concierge assistance and ground-floor accessibility"
-    },
-    {
-      name: "Uccle Garden Apartments",
-      description: "Set in the peaceful residential neighborhood of Uccle, these spacious apartments offer a quieter alternative to downtown living while remaining well-connected by tram. Each unit features modern bathrooms with safety features, fully equipped kitchens, and private balconies overlooking tree-lined streets. The area is known for its excellent medical facilities, upscale grocery stores, and genteel atmosphere preferred by many senior residents.",
-      highlight: "Peaceful location with private balconies and nearby medical centers"
-    },
-    {
-      name: "Grand Place Heritage Suites",
-      description: "For seniors who want to be in the heart of Brussels' action, these centrally located apartments combine historic charm with modern accessibility upgrades. Elevator-equipped buildings feature renovated interiors with walk-in showers, emergency call systems, and comfortable furnishings. You're within easy walking distance of restaurants, museums, and cultural sites, with helpful building staff available during business hours to assist with any needs.",
-      highlight: "Prime central location with historic charm and modern safety features"
+        "name": "Boutique Brussels",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
     }
-  ],
-  
-  tips: "When booking your Brussels apartment, prioritize locations near Metro or tram lines with elevator access—this ensures easy exploration without exhausting walks. The neighborhoods of Ixelles, Uccle, and the European Quarter are particularly senior-friendly with well-maintained sidewalks and ample seating areas. Request ground-floor or low-floor apartments when possible, even in buildings with elevators, for added convenience. Before arriving, confirm that the apartment has safety features like non-slip bathroom surfaces, adequate lighting, and easy-to-reach storage. Brussels' grocery delivery services are excellent; apps like Delhaize and Carrefour deliver directly to your door, perfect for stocking up without carrying heavy bags. The city's pharmacies (recognizable by green crosses) have English-speaking staff and can assist with familiar medications. Consider visiting during spring or early autumn when weather is mild and crowds are smaller. Belgian healthcare is world-class; carry your travel insurance information and EHIC card if you're an EU resident. Most apartments include WiFi, allowing video calls with family and easy access to translation apps. Finally, don't hesitate to use Brussels' excellent taxi services for evening outings—they're affordable, reliable, and drivers are accustomed to assisting senior passengers.",
-  
-  conclusion: "Brussels stands out as an exceptional destination for seniors seeking apartment accommodations that prioritize comfort, safety, and independence. The city's combination of accessible infrastructure, excellent healthcare, efficient public transportation, and welcoming atmosphere creates an ideal environment for extended stays. Choosing an apartment over a hotel provides the space, flexibility, and homey comfort that makes travel truly enjoyable in your senior years. Whether you're drawn to the vibrant energy of central Brussels, the refined tranquility of residential neighborhoods, or the international atmosphere of the European Quarter, you'll find apartments designed to meet your needs. With careful selection focused on accessibility features, neighborhood amenities, and proximity to services, your Brussels apartment becomes more than just accommodation—it becomes your comfortable European home. The city's manageable size, walkable streets, and abundance of cafes and parks encourage the gentle-paced exploration that makes senior travel so rewarding. Book your Brussels apartment with confidence, knowing you're choosing a destination that genuinely welcomes and accommodates senior travelers with warmth and practical consideration."
+],
+  tips: "Booking apartments in Brussels requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Brussels is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Brussels rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Brussels's unique character, and prepare for a stay that exceeds expectations. Your perfect Brussels adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

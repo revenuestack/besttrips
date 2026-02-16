@@ -1,0 +1,115 @@
+{
+  "city": "Paris",
+  "country": "France",
+  "slug": "paris",
+  "neighborhoods": [
+    "Le Marais",
+    "Saint-Germain-des-Prés",
+    "Montmartre",
+    "Latin Quarter",
+    "Champs-Élysées",
+    "Bastille",
+    "Opera"
+  ],
+  "hotels": {
+    "luxury": [
+      {
+        "name": "Hôtel Plaza Athénée",
+        "neighborhood": "Champs-Élysées",
+        "priceRange": "€800-2000",
+        "rating": 9.4,
+        "highlight": "Iconic Dior suite with Eiffel views"
+      },
+      {
+        "name": "Le Bristol Paris",
+        "neighborhood": "Faubourg Saint-Honoré",
+        "priceRange": "€900-2500",
+        "rating": 9.5,
+        "highlight": "Rooftop pool and 3-Michelin-star restaurant"
+      },
+      {
+        "name": "Hôtel de Crillon",
+        "neighborhood": "Place de la Concorde",
+        "priceRange": "€850-2200",
+        "rating": 9.3,
+        "highlight": "18th-century palace with Karl Lagerfeld suite"
+      }
+    ],
+    "boutique": [
+      {
+        "name": "Hôtel Particulier Montmartre",
+        "neighborhood": "Montmartre",
+        "priceRange": "€350-600",
+        "rating": 9.1,
+        "highlight": "Secret garden oasis in artistic quarter"
+      },
+      {
+        "name": "Pavillon de la Reine",
+        "neighborhood": "Le Marais",
+        "priceRange": "€300-550",
+        "rating": 9,
+        "highlight": "Hidden courtyard on Place des Vosges"
+      },
+      {
+        "name": "Hôtel Providence",
+        "neighborhood": "République",
+        "priceRange": "€180-320",
+        "rating": 8.8,
+        "highlight": "Rock-and-roll chic with cocktail bar"
+      }
+    ],
+    "budget": [
+      {
+        "name": "Generator Paris",
+        "neighborhood": "Canal Saint-Martin",
+        "priceRange": "€25-80",
+        "rating": 8.2,
+        "highlight": "Design hostel with rooftop bar"
+      },
+      {
+        "name": "Les Piaules",
+        "neighborhood": "Belleville",
+        "priceRange": "€30-90",
+        "rating": 8.5,
+        "highlight": "Hip hostel with panoramic rooftop"
+      },
+      {
+        "name": "St Christopher's Canal",
+        "neighborhood": "La Villette",
+        "priceRange": "€20-70",
+        "rating": 7.8,
+        "highlight": "Canal-side location, lively bar"
+      }
+    ]
+  },
+  "apartments": {
+    "couples": [
+      {
+        "name": "Romantic Marais Studio",
+        "neighborhood": "Le Marais",
+        "priceRange": "€120-200",
+        "highlight": "Exposed beams, steps from Place des Vosges"
+      },
+      {
+        "name": "Eiffel View Apartment",
+        "neighborhood": "7th Arrondissement",
+        "priceRange": "€180-300",
+        "highlight": "Private balcony with Tower views"
+      },
+      {
+        "name": "Saint-Germain Hideaway",
+        "neighborhood": "Saint-Germain",
+        "priceRange": "€150-250",
+        "highlight": "Above historic café, literary charm"
+      }
+    ]
+  },
+  "localTips": [
+    "Skip the tourist cafés on Champs-Élysées - locals head to Canal Saint-Martin",
+    "Metro Line 6 offers free Eiffel Tower views above ground",
+    "Sunday mornings: Marché d'Aligre for authentic Parisian market experience",
+    "Best croissants: Du Pain et des Idées in the 10th"
+  ],
+  "needsEnhancement": false,
+  "lastUpdated": "2026-02-16T18:51:06.206Z"
+}

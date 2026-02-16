@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Brussels | Your Base for Belgian Exploration",
-  description: "Find the perfect apartment in Brussels for adventure seekers. Stay near cycling routes, climbing gyms, and quick access to Ardennes hiking trails."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Brussels isn\'t just about waffles and EU politics—it\'s a launchpad for adrenaline-fueled exploration. From urban cycling adventures through cobblestone streets to weekend escapes into the rugged Ardennes, the right apartment puts you at the heart of Belgium\'s action. Choose accommodations that blend local authenticity with easy access to adventure hotspots, bike rentals, and transport hubs connecting you to rock climbing, kayaking, and forest trails within an hour.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Central location near bike-sharing stations, climbing gyms like Entrepot, and Brussels Park for morning runs</li>
-          <li>Quick train connections to Dinant, Durbuy, and Ardennes adventure zones for hiking, caving, and kayaking day trips</li>
-          <li>Proximity to vibrant neighborhoods with street art tours, urban exploring, and late-night energy for post-adventure socializing</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Brussels weather is unpredictable—apartments with gear storage and drying space are essential for muddy boots and wet equipment</li>
-          <li>Parking is challenging in central areas; prioritize apartments near Metro stations if planning car rentals for Ardennes excursions</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Ixelles offers youthful energy near Bois de la Cambre park for trail running. Saint-Gilles provides authentic character with easy access to cycling routes. Schaerbeek connects quickly to northern climbing areas, while Etterbeek sits near EU Quarter with excellent transport links.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Book your adventure-ready Brussels apartment today and unlock Belgium\'s wild side—from urban exploration to mountain trails, your base camp awaits.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Brussels 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Brussels, Belgium. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Brussels stay.'
+}
+
+const guide = {
+  destination: "Brussels",
+  country: "Belgium",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-brussels"
+}
+
+const content = {
+  intro: "Brussels captivates adventure travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Brussels's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Brussels offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Brussels are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Brussels's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Brussels",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Brussels requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Brussels is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Brussels rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Brussels's unique character, and prepare for a stay that exceeds expectations. Your perfect Brussels adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

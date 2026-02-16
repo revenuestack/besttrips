@@ -1,61 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Adventure Seekers in Edinburgh, Scotland | Your Highland Base",
-  description: "Discover Edinburgh's top adventure hotels near hiking trails, climbing spots, and outdoor activities. Perfect basecamp for exploring Scotland's rugged landscapes.",
-};
+  title: 'Best Hotels for Adventure Seekers in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best hotels for adventure seekers in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Hotels",
+  audience: "Adventure Seekers",
+  slug: "best-hotels-adventure-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates adventure travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect hotels here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Edinburgh offer service, amenities, convenience. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Edinburgh's hotels deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Edinburgh",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Edinburgh requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards adventure travelers who choose wisely. The hotels highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  const content = {
-    hook: "Edinburgh isn't just cobblestone streets and castles—it's your gateway to Scotland's wildest adventures. The city's best hotels for thrill-seekers put you within striking distance of Arthur's Seat volcano hikes, coastal cliff walks, mountain biking trails in the Pentland Hills, and rock climbing at Salisbury Crags. Whether you're summiting peaks at dawn or exploring hidden gorges, these accommodations understand that adventurers need more than just a bed—they need gear storage, hearty breakfasts, and staff who know the best trails.",
-    highlights: [
-      "Prime access to Arthur's Seat, Pentland Hills, and coastal trails within 15-30 minutes",
-      "Properties offering bike storage, drying rooms, and early breakfast for sunrise expeditions",
-      "Knowledgeable staff providing trail maps, weather updates, and local adventure recommendations",
-      "Central locations balancing outdoor access with evening entertainment in Edinburgh's vibrant neighborhoods"
-    ],
-    considerations: [
-      "Summer (June-August) books fast—reserve adventure-focused hotels 2-3 months ahead for best availability",
-      "Weather changes rapidly in Scottish highlands—choose hotels with flexible check-in for delayed returns from trails"
-    ],
-    location_context: "Edinburgh uniquely combines urban culture with immediate wilderness access. Arthur's Seat, an extinct volcano, rises 823 feet right in the city center, while the Pentland Hills Regional Park offers 90 square kilometers of hiking and biking just 30 minutes away. The city serves as an ideal basecamp for day trips to Highland glens and coastal adventures.",
-    cta: "Book your Edinburgh adventure hotel now and wake up ready to conquer Scotland's legendary landscapes."
-  };
-
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

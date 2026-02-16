@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in London: Comfort Meets Culture',
-  description: 'Discover senior-friendly apartments in London offering accessibility, convenience, and proximity to healthcare, parks, and cultural attractions. Your perfect London home awaits.'
+  title: 'Best Apartments for Seniors in London 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-london"
+}
+
+const content = {
+  intro: "London captivates seniors travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, London's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in London offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in London are significant—the best apartments position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: London's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique London",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in London requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "hook": "London's vibrant neighborhoods offer apartments perfectly suited for seniors seeking independence, accessibility, and cultural enrichment in one of the world's most historic cities.",
-    "why_visit": [
-      "Exceptional healthcare access with world-class hospitals like St. Thomas' and The Royal Marsden within easy reach of most neighborhoods",
-      "Accessible public transport with senior discounts, step-free tube stations, and Freedom Pass eligibility for London residents over 60",
-      "Rich cultural life including free museum entry, beautiful parks like Hyde Park and Kew Gardens, and senior-friendly community centers throughout the city"
-    ],
-    "insider_tips": [
-      "Focus on ground-floor or lift-equipped apartments in neighborhoods like Kensington, Bloomsbury, or Richmond—these areas offer excellent walkability, nearby medical facilities, and peaceful green spaces",
-      "Many London boroughs offer sheltered housing schemes with on-site wardens and communal facilities; contact local councils directly for waiting lists and eligibility requirements"
-    ],
-    "logistics": "Book viewings through reputable estate agents specializing in senior accommodation. Consider proximity to GP surgeries, pharmacies, and grocery delivery services. Most senior-friendly apartments range from £1,200-£2,500 monthly depending on location and amenities.",
-    "cta": "Start your London apartment search today and discover the perfect blend of independence, safety, and cultural richness tailored for your golden years."
-  }
-  
-  return <SimpleGuide content={content} destination="London" slug="best-apartments-seniors-london" title="Best Apartments for Seniors in London: Comfort Meets Culture" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

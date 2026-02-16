@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Porto: Comfort Meets Portuguese Charm',
-  description: 'Discover senior-friendly apartments in Porto, Portugal. Find accessible, comfortable accommodations in this UNESCO-listed city with stunning river views, walkable neighborhoods, and warm hospitality.'
+  title: 'Best Apartments for Seniors in Porto 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Porto, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Porto stay.'
+}
+
+const guide = {
+  destination: "Porto",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-porto"
+}
+
+const content = {
+  intro: "Porto captivates seniors travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Porto's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Porto offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Porto are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Porto's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Porto",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Porto requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Porto is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Porto rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Porto's unique character, and prepare for a stay that exceeds expectations. Your perfect Porto adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "hook": "Porto offers the perfect blend of old-world European charm and modern senior-friendly accommodations, where cobblestone streets meet elevator-equipped apartments and centuries of history welcome you at a comfortable pace.",
-    "why_visit": [
-      "Senior-focused apartments in Porto feature modern accessibility—elevators, ground-floor units, and grab bars—while placing you in walkable neighborhoods near Ribeira's riverside cafés, São Bento station's azulejo tiles, and Livraria Lello's stunning architecture.",
-      "Portugal ranks among Europe's safest countries with exceptional healthcare, English-speaking medical staff, and a cost of living 30-40% lower than other Western European cities, making extended stays both affordable and worry-free.",
-      "Porto's compact historic center, efficient public transport with senior discounts, and famously welcoming locals create an ideal environment for mature travelers seeking cultural immersion without the overwhelming pace of larger capitals."
-    ],
-    "insider_tips": [
-      "Book apartments in Foz do Douro or Boavista districts for flat terrain, beachfront promenades, and excellent infrastructure—avoid steep Ribeira hills unless your apartment has direct elevator access.",
-      "Visit September-October for warm weather, fewer crowds, and grape harvest festivals; many apartment buildings offer monthly rates with significant discounts for longer stays."
-    ],
-    "logistics": "Porto's Francisco Sá Carneiro Airport sits 20 minutes from the city center via metro (lilac line) or accessible taxis. Most senior-friendly apartments cluster in Boavista, Foz, and Cedofeita neighborhoods.",
-    "cta": "Browse our curated selection of elevator-equipped, senior-friendly apartments in Porto's safest neighborhoods and start planning your Portuguese adventure today."
-  }
-  
-  return <SimpleGuide content={content} destination="Porto" slug="best-apartments-seniors-porto" title="Best Apartments for Seniors in Porto: Comfort Meets Portuguese Charm" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,42 +1,46 @@
-export const metadata = {
-  title: "Best Apartments for Budget Travelers in Barcelona",
-  description: "Discover affordable apartment rentals in Barcelona perfect for budget-conscious travelers. Find the best neighborhoods and money-saving tips for your stay."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Budget Travelers in Barcelona</h1>
-      
-      <section className="hook">
-        <p>Barcelona's vibrant culture doesn't have to break the bank. Budget-friendly apartments offer the perfect base to explore Gaudí's masterpieces, sunbathe on Mediterranean beaches, and savor authentic tapas without sacrificing comfort or location.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Self-catering apartments slash food costs dramatically—shop at local markets like La Boqueria and prepare meals with fresh Spanish ingredients for a fraction of restaurant prices.</li>
-          <li>More space and amenities than hostels or budget hotels, often including washing machines, full kitchens, and separate living areas ideal for longer stays or small groups splitting costs.</li>
-          <li>Authentic neighborhood experiences in residential areas provide genuine local immersion while offering better value than tourist-centric zones, with metro connections making attractions easily accessible.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book well in advance during peak season (June-August) and major events like Mobile World Congress to secure the best rates and avoid price surges.</li>
-          <li>Verify exact locations carefully—some 'Barcelona' apartments are actually in outer suburbs requiring lengthy commutes, and ensure buildings have elevators if mobility is a concern since many older buildings lack them.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Gràcia offers bohemian charm with affordable options, while Poble Sec provides authentic local flavor near Montjuïc. El Raval delivers central location at lower prices, and Sant Martí combines beach proximity with budget-friendly rates away from tourist crowds.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Start your Barcelona apartment search today and unlock authentic Spanish living at prices that leave plenty in your budget for sangria and adventures.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Budget Travelers in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best apartments for budget travelers in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Budget Travelers",
+  slug: "best-apartments-budget-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates budget travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Barcelona offer space, kitchen, living like a local. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best apartments position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Barcelona's apartments deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Generator Barcelona",
+        "description": "Located in Gràcia, this property offers Pool and terrace, near Park Güell. Prices range €20-60 with consistent 8.3+ ratings from guests.",
+        "highlight": "Pool and terrace, near Park Güell"
+    },
+    {
+        "name": "Casa Gracia",
+        "description": "Located in Gràcia, this property offers Boutique hostel with cocktail bar. Prices range €25-80 with consistent 8.5+ ratings from guests.",
+        "highlight": "Boutique hostel with cocktail bar"
+    },
+    {
+        "name": "TOC Hostel Barcelona",
+        "description": "Located in Eixample, this property offers Rooftop pool, central location. Prices range €18-55 with consistent 8.1+ ratings from guests.",
+        "highlight": "Rooftop pool, central location"
+    }
+],
+  tips: "Booking apartments in Barcelona requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards budget travelers who choose wisely. The apartments highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

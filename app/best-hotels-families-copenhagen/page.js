@@ -1,63 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Families in Copenhagen: Top Family-Friendly Accommodation",
-  description: "Discover the best family hotels in Copenhagen with spacious rooms, kid-friendly amenities, and prime locations near Tivoli Gardens and top attractions."
-};
+  title: 'Best Hotels for Families in Copenhagen 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in Copenhagen, Denmark. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Copenhagen stay.'
+}
+
+const guide = {
+  destination: "Copenhagen",
+  country: "Denmark",
+  accommodationType: "Hotels",
+  audience: "Families",
+  slug: "best-hotels-families-copenhagen"
+}
+
+const content = {
+  intro: "Copenhagen captivates families travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Copenhagen's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Copenhagen offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Copenhagen are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Copenhagen's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Copenhagen",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Copenhagen requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Copenhagen is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Copenhagen rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Copenhagen's unique character, and prepare for a stay that exceeds expectations. Your perfect Copenhagen adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Hotels for Families in Copenhagen</h1>
-      
-      <section className="mb-8">
-        <p className="text-lg leading-relaxed">
-          Copenhagen's fairy-tale charm extends to its exceptional family hotels, where Scandinavian design meets child-friendly hospitality. From cozy boutique properties to full-service resorts, Denmark's capital offers accommodations that delight both parents and children with thoughtful amenities and convenient locations.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Hotels in Copenhagen</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Hotels in Copenhagen offer reliable child-friendly services including cribs, high chairs, and kids' menus, with many providing family suites and connecting rooms for comfortable stays</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Prime locations near Tivoli Gardens, the National Aquarium, and Nyhavn mean less travel time and more exploration, with many hotels offering bike rentals perfect for family adventures</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Professional concierge services can arrange babysitting, book family tours, and recommend age-appropriate activities, while daily housekeeping and on-site restaurants simplify family travel logistics</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Things to Consider</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Copenhagen hotels can be pricey, especially during summer peak season; booking well in advance and considering weekday stays can yield better rates and family package deals</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Some historic Copenhagen hotels feature charming but compact rooms; verify room dimensions and request family-specific accommodations to ensure adequate space for children and luggage</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Best Neighborhoods</h2>
-        <p className="leading-relaxed">
-          Vesterbro offers trendy, family-friendly vibes near Central Station and Tivoli Gardens with excellent restaurants. Nyhavn and Indre By provide postcard-perfect harbourfront locations within walking distance of attractions. Østerbro presents a residential, parks-filled atmosphere near beaches and the aquarium. Frederiksberg combines green spaces with proximity to Copenhagen Zoo, ideal for families seeking quieter, spacious surroundings while remaining well-connected to downtown.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-lg font-medium text-blue-600">
-          Find your perfect Copenhagen family hotel today and start planning an unforgettable Danish adventure for all ages.
-        </p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

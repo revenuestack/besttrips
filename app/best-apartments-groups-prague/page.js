@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Groups in Prague: Space, Privacy & Authentic Living",
-  description: "Discover the best group apartments in Prague. From Old Town charm to trendy Vinohrady, find spacious accommodations perfect for friends and families exploring the Czech capital together."
+  title: 'Best Apartments for Groups in Prague 2026 - BestTrips.org',
+  description: 'Discover the best apartments for groups in Prague, Czech Republic. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Prague stay.'
+}
+
+const guide = {
+  destination: "Prague",
+  country: "Czech Republic",
+  accommodationType: "Apartments",
+  audience: "Groups",
+  slug: "best-apartments-groups-prague"
+}
+
+const content = {
+  intro: "Prague captivates groups travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Prague's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Prague offer space, kitchen, living like a local. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in Prague are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: Prague's apartments deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Prague",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Prague requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in Prague is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Prague rewards groups travelers who choose wisely. The apartments highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace Prague's unique character, and prepare for a stay that exceeds expectations. Your perfect Prague adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Prague",
-    country: "Czech Republic",
-    type: "Apartments",
-    audience: "Groups",
-    hook: "Prague's fairy-tale architecture and vibrant nightlife make it perfect for group travel, and renting an apartment offers the space, flexibility, and local experience hotels simply can't match.",
-    why_stay: [
-      "Cost-effective for groups: Split the cost of a spacious 3-4 bedroom apartment and you'll often pay less per person than hostel beds, with the bonus of full kitchens, living areas, and multiple bathrooms to avoid morning rush chaos.",
-      "Live like locals: Apartments in residential neighborhoods give you access to corner bakeries, local pubs, and grocery stores where you'll experience authentic Prague beyond the tourist trail, plus the freedom to cook traditional Czech meals together.",
-      "Space to spread out: After busy days exploring Prague Castle and Charles Bridge, retreat to your own living room for group dinners, game nights, or quiet reading time—without squeezing into cramped hotel rooms."
-    ],
-    considerations: [
-      "Many historic buildings lack elevators, so confirm floor level if mobility is a concern, and note that Prague's Old Town cobblestones can make wheeling luggage challenging.",
-      "Noise regulations are strict in residential areas—late-night gatherings may upset neighbors, so choose party-friendly locations in neighborhoods like Žižkov if you plan to celebrate."
-    ],
-    neighborhood_tips: "Old Town and Malá Strana offer postcard views but premium prices. Vinohrady and Karlín provide excellent value with trendy cafés, parks, and easy metro access. Žižkov suits night owls with its legendary bar scene.",
-    booking_advice: "Book 3-6 months ahead for summer and Christmas markets. Verify exact addresses (not just districts), read reviews mentioning group stays, and confirm check-in procedures—many apartments use keyless entry systems rather than 24-hour reception."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

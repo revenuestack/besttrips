@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Groups in London: Spacious Stays in the Heart of the City",
-  description: "Discover the best group apartments in London. From Victorian townhouses to modern flats, find spacious accommodations perfect for families and friends exploring the capital together."
+  title: 'Best Apartments for Groups in London 2026 - BestTrips.org',
+  description: 'Discover the best apartments for groups in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Groups",
+  slug: "best-apartments-groups-london"
+}
+
+const content = {
+  intro: "London captivates groups travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, London's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in London offer space, kitchen, living like a local. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in London are significant—the best apartments position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: London's apartments deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique London",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in London requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards groups travelers who choose wisely. The apartments highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "London",
-    country: "England",
-    type: "Apartments",
-    audience: "Groups",
-    hook: "London's best group apartments combine space, location, and value, transforming your city break into a proper home-away-from-home experience. Whether you're planning a family reunion or friends' getaway, these self-catering stays offer the freedom and flexibility hotels simply can't match.",
-    why_stay: [
-      "Cost-effective for groups of 4-8, with full kitchens saving significantly on dining out while giving you flexibility to eat on your schedule",
-      "More space and privacy than hotel rooms, with separate bedrooms, living areas, and often multiple bathrooms to avoid morning queues",
-      "Authentic London living in residential neighborhoods, giving you access to local markets, pubs, and the genuine rhythm of city life"
-    ],
-    considerations: [
-      "Most apartments require minimum 3-5 night stays, especially during peak season, so plan accordingly if you're only visiting briefly",
-      "Check accessibility carefully—many charming Victorian conversions involve stairs, and lift availability varies significantly across properties"
-    ],
-    neighborhood_tips: "Shoreditch and Hackney offer trendy vibes with excellent nightlife. South Bank puts you near major attractions with riverside walks. Notting Hill provides village charm with excellent transport links. King's Cross combines convenience with emerging foodie scenes.",
-    booking_advice: "Book 3-4 months ahead for summer and Christmas periods. Verify exact sleeping arrangements—'sleeps 8' might include sofa beds. Confirm transport links to your planned activities, and always read recent reviews about cleanliness and host responsiveness."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,63 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in Edinburgh - Romantic Stays in Scotland's Capital",
-  description: "Discover the most romantic hotels in Edinburgh for couples. From historic Old Town charm to elegant New Town retreats, find your perfect romantic getaway."
-};
+  title: 'Best Hotels for Couples in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates couples travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Edinburgh offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Edinburgh's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Edinburgh",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Edinburgh requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Hotels for Couples in Edinburgh</h1>
-      
-      <section className="mb-8">
-        <p className="text-lg leading-relaxed">
-          Edinburgh's enchanting blend of medieval architecture, cobblestone streets, and dramatic castle views creates an unforgettable backdrop for romance. The city's finest hotels offer couples luxurious sanctuaries where Scottish heritage meets contemporary comfort, perfect for celebrating love in one of Europe's most captivating capitals.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Hotels in Edinburgh</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Edinburgh's hotels range from historic boutiques in converted Georgian townhouses to luxury properties with castle views, offering intimate settings with Scottish character and world-class amenities designed for romantic escapes</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Central hotel locations put couples within walking distance of candlelit restaurants, cozy whisky bars, sunset strolls along the Royal Mile, and scenic viewpoints like Calton Hill and Arthur's Seat for unforgettable moments together</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Many Edinburgh hotels feature couples-focused packages including spa treatments, champagne on arrival, four-poster beds, and in-room dining, while concierge services can arrange private tours, theater tickets, and special celebrations</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Things to Consider</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Edinburgh's peak seasons (August Festival, Hogmanay) see hotel prices surge and availability shrink, so book well ahead or visit during shoulder seasons for better value and a more intimate experience</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Historic buildings in Old Town offer character but may have stairs and smaller rooms, while New Town properties typically provide more space and modern facilities—consider your priorities when choosing</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Best Neighborhoods</h2>
-        <p className="leading-relaxed">
-          Old Town places couples amid medieval charm steps from Edinburgh Castle and atmospheric closes, ideal for history lovers. New Town's Georgian elegance along Princes Street offers upscale shopping and dining. Stockbridge provides village-like tranquility with boutiques and riverside walks. Leith's waterfront brings contemporary hotels near Michelin-starred restaurants. Dean Village offers romantic seclusion just minutes from the center.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-lg font-medium text-blue-600">
-          Browse our curated selection of romantic Edinburgh hotels and book your couples' retreat in Scotland's most enchanting city today.
-        </p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

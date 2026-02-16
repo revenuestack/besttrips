@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Luxury Apartments in London: Your Ultimate Guide to Upscale Living",
-  description: "Discover the finest luxury apartments in London for discerning travelers. From Mayfair penthouses to Kensington townhouses, find your perfect upscale accommodation."
+  title: 'Best Apartments for Luxury Travelers in London 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-london"
+}
+
+const content = {
+  intro: "London captivates luxury travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, London's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in London offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in London are significant—the best apartments position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: London's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel London",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in London requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "London",
-    country: "England",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "London's luxury apartment scene offers sophisticated travelers the perfect blend of opulence, space, and authentic local living that hotels simply cannot match.",
-    why_stay: [
-      "Exceptional space and privacy with separate living areas, fully-equipped gourmet kitchens, and often multiple bedrooms—ideal for extended stays or traveling with family while maintaining five-star amenities like concierge services and housekeeping",
-      "Prime locations in prestigious neighborhoods such as Mayfair, Knightsbridge, Chelsea, and Belgravia place you steps from world-class shopping, Michelin-starred dining, and cultural landmarks while offering the exclusivity of residential buildings",
-      "Superior value for luxury seekers, as apartments typically cost less per night than equivalent hotel suites while providing significantly more space, laundry facilities, and the freedom to entertain guests in elegant surroundings"
-    ],
-    considerations: [
-      "Minimum stay requirements often range from 3-7 nights, particularly in the most exclusive properties, so plan accordingly for shorter trips",
-      "Advance booking is essential during peak seasons (May-September, Christmas) as the finest luxury apartments are limited and book months ahead"
-    ],
-    neighborhood_tips: "Mayfair and Knightsbridge offer unparalleled sophistication near Hyde Park and luxury shopping. South Kensington provides museum access and charming streets, while Chelsea and Notting Hill deliver village-like elegance with celebrity cachet.",
-    booking_advice: "Use specialized luxury rental agencies like Onefinestay or The Apartment Service for vetted properties. Verify high-speed WiFi, confirm concierge availability, and request recent photos. Book directly when possible for better rates and flexibility."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

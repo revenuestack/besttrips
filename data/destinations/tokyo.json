@@ -1,0 +1,103 @@
+{
+  "city": "Tokyo",
+  "country": "Japan",
+  "slug": "tokyo",
+  "neighborhoods": [
+    "Shibuya",
+    "Shinjuku",
+    "Ginza",
+    "Asakusa",
+    "Roppongi",
+    "Harajuku",
+    "Akihabara"
+  ],
+  "hotels": {
+    "luxury": [
+      {
+        "name": "Aman Tokyo",
+        "neighborhood": "Otemachi",
+        "priceRange": "¥100,000-250,000",
+        "rating": 9.6,
+        "highlight": "Minimalist luxury with Imperial Palace views"
+      },
+      {
+        "name": "Park Hyatt Tokyo",
+        "neighborhood": "Shinjuku",
+        "priceRange": "¥60,000-150,000",
+        "rating": 9.3,
+        "highlight": "Lost in Translation hotel, 52nd floor pool"
+      },
+      {
+        "name": "The Peninsula Tokyo",
+        "neighborhood": "Ginza",
+        "priceRange": "¥70,000-180,000",
+        "rating": 9.4,
+        "highlight": "Tech-forward rooms, Michelin dining"
+      }
+    ],
+    "boutique": [
+      {
+        "name": "Hoshinoya Tokyo",
+        "neighborhood": "Otemachi",
+        "priceRange": "¥50,000-100,000",
+        "rating": 9.2,
+        "highlight": "Traditional ryokan experience in skyscraper"
+      },
+      {
+        "name": "Trunk Hotel",
+        "neighborhood": "Shibuya",
+        "priceRange": "¥35,000-70,000",
+        "rating": 8.9,
+        "highlight": "Socially conscious design hotel"
+      },
+      {
+        "name": "BnA Alter Museum",
+        "neighborhood": "Kyobashi",
+        "priceRange": "¥20,000-45,000",
+        "rating": 8.7,
+        "highlight": "Sleep inside art installations"
+      }
+    ],
+    "budget": [
+      {
+        "name": "Khaosan World Asakusa",
+        "neighborhood": "Asakusa",
+        "priceRange": "¥3,000-8,000",
+        "rating": 8.4,
+        "highlight": "Near Senso-ji temple, rooftop bar"
+      },
+      {
+        "name": "Nui. Hostel",
+        "neighborhood": "Kuramae",
+        "priceRange": "¥3,500-9,000",
+        "rating": 8.6,
+        "highlight": "Craft coffee, artisan neighborhood"
+      },
+      {
+        "name": "Wise Owl Hostels",
+        "neighborhood": "Shibuya",
+        "priceRange": "¥4,000-10,000",
+        "rating": 8.3,
+        "highlight": "Modern pods near nightlife"
+      }
+    ]
+  },
+  "apartments": {
+    "couples": [
+      {
+        "name": "Romantic Tokyo Apartment",
+        "neighborhood": "Old Town",
+        "priceRange": "€80-150",
+        "highlight": "NEEDS_ENHANCEMENT"
+      }
+    ]
+  },
+  "localTips": [
+    "Get a Suica card immediately - works everywhere including convenience stores",
+    "Best ramen: queue at Fuunji in Shinjuku (tsukemen style)",
+    "Avoid taxis - trains run like clockwork until midnight",
+    "Don't tip - it's considered rude"
+  ],
+  "needsEnhancement": false,
+  "lastUpdated": "2026-02-16T18:51:06.215Z"
+}

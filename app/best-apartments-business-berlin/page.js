@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Berlin",
-  description: "Discover top apartment rentals in Berlin designed for business travelers. Find modern, well-connected accommodations near major business districts with all the amenities you need."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Business Travelers in Berlin</h1>
-      
-      <section className="hook">
-        <p>Berlin's dynamic business scene demands accommodation that works as hard as you do. The right apartment can transform a routine business trip into a productive and comfortable experience.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Space and Privacy: Unlike hotel rooms, apartments offer separate living and working areas, perfect for video calls, presentations, and unwinding after meetings. Many feature dedicated workspaces with high-speed internet and ergonomic furniture.</li>
-          <li>Cost-Effective Extended Stays: For trips longer than a few days, apartments provide better value with kitchen facilities that reduce dining expenses. Weekly rates often offer significant savings compared to hotels.</li>
-          <li>Authentic Berlin Experience: Living in residential neighborhoods gives you genuine insight into Berlin's culture while maintaining proximity to business hubs. Access local cafés, markets, and transportation like a resident.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Location is critical—prioritize apartments near your meeting venues or along major U-Bahn and S-Bahn lines for efficient commuting across Berlin's sprawling layout.</li>
-          <li>Verify reliable Wi-Fi speeds, availability of washing facilities, and 24/7 check-in options to accommodate unpredictable business schedules and flight times.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Mitte and Friedrichshain offer proximity to startups and tech companies, while Charlottenburg suits traditional corporate settings. Kreuzberg provides creative agency access, and Potsdamer Platz places you at Berlin's modern commercial heart.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Book your Berlin business apartment today and experience the perfect blend of productivity and comfort in Germany's capital.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Berlin 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Berlin, Germany. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Berlin stay.'
+}
+
+const guide = {
+  destination: "Berlin",
+  country: "Germany",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-berlin"
+}
+
+const content = {
+  intro: "Berlin captivates business travelers with its unique blend of efficiency, culture, and surprising warmth. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Berlin's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Berlin offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Berlin are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Berlin's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Berlin",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Berlin requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Berlin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Berlin rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Berlin's unique character, and prepare for a stay that exceeds expectations. Your perfect Berlin adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

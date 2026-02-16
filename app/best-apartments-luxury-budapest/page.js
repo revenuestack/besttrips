@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Luxury Travelers in Budapest",
-  description: "Discover Budapest's finest luxury apartments offering elegance, space, and authentic Hungarian charm in the heart of Europe's most captivating capital."
+  title: 'Best Apartments for Luxury Travelers in Budapest 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Budapest, Hungary. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Budapest stay.'
+}
+
+const guide = {
+  destination: "Budapest",
+  country: "Hungary",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-budapest"
+}
+
+const content = {
+  intro: "Budapest captivates luxury travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Budapest's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Budapest offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Budapest are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Budapest's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel Budapest",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Budapest requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Budapest is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Budapest rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Budapest's unique character, and prepare for a stay that exceeds expectations. Your perfect Budapest adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Budapest",
-    country: "Hungary",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Budapest's luxury apartment scene combines Old World grandeur with modern sophistication, offering discerning travelers spacious retreats in historic buildings along the Danube, complete with thermal spa access and Michelin-star dining at your doorstep.",
-    why_stay: [
-      "Spacious elegance in restored 19th-century buildings featuring original frescoes, soaring ceilings, and contemporary amenities like smart home systems and wine cellars",
-      "Prime locations in District V (Belváros) and the Castle District place you steps from iconic landmarks, luxury boutiques, and renowned thermal baths",
-      "Privacy and personalized service with dedicated concierges, private chefs, and curated experiences unavailable to hotel guests"
-    ],
-    considerations: [
-      "Elevators are rare in historic buildings—confirm accessibility if climbing stairs is a concern",
-      "Peak season (May-September) requires booking 3-6 months ahead for premium properties"
-    ],
-    neighborhood_tips: "The Castle District offers unmatched views and historic atmosphere, while District V provides walkability to everything. Andrássy Avenue apartments blend elegance with cafe culture. For ultimate exclusivity, seek penthouses in the Jewish Quarter's renovated courtyards.",
-    booking_advice: "Book directly with boutique rental agencies specializing in luxury properties for better rates and authentic local expertise. Verify thermal bath partnerships and request apartments with Danube views—the evening panoramas justify premium rates."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

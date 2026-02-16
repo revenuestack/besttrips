@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Budget Travelers in Athens",
-  description: "Discover affordable apartments in Athens perfect for budget travelers. Find the best neighborhoods, amenities, and insider tips for comfortable, cost-effective stays in Greece's historic capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Budget Travelers in Athens</h1>
-      
-      <section className="hook">
-        <p>Athens offers budget travelers an incredible opportunity to experience ancient wonders without breaking the bank. Choosing an apartment over traditional hotels gives you authentic local living, kitchen facilities to save on dining costs, and often more space for your money.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Self-catering kitchens let you shop at local markets and prepare meals, cutting food expenses by up to 60% compared to eating out for every meal</li>
-          <li>Neighborhoods like Koukaki and Metaxourgio offer excellent value with apartments 30-50% cheaper than touristy Plaka while still being walkable to major sites</li>
-          <li>Weekly rental discounts and apartment sharing options make extended stays remarkably affordable, often under €30 per person per night</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early for summer travel (June-August) as budget-friendly apartments fill quickly, and verify that air conditioning is included as Athens summers are scorching</li>
-          <li>Check proximity to metro stations rather than just tourist sites—Athens' metro is affordable and efficient, making slightly distant apartments practical and much cheaper</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Koukaki and Mets offer charm near the Acropolis with genuine tavernas. Metaxourgio provides artistic vibes and rock-bottom prices. Exarchia appeals to bohemian travelers with alternative culture. Pagrati delivers residential authenticity with excellent value.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Start comparing Athens apartment listings today and secure your budget-friendly base for exploring ancient Greece's most captivating city.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Budget Travelers in Athens 2026 - BestTrips.org',
+  description: 'Discover the best apartments for budget travelers in Athens, Greece. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Athens stay.'
+}
+
+const guide = {
+  destination: "Athens",
+  country: "Greece",
+  accommodationType: "Apartments",
+  audience: "Budget Travelers",
+  slug: "best-apartments-budget-athens"
+}
+
+const content = {
+  intro: "Athens captivates budget travelers with its unique blend of mythology, beauty, and Mediterranean soul. Finding the perfect apartments here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Athens's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Athens offer space, kitchen, living like a local. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Athens are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Athens's apartments deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Athens Central Hostel",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €20-50 with consistent 8+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Athens requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Athens is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Athens rewards budget travelers who choose wisely. The apartments highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Athens's unique character, and prepare for a stay that exceeds expectations. Your perfect Athens adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

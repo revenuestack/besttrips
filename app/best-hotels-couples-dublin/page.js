@@ -1,63 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in Dublin: Romantic Stays in Ireland's Capital",
-  description: "Discover Dublin's most romantic hotels perfect for couples. From Georgian elegance to modern luxury, find your ideal romantic getaway in Ireland's capital."
-};
+  title: 'Best Hotels for Couples in Dublin 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Dublin, Ireland. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Dublin stay.'
+}
+
+const guide = {
+  destination: "Dublin",
+  country: "Ireland",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-dublin"
+}
+
+const content = {
+  intro: "Dublin captivates couples travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Dublin's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Dublin offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Dublin are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Dublin's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Dublin",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Dublin requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Dublin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Dublin rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Dublin's unique character, and prepare for a stay that exceeds expectations. Your perfect Dublin adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Hotels for Couples in Dublin</h1>
-      
-      <section className="mb-8">
-        <p className="text-lg leading-relaxed">
-          Dublin's cobblestone streets, vibrant culture, and warm hospitality create the perfect backdrop for romance. The city's finest hotels offer couples intimate escapes combining historic charm with contemporary luxury, ensuring unforgettable moments together in Ireland's captivating capital.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Hotels in Dublin</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Hotels provide full-service amenities including spa treatments, fine dining restaurants, and room service—perfect for romantic evenings without leaving your sanctuary</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Many Dublin hotels occupy beautifully restored Georgian buildings or historic properties, offering architectural charm and character that enhances the romantic atmosphere</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Central hotel locations put couples within walking distance of intimate pubs, candlelit restaurants, Trinity College, and scenic walks along the River Liffey</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Things to Consider</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Book well in advance during peak seasons (summer and St. Patrick's Day) as romantic hotels with special amenities fill quickly, and consider packages that include champagne or dining credits</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Temple Bar area hotels offer vibrant nightlife but can be noisy—opt for south-side neighborhoods for a quieter, more intimate atmosphere while staying centrally located</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Best Neighborhoods</h2>
-        <p className="leading-relaxed">
-          St. Stephen's Green offers elegant hotels near boutique shopping and leafy parks ideal for romantic strolls. Georgian Merrion Square provides sophisticated charm with proximity to museums and galleries. The Docklands features modern waterfront hotels with stunning views. Ballsbridge offers refined luxury in a quieter residential setting, while still being close to the city center via short taxi rides.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-lg font-medium text-blue-600">
-          Browse our curated selection of romantic Dublin hotels and book your perfect couples' retreat in Ireland's enchanting capital today.
-        </p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

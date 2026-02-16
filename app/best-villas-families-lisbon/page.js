@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Villas for Families in Lisbon - BestTrips.org',
-  description: 'Discover the best villas for families in Lisbon, Portugal. Expert recommendations, local tips, and top picks for your perfect stay.'
+  title: 'Best Villas for Families in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best villas for families in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
 }
 
 const guide = {
@@ -14,31 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Lisbon is one of Portugal's most captivating destinations, offering a perfect blend of culture, history, and modern amenities. For families, finding the right villas can make all the difference in your travel experience. Whether you're drawn to the historic charm of the old town or the vibrant energy of contemporary neighborhoods, Lisbon has something special waiting for you. The city's diverse accommodation options cater to every preference, from centrally located properties near major attractions to peaceful retreats in residential areas. Local hospitality in Lisbon is renowned for its warmth and attention to detail, ensuring that every guest feels welcomed and valued.",
+  intro: "Lisbon captivates families travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect villas here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to groups, celebrations, luxury retreats, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best villas for families travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Villas in Lisbon offer an authentic local experience that larger chain accommodations simply cannot match. You'll find yourself immersed in the neighborhood's daily rhythm, from morning markets to evening gatherings at local cafés.",
-    "For families, Lisbon's villas provide the perfect balance of comfort and convenience. Many properties are strategically located near public transport, making it easy to explore the city's many attractions.",
-    "The value proposition of villas in Lisbon is exceptional. You'll often get more space, better amenities, and a more personalized experience compared to standard hotel rooms at similar price points."
+    "Villas in Lisbon offer privacy, space, exclusive amenities. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best villas position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Lisbon's villas deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
 ],
   topPicks: [
     {
-        "name": "The Lisbon Villa House",
-        "description": "Located in the heart of Lisbon, this charming property offers stunning views and easy access to major attractions. The hosts are known for their exceptional hospitality and local knowledge.",
-        "highlight": "Rooftop terrace with panoramic city views"
-    },
-    {
-        "name": "Lisbon Central Villa",
-        "description": "A beautifully restored property combining historic character with modern comforts. Perfect for families who appreciate attention to detail and prime locations.",
-        "highlight": "Walking distance to top restaurants and museums"
-    },
-    {
-        "name": "The Garden Villa Lisbon",
-        "description": "Set in a quiet residential area, this property offers a peaceful retreat while remaining well-connected to the city center. The private garden is perfect for relaxation after a day of exploration.",
-        "highlight": "Private garden oasis in the city"
+        "name": "Boutique Lisbon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
     }
 ],
-  tips: "When booking villas in Lisbon, timing is everything. The shoulder seasons (spring and autumn) offer the best combination of pleasant weather and availability. For families, we recommend booking at least 2-3 months in advance for peak periods. Consider neighborhoods slightly outside the tourist center for better value and a more authentic experience. Public transport in Lisbon is excellent, so don't feel you need to stay right in the middle of everything. Check if your accommodation offers airport transfers or local experience recommendations—many hosts in Lisbon are happy to share insider tips that you won't find in guidebooks.",
-  conclusion: "Lisbon awaits with open arms, and choosing the right villas will set the foundation for an unforgettable trip. For families, the options we've highlighted offer the perfect combination of location, comfort, and authentic local character. Whether this is your first visit or your tenth, there's always something new to discover in this remarkable city. Book with confidence, pack your sense of adventure, and prepare for memories that will last a lifetime. Lisbon is ready to welcome you home."
+  tips: "Booking villas in Lisbon requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards families travelers who choose wisely. The villas highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

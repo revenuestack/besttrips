@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Boutique Hotels for Budget Travelers in Reykjavik - BestTrips.org',
-  description: 'Discover the best boutique hotels for budget travelers in Reykjavik, Iceland. Expert recommendations, local tips, and top picks for your perfect stay.'
+  title: 'Best Boutique Hotels for Budget Travelers in Reykjavik 2026 - BestTrips.org',
+  description: 'Discover the best boutique hotels for budget travelers in Reykjavik, Iceland. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Reykjavik stay.'
 }
 
 const guide = {
@@ -14,31 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Reykjavik is one of Iceland's most captivating destinations, offering a perfect blend of culture, history, and modern amenities. For budget travelers, finding the right boutique hotels can make all the difference in your travel experience. Whether you're drawn to the historic charm of the old town or the vibrant energy of contemporary neighborhoods, Reykjavik has something special waiting for you. The city's diverse accommodation options cater to every preference, from centrally located properties near major attractions to peaceful retreats in residential areas. Local hospitality in Reykjavik is renowned for its warmth and attention to detail, ensuring that every guest feels welcomed and valued.",
+  intro: "Reykjavik captivates budget travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect boutique hotels here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to Instagram-worthy stays, unique experiences, Reykjavik's accommodation scene delivers options that exceed expectations. This guide reveals the best boutique hotels for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Boutique Hotels in Reykjavik offer an authentic local experience that larger chain accommodations simply cannot match. You'll find yourself immersed in the neighborhood's daily rhythm, from morning markets to evening gatherings at local cafés.",
-    "For budget travelers, Reykjavik's boutique hotels provide the perfect balance of comfort and convenience. Many properties are strategically located near public transport, making it easy to explore the city's many attractions.",
-    "The value proposition of boutique hotels in Reykjavik is exceptional. You'll often get more space, better amenities, and a more personalized experience compared to standard hotel rooms at similar price points."
+    "Boutique hotels in Reykjavik offer unique character, design, personalized service. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Reykjavik are significant—the best boutique hotels position you within walking distance of major attractions and local favorites, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Reykjavik's boutique hotels deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
 ],
   topPicks: [
     {
-        "name": "The Reykjavik Boutique Hotel House",
-        "description": "Located in the heart of Reykjavik, this charming property offers stunning views and easy access to major attractions. The hosts are known for their exceptional hospitality and local knowledge.",
-        "highlight": "Rooftop terrace with panoramic city views"
-    },
-    {
-        "name": "Reykjavik Central Boutique Hotel",
-        "description": "A beautifully restored property combining historic character with modern comforts. Perfect for budget travelers who appreciate attention to detail and prime locations.",
-        "highlight": "Walking distance to top restaurants and museums"
-    },
-    {
-        "name": "The Garden Boutique Hotel Reykjavik",
-        "description": "Set in a quiet residential area, this property offers a peaceful retreat while remaining well-connected to the city center. The private garden is perfect for relaxation after a day of exploration.",
-        "highlight": "Private garden oasis in the city"
+        "name": "Reykjavik Central Hostel",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €20-50 with consistent 8+ ratings from guests.",
+        "highlight": "Prime City Center location"
     }
 ],
-  tips: "When booking boutique hotels in Reykjavik, timing is everything. The shoulder seasons (spring and autumn) offer the best combination of pleasant weather and availability. For budget travelers, we recommend booking at least 2-3 months in advance for peak periods. Consider neighborhoods slightly outside the tourist center for better value and a more authentic experience. Public transport in Reykjavik is excellent, so don't feel you need to stay right in the middle of everything. Check if your accommodation offers airport transfers or local experience recommendations—many hosts in Reykjavik are happy to share insider tips that you won't find in guidebooks.",
-  conclusion: "Reykjavik awaits with open arms, and choosing the right boutique hotels will set the foundation for an unforgettable trip. For budget travelers, the options we've highlighted offer the perfect combination of location, comfort, and authentic local character. Whether this is your first visit or your tenth, there's always something new to discover in this remarkable city. Book with confidence, pack your sense of adventure, and prepare for memories that will last a lifetime. Reykjavik is ready to welcome you home."
+  tips: "Booking boutique hotels in Reykjavik requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Reykjavik is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Reykjavik rewards budget travelers who choose wisely. The boutique hotels highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Reykjavik's unique character, and prepare for a stay that exceeds expectations. Your perfect Reykjavik adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

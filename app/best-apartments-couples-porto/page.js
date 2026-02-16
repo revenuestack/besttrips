@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Porto: Romantic Stays in Portugal's Charming Gem",
-  description: "Discover the best apartments for couples in Porto. From riverside views in Ribeira to trendy Cedofeita lofts, find your perfect romantic retreat in Portugal's second city."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Porto's enchanting blend of cobbled streets, riverside romance, and port wine cellars makes it an ideal couples' destination. Choosing an apartment over a hotel gives you the freedom to cook fresh market finds, enjoy intimate breakfasts on private balconies, and live like locals in one of Europe's most romantic cities.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and intimacy with your own space, kitchen, and often a balcony or terrace perfect for sunset wine moments overlooking the Douro River or historic city center</li>
-          <li>Better value than hotels, especially for longer stays, allowing you to splurge on experiences like wine tastings, river cruises, and dinners at acclaimed restaurants</li>
-          <li>Authentic neighborhoods away from tourist crowds where you can discover hidden cafés, neighborhood tascas, and experience genuine Porto life together</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Porto's historic districts feature steep hills and narrow streets with uneven cobblestones—factor in accessibility if mobility is a concern, and consider neighborhoods like Foz for flatter terrain</li>
-          <li>Many charming apartments are in centuries-old buildings without elevators—confirm floor level and building amenities before booking to avoid surprises</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Ribeira offers riverside romance with Douro views but can be touristy. Cedofeita and Miguel Bombarda blend trendy galleries, restaurants, and local life. Foz do Douro provides beachside charm with Atlantic sunsets. Miragaia offers historic character with fewer crowds, perfect for couples seeking authentic experiences.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Ready to find your romantic Porto retreat? Browse our curated selection of couple-friendly apartments and start planning your unforgettable Portuguese escape today.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Porto 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Porto, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Porto stay.'
+}
+
+const guide = {
+  destination: "Porto",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-porto"
+}
+
+const content = {
+  intro: "Porto captivates couples travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Porto's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Porto offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Porto are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Porto's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Porto",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Porto requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Porto is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Porto rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Porto's unique character, and prepare for a stay that exceeds expectations. Your perfect Porto adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

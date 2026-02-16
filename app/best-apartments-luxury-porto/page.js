@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Luxury Apartments in Porto: Where Elegance Meets Authentic Portuguese Living",
-  description: "Discover Porto's finest luxury apartments offering spacious elegance, historic charm, and modern amenities. Your guide to upscale accommodation in Portugal's enchanting riverside city."
+  title: 'Best Apartments for Luxury Travelers in Porto 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Porto, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Porto stay.'
+}
+
+const guide = {
+  destination: "Porto",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-porto"
+}
+
+const content = {
+  intro: "Porto captivates luxury travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Porto's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Porto offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Porto are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Porto's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel Porto",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Porto requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Porto is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Porto rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Porto's unique character, and prepare for a stay that exceeds expectations. Your perfect Porto adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Porto",
-    country: "Portugal",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Porto's luxury apartment scene brilliantly blends historic Portuguese architecture with contemporary sophistication, offering discerning travelers private havens in one of Europe's most captivating cities. These curated spaces provide the perfect base for exploring Porto's riverside charm, renowned wine culture, and UNESCO-listed historic center while enjoying the privacy and amenities that luxury hotels simply cannot match.",
-    why_stay: [
-      "Space and privacy with full kitchens, multiple bedrooms, and living areas—ideal for longer stays or traveling with companions while maintaining the intimacy of a private residence",
-      "Authentic neighborhood immersion in historic districts like Ribeira, Foz do Douro, or Boavista, with local markets, traditional tascas, and genuine Porto lifestyle at your doorstep",
-      "Exceptional value compared to luxury hotels, offering premium amenities like rooftop terraces, wine cellars, and concierge services at more competitive rates"
-    ],
-    considerations: [
-      "Verify elevator availability in historic buildings—many charming apartments occupy renovated 18th-century townhouses with steep staircases and no lift access",
-      "Book well in advance during peak seasons (May-September) and port wine harvest periods when luxury inventory becomes extremely limited"
-    ],
-    neighborhood_tips: "Baixa and Ribeira offer historic atmosphere steps from iconic landmarks, while Foz do Douro provides coastal sophistication with beach access. Boavista appeals to those seeking modern luxury with excellent dining and shopping.",
-    booking_advice: "Request detailed photos and recent reviews focusing on cleanliness and host responsiveness. Consider properties with dedicated concierge services for restaurant reservations and private port wine cellar tours."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

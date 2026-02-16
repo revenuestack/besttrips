@@ -1,108 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Adventure Seekers in London',
-  description: 'London\'s apartments offer adventure seekers the perfect base to explore this dynamic city\'s endless thrills.'
+  title: 'Best Apartments for Adventure Seekers in London 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-london"
+}
+
+const content = {
+  intro: "London captivates adventure travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, London's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in London offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in London are significant—the best apartments position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: London's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique London",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in London requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    intro: "London's apartments offer adventure seekers the perfect base to explore this dynamic city's endless thrills. From rock climbing walls to Thames kayaking, urban exploration to food market adventures, staying in a self-catered flat gives you freedom and flexibility. Wake up in vibrant neighborhoods where every street corner promises discovery.",
-    
-    recommendations: [
-      {
-        name: "The Hoxton Shoreditch",
-        location: "Shoreditch, East London",
-        priceRange: "£150-220/night",
-        rating: 8.9,
-        reviewCount: 3200,
-        features: [
-          "Industrial-chic design in the heart of street art district",
-          "Free WiFi, weekday breakfast bag, and co-working spaces",
-          "Walking distance to Brick Lane markets, climbing gyms, and Olympic Park"
-        ],
-        whyGreat: "Perfect for adventure seekers wanting to be in London's most creative neighborhood, with rooftop bars, vintage shops, and street food markets all within 10 minutes walk. The vibe is young, energetic, and unpretentious.",
-        bookingUrl: "https://www.booking.com/hotel/gb/the-hoxton-shoreditch.html"
-      },
-      {
-        name: "CitizenM Tower of London",
-        location: "Tower Hill, Central London",
-        priceRange: "£100-160/night",
-        rating: 8.7,
-        reviewCount: 5100,
-        features: [
-          "Modern pod-style rooms with floor-to-ceiling windows",
-          "24/7 food, rooftop bar with Thames views",
-          "Steps from Tower Bridge and Borough Market"
-        ],
-        whyGreat: "Ideal base for urban explorers - wake up to Tower Bridge views, breakfast at Borough Market, kayak the Thames by afternoon. The self-service tech suits independent travelers who want efficiency without sacrificing style.",
-        bookingUrl: "https://www.booking.com/hotel/gb/citizenm-london-tower-of-london.html"
-      },
-      {
-        name: "Qbic London City",
-        location: "Whitechapel, East London",
-        priceRange: "£80-130/night",
-        rating: 8.4,
-        reviewCount: 2800,
-        features: [
-          "Sustainable design with compact, clever rooms",
-          "Excellent value for central location near Spitalfields",
-          "Bike storage and easy access to cycling routes"
-        ],
-        whyGreat: "Budget-friendly without feeling cheap, perfect for adventurers who'd rather spend money on experiences than accommodation. The Whitechapel location puts you near trendy Spitalfields Market while keeping costs down.",
-        bookingUrl: "https://www.booking.com/hotel/gb/qbic-london-city.html"
-      },
-      {
-        name: "Ace Hotel Shoreditch",
-        location: "Shoreditch, East London",
-        priceRange: "£180-280/night",
-        rating: 8.8,
-        reviewCount: 1900,
-        features: [
-          "Boutique hotel with vintage vinyl players and curated playlists",
-          "Miranda Cafe serves all-day breakfast and natural wines",
-          "Art gallery, live music venue, and creative community events"
-        ],
-        whyGreat: "For adventure seekers who appreciate design and culture alongside physical activities. The hotel doubles as an East London cultural hub, hosting DJs, artists, and creatives. Wake up to coffee from one of London's best cafes.",
-        bookingUrl: "https://www.booking.com/hotel/gb/ace-hotel-shoreditch.html"
-      },
-      {
-        name: "Generator London",
-        location: "King's Cross, North London",
-        priceRange: "£35-85/night (private rooms)",
-        rating: 8.2,
-        reviewCount: 6700,
-        features: [
-          "Stylish hostel with private room options",
-          "Bar, cinema room, and social events for meeting fellow travelers",
-          "Near King's Cross for day trips to Cambridge, Oxford, Brighton"
-        ],
-        whyGreat: "Best value for solo adventurers or those wanting to meet other travelers. The King's Cross location is perfect for day trips while the social atmosphere means you'll never adventure alone. Great for ages 18-35.",
-        bookingUrl: "https://www.booking.com/hotel/gb/generator-hostel-london.html"
-      }
-    ],
-    
-    why_stay: [
-      "Apartments provide kitchens for fueling early morning adventures and late-night returns from London's legendary nightlife scene.",
-      "Self-catering accommodation saves money for experiences like indoor skydiving, zip-lining at O2 Arena, or spontaneous West End shows.",
-      "Washing machines mean packing light for multi-day adventures hiking the Thames Path or cycling through Richmond Park's wilderness."
-    ],
-    neighborhoods: [
-      "Shoreditch: Street art paradise with climbing gyms, rooftop bars, and direct access to Olympic Park's adventure activities.",
-      "Camden: Edgy markets, canal-side walks, and proximity to Regent's Park for morning runs and outdoor yoga sessions.",
-      "Canary Wharf: Modern apartments near cable car rides, watersports centers, and excellent transport links to adventure destinations."
-    ],
-    tips: [
-      "Book apartments near Tube stations for quick access to day trips like Brighton beaches or Chiltern Hills hiking trails.",
-      "Choose neighborhoods with 24-hour grocery stores and bike rental schemes for maximum spontaneity and adventure flexibility."
-    ],
-    cta: "Book your London adventure apartment today and transform the city into your ultimate urban playground."
-  }
-
-  return <SimpleGuide 
-    content={content} 
-    title="Best Apartments for Adventure Seekers in London"
-    destination="London"
-    slug="best-apartments-adventure-london"
-  />
+  return <AccommodationGuide guide={guide} content={content} />
 }

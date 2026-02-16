@@ -1,32 +1,46 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Budget Hotels in Barcelona",
-  description: "Discover the best budget hotels in Barcelona offering comfort, location, and value. Find affordable accommodation near Sagrada Familia, Gothic Quarter, and Barcelona's top attractions."
-};
+  title: 'Best Hotels for Budget Travelers in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best hotels for budget travelers in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Hotels",
+  audience: "Budget Travelers",
+  slug: "best-hotels-budget-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates budget travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect hotels here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Barcelona offer service, amenities, convenience. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best hotels position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Barcelona's hotels deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Generator Barcelona",
+        "description": "Located in Gràcia, this property offers Pool and terrace, near Park Güell. Prices range €20-60 with consistent 8.3+ ratings from guests.",
+        "highlight": "Pool and terrace, near Park Güell"
+    },
+    {
+        "name": "Casa Gracia",
+        "description": "Located in Gràcia, this property offers Boutique hostel with cocktail bar. Prices range €25-80 with consistent 8.5+ ratings from guests.",
+        "highlight": "Boutique hostel with cocktail bar"
+    },
+    {
+        "name": "TOC Hostel Barcelona",
+        "description": "Located in Eixample, this property offers Rooftop pool, central location. Prices range €18-55 with consistent 8.1+ ratings from guests.",
+        "highlight": "Rooftop pool, central location"
+    }
+],
+  tips: "Booking hotels in Barcelona requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards budget travelers who choose wisely. The hotels highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Budget Hotels in Barcelona</h1>
-      
-      <p className="hook">Barcelona welcomes budget travelers with an impressive selection of affordable hotels that don't compromise on location or comfort. From the winding streets of the Gothic Quarter to the beachside neighborhoods of Barceloneta, you'll find wallet-friendly stays that put you right in the heart of the action.</p>
-      
-      <h2>Why Choose Budget Hotels</h2>
-      <ul>
-        <li>Stay in central locations near Sagrada Familia, Las Ramblas, and Park Güell without breaking the bank, with many budget hotels offering rooftop terraces and complimentary breakfast</li>
-        <li>Access excellent public transportation from most budget accommodations, making it easy to explore Gaudí's architectural masterpieces and Barcelona's vibrant neighborhoods</li>
-        <li>Enjoy authentic Catalan culture in local neighborhoods like Gràcia and El Raval, where budget hotels offer better value and more genuine Barcelona experiences</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book well in advance during peak season (June-August) and major events like Mobile World Congress, as budget options fill quickly and prices can double</li>
-        <li>Many budget hotels in Barcelona are located in older buildings without elevators, and rooms may be compact by international standards</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>El Raval and Poble Sec offer the best budget hotel values with authentic local flavor, while Eixample provides better accessibility and metro connections. Avoid staying too close to Las Ramblas unless you enjoy constant tourist crowds and higher prices.</p>
-      
-      <p className="cta">Book your Barcelona budget hotel today and save more for tapas, Gaudí tours, and unforgettable Mediterranean experiences.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

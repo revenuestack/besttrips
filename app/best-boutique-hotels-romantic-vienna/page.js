@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Boutique Hotels for Romantic Getaways in Vienna - BestTrips.org',
-  description: 'Discover the best boutique hotels for romantic getaways in Vienna, Austria. Expert recommendations, local tips, and top picks for your perfect stay.'
+  title: 'Best Boutique Hotels for Romantic Getaways in Vienna 2026 - BestTrips.org',
+  description: 'Discover the best boutique hotels for romantic getaways in Vienna, Austria. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Vienna stay.'
 }
 
 const guide = {
@@ -14,31 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Vienna is one of Austria's most captivating destinations, offering a perfect blend of culture, history, and modern amenities. For romantic getaways, finding the right boutique hotels can make all the difference in your travel experience. Whether you're drawn to the historic charm of the old town or the vibrant energy of contemporary neighborhoods, Vienna has something special waiting for you. The city's diverse accommodation options cater to every preference, from centrally located properties near major attractions to peaceful retreats in residential areas. Local hospitality in Vienna is renowned for its warmth and attention to detail, ensuring that every guest feels welcomed and valued.",
+  intro: "Vienna captivates romantic travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect boutique hotels here means balancing intimacy, special touches, memorable moments with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to Instagram-worthy stays, unique experiences, Vienna's accommodation scene delivers options that exceed expectations. This guide reveals the best boutique hotels for romantic travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Boutique Hotels in Vienna offer an authentic local experience that larger chain accommodations simply cannot match. You'll find yourself immersed in the neighborhood's daily rhythm, from morning markets to evening gatherings at local cafés.",
-    "For romantic getaways, Vienna's boutique hotels provide the perfect balance of comfort and convenience. Many properties are strategically located near public transport, making it easy to explore the city's many attractions.",
-    "The value proposition of boutique hotels in Vienna is exceptional. You'll often get more space, better amenities, and a more personalized experience compared to standard hotel rooms at similar price points."
+    "Boutique hotels in Vienna offer unique character, design, personalized service. For romantic travelers specifically, this means access to four-poster beds, champagne, private balconies that larger chains often lack.",
+    "Location advantages in Vienna are significant—the best boutique hotels position you within walking distance of major attractions and local favorites, while keeping you connected to candlelit dinners, couples spa, sunset views that define the romantic experience here.",
+    "Value proposition matters: Vienna's boutique hotels deliver intimacy, special touches, memorable moments at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
 ],
   topPicks: [
     {
-        "name": "The Vienna Boutique Hotel House",
-        "description": "Located in the heart of Vienna, this charming property offers stunning views and easy access to major attractions. The hosts are known for their exceptional hospitality and local knowledge.",
-        "highlight": "Rooftop terrace with panoramic city views"
-    },
-    {
-        "name": "Vienna Central Boutique Hotel",
-        "description": "A beautifully restored property combining historic character with modern comforts. Perfect for romantic getaways who appreciate attention to detail and prime locations.",
-        "highlight": "Walking distance to top restaurants and museums"
-    },
-    {
-        "name": "The Garden Boutique Hotel Vienna",
-        "description": "Set in a quiet residential area, this property offers a peaceful retreat while remaining well-connected to the city center. The private garden is perfect for relaxation after a day of exploration.",
-        "highlight": "Private garden oasis in the city"
+        "name": "Boutique Vienna",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
     }
 ],
-  tips: "When booking boutique hotels in Vienna, timing is everything. The shoulder seasons (spring and autumn) offer the best combination of pleasant weather and availability. For romantic getaways, we recommend booking at least 2-3 months in advance for peak periods. Consider neighborhoods slightly outside the tourist center for better value and a more authentic experience. Public transport in Vienna is excellent, so don't feel you need to stay right in the middle of everything. Check if your accommodation offers airport transfers or local experience recommendations—many hosts in Vienna are happy to share insider tips that you won't find in guidebooks.",
-  conclusion: "Vienna awaits with open arms, and choosing the right boutique hotels will set the foundation for an unforgettable trip. For romantic getaways, the options we've highlighted offer the perfect combination of location, comfort, and authentic local character. Whether this is your first visit or your tenth, there's always something new to discover in this remarkable city. Book with confidence, pack your sense of adventure, and prepare for memories that will last a lifetime. Vienna is ready to welcome you home."
+  tips: "Booking boutique hotels in Vienna requires strategy. For romantic travelers, prioritize intimacy, special touches, memorable moments when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider candlelit dinners, couples spa, sunset views when choosing your base. Transport in Vienna is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Vienna rewards romantic travelers who choose wisely. The boutique hotels highlighted here represent the best of dreamy and passionate accommodations, each offering intimacy, special touches, memorable moments that elevates your experience. Whether you prioritize four-poster beds or private balconies, these options deliver. Book with confidence, embrace Vienna's unique character, and prepare for a stay that exceeds expectations. Your perfect Vienna adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

@@ -1,33 +1,46 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Families in Paris",
-  description: "Discover the best family-friendly hotels in Paris with spacious rooms, kid-friendly amenities, and proximity to top attractions. Plan your perfect family vacation to the City of Light.",
-};
+  title: 'Best Hotels for Families in Paris 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in Paris, France. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Paris stay.'
+}
+
+const guide = {
+  destination: "Paris",
+  country: "France",
+  accommodationType: "Hotels",
+  audience: "Families",
+  slug: "best-hotels-families-paris"
+}
+
+const content = {
+  intro: "Paris captivates families travelers with its unique blend of art, cuisine, and timeless elegance. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from Le Marais, Saint-Germain-des-Prés, Montmartre—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Paris's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Paris offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Paris are significant—the best hotels position you within walking distance of the Eiffel Tower, Louvre, and Montmartre, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Paris's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hôtel Particulier Montmartre",
+        "description": "Located in Montmartre, this property offers Secret garden oasis in artistic quarter. Prices range €350-600 with consistent 9.1+ ratings from guests.",
+        "highlight": "Secret garden oasis in artistic quarter"
+    },
+    {
+        "name": "Pavillon de la Reine",
+        "description": "Located in Le Marais, this property offers Hidden courtyard on Place des Vosges. Prices range €300-550 with consistent 9+ ratings from guests.",
+        "highlight": "Hidden courtyard on Place des Vosges"
+    },
+    {
+        "name": "Hôtel Providence",
+        "description": "Located in République, this property offers Rock-and-roll chic with cocktail bar. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Rock-and-roll chic with cocktail bar"
+    }
+],
+  tips: "Booking hotels in Paris requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include Le Marais and Saint-Germain-des-Prés. Local insight: Skip the tourist cafés on Champs-Élysées - locals head to Canal Saint-Martin Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Paris is excellent via Metro, so location flexibility depends on your priorities.",
+  conclusion: "Paris rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Paris's unique character, and prepare for a stay that exceeds expectations. Your perfect Paris adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <>
-      <h1>Best Hotels for Families in Paris</h1>
-      
-      <p>Paris welcomes families with open arms, offering an enchanting blend of world-class museums, charming parks, and unforgettable experiences that captivate children and adults alike. Finding the right hotel can transform your family vacation from stressful to spectacular, providing a comfortable home base after days exploring the City of Light. The best family hotels in Paris combine spacious accommodations, convenient locations, and thoughtful amenities that make traveling with kids genuinely enjoyable.</p>
-
-      <h2>Why Choose Paris for Families</h2>
-      <ul>
-        <li>Many Parisian family hotels offer connecting rooms, cribs, and kid-friendly menus, ensuring comfort for all ages while maintaining the elegance France is known for</li>
-        <li>Strategic locations near metro stations and major attractions like the Eiffel Tower, Louvre, and Luxembourg Gardens minimize transit time and maximize family fun</li>
-        <li>Family-oriented hotels often provide services like babysitting, children's activities, and early dining options that respect both kids' schedules and parents' sanity</li>
-      </ul>
-
-      <h2>Considerations</h2>
-      <ul>
-        <li>Parisian hotel rooms tend to be smaller than American standards, so verify room dimensions and bed configurations before booking, especially for families with multiple children</li>
-        <li>Peak season (June-August) brings premium prices and crowds; consider visiting during shoulder seasons for better rates and a more relaxed experience</li>
-      </ul>
-
-      <h2>Best Neighborhoods</h2>
-      <p>The 7th arrondissement near the Eiffel Tower offers iconic views and garden spaces perfect for families, while the Marais (3rd/4th) provides charming streets and shorter distances to multiple attractions. Saint-Germain-des-Prés combines elegance with proximity to Luxembourg Gardens, ideal for afternoon picnics and playground breaks.</p>
-
-      <h2>Start Your Paris Adventure</h2>
-      <p>Start planning your family's Parisian adventure today by exploring hotels that cater specifically to traveling families. Book early to secure the best rates and room configurations, and prepare for a trip filled with croissants, culture, and memories that will last a lifetime.</p>
-    </>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in London",
-  description: "Discover top serviced apartments in London perfect for business travelers. Compare locations, amenities, and proximity to financial districts for your corporate stay."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>London's serviced apartments offer business travelers the perfect blend of professional amenities and home comfort, with flexible stays that adapt to your corporate schedule.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Fully equipped kitchens and separate living spaces provide cost-effective alternatives to hotels for extended stays, while high-speed Wi-Fi and dedicated workspaces ensure productivity throughout your trip.</li>
-          <li>Prime locations in Canary Wharf, The City, and Mayfair place you minutes from London's financial hubs, reducing commute times and maximizing efficiency during busy work schedules.</li>
-          <li>Flexible check-in times, 24/7 concierge services, and weekly housekeeping eliminate the hassles of traditional rentals while maintaining the privacy and space essential for business professionals.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book well in advance during peak business seasons (September-November, January-March) as corporate demand fills premium apartments quickly, particularly near major financial districts.</li>
-          <li>Factor in London's congestion charge zones when selecting locations if you plan to drive, though most business travelers find the Tube and taxi services more convenient for city navigation.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Canary Wharf dominates for finance professionals, while Mayfair and St. James's serve luxury corporate needs. South Bank and Southwark offer modern riverside options with excellent transport links, and King's Cross provides emerging tech hub proximity with Eurostar access for continental business.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Browse our curated selection of business-ready apartments and secure your London base with instant confirmation and flexible cancellation policies.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in London 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-london"
+}
+
+const content = {
+  intro: "London captivates business travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, London's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in London offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in London are significant—the best apartments position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: London's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique London",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in London requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

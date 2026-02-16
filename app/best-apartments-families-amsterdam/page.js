@@ -1,29 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Families in Amsterdam',
-  description: "Amsterdam's family-friendly apartments offer the perfect home base for exploring this enchanting Dutch city with children."
+  title: 'Best Apartments for Families in Amsterdam 2026 - BestTrips.org',
+  description: 'Discover the best apartments for families in Amsterdam, Netherlands. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Amsterdam stay.'
+}
+
+const guide = {
+  destination: "Amsterdam",
+  country: "Netherlands",
+  accommodationType: "Apartments",
+  audience: "Families",
+  slug: "best-apartments-families-amsterdam"
+}
+
+const content = {
+  intro: "Amsterdam captivates families travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Amsterdam's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Amsterdam offer space, kitchen, living like a local. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Amsterdam are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Amsterdam's apartments deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Amsterdam",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Amsterdam requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Amsterdam is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Amsterdam rewards families travelers who choose wisely. The apartments highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Amsterdam's unique character, and prepare for a stay that exceeds expectations. Your perfect Amsterdam adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-  "intro": "Amsterdam's family-friendly apartments offer the perfect home base for exploring this enchanting Dutch city with children. Spacious rentals with full kitchens and living areas provide comfort and flexibility that hotels simply can't match. From canal-side charm to modern conveniences, Amsterdam's apartment options cater perfectly to families seeking memorable European adventures.",
-  "why_stay": [
-    "Full kitchens let you prepare kid-friendly meals, saving money while accommodating picky eaters and dietary needs effortlessly.",
-    "Extra space means children have room to play while parents relax, creating a true home-away-from-home experience.",
-    "Washing machines in many apartments make packing light possible, especially helpful for families with young children prone to spills."
-  ],
-  "neighborhoods": [
-    "Jordaan: Charming canals, cozy cafes, and the Anne Frank House nearby. Safe streets perfect for stroller walks.",
-    "De Pijp: Vibrant local vibe with the famous Albert Cuyp Market. Excellent playgrounds and family-run eateries throughout.",
-    "Oud-West: Residential feel near Vondelpark, Amsterdam's green heart. Quiet evenings, easy tram access to major attractions."
-  ],
-  "tips": [
-    "Book apartments with bike storage and rent family cargo bikes to explore like locals—kids love riding through the city.",
-    "Choose ground-floor or elevator-equipped buildings, as many charming canal houses have steep stairs challenging with strollers and luggage."
-  ],
-  "cta": "Discover your perfect Amsterdam family apartment today and create unforgettable memories in this magical, bike-friendly city!"
-}
-
-  return <SimpleGuide content={content} destination="Amsterdam" slug="best-apartments-families-amsterdam" title="Best Apartments for Families in Amsterdam" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

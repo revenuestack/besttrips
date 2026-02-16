@@ -1,40 +1,46 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Barcelona",
-  description: "Discover the perfect Barcelona apartments for thrill-seekers. Base yourself near climbing spots, beaches, and mountain trails while exploring Catalonia's adventure capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Barcelona isn\'t just about Gaudí and tapas—it\'s an adventure playground where Mediterranean beaches meet Montjuïc\'s hiking trails and world-class climbing spots. The right apartment puts you within reach of kitesurfing, mountain biking, and dawn swims before your morning cortado.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Strategic locations near Barceloneta Beach for water sports, Collserola Natural Park for trail running, and climbing gyms like Sharma Climbing BCN—many apartments offer bike storage and gear-drying areas.</li>
-          <li>Flexible self-catering options let you fuel early starts and late returns on your schedule, with local markets like La Boqueria providing fresh supplies for packed lunches before day trips to Montserrat.</li>
-          <li>Cost-effective bases for multi-day adventures: use Barcelona as your hub for Costa Brava coasteering, Pyrenees hiking, or Via Ferrata routes, returning to comfortable apartments instead of pricey hotels.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments in neighborhoods with easy metro access to adventure zones—Sants for mountain access, Poblenou for beaches—and confirm secure storage for bikes, boards, or climbing gear.</li>
-          <li>Summer (June-September) offers perfect water sports conditions but higher prices; spring and fall provide ideal hiking weather and better apartment rates with fewer tourists crowding trails.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Poblenou blends beach proximity with local vibes and excellent cycling infrastructure. Gràcia offers authentic Barcelona living near Collserola\'s trails. Sants provides direct access to mountain trains and bike routes, while Barceloneta puts you steps from Mediterranean water sports—though it\'s touristy and pricier.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Find your adventure base in Barcelona today and start planning epic days exploring Catalonia\'s peaks, seas, and hidden trails.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates adventure travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Barcelona offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best apartments position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Barcelona's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hotel Brummell",
+        "description": "Located in Poble Sec, this property offers Rooftop pool, local neighborhood vibe. Prices range €150-280 with consistent 8.9+ ratings from guests.",
+        "highlight": "Rooftop pool, local neighborhood vibe"
+    },
+    {
+        "name": "Casa Camper Barcelona",
+        "description": "Located in El Raval, this property offers Free 24h snack bar, minimalist design. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Free 24h snack bar, minimalist design"
+    },
+    {
+        "name": "Hotel Neri",
+        "description": "Located in Gothic Quarter, this property offers Medieval palace with rooftop terrace. Prices range €250-450 with consistent 9+ ratings from guests.",
+        "highlight": "Medieval palace with rooftop terrace"
+    }
+],
+  tips: "Booking apartments in Barcelona requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

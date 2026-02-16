@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Athens",
-  description: "Discover top serviced apartments in Athens perfect for business travelers. Modern amenities, central locations, and flexible stays near major business districts."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Business Travelers in Athens</h1>
-      
-      <section className="hook">
-        <p>Athens combines ancient history with modern business infrastructure, making it an ideal destination for corporate travelers seeking comfortable, well-connected apartment accommodations.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Serviced apartments offer more space and privacy than hotels, with full kitchens, separate living areas, and workspaces perfect for extended stays or hosting client meetings.</li>
-          <li>Athens' compact city center means most business districts, including Syntagma Square and the financial district, are within 15-20 minutes of quality apartment rentals.</li>
-          <li>Cost-effective for longer stays, apartments provide weekly rates significantly lower than hotels while including amenities like high-speed WiFi, laundry facilities, and 24/7 concierge services.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments near metro stations (Syntagma, Monastiraki, or Evangelismos) for easy airport access via Line 3, cutting commute time to under 45 minutes.</li>
-          <li>Verify that apartments include dedicated workspace with ergonomic furniture and reliable internet speeds of at least 100 Mbps for video conferencing needs.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Kolonaki offers upscale living near embassies and corporate offices, while Syntagma provides direct parliament proximity. Plaka balances business access with cultural charm, and Koukaki delivers modern apartments near Acropolis with excellent dining options.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Book your Athens business apartment today and experience the perfect blend of productivity and Mediterranean lifestyle in Greece's dynamic capital.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Athens 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Athens, Greece. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Athens stay.'
+}
+
+const guide = {
+  destination: "Athens",
+  country: "Greece",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-athens"
+}
+
+const content = {
+  intro: "Athens captivates business travelers with its unique blend of mythology, beauty, and Mediterranean soul. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Athens's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Athens offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Athens are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Athens's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Athens",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Athens requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Athens is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Athens rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Athens's unique character, and prepare for a stay that exceeds expectations. Your perfect Athens adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

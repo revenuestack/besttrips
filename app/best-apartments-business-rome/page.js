@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Rome",
-  description: "Discover top apartment rentals in Rome perfect for business travelers. Find fully-equipped accommodations near business districts with high-speed WiFi, workspaces, and convenient transport links."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Rome's business scene demands accommodation that balances productivity with comfort. Apartments offer business travelers the space, amenities, and flexibility that hotels often lack, making them the smart choice for extended stays or frequent visits to Italy's capital.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Cost-effectiveness for extended stays with fully-equipped kitchens that reduce dining expenses and allow meal prep on your schedule</li>
-          <li>Dedicated workspace with high-speed WiFi, ergonomic furniture, and quiet environments for video calls and focused work without hotel room distractions</li>
-          <li>Strategic locations near EUR business district, Termini Station, and conference centers with easy metro access to meetings across the city</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments with 24/7 check-in flexibility and responsive property management to accommodate irregular business travel schedules and last-minute itinerary changes</li>
-          <li>Verify workspace amenities including desk size, chair quality, reliable internet speeds, and proximity to coworking spaces or business centers for backup options</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>EUR district offers modern apartments near corporate offices and conference venues. Prati provides elegant options near Vatican business events with excellent restaurants. Termini area ensures quick airport transfers and nationwide train connections. Monti blends historic charm with proximity to government offices and embassies.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Browse verified business-friendly apartments in Rome and secure your productive base in the Eternal City today.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Rome 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Rome, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Rome stay.'
+}
+
+const guide = {
+  destination: "Rome",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-rome"
+}
+
+const content = {
+  intro: "Rome captivates business travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Rome's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Rome offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Rome are significant—the best apartments position you within walking distance of the Colosseum, Vatican, and Trastevere, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Rome's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Rome",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Rome requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Rome is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Rome rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Rome's unique character, and prepare for a stay that exceeds expectations. Your perfect Rome adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

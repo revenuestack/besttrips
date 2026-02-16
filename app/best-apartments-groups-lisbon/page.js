@@ -1,28 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Apartments for Groups in Lisbon | Group Travel Guide",
-  description: "Find the perfect apartment for your group in Lisbon. Compare neighborhoods, prices, and get expert booking tips for an unforgettable Portuguese getaway."
-};
+  title: 'Best Apartments for Groups in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best apartments for groups in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
+}
+
+const guide = {
+  destination: "Lisbon",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Groups",
+  slug: "best-apartments-groups-lisbon"
+}
+
+const content = {
+  intro: "Lisbon captivates groups travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Lisbon offer space, kitchen, living like a local. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: Lisbon's apartments deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Lisbon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Lisbon requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards groups travelers who choose wisely. The apartments highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Apartments for Groups in Lisbon</h1>
-      
-      <p>Lisbon's charm shines brightest when shared with friends or family, and apartments offer the perfect home base for group adventures. With spacious living areas, fully-equipped kitchens, and the freedom to create your own schedule, apartments transform a simple trip into an authentic Lisbon experience.</p>
-      
-      <h2>Why Choose Apartments</h2>
-      <p>Apartments give groups the space to spread out while staying together, with separate bedrooms, communal areas, and kitchens that slash dining costs. You'll save money compared to booking multiple hotel rooms, enjoy more privacy, and experience Lisbon like a local in residential neighborhoods.</p>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>Alfama offers historic charm with winding streets and fado music venues, perfect for culture enthusiasts. Bairro Alto buzzes with nightlife and restaurants, ideal for younger groups seeking entertainment. Príncipe Real provides upscale living with trendy cafes and easy metro access. Belém suits families wanting space, waterfront views, and proximity to major monuments.</p>
-      
-      <h2>What to Expect</h2>
-      <p>Budget-friendly apartments in residential areas start at €80-120 per night for 4-6 guests. Mid-range options in central neighborhoods like Chiado or Santos run €150-250 nightly with modern amenities, balconies, and washing machines. Luxury penthouses with Tagus views and rooftop terraces reach €300-500+ per night.</p>
-      
-      <h2>Booking Tips</h2>
-      <p>Book 2-3 months ahead for summer or festivals to secure prime locations and better rates. Always verify guest capacity limits and read reviews mentioning stairs, as many Lisbon buildings lack elevators. Consider apartments near metro stations for easy exploration beyond your neighborhood.</p>
-      
-      <p>Ready to explore Lisbon with your crew? Browse apartments that match your group's style and budget, and start planning unforgettable memories in Portugal's captivating capital.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

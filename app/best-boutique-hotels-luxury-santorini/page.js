@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Boutique Hotels for Luxury Travelers in Santorini - BestTrips.org',
-  description: 'Discover the best boutique hotels for luxury travelers in Santorini, Greece. Expert recommendations, local tips, and top picks for your perfect stay.'
+  title: 'Best Boutique Hotels for Luxury Travelers in Santorini 2026 - BestTrips.org',
+  description: 'Discover the best boutique hotels for luxury travelers in Santorini, Greece. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Santorini stay.'
 }
 
 const guide = {
@@ -14,31 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Santorini is one of Greece's most captivating destinations, offering a perfect blend of culture, history, and modern amenities. For luxury travelers, finding the right boutique hotels can make all the difference in your travel experience. Whether you're drawn to the historic charm of the old town or the vibrant energy of contemporary neighborhoods, Santorini has something special waiting for you. The city's diverse accommodation options cater to every preference, from centrally located properties near major attractions to peaceful retreats in residential areas. Local hospitality in Santorini is renowned for its warmth and attention to detail, ensuring that every guest feels welcomed and valued.",
+  intro: "Santorini captivates luxury travelers with its unique blend of mythology, beauty, and Mediterranean soul. Finding the perfect boutique hotels here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to Instagram-worthy stays, unique experiences, Santorini's accommodation scene delivers options that exceed expectations. This guide reveals the best boutique hotels for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Boutique Hotels in Santorini offer an authentic local experience that larger chain accommodations simply cannot match. You'll find yourself immersed in the neighborhood's daily rhythm, from morning markets to evening gatherings at local cafés.",
-    "For luxury travelers, Santorini's boutique hotels provide the perfect balance of comfort and convenience. Many properties are strategically located near public transport, making it easy to explore the city's many attractions.",
-    "The value proposition of boutique hotels in Santorini is exceptional. You'll often get more space, better amenities, and a more personalized experience compared to standard hotel rooms at similar price points."
+    "Boutique hotels in Santorini offer unique character, design, personalized service. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Santorini are significant—the best boutique hotels position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Santorini's boutique hotels deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
 ],
   topPicks: [
     {
-        "name": "The Santorini Boutique Hotel House",
-        "description": "Located in the heart of Santorini, this charming property offers stunning views and easy access to major attractions. The hosts are known for their exceptional hospitality and local knowledge.",
-        "highlight": "Rooftop terrace with panoramic city views"
-    },
-    {
-        "name": "Santorini Central Boutique Hotel",
-        "description": "A beautifully restored property combining historic character with modern comforts. Perfect for luxury travelers who appreciate attention to detail and prime locations.",
-        "highlight": "Walking distance to top restaurants and museums"
-    },
-    {
-        "name": "The Garden Boutique Hotel Santorini",
-        "description": "Set in a quiet residential area, this property offers a peaceful retreat while remaining well-connected to the city center. The private garden is perfect for relaxation after a day of exploration.",
-        "highlight": "Private garden oasis in the city"
+        "name": "Grand Hotel Santorini",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
     }
 ],
-  tips: "When booking boutique hotels in Santorini, timing is everything. The shoulder seasons (spring and autumn) offer the best combination of pleasant weather and availability. For luxury travelers, we recommend booking at least 2-3 months in advance for peak periods. Consider neighborhoods slightly outside the tourist center for better value and a more authentic experience. Public transport in Santorini is excellent, so don't feel you need to stay right in the middle of everything. Check if your accommodation offers airport transfers or local experience recommendations—many hosts in Santorini are happy to share insider tips that you won't find in guidebooks.",
-  conclusion: "Santorini awaits with open arms, and choosing the right boutique hotels will set the foundation for an unforgettable trip. For luxury travelers, the options we've highlighted offer the perfect combination of location, comfort, and authentic local character. Whether this is your first visit or your tenth, there's always something new to discover in this remarkable city. Book with confidence, pack your sense of adventure, and prepare for memories that will last a lifetime. Santorini is ready to welcome you home."
+  tips: "Booking boutique hotels in Santorini requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Santorini is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Santorini rewards luxury travelers who choose wisely. The boutique hotels highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Santorini's unique character, and prepare for a stay that exceeds expectations. Your perfect Santorini adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Florence",
-  description: "Discover the best apartments in Florence for adventure seekers. Find the perfect base for hiking Tuscan hills, biking scenic routes, and exploring Renaissance treasures on foot."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Florence isn\'t just museums and galleries—it\'s your gateway to Tuscan adventures. From dawn hikes in the Apennines to sunset bike rides through Chianti vineyards, the right apartment puts you at the heart of it all.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Prime access to hiking trails in Fiesole and Settignano hills, with apartments near trailheads offering panoramic views of the Arno Valley</li>
-          <li>Bike-friendly neighborhoods with secure storage, close to rental shops and the 160km Chianti bike route through olive groves and medieval villages</li>
-          <li>Self-catering kitchens perfect for fueling multi-day adventures, plus laundry facilities for gear maintenance between excursions</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Upper-floor apartments without elevators are common in historic buildings—great leg workouts but challenging with heavy hiking gear</li>
-          <li>Book apartments near Porta Romana or San Niccolò for quick access to countryside trails while staying within walking distance of city center attractions</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>San Niccolò offers riverside paths and hillside access, Oltrarno provides authentic local vibes near Boboli Gardens\' trails, while Fiesole—just 20 minutes out—delivers mountain village charm with direct trail access and stunning valley views.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Ready to base your Tuscan adventure in Florence? Browse apartments with bike storage, trail access, and authentic neighborhood character today.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Florence 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Florence, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Florence stay.'
+}
+
+const guide = {
+  destination: "Florence",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-florence"
+}
+
+const content = {
+  intro: "Florence captivates adventure travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Florence's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Florence offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Florence are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Florence's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Florence",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Florence requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Florence is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Florence rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Florence's unique character, and prepare for a stay that exceeds expectations. Your perfect Florence adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

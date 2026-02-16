@@ -1,32 +1,46 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hostels for Families in Barcelona",
-  description: "Discover family-friendly hostels in Barcelona offering private rooms, kitchen facilities, and kid-welcoming amenities. Budget accommodation guide for families exploring Catalonia's vibrant capital."
-};
+  title: 'Best Hostels for Families in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best hostels for families in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Hostels",
+  audience: "Families",
+  slug: "best-hostels-families-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates families travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect hostels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to meeting travelers, stretching budget, adventure, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best hostels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hostels in Barcelona offer social atmosphere, budget-friendly, local tips. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best hostels position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Barcelona's hostels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hotel Brummell",
+        "description": "Located in Poble Sec, this property offers Rooftop pool, local neighborhood vibe. Prices range €150-280 with consistent 8.9+ ratings from guests.",
+        "highlight": "Rooftop pool, local neighborhood vibe"
+    },
+    {
+        "name": "Casa Camper Barcelona",
+        "description": "Located in El Raval, this property offers Free 24h snack bar, minimalist design. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Free 24h snack bar, minimalist design"
+    },
+    {
+        "name": "Hotel Neri",
+        "description": "Located in Gothic Quarter, this property offers Medieval palace with rooftop terrace. Prices range €250-450 with consistent 9+ ratings from guests.",
+        "highlight": "Medieval palace with rooftop terrace"
+    }
+],
+  tips: "Booking hostels in Barcelona requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards families travelers who choose wisely. The hostels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Hostels for Families in Barcelona</h1>
-      
-      <p className="hook">Barcelona's hostel scene has evolved far beyond backpacker dorms, with many properties now offering spacious family rooms, play areas, and child-friendly facilities that rival hotels at a fraction of the cost.</p>
-      
-      <h2>Why Choose Hostels</h2>
-      <ul>
-        <li>Family rooms with en-suite bathrooms and kitchenettes allow you to maintain routines while saving significantly on accommodation and meals</li>
-        <li>Many hostels feature rooftop terraces, game rooms, and organized activities where kids can socialize while parents connect with other traveling families</li>
-        <li>Central locations near Las Ramblas, Gothic Quarter, and Barceloneta Beach mean shorter travel times with tired children and easy access to parks and attractions</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book private family rooms well in advance during peak season (June-August) as they fill quickly, and confirm bed configurations match your children's ages</li>
-        <li>Check noise policies and room locations—some hostels have bar areas that can be loud at night, so request rooms on quieter floors away from common spaces</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>Gràcia offers a local vibe with pedestrian plazas perfect for kids to play while you enjoy café culture. Eixample provides wide sidewalks ideal for strollers and proximity to family attractions like Casa Batlló. The Gothic Quarter's narrow streets are charming but can be challenging with young children and luggage.</p>
-      
-      <p className="cta">Start comparing family-friendly hostels in Barcelona today and discover how comfortable budget travel can be with children.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

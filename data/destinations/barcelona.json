@@ -1,0 +1,103 @@
+{
+  "city": "Barcelona",
+  "country": "Spain",
+  "slug": "barcelona",
+  "neighborhoods": [
+    "Gothic Quarter",
+    "El Born",
+    "Gràcia",
+    "Eixample",
+    "Barceloneta",
+    "Poble Sec",
+    "Sant Antoni"
+  ],
+  "hotels": {
+    "luxury": [
+      {
+        "name": "Hotel Arts Barcelona",
+        "neighborhood": "Barceloneta",
+        "priceRange": "€350-800",
+        "rating": 9.2,
+        "highlight": "Beachfront tower with Frank Gehry fish sculpture"
+      },
+      {
+        "name": "Mandarin Oriental Barcelona",
+        "neighborhood": "Passeig de Gràcia",
+        "priceRange": "€400-900",
+        "rating": 9.4,
+        "highlight": "Rooftop pool with Gaudí views"
+      },
+      {
+        "name": "El Palace Barcelona",
+        "neighborhood": "Eixample",
+        "priceRange": "€300-700",
+        "rating": 9.1,
+        "highlight": "Historic glamour, Caelis Michelin restaurant"
+      }
+    ],
+    "boutique": [
+      {
+        "name": "Hotel Brummell",
+        "neighborhood": "Poble Sec",
+        "priceRange": "€150-280",
+        "rating": 8.9,
+        "highlight": "Rooftop pool, local neighborhood vibe"
+      },
+      {
+        "name": "Casa Camper Barcelona",
+        "neighborhood": "El Raval",
+        "priceRange": "€180-320",
+        "rating": 8.8,
+        "highlight": "Free 24h snack bar, minimalist design"
+      },
+      {
+        "name": "Hotel Neri",
+        "neighborhood": "Gothic Quarter",
+        "priceRange": "€250-450",
+        "rating": 9,
+        "highlight": "Medieval palace with rooftop terrace"
+      }
+    ],
+    "budget": [
+      {
+        "name": "Generator Barcelona",
+        "neighborhood": "Gràcia",
+        "priceRange": "€20-60",
+        "rating": 8.3,
+        "highlight": "Pool and terrace, near Park Güell"
+      },
+      {
+        "name": "Casa Gracia",
+        "neighborhood": "Gràcia",
+        "priceRange": "€25-80",
+        "rating": 8.5,
+        "highlight": "Boutique hostel with cocktail bar"
+      },
+      {
+        "name": "TOC Hostel Barcelona",
+        "neighborhood": "Eixample",
+        "priceRange": "€18-55",
+        "rating": 8.1,
+        "highlight": "Rooftop pool, central location"
+      }
+    ]
+  },
+  "apartments": {
+    "couples": [
+      {
+        "name": "Romantic Barcelona Apartment",
+        "neighborhood": "Old Town",
+        "priceRange": "€80-150",
+        "highlight": "NEEDS_ENHANCEMENT"
+      }
+    ]
+  },
+  "localTips": [
+    "La Boqueria is touristy - try Mercat de Sant Antoni instead",
+    "Dinner starts at 9pm, earlier marks you as a tourist",
+    "Skip Barceloneta beach on weekends - head to Bogatell",
+    "Vermouth hour (vermut) at 1pm is a sacred local tradition"
+  ],
+  "needsEnhancement": false,
+  "lastUpdated": "2026-02-16T18:51:06.200Z"
+}

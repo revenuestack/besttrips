@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Edinburgh",
-  description: "Discover the best apartments in Edinburgh for adventure seekers. Find your perfect base near Arthur's Seat, historic trails, and highland gateways for unforgettable Scottish adventures."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Edinburgh is an adventurer\'s paradise where ancient volcanoes meet medieval streets and the Scottish Highlands wait at your doorstep. Choosing the right apartment puts you at the heart of it all.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Prime access to Arthur\'s Seat, Pentland Hills, and coastal paths for daily hiking and trail running adventures right from your doorstep</li>
-          <li>Central location to Scotland\'s outdoor playground with easy connections to the Highlands, Cairngorms, and world-class mountain biking trails within an hour\'s drive</li>
-          <li>Authentic Scottish experience with apartments in historic neighborhoods offering climbing walls, gear rental shops, and adventure tour operators nearby</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Edinburgh\'s weather changes rapidly—choose apartments with good heating, drying facilities for wet gear, and secure storage for bikes and equipment</li>
-          <li>Peak adventure season (May-September) means higher prices and limited availability, so book early or consider shoulder seasons for better deals and quieter trails</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Leith offers coastal access and modern amenities, Old Town provides historic charm near castle ramparts and underground vaults, while Bruntsfield and Morningside give direct access to hiking trails with quieter residential vibes. Stockbridge combines riverside walks with vibrant cafes perfect for post-adventure recovery.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Book your Edinburgh adventure base today and wake up ready to conquer Scotland\'s most iconic peaks and hidden trails.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates adventure travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Edinburgh offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Edinburgh's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Edinburgh",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Edinburgh requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

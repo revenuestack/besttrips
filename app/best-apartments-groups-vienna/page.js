@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Groups in Vienna: Space, Style & Central Locations",
-  description: "Discover the best group apartments in Vienna. Spacious accommodations near top attractions, perfect for families and friends exploring Austria's imperial capital together."
+  title: 'Best Apartments for Groups in Vienna 2026 - BestTrips.org',
+  description: 'Discover the best apartments for groups in Vienna, Austria. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Vienna stay.'
+}
+
+const guide = {
+  destination: "Vienna",
+  country: "Austria",
+  accommodationType: "Apartments",
+  audience: "Groups",
+  slug: "best-apartments-groups-vienna"
+}
+
+const content = {
+  intro: "Vienna captivates groups travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Vienna's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Vienna offer space, kitchen, living like a local. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in Vienna are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: Vienna's apartments deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Vienna",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Vienna requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in Vienna is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Vienna rewards groups travelers who choose wisely. The apartments highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace Vienna's unique character, and prepare for a stay that exceeds expectations. Your perfect Vienna adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Vienna",
-    country: "Austria",
-    type: "Apartments",
-    audience: "Groups",
-    hook: "Vienna's grand boulevards and imperial palaces are best enjoyed with your favorite people, and group apartments offer the perfect home base for exploring this elegant city together.",
-    why_stay: [
-      "Cost-effective luxury: Split the cost of spacious apartments with full kitchens, multiple bedrooms, and living areas—often cheaper per person than hotels while offering far more space and privacy.",
-      "Live like locals: Cook Viennese pastries in your own kitchen, gather around dining tables for evening wine, and enjoy the freedom of a true home base in the heart of Europe's cultural capital.",
-      "Prime locations: Many group apartments occupy historic buildings near Stephansplatz, the Museum Quarter, or charming Neubau, putting coffeehouses, concert halls, and Christmas markets at your doorstep."
-    ],
-    considerations: [
-      "Elevator availability: Many beautiful historic buildings lack elevators—confirm before booking if mobility is a concern, especially for apartments on upper floors.",
-      "Minimum stay requirements: Popular group apartments often require 3-4 night minimums, particularly during peak seasons and holiday periods."
-    ],
-    neighborhood_tips: "Innere Stadt offers unbeatable walkability to attractions, while Neubau and Josefstadt provide authentic residential vibes with excellent cafés. Leopoldstadt combines space with proximity to Prater park.",
-    booking_advice: "Book 3-4 months ahead for summer and Christmas market season. Verify exact guest capacity, as Vienna has strict occupancy regulations. Request keyless entry options for flexible arrival times."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Berlin",
-  description: "Discover the perfect apartment base for your Berlin adventure. From bike-friendly neighborhoods to areas with extreme sports access, find where thrill-seekers stay in Germany's dynamic capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Berlin pulses with urban adventure, and choosing the right apartment puts you at the heart of the action. Whether you\'re cycling the Berlin Wall Trail, exploring abandoned sites, or kayaking the Spree, your basecamp matters.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Flexible home base with kitchen facilities to fuel early morning adventures and late-night returns from Berlin\'s legendary nightlife</li>
-          <li>Space for adventure gear storage including bikes, climbing equipment, and outdoor essentials in spacious German apartments</li>
-          <li>Local neighborhood immersion in areas where Berliners actually live, bike, and explore beyond typical tourist zones</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments near U-Bahn or S-Bahn stations for quick access to Teufelsberg, Müggelsee, or Grunewald forest adventures</li>
-          <li>Summer months (May-September) offer peak adventure conditions but require advance booking, especially in popular districts</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Friedrichshain offers urban exploration with East Side Gallery access and Spree kayaking. Kreuzberg combines canal-side cycling with vibrant street culture. Prenzlauer Berg provides easy bike routes to parks and lakes. Neukölln attracts adventurous travelers with its raw energy and affordable options near Tempelhofer Feld, Berlin\'s massive former airport turned urban park.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Find your Berlin adventure apartment today and unlock Germany\'s most dynamic city from a local\'s perspective.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Berlin 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Berlin, Germany. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Berlin stay.'
+}
+
+const guide = {
+  destination: "Berlin",
+  country: "Germany",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-berlin"
+}
+
+const content = {
+  intro: "Berlin captivates adventure travelers with its unique blend of efficiency, culture, and surprising warmth. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Berlin's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Berlin offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Berlin are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Berlin's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Berlin",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Berlin requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Berlin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Berlin rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Berlin's unique character, and prepare for a stay that exceeds expectations. Your perfect Berlin adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

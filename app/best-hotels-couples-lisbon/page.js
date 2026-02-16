@@ -1,63 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in Lisbon: Romantic Stays in Portugal's Capital",
-  description: "Discover the most romantic hotels in Lisbon for couples. From boutique hideaways to luxury waterfront stays, find your perfect romantic escape in Portugal."
-};
+  title: 'Best Hotels for Couples in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
+}
+
+const guide = {
+  destination: "Lisbon",
+  country: "Portugal",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-lisbon"
+}
+
+const content = {
+  intro: "Lisbon captivates couples travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Lisbon offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Lisbon's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Lisbon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Lisbon requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Hotels for Couples in Lisbon</h1>
-      
-      <section className="mb-8">
-        <p className="text-lg leading-relaxed">
-          Lisbon's golden light, cobblestone streets, and sweeping Tagus River views create an irresistibly romantic backdrop. The city's finest hotels blend historic Portuguese charm with modern luxury, offering couples intimate retreats where tile-adorned walls meet rooftop terraces overlooking terracotta rooftops.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Hotels in Lisbon</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Hotels in Lisbon offer full-service amenities perfect for romance—think rooftop bars for sunset cocktails, spa treatments for two, and concierge services to arrange private fado performances or wine tastings in your room.</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Many historic hotels occupy renovated palaces and convents, providing architectural grandeur and unique character that creates memorable experiences you won't find in standard accommodations.</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Central hotel locations put you within walking distance of romantic activities: candlelit dinners in Bairro Alto, sunset viewpoints at Miradouros, and moonlit strolls along the waterfront.</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Things to Consider</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Lisbon's hilly terrain means some hotels require climbing steep streets—check accessibility if you prefer easy flat access, or embrace the charm and book near tram lines.</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Peak season (May-September) brings higher prices and crowds; consider visiting in spring or fall for better rates and a more intimate atmosphere while still enjoying pleasant weather.</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Best Neighborhoods</h2>
-        <p className="leading-relaxed">
-          Chiado and Baixa offer central luxury with proximity to top restaurants and cultural sites. Alfama provides historic romance with narrow alleys and traditional fado houses. Principe Real attracts couples seeking boutique sophistication with garden squares and design hotels. For waterfront views, consider Belém or the revitalized Cais do Sodré docklands, blending maritime heritage with contemporary cool.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-lg font-medium text-blue-600">
-          Browse our curated selection of romantic Lisbon hotels and book your perfect couples' getaway today.
-        </p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

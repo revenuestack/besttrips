@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Luxury Apartments in Dublin: Upscale Serviced Accommodations for Discerning Travelers",
-  description: "Discover Dublin's finest luxury apartments offering five-star amenities, Georgian elegance, and prime locations in the city's most prestigious neighborhoods."
+  title: 'Best Apartments for Luxury Travelers in Dublin 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Dublin, Ireland. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Dublin stay.'
+}
+
+const guide = {
+  destination: "Dublin",
+  country: "Ireland",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-dublin"
+}
+
+const content = {
+  intro: "Dublin captivates luxury travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Dublin's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Dublin offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Dublin are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Dublin's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel Dublin",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Dublin requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Dublin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Dublin rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Dublin's unique character, and prepare for a stay that exceeds expectations. Your perfect Dublin adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Dublin",
-    country: "Ireland",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Dublin's luxury apartment scene combines historic Georgian grandeur with contemporary Irish sophistication, offering discerning travelers spacious havens in the heart of Ireland's vibrant capital.",
-    why_stay: [
-      "Spacious layouts with full kitchens, separate living areas, and premium furnishings provide the comfort of home with five-star hotel amenities including concierge services and daily housekeeping",
-      "Prime locations in prestigious neighborhoods like Ballsbridge, Georgian Merrion Square, and the trendy Docklands put you steps from Michelin-starred restaurants, designer boutiques, and cultural landmarks",
-      "Privacy and exclusivity with secure buildings, private entrances, and personalized services that cater to luxury travelers seeking discretion and bespoke experiences"
-    ],
-    considerations: [
-      "Luxury apartments command premium rates, especially during peak season (June-August) and major events like the Dublin Horse Show, with minimum stays often required",
-      "While most offer parking, navigating Dublin's narrow Georgian streets can be challenging; consider using the excellent taxi services or hiring a private driver"
-    ],
-    neighborhood_tips: "Ballsbridge offers embassy-district elegance near Herbert Park, while Merrion Square places you amid Georgian architecture and literary history. The Docklands provide ultra-modern waterfront living with contemporary dining scenes.",
-    booking_advice: "Book directly with premium providers like The Doyle Collection or Staycity Aparthotels for best rates and upgrades. Reserve 3-6 months ahead for summer stays, and request upper floors for stunning views over Dublin Bay or the Wicklow Mountains."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

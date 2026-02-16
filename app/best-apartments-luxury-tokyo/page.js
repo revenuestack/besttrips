@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Luxury Travelers in Tokyo - BestTrips.org',
-  description: 'Discover the best apartments for luxury travelers in Tokyo, Japan. Expert recommendations, local tips, and top picks for your perfect stay.'
+  title: 'Best Apartments for Luxury Travelers in Tokyo 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Tokyo, Japan. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Tokyo stay.'
 }
 
 const guide = {
@@ -14,31 +14,31 @@ const guide = {
 }
 
 const content = {
-  intro: "Tokyo is one of Japan's most captivating destinations, offering a perfect blend of culture, history, and modern amenities. For luxury travelers, finding the right apartments can make all the difference in your travel experience. Whether you're drawn to the historic charm of the old town or the vibrant energy of contemporary neighborhoods, Tokyo has something special waiting for you. The city's diverse accommodation options cater to every preference, from centrally located properties near major attractions to peaceful retreats in residential areas. Local hospitality in Tokyo is renowned for its warmth and attention to detail, ensuring that every guest feels welcomed and valued.",
+  intro: "Tokyo captivates luxury travelers with its unique blend of ancient traditions and cutting-edge modernity. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from Shibuya, Shinjuku, Ginza—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Tokyo's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Apartments in Tokyo offer an authentic local experience that larger chain accommodations simply cannot match. You'll find yourself immersed in the neighborhood's daily rhythm, from morning markets to evening gatherings at local cafés.",
-    "For luxury travelers, Tokyo's apartments provide the perfect balance of comfort and convenience. Many properties are strategically located near public transport, making it easy to explore the city's many attractions.",
-    "The value proposition of apartments in Tokyo is exceptional. You'll often get more space, better amenities, and a more personalized experience compared to standard hotel rooms at similar price points."
+    "Apartments in Tokyo offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Tokyo are significant—the best apartments position you within walking distance of Shibuya Crossing, temples, and Tsukiji, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Tokyo's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
 ],
   topPicks: [
     {
-        "name": "The Tokyo Apartment House",
-        "description": "Located in the heart of Tokyo, this charming property offers stunning views and easy access to major attractions. The hosts are known for their exceptional hospitality and local knowledge.",
-        "highlight": "Rooftop terrace with panoramic city views"
+        "name": "Aman Tokyo",
+        "description": "Located in Otemachi, this property offers Minimalist luxury with Imperial Palace views. Prices range ¥100,000-250,000 with consistent 9.6+ ratings from guests.",
+        "highlight": "Minimalist luxury with Imperial Palace views"
     },
     {
-        "name": "Tokyo Central Apartment",
-        "description": "A beautifully restored property combining historic character with modern comforts. Perfect for luxury travelers who appreciate attention to detail and prime locations.",
-        "highlight": "Walking distance to top restaurants and museums"
+        "name": "Park Hyatt Tokyo",
+        "description": "Located in Shinjuku, this property offers Lost in Translation hotel, 52nd floor pool. Prices range ¥60,000-150,000 with consistent 9.3+ ratings from guests.",
+        "highlight": "Lost in Translation hotel, 52nd floor pool"
     },
     {
-        "name": "The Garden Apartment Tokyo",
-        "description": "Set in a quiet residential area, this property offers a peaceful retreat while remaining well-connected to the city center. The private garden is perfect for relaxation after a day of exploration.",
-        "highlight": "Private garden oasis in the city"
+        "name": "The Peninsula Tokyo",
+        "description": "Located in Ginza, this property offers Tech-forward rooms, Michelin dining. Prices range ¥70,000-180,000 with consistent 9.4+ ratings from guests.",
+        "highlight": "Tech-forward rooms, Michelin dining"
     }
 ],
-  tips: "When booking apartments in Tokyo, timing is everything. The shoulder seasons (spring and autumn) offer the best combination of pleasant weather and availability. For luxury travelers, we recommend booking at least 2-3 months in advance for peak periods. Consider neighborhoods slightly outside the tourist center for better value and a more authentic experience. Public transport in Tokyo is excellent, so don't feel you need to stay right in the middle of everything. Check if your accommodation offers airport transfers or local experience recommendations—many hosts in Tokyo are happy to share insider tips that you won't find in guidebooks.",
-  conclusion: "Tokyo awaits with open arms, and choosing the right apartments will set the foundation for an unforgettable trip. For luxury travelers, the options we've highlighted offer the perfect combination of location, comfort, and authentic local character. Whether this is your first visit or your tenth, there's always something new to discover in this remarkable city. Book with confidence, pack your sense of adventure, and prepare for memories that will last a lifetime. Tokyo is ready to welcome you home."
+  tips: "Booking apartments in Tokyo requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include Shibuya and Shinjuku. Local insight: Get a Suica card immediately - works everywhere including convenience stores Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Tokyo is world-class via trains, so location flexibility depends on your priorities.",
+  conclusion: "Tokyo rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Tokyo's unique character, and prepare for a stay that exceeds expectations. Your perfect Tokyo adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

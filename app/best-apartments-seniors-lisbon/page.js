@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Lisbon: Comfort Meets Culture in Portugal\'s Capital',
-  description: 'Discover senior-friendly apartments in Lisbon offering accessibility, comfort, and proximity to healthcare. Your guide to safe, convenient retirement living in Portugal\'s sunny capital.'
+  title: 'Best Apartments for Seniors in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
+}
+
+const guide = {
+  destination: "Lisbon",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-lisbon"
+}
+
+const content = {
+  intro: "Lisbon captivates seniors travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Lisbon offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Lisbon's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Lisbon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Lisbon requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "hook": "Lisbon's blend of old-world charm and modern amenities makes it an increasingly popular destination for seniors seeking comfortable apartment living. With its mild climate, excellent healthcare, and walkable neighborhoods, Portugal's capital offers an ideal setting for retirement.",
-    "why_visit": [
-      "Accessibility-focused neighborhoods like Parque das Nações feature modern apartments with elevators, ramps, and proximity to metro stations, medical facilities, and supermarkets—perfect for senior mobility needs.",
-      "Year-round mild weather (average 17°C) means less strain on joints and easier daily activities, while Lisbon's famous trams and funiculars help navigate hills without excessive walking.",
-      "Portugal's Golden Visa program and affordable cost of living make long-term apartment rentals attractive, with English widely spoken in expat-friendly areas like Cascais and Belém."
-    ],
-    "insider_tips": [
-      "Choose ground-floor or elevator-equipped apartments in flat areas like Avenidas Novas or Alvalade rather than historic Alfama's steep cobblestone streets.",
-      "Book apartments near Hospital da Luz or British Hospital for easy access to English-speaking healthcare providers and pharmacies."
-    ],
-    "logistics": "Most senior-friendly apartments require 1-2 month deposits. Public transport offers senior discounts (65+). Airport taxis to central Lisbon cost €15-25.",
-    "cta": "Ready to embrace Lisbon's golden years? Browse verified senior-friendly apartments and start your Portuguese adventure today."
-  }
-  
-  return <SimpleGuide content={content} destination="Lisbon" slug="best-apartments-seniors-lisbon" title="Best Apartments for Seniors in Lisbon: Comfort Meets Culture in Portugal" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

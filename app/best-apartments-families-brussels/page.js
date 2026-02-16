@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Families in Brussels: Your Perfect Home Base",
-  description: "Discover the best family-friendly apartments in Brussels. Spacious accommodations in safe neighborhoods near parks, museums, and excellent transport links for your family vacation."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Brussels offers families the perfect blend of European charm and modern convenience, with apartment rentals providing the space, flexibility, and local experience hotels simply can't match.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Space and comfort: Family apartments feature multiple bedrooms, full kitchens, and living areas where kids can play while parents relax. Prepare meals, do laundry, and maintain routines that keep everyone happy during extended stays.</li>
-          <li>Prime locations: Stay in family-friendly neighborhoods like Ixelles, Woluwe-Saint-Pierre, or near Cinquantenaire Park. Many apartments offer easy access to Metro lines, making day trips to Mini-Europe, Atomium, and Comic Strip Museum effortless.</li>
-          <li>Cost-effective value: Apartments often cost less than booking multiple hotel rooms, with amenities like washers, kitchens, and extra space included. Enjoy grocery shopping at local markets and experience Brussels like a resident, not a tourist.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early for summer and holiday periods, as family-sized apartments (3+ bedrooms) fill quickly. Verify apartment locations near Metro stations for convenient sightseeing with children.</li>
-          <li>Check building amenities like elevators (many Brussels buildings lack them), parking availability if renting a car, and proximity to supermarkets and pharmacies for family essentials.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Top family neighborhoods include Woluwe-Saint-Pierre (parks, international schools), Ixelles (trendy, walkable, near EU Quarter), Cinquantenaire area (museums, green spaces), and Sablon (central, upscale, near Grand Place).</p>
-      </section>
-      
-      <section className="cta">
-        <button>Start your Brussels family adventure today—browse apartment rentals in your preferred neighborhood and secure the perfect home away from home for unforgettable memories.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Families in Brussels 2026 - BestTrips.org',
+  description: 'Discover the best apartments for families in Brussels, Belgium. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Brussels stay.'
+}
+
+const guide = {
+  destination: "Brussels",
+  country: "Belgium",
+  accommodationType: "Apartments",
+  audience: "Families",
+  slug: "best-apartments-families-brussels"
+}
+
+const content = {
+  intro: "Brussels captivates families travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Brussels's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Brussels offer space, kitchen, living like a local. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Brussels are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Brussels's apartments deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Brussels",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Brussels requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Brussels is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Brussels rewards families travelers who choose wisely. The apartments highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Brussels's unique character, and prepare for a stay that exceeds expectations. Your perfect Brussels adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

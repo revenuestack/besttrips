@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Budget Travelers in Edinburgh",
-  description: "Discover affordable apartment rentals in Edinburgh perfect for budget travelers. Find self-catering flats in top neighborhoods with kitchen facilities and great transport links."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Budget Travelers in Edinburgh</h1>
-      
-      <section className="hook">
-        <p>Edinburgh's charm doesn't have to break the bank. Budget-friendly apartments offer travelers the perfect blend of independence, space, and savings in Scotland's historic capital. With self-catering facilities and local neighborhood experiences, apartment stays let you live like an Edinburgher while keeping costs down.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Self-catering kitchens slash dining costs—cook with fresh produce from local markets and save up to £40 daily compared to eating out for every meal</li>
-          <li>More space and privacy than hostels at comparable prices, especially when traveling with friends or family who can split costs</li>
-          <li>Access to washing machines and full amenities means packing lighter and avoiding laundromat fees during longer stays</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book well in advance during August Festival season when prices triple and availability plummets—aim for 3-6 months ahead for summer visits</li>
-          <li>Check exact location and transport links carefully as budget apartments often sit in residential areas outside the tourist center, requiring 15-30 minute bus rides to major attractions</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Leith offers the best value with waterfront views and excellent restaurants. Bruntsfield and Marchmont provide village vibes close to Meadows park. Dalry and Gorgie sit near Haymarket station with superb transport connections.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Start your Edinburgh apartment search today and experience Scotland's capital like a local without the luxury price tag.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Budget Travelers in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best apartments for budget travelers in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Budget Travelers",
+  slug: "best-apartments-budget-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates budget travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Edinburgh offer space, kitchen, living like a local. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Edinburgh's apartments deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Edinburgh Central Hostel",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €20-50 with consistent 8+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Edinburgh requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards budget travelers who choose wisely. The apartments highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

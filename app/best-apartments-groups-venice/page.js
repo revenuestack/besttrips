@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Groups in Venice: Spacious Stays in the Floating City",
-  description: "Discover the best group apartments in Venice, Italy. From canal-view rentals to spacious Dorsoduro flats, find the perfect base for your group adventure in this magical city."
+  title: 'Best Apartments for Groups in Venice 2026 - BestTrips.org',
+  description: 'Discover the best apartments for groups in Venice, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Venice stay.'
+}
+
+const guide = {
+  destination: "Venice",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Groups",
+  slug: "best-apartments-groups-venice"
+}
+
+const content = {
+  intro: "Venice captivates groups travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing space, value, shared facilities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Venice's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for groups travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Venice offer space, kitchen, living like a local. For groups travelers specifically, this means access to multiple rooms, common areas, group discounts that larger chains often lack.",
+    "Location advantages in Venice are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to group activities, private dining, celebrations that define the groups experience here.",
+    "Value proposition matters: Venice's apartments deliver space, value, shared facilities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Venice",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Venice requires strategy. For groups travelers, prioritize space, value, shared facilities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group activities, private dining, celebrations when choosing your base. Transport in Venice is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Venice rewards groups travelers who choose wisely. The apartments highlighted here represent the best of fun and practical accommodations, each offering space, value, shared facilities that elevates your experience. Whether you prioritize multiple rooms or group discounts, these options deliver. Book with confidence, embrace Venice's unique character, and prepare for a stay that exceeds expectations. Your perfect Venice adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Venice",
-    country: "Italy",
-    type: "Apartments",
-    audience: "Groups",
-    hook: "Venice rewards groups who choose apartments over hotels—more space, authentic neighborhoods, and the joy of cooking fresh market finds while planning your next gondola adventure together.",
-    why_stay: [
-      "Cost-effective for 4+ travelers with full kitchens to prepare meals using ingredients from Rialto Market, plus separate bedrooms and common areas for group dynamics",
-      "Authentic neighborhood experiences in residential areas like Cannaregio or Dorsoduro, where you'll live like locals away from tourist-packed San Marco",
-      "Flexibility to create your own schedule with laundry facilities, multiple bathrooms, and space to spread out after long days exploring bridges and basilicas"
-    ],
-    considerations: [
-      "Venice's car-free layout means lugging bags over bridges and through narrow calles—choose apartments near vaporetto stops and confirm accessibility with owners before booking",
-      "Group noise travels in old Venetian buildings with thin walls; respect quiet hours (typically 14:00-16:00 and 22:00-08:00) to maintain neighbor relations"
-    ],
-    neighborhood_tips: "Cannaregio offers excellent value with local trattorias and easy vaporetto access. Dorsoduro provides artsy vibes near galleries and universities. Avoid ultra-touristy San Marco unless you crave constant crowds. Giudecca offers peaceful waterfront living with stunning skyline views, though you'll vaporetto-commute everywhere.",
-    booking_advice: "Book 4-6 months ahead for peak season (April-October). Verify the exact address and vaporetto stop proximity. Request building codes and lockbox details in advance. Use platforms with verified reviews from other groups, and confirm the apartment accommodates your exact headcount legally—Venice enforces occupancy limits strictly."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

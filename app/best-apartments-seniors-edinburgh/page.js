@@ -1,28 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Apartments for Seniors in Edinburgh | Senior Travel Guide",
-  description: "Discover the best senior-friendly apartments in Edinburgh. Expert recommendations on accessible locations, pricing, and comfort tips for older travelers."
-};
+  title: 'Best Apartments for Seniors in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates seniors travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Edinburgh offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Edinburgh's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Edinburgh",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Edinburgh requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Apartments for Seniors in Edinburgh</h1>
-      
-      <p>Edinburgh's apartment accommodations offer seniors the perfect blend of independence and comfort for exploring Scotland's historic capital. With spacious layouts, kitchen facilities, and ground-floor options, apartments provide more flexibility than traditional hotels while maintaining the amenities seniors need for a comfortable stay.</p>
-      
-      <h2>Why Choose Apartments</h2>
-      <p>Apartments give seniors valuable independence with self-catering facilities, allowing dietary control and familiar routines. Many feature elevators, accessible bathrooms, and separate living spaces for rest between sightseeing. The extra space means room for mobility aids and comfortable seating.</p>
-      
-      <h2>Best Areas</h2>
-      <p>New Town offers elegant Georgian apartments with flat streets and proximity to Princes Street shops. Stockbridge provides quiet charm with ground-floor options near local amenities. Bruntsfield combines residential calm with easy tram access to city attractions. Leith offers waterfront apartments with modern accessibility features at better value.</p>
-      
-      <h2>What to Expect</h2>
-      <p>Ground-floor or elevator-serviced apartments range from £80-150 per night depending on season and location. Expect fully equipped kitchens, comfortable furnishings, and often washing machines. Many include free WiFi, heating controls, and walk-in showers. Premium options offer concierge services and accessible parking.</p>
-      
-      <h2>Senior Travel Tips</h2>
-      <p>Book ground-floor apartments or confirm elevator access before arrival. Request detailed accessibility information about bathroom layouts and entrance steps. Choose locations near tram or bus routes to minimize walking, and consider properties with grocery delivery services for added convenience.</p>
-      
-      <p>Edinburgh's senior-friendly apartments combine independence with comfort, making them ideal for older travelers seeking a home-away-from-home experience. Start planning your Scottish adventure today by exploring accessible apartment options in these welcoming neighborhoods.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

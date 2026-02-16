@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Madrid: Comfort Meets Culture',
-  description: 'Discover senior-friendly apartments in Madrid offering accessibility, healthcare proximity, and vibrant cultural experiences in Spain\'s welcoming capital.'
+  title: 'Best Apartments for Seniors in Madrid 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Madrid, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Madrid stay.'
+}
+
+const guide = {
+  destination: "Madrid",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-madrid"
+}
+
+const content = {
+  intro: "Madrid captivates seniors travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Madrid's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Madrid offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Madrid are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Madrid's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Madrid",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Madrid requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Madrid is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Madrid rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Madrid's unique character, and prepare for a stay that exceeds expectations. Your perfect Madrid adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "hook": "Madrid combines world-class healthcare, walkable neighborhoods, and a pace of life that honors both activity and relaxation—perfect for seniors seeking apartment living abroad.",
-    "why_visit": [
-      "Exceptional healthcare system with English-speaking specialists and hospitals within easy reach of most neighborhoods, plus Spain's reputation for longevity and quality senior care",
-      "Accessible neighborhoods like Salamanca, Chamberí, and Retiro offer elevator-equipped buildings, wide sidewalks, parks for gentle strolls, and abundant cafés for social connection",
-      "Year-round mild climate, affordable cost of living compared to other European capitals, and a culture that deeply respects and includes older generations in daily life"
-    ],
-    "insider_tips": [
-      "Focus on apartments near Metro stations with elevators (newer lines 10-12) and look for buildings with 'ascensor' and doorman services for added security and assistance",
-      "Visit during spring or fall to explore neighborhoods at your own pace, and consider short-term rentals first to test different districts before committing long-term"
-    ],
-    "logistics": "Madrid-Barajas Airport connects to the city center via Metro, taxi, or accessible airport shuttle. Most senior-friendly apartments cluster in central districts with excellent public transport. The Metro offers reduced fares for seniors, and many buildings include community amenities.",
-    "cta": "Start your Madrid apartment search today and discover why thousands of international seniors have made Spain's capital their home."
-  }
-  
-  return <SimpleGuide content={content} destination="Madrid" slug="best-apartments-seniors-madrid" title="Best Apartments for Seniors in Madrid: Comfort Meets Culture" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

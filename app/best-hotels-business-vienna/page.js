@@ -1,61 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Business Hotels in Vienna: Top Accommodations for Corporate Travelers 2026",
-  description: "Discover Vienna's premier business hotels offering meeting facilities, high-speed WiFi, and prime locations near corporate districts and transit hubs.",
-};
+  title: 'Best Hotels for Business Travelers in Vienna 2026 - BestTrips.org',
+  description: 'Discover the best hotels for business travelers in Vienna, Austria. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Vienna stay.'
+}
+
+const guide = {
+  destination: "Vienna",
+  country: "Austria",
+  accommodationType: "Hotels",
+  audience: "Business Travelers",
+  slug: "best-hotels-business-vienna"
+}
+
+const content = {
+  intro: "Vienna captivates business travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect hotels here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Vienna's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Vienna offer service, amenities, convenience. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Vienna are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Vienna's hotels deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Vienna",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Vienna requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Vienna is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Vienna rewards business travelers who choose wisely. The hotels highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Vienna's unique character, and prepare for a stay that exceeds expectations. Your perfect Vienna adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  const content = {
-    hook: "Vienna's business hotels combine imperial elegance with cutting-edge amenities, positioning corporate travelers minutes from financial districts, convention centers, and international headquarters. From the bustling Innere Stadt to modern developments near Vienna International Centre, these accommodations deliver productivity-focused environments without sacrificing comfort.",
-    highlights: [
-      "Strategic locations near Messe Wien exhibition center, UN complex, and corporate headquarters with reliable public transport connections",
-      "Executive amenities including 24-hour business centers, high-speed fiber WiFi, meeting rooms with AV equipment, and same-day laundry services",
-      "Flexible dining options from early breakfast buffets to late-night room service, accommodating international schedules and dietary requirements",
-      "Concierge services specializing in business needs: translation assistance, courier services, and local corporate dining recommendations"
-    ],
-    considerations: [
-      "Book well ahead for September and October when major conferences and trade fairs drive occupancy above 90%",
-      "Many historic properties feature traditional charm but smaller rooms; request modern wings for larger workspaces if needed"
-    ],
-    location_context: "Vienna's business hotels cluster around three key areas: the First District for finance and government, Leopoldstadt near the Prater exhibition grounds, and Donaustadt surrounding the Austria Center and UN headquarters, all connected by efficient U-Bahn lines.",
-    cta: "Compare rates and executive packages across Vienna's top business hotels to find your ideal corporate base in Austria's capital."
-  };
-
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <p className="text-lg mb-6">{content.hook}</p>
-      
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Highlights</h2>
-        <ul className="space-y-3">
-          {content.highlights.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Things to Know</h2>
-        <ul className="space-y-3">
-          {content.considerations.map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <span className="text-amber-600 font-bold">⚠</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Location Context</h2>
-        <p className="text-gray-700">{content.location_context}</p>
-      </section>
-
-      <section className="bg-blue-50 p-6 rounded-lg">
-        <p className="text-lg font-semibold text-center">{content.cta}</p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

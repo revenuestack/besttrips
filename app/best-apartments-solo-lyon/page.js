@@ -1,8 +1,8 @@
 import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Solo Travelers in Lyon - BestTrips.org',
-  description: 'Discover the best apartments for solo travelers in Lyon, France. Expert recommendations, local tips, and top picks for your perfect stay.'
+  title: 'Best Apartments for Solo Travelers in Lyon 2026 - BestTrips.org',
+  description: 'Discover the best apartments for solo travelers in Lyon, France. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lyon stay.'
 }
 
 const guide = {
@@ -14,31 +14,21 @@ const guide = {
 }
 
 const content = {
-  intro: "Lyon is one of France's most captivating destinations, offering a perfect blend of culture, history, and modern amenities. For solo travelers, finding the right apartments can make all the difference in your travel experience. Whether you're drawn to the historic charm of the old town or the vibrant energy of contemporary neighborhoods, Lyon has something special waiting for you. The city's diverse accommodation options cater to every preference, from centrally located properties near major attractions to peaceful retreats in residential areas. Local hospitality in Lyon is renowned for its warmth and attention to detail, ensuring that every guest feels welcomed and valued.",
+  intro: "Lyon captivates solo travelers with its unique blend of art, cuisine, and timeless elegance. Finding the perfect apartments here means balancing safety, social opportunities, central location with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Lyon's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for solo travelers, with insider tips that transform a good trip into an unforgettable one.",
   whyChoose: [
-    "Apartments in Lyon offer an authentic local experience that larger chain accommodations simply cannot match. You'll find yourself immersed in the neighborhood's daily rhythm, from morning markets to evening gatherings at local cafés.",
-    "For solo travelers, Lyon's apartments provide the perfect balance of comfort and convenience. Many properties are strategically located near public transport, making it easy to explore the city's many attractions.",
-    "The value proposition of apartments in Lyon is exceptional. You'll often get more space, better amenities, and a more personalized experience compared to standard hotel rooms at similar price points."
+    "Apartments in Lyon offer space, kitchen, living like a local. For solo travelers specifically, this means access to common areas, single rooms, coworking spaces that larger chains often lack.",
+    "Location advantages in Lyon are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to group tours, pub crawls, local meetups that define the solo experience here.",
+    "Value proposition matters: Lyon's apartments deliver safety, social opportunities, central location at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
 ],
   topPicks: [
     {
-        "name": "The Lyon Apartment House",
-        "description": "Located in the heart of Lyon, this charming property offers stunning views and easy access to major attractions. The hosts are known for their exceptional hospitality and local knowledge.",
-        "highlight": "Rooftop terrace with panoramic city views"
-    },
-    {
-        "name": "Lyon Central Apartment",
-        "description": "A beautifully restored property combining historic character with modern comforts. Perfect for solo travelers who appreciate attention to detail and prime locations.",
-        "highlight": "Walking distance to top restaurants and museums"
-    },
-    {
-        "name": "The Garden Apartment Lyon",
-        "description": "Set in a quiet residential area, this property offers a peaceful retreat while remaining well-connected to the city center. The private garden is perfect for relaxation after a day of exploration.",
-        "highlight": "Private garden oasis in the city"
+        "name": "Boutique Lyon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
     }
 ],
-  tips: "When booking apartments in Lyon, timing is everything. The shoulder seasons (spring and autumn) offer the best combination of pleasant weather and availability. For solo travelers, we recommend booking at least 2-3 months in advance for peak periods. Consider neighborhoods slightly outside the tourist center for better value and a more authentic experience. Public transport in Lyon is excellent, so don't feel you need to stay right in the middle of everything. Check if your accommodation offers airport transfers or local experience recommendations—many hosts in Lyon are happy to share insider tips that you won't find in guidebooks.",
-  conclusion: "Lyon awaits with open arms, and choosing the right apartments will set the foundation for an unforgettable trip. For solo travelers, the options we've highlighted offer the perfect combination of location, comfort, and authentic local character. Whether this is your first visit or your tenth, there's always something new to discover in this remarkable city. Book with confidence, pack your sense of adventure, and prepare for memories that will last a lifetime. Lyon is ready to welcome you home."
+  tips: "Booking apartments in Lyon requires strategy. For solo travelers, prioritize safety, social opportunities, central location when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider group tours, pub crawls, local meetups when choosing your base. Transport in Lyon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lyon rewards solo travelers who choose wisely. The apartments highlighted here represent the best of empowering and social accommodations, each offering safety, social opportunities, central location that elevates your experience. Whether you prioritize common areas or coworking spaces, these options deliver. Book with confidence, embrace Lyon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lyon adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {

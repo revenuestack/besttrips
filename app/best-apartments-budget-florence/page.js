@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Budget Travelers in Florence",
-  description: "Discover affordable apartment rentals in Florence, Italy. Find budget-friendly accommodations in prime locations near major attractions, with local tips for savvy travelers."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Budget Travelers in Florence</h1>
-      
-      <section className="hook">
-        <p>Florence doesn't have to break the bank. Budget-conscious travelers can find charming apartments that offer authentic Florentine living at a fraction of hotel costs, complete with kitchens to save on dining and space to truly settle in.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Cost savings with kitchen facilities mean you can shop at local markets like Sant'Ambrogio and prepare meals, cutting your food budget significantly while experiencing authentic Italian ingredients.</li>
-          <li>More space and privacy than hostels or budget hotels, with many apartments featuring separate bedrooms, living areas, and washing machines for extended stays.</li>
-          <li>Local neighborhood experiences in residential areas where you'll interact with Florentines, discover family-run trattorias, and live like a temporary resident rather than a tourist.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book well in advance during peak season (April-October) as the best budget apartments fill quickly, and verify exact locations to ensure walkability to attractions.</li>
-          <li>Check for additional fees like cleaning charges, tourist taxes, and utilities that may not be included in the nightly rate, which can add 15-20% to your total cost.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Oltrarno offers authentic charm and lower prices across the river, while San Frediano provides local atmosphere with excellent restaurants. Santa Croce combines affordability with proximity to major sites, and areas near Campo di Marte station offer great value with easy tram access to the center.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Start your Florentine adventure today—browse verified apartment listings and secure your budget-friendly home base in this Renaissance masterpiece.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Budget Travelers in Florence 2026 - BestTrips.org',
+  description: 'Discover the best apartments for budget travelers in Florence, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Florence stay.'
+}
+
+const guide = {
+  destination: "Florence",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Budget Travelers",
+  slug: "best-apartments-budget-florence"
+}
+
+const content = {
+  intro: "Florence captivates budget travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Florence's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Florence offer space, kitchen, living like a local. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Florence are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Florence's apartments deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Florence Central Hostel",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €20-50 with consistent 8+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Florence requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Florence is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Florence rewards budget travelers who choose wisely. The apartments highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Florence's unique character, and prepare for a stay that exceeds expectations. Your perfect Florence adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

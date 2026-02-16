@@ -1,29 +1,46 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Luxury Apartments in Barcelona: Your Ultimate Guide for Discerning Travelers",
-  description: "Discover Barcelona's finest luxury apartments with private terraces, designer interiors, and prime locations. Your guide to upscale accommodation in Spain's most captivating city."
+  title: 'Best Apartments for Luxury Travelers in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates luxury travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Barcelona offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best apartments position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Barcelona's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hotel Arts Barcelona",
+        "description": "Located in Barceloneta, this property offers Beachfront tower with Frank Gehry fish sculpture. Prices range €350-800 with consistent 9.2+ ratings from guests.",
+        "highlight": "Beachfront tower with Frank Gehry fish sculpture"
+    },
+    {
+        "name": "Mandarin Oriental Barcelona",
+        "description": "Located in Passeig de Gràcia, this property offers Rooftop pool with Gaudí views. Prices range €400-900 with consistent 9.4+ ratings from guests.",
+        "highlight": "Rooftop pool with Gaudí views"
+    },
+    {
+        "name": "El Palace Barcelona",
+        "description": "Located in Eixample, this property offers Historic glamour, Caelis Michelin restaurant. Prices range €300-700 with consistent 9.1+ ratings from guests.",
+        "highlight": "Historic glamour, Caelis Michelin restaurant"
+    }
+],
+  tips: "Booking apartments in Barcelona requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Barcelona",
-    country: "Spain",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Barcelona's luxury apartment scene offers sophisticated travelers an unmatched blend of privacy, space, and authentic Catalan living. From modernist penthouses in Eixample to beachfront sanctuaries in Barceloneta, these curated residences deliver five-star amenities with the intimacy of a private home.",
-    why_stay: [
-      "Exclusive amenities including private rooftop terraces, infinity pools, wine cellars, and concierge services that rival luxury hotels while maintaining residential privacy and space",
-      "Prime locations in prestigious neighborhoods like Passeig de Gràcia and Gothic Quarter, placing Gaudí's masterpieces, Michelin-starred dining, and designer boutiques at your doorstep",
-      "Authentic living experience with fully-equipped gourmet kitchens, allowing you to shop at La Boqueria market and enjoy private chef services in your own elegant space"
-    ],
-    considerations: [
-      "Book 3-6 months ahead for peak season (May-September) as premium properties with sought-after features like terraces overlooking Sagrada Familia fill quickly",
-      "Verify building amenities and elevator access, particularly in Gothic Quarter's historic buildings where charming medieval architecture may mean walk-up apartments"
-    ],
-    neighborhood_tips: "Eixample offers sophisticated boulevards and architectural gems, while Born provides boutique charm near cultural sites. Barceloneta delivers beachfront luxury, and Gràcia neighborhood presents authentic local character with upscale residential appeal.",
-    booking_advice: "Use specialized luxury rental platforms, confirm dedicated concierge availability, and request virtual tours. Negotiate extended-stay rates for month-long bookings, and verify proximity to metro stations for effortless exploration beyond your refined Barcelona sanctuary."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

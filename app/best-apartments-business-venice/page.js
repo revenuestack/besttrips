@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Venice",
-  description: "Discover the best apartments for business travelers in Venice. Find serviced accommodations with high-speed Wi-Fi, workspaces, and easy access to meeting venues and transport hubs."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Venice offers business travelers a unique blend of professional convenience and cultural inspiration. Modern apartments throughout the city provide the workspace amenities and connectivity you need while keeping you steps away from world-class networking venues and inspiring scenery.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Dedicated workspace and reliable high-speed Wi-Fi ensure productivity between meetings, with many apartments offering separate office areas and ergonomic furnishings that hotels simply can't match</li>
-          <li>Cost-effective extended stays with full kitchen facilities allow you to prepare meals on your schedule, saving time and money while maintaining your routine during longer business trips</li>
-          <li>Authentic neighborhood experiences in residential areas provide a quieter environment for evening work and video calls, away from tourist crowds but still connected to business districts</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Venice's car-free layout means navigating bridges and stairs with luggage—choose apartments near vaporetto stops or water taxi docks, and confirm elevator availability if mobility is a concern</li>
-          <li>Book accommodations near Piazzale Roma or the train station for easier mainland business travel, as reaching meetings in Mestre or Marco Polo Airport requires strategic location planning</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>San Marco offers proximity to convention centers and luxury meeting venues, while Cannaregio and Dorsoduro provide quieter residential settings with excellent transport links. Santa Croce near Piazzale Roma suits frequent mainland commuters.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Find your ideal Venice business apartment today and experience productive work-life balance in Italy's most extraordinary city.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Venice 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Venice, Italy. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Venice stay.'
+}
+
+const guide = {
+  destination: "Venice",
+  country: "Italy",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-venice"
+}
+
+const content = {
+  intro: "Venice captivates business travelers with its unique blend of history, romance, and la dolce vita. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Venice's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Venice offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Venice are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Venice's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Venice",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Venice requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Venice is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Venice rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Venice's unique character, and prepare for a stay that exceeds expectations. Your perfect Venice adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

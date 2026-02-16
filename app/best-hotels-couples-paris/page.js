@@ -1,33 +1,46 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in Paris",
-  description: "Discover the most romantic hotels in Paris for couples. From intimate boutiques to luxury escapes near the Eiffel Tower, find your perfect Parisian love nest.",
-};
+  title: 'Best Hotels for Couples in Paris 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Paris, France. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Paris stay.'
+}
+
+const guide = {
+  destination: "Paris",
+  country: "France",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-paris"
+}
+
+const content = {
+  intro: "Paris captivates couples travelers with its unique blend of art, cuisine, and timeless elegance. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from Le Marais, Saint-Germain-des-Prés, Montmartre—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Paris's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Paris offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Paris are significant—the best hotels position you within walking distance of the Eiffel Tower, Louvre, and Montmartre, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Paris's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hôtel Particulier Montmartre",
+        "description": "Located in Montmartre, this property offers Secret garden oasis in artistic quarter. Prices range €350-600 with consistent 9.1+ ratings from guests.",
+        "highlight": "Secret garden oasis in artistic quarter"
+    },
+    {
+        "name": "Pavillon de la Reine",
+        "description": "Located in Le Marais, this property offers Hidden courtyard on Place des Vosges. Prices range €300-550 with consistent 9+ ratings from guests.",
+        "highlight": "Hidden courtyard on Place des Vosges"
+    },
+    {
+        "name": "Hôtel Providence",
+        "description": "Located in République, this property offers Rock-and-roll chic with cocktail bar. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Rock-and-roll chic with cocktail bar"
+    }
+],
+  tips: "Booking hotels in Paris requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include Le Marais and Saint-Germain-des-Prés. Local insight: Skip the tourist cafés on Champs-Élysées - locals head to Canal Saint-Martin Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Paris is excellent via Metro, so location flexibility depends on your priorities.",
+  conclusion: "Paris rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Paris's unique character, and prepare for a stay that exceeds expectations. Your perfect Paris adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <>
-      <h1>Best Hotels for Couples in Paris</h1>
-      
-      <p>Paris isn't just the City of Light—it's the city of love, and choosing the right hotel can transform your romantic getaway into an unforgettable experience. Whether you're celebrating an anniversary, planning a honeymoon, or simply stealing away for a weekend à deux, Paris offers enchanting accommodations that cater specifically to couples seeking intimacy, elegance, and that quintessential Parisian charm.</p>
-
-      <h2>Why Choose Paris for Couples</h2>
-      <ul>
-        <li>Romantic ambiance with intimate settings designed for two, from canopy beds and private balconies to champagne on arrival and couples' spa treatments</li>
-        <li>Prime locations in Paris's most romantic neighborhoods, putting you steps from iconic landmarks, hidden gardens, and candlelit bistros perfect for evening strolls</li>
-        <li>Exceptional service tailored to couples, including late checkouts, in-room dining with city views, and concierge assistance with reservations and surprise arrangements</li>
-      </ul>
-
-      <h2>Considerations</h2>
-      <ul>
-        <li>Book well in advance, especially for peak seasons (spring and fall) when romantic travelers flock to Paris and premium couple-friendly rooms sell out quickly</li>
-        <li>Budget carefully—romantic Parisian hotels often command premium prices, with rooms featuring Eiffel Tower views or designer interiors costing significantly more</li>
-      </ul>
-
-      <h2>Best Neighborhoods</h2>
-      <p>The 7th arrondissement offers Eiffel Tower proximity and elegant streets, while the Marais blends historic charm with trendy cafés. Saint-Germain-des-Prés exudes Left Bank sophistication, and Montmartre provides hilltop romance with artistic flair. For luxury seekers, the 8th arrondissement near the Champs-Élysées delivers grandeur and world-class shopping.</p>
-
-      <h2>Start Your Paris Adventure</h2>
-      <p>Ready to write your Parisian love story? Browse our curated selection of the most romantic hotels in Paris and book your couple's retreat today. From boutique hideaways to five-star palaces, your perfect romantic escape awaits in the world's most enchanting city.</p>
-    </>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

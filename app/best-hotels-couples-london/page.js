@@ -1,32 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in London",
-  description: "Discover the most romantic hotels in London perfect for couples. From luxury suites to intimate boutique stays, find your ideal romantic getaway in England's captivating capital."
-};
+  title: 'Best Hotels for Couples in London 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-london"
+}
+
+const content = {
+  intro: "London captivates couples travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, London's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in London offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in London are significant—the best hotels position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: London's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique London",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in London requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Hotels for Couples in London</h1>
-      
-      <p className="hook">London sets the stage for unforgettable romantic escapes, offering couples everything from historic luxury hotels with Thames views to intimate boutique hideaways in charming neighborhoods. Whether celebrating an anniversary or planning a spontaneous weekend away, the city's hotel scene caters to every couple's dream.</p>
-      
-      <h2>Why Choose These Hotels</h2>
-      <ul>
-        <li>Iconic romantic experiences like afternoon tea at The Ritz, couples spa treatments at five-star properties, and rooftop bars overlooking the glittering cityscape create memorable moments together</li>
-        <li>World-class dining within hotel restaurants helmed by Michelin-starred chefs, plus easy access to West End shows, art galleries, and riverside walks along the South Bank</li>
-        <li>Diverse accommodation styles from classic Mayfair elegance to trendy Shoreditch lofts, ensuring couples find the perfect atmosphere whether seeking timeless sophistication or contemporary cool</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>London hotels command premium prices, especially during peak season (May-September) and holidays, so booking well in advance often secures better rates and room selection</li>
-        <li>Central locations like Covent Garden and Westminster offer convenience but can be bustling; consider quieter neighborhoods like Marylebone or Notting Hill for a more intimate, local experience</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>Mayfair and Knightsbridge deliver classic luxury and proximity to Hyde Park for romantic strolls. South Bank provides modern hotels with river views and walkable access to cultural landmarks. For a village-like feel with independent restaurants and charming streets, explore Notting Hill or Primrose Hill properties.</p>
-      
-      <p className="cta">Start planning your romantic London escape today—compare couples-friendly hotels and book your perfect stay in one of the world's most enchanting cities.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

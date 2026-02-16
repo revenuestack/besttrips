@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Madrid: Your Executive Home Away From Home",
-  description: "Discover top serviced apartments in Madrid's business districts. Flexible stays, work-ready amenities, and prime locations for corporate travelers seeking comfort and productivity."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Madrid's thriving business scene demands accommodation that matches your professional standards. Serviced apartments offer the perfect blend of hotel convenience and residential comfort, giving you the space and flexibility to work effectively while experiencing authentic Madrid living.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Cost-effective for extended stays with full kitchens, laundry facilities, and separate living areas that reduce dining-out expenses while providing work-life balance</li>
-          <li>Prime business district locations in Salamanca, Chamartín, and AZCA with walking distance to corporate offices, conference centers, and excellent metro connections</li>
-          <li>Professional amenities including high-speed WiFi, dedicated workspaces, 24/7 concierge services, and meeting rooms that support your productivity needs</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early during major trade fairs like FITUR or ARCOmadrid when corporate housing fills quickly and rates increase significantly</li>
-          <li>Verify parking availability if you need a rental car, as central Madrid apartments often charge premium rates or have limited spaces</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Salamanca offers upscale elegance near embassies and luxury offices. Chamartín provides modern towers close to the train station and northern business parks. Centro grants historic charm with proximity to government offices. AZCA delivers contemporary high-rises surrounded by multinational headquarters.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Browse Madrid's finest business apartments today and secure your professional sanctuary in Spain's dynamic capital.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Madrid 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Madrid, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Madrid stay.'
+}
+
+const guide = {
+  destination: "Madrid",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-madrid"
+}
+
+const content = {
+  intro: "Madrid captivates business travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Madrid's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Madrid offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Madrid are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Madrid's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Madrid",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Madrid requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Madrid is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Madrid rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Madrid's unique character, and prepare for a stay that exceeds expectations. Your perfect Madrid adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

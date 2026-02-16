@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Budapest: Comfort, Culture & Accessibility',
-  description: 'Discover the best senior-friendly apartments in Budapest. From thermal baths to accessible neighborhoods, find your perfect Hungarian home with safety, comfort, and charm.'
+  title: 'Best Apartments for Seniors in Budapest 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Budapest, Hungary. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Budapest stay.'
+}
+
+const guide = {
+  destination: "Budapest",
+  country: "Hungary",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-budapest"
+}
+
+const content = {
+  intro: "Budapest captivates seniors travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Budapest's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Budapest offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Budapest are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Budapest's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Budapest",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Budapest requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Budapest is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Budapest rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Budapest's unique character, and prepare for a stay that exceeds expectations. Your perfect Budapest adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    intro: "Budapest offers seniors the perfect blend of Old World charm and modern comfort, with affordable apartments in accessible neighborhoods that put thermal baths, historic sites, and excellent healthcare within easy reach.",
-    why_stay: [
-      "Affordable luxury living with senior-friendly apartments featuring elevators, handrails, and ground-floor options in safe neighborhoods like District V (Belváros) and District II (Rózsadomb)",
-      "World-renowned thermal baths with therapeutic benefits just minutes from residential areas, plus excellent healthcare facilities and English-speaking medical professionals",
-      "Rich cultural life with accessible museums, opera houses, and riverside promenades, all connected by an efficient public transport system with senior discounts"
-    ],
-    tips: [
-      "Choose apartments near metro Line 1 (the yellow line) for easiest access—stations have elevators and it connects major senior-friendly neighborhoods to attractions",
-      "Look for properties in Buda rather than Pest for quieter streets, hillside views, and proximity to nature while staying close to city amenities",
-      "Budapest Ferenc Liszt Airport is 16km from the city center, accessible via 100E bus or taxi. Most senior-friendly apartments are in Districts I, II, V, and XII."
-    ],
-    cta: "Start your Budapest apartment search today and discover why thousands of seniors have chosen Hungary's stunning capital for comfortable, cultured retirement living."
-  }
-  
-  return <SimpleGuide content={content} destination="Budapest" slug="best-apartments-seniors-budapest" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

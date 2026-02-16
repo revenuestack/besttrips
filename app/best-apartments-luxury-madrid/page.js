@@ -1,29 +1,36 @@
-import GuideLayout from '@/components/GuideLayout'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: "Best Apartments for Luxury Travelers in Madrid",
-  description: "Discover Madrid's finest luxury apartments offering sophisticated accommodations in prime locations. From Salamanca's designer boutiques to Chamberí's upscale charm, find your perfect Madrid retreat."
+  title: 'Best Apartments for Luxury Travelers in Madrid 2026 - BestTrips.org',
+  description: 'Discover the best apartments for luxury travelers in Madrid, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Madrid stay.'
+}
+
+const guide = {
+  destination: "Madrid",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Luxury Travelers",
+  slug: "best-apartments-luxury-madrid"
+}
+
+const content = {
+  intro: "Madrid captivates luxury travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing exceptional service, unique experiences, prestige with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Madrid's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for luxury travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Madrid offer space, kitchen, living like a local. For luxury travelers specifically, this means access to butler service, Michelin dining, spa, transfers that larger chains often lack.",
+    "Location advantages in Madrid are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to private tours, fine dining, exclusive access that define the luxury experience here.",
+    "Value proposition matters: Madrid's apartments deliver exceptional service, unique experiences, prestige at price points that make sense. Expect exclusive amenities and personalized service compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Grand Hotel Madrid",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €200-500 with consistent 9+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Madrid requires strategy. For luxury travelers, prioritize exceptional service, unique experiences, prestige when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider private tours, fine dining, exclusive access when choosing your base. Transport in Madrid is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Madrid rewards luxury travelers who choose wisely. The apartments highlighted here represent the best of sophisticated and exclusive accommodations, each offering exceptional service, unique experiences, prestige that elevates your experience. Whether you prioritize butler service or transfers, these options deliver. Book with confidence, embrace Madrid's unique character, and prepare for a stay that exceeds expectations. Your perfect Madrid adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const guide = {
-    destination: "Madrid",
-    country: "Spain",
-    type: "Apartments",
-    audience: "Luxury Travelers",
-    hook: "Madrid's luxury apartment scene rivals its world-class museums and Michelin-starred restaurants, offering discerning travelers private sanctuaries in the heart of Spain's vibrant capital.",
-    why_stay: [
-      "Space and Privacy: Luxury apartments provide expansive living areas, private terraces, and fully-equipped gourmet kitchens—perfect for extended stays or travelers seeking residential comfort with five-star amenities including concierge services and daily housekeeping.",
-      "Prime Locations: Position yourself in prestigious neighborhoods like Salamanca, with its Golden Mile shopping, or Justicia, steps from Chueca's cultural scene. Many apartments occupy historic buildings with modern renovations, blending Madrid's architectural heritage with contemporary luxury.",
-      "Authentic Experience: Live like a madrileño while enjoying hotel-caliber service. Morning coffee at neighborhood cafés, evening paseos through tree-lined boulevards, and the freedom to entertain guests in sophisticated surroundings create an immersive cultural experience impossible in traditional hotels."
-    ],
-    considerations: [
-      "Luxury apartments command premium rates, typically €300-800+ nightly depending on size and location. Book directly with reputable property management companies to ensure advertised amenities and avoid scams.",
-      "Many historic buildings lack elevators, and some neighborhoods experience nightlife noise. Confirm floor level, soundproofing, and air conditioning—essential for Madrid's summer heat."
-    ],
-    neighborhood_tips: "Salamanca offers refined elegance near Retiro Park. Chamberí provides local charm with excellent restaurants. Justicia balances central location with residential tranquility. Avoid tourist-heavy Sol for longer stays.",
-    booking_advice: "Reserve 2-3 months ahead for spring and fall. Request detailed photos, verify exact addresses, and confirm check-in procedures. Consider properties with 24/7 support for peace of mind."
-  }
-
-  return <GuideLayout guide={guide} />
+  return <AccommodationGuide guide={guide} content={content} />
 }

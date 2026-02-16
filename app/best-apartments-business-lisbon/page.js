@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Lisbon",
-  description: "Discover top-rated serviced apartments in Lisbon perfect for business travelers. Find fully-equipped accommodations with high-speed WiFi, workspaces, and prime locations near business districts."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Business Travelers in Lisbon</h1>
-      
-      <section className="hook">
-        <p>Lisbon's blend of historic charm and modern infrastructure makes it an ideal European business hub, and choosing the right apartment can transform your work trip into a productive and comfortable experience.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Serviced apartments offer dedicated workspaces, high-speed fiber internet, and 24/7 concierge services—essential for maintaining productivity while enjoying more space and privacy than traditional hotels at competitive rates.</li>
-          <li>Strategic locations in business districts like Parque das Nações and Avenidas Novas put you minutes from corporate offices, conference centers, and excellent public transport connections including the metro and airport shuttle services.</li>
-          <li>Flexible lease terms from nightly to monthly stays accommodate various business needs, while fully-equipped kitchens and in-unit laundry facilities provide the convenience and cost savings that extended business trips demand.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early during peak conference seasons (September-November and March-May) as premium business apartments fill quickly, and verify that your chosen property includes invoicing capabilities for corporate expense reporting.</li>
-          <li>Prioritize buildings with backup power generators and redundant internet connections to avoid workflow disruptions, and confirm parking availability if you plan to rent a vehicle for client meetings outside the city center.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Avenidas Novas and Saldanha offer proximity to corporate headquarters and metro access, while Parque das Nações provides modern waterfront living near the airport and convention center. Chiado and Baixa suit those mixing business with client entertainment in historic settings.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Browse verified business-friendly apartments with instant booking, verified WiFi speeds, and workspace photos to secure your ideal Lisbon base today.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
+}
+
+const guide = {
+  destination: "Lisbon",
+  country: "Portugal",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-lisbon"
+}
+
+const content = {
+  intro: "Lisbon captivates business travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Lisbon offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Lisbon's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Lisbon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Lisbon requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,0 +1,56 @@
+{
+  "city": "Miami",
+  "country": "USA",
+  "slug": "miami",
+  "neighborhoods": [
+    "City Center",
+    "Old Town",
+    "Waterfront",
+    "Arts District",
+    "Business District"
+  ],
+  "hotels": {
+    "luxury": [
+      {
+        "name": "Grand Hotel Miami",
+        "neighborhood": "City Center",
+        "priceRange": "€200-500",
+        "rating": 9,
+        "highlight": "NEEDS_ENHANCEMENT"
+      }
+    ],
+    "boutique": [
+      {
+        "name": "Boutique Miami",
+        "neighborhood": "Old Town",
+        "priceRange": "€100-200",
+        "rating": 8.5,
+        "highlight": "NEEDS_ENHANCEMENT"
+      }
+    ],
+    "budget": [
+      {
+        "name": "Miami Central Hostel",
+        "neighborhood": "City Center",
+        "priceRange": "€20-50",
+        "rating": 8,
+        "highlight": "NEEDS_ENHANCEMENT"
+      }
+    ]
+  },
+  "apartments": {
+    "couples": [
+      {
+        "name": "Romantic Miami Apartment",
+        "neighborhood": "Old Town",
+        "priceRange": "€80-150",
+        "highlight": "NEEDS_ENHANCEMENT"
+      }
+    ]
+  },
+  "localTips": [
+    "NEEDS_ENHANCEMENT - Local tips will be added"
+  ],
+  "needsEnhancement": true,
+  "lastUpdated": "2026-02-16T18:51:06.215Z"
+}

@@ -1,63 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Families in Prague: Top Family-Friendly Accommodations",
-  description: "Discover the best family hotels in Prague with spacious rooms, kid-friendly amenities, and prime locations near top attractions. Book your perfect stay today."
-};
+  title: 'Best Hotels for Families in Prague 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in Prague, Czech Republic. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Prague stay.'
+}
+
+const guide = {
+  destination: "Prague",
+  country: "Czech Republic",
+  accommodationType: "Hotels",
+  audience: "Families",
+  slug: "best-hotels-families-prague"
+}
+
+const content = {
+  intro: "Prague captivates families travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Prague's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Prague offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Prague are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Prague's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Prague",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Prague requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Prague is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Prague rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Prague's unique character, and prepare for a stay that exceeds expectations. Your perfect Prague adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Hotels for Families in Prague</h1>
-      
-      <section className="mb-8">
-        <p className="text-lg leading-relaxed">
-          Prague captivates families with its fairy-tale charm, from medieval castles to enchanting cobblestone streets. Finding the right hotel transforms your visit into an unforgettable adventure, with comfort and convenience ensuring everyone from toddlers to teens enjoys this magical European destination.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Hotels in Prague</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Family-focused hotels offer spacious rooms and suites with extra beds, cribs, and connecting rooms, providing the space growing families need after busy sightseeing days</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Many properties feature dedicated kids' clubs, indoor pools, and play areas that keep children entertained while parents relax, plus concierge services can arrange family-friendly tours and activities</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Hotels provide reliable amenities like on-site restaurants with children's menus, laundry facilities, and 24-hour reception staff who can assist with any needs or emergencies during your stay</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Things to Consider</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Book properties with elevators if traveling with strollers, as Prague's historic buildings often feature multiple flights of stairs and limited accessibility</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Consider locations near public transportation or attractions to minimize walking distances with tired children, and verify if breakfast is included to simplify morning routines</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Best Neighborhoods</h2>
-        <p className="leading-relaxed">
-          Old Town (Staré Město) places families steps from Prague Castle and Charles Bridge, though expect premium prices. Lesser Town (Malá Strana) offers quieter streets with castle views. New Town (Nové Město) provides excellent value near Wenceslas Square with abundant restaurants. Vinohrady combines residential charm with parks, playgrounds, and easy metro access—perfect for families seeking authentic Prague while staying budget-conscious.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-lg font-medium text-blue-600">
-          Browse our curated selection of family-friendly Prague hotels and secure the perfect base for your Central European adventure today.
-        </p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,32 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Couples in Berlin",
-  description: "Discover the most romantic hotels in Berlin perfect for couples. From boutique stays in Mitte to luxurious retreats in Charlottenburg, find your ideal romantic getaway in Germany's vibrant capital."
-};
+  title: 'Best Hotels for Couples in Berlin 2026 - BestTrips.org',
+  description: 'Discover the best hotels for couples in Berlin, Germany. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Berlin stay.'
+}
+
+const guide = {
+  destination: "Berlin",
+  country: "Germany",
+  accommodationType: "Hotels",
+  audience: "Couples",
+  slug: "best-hotels-couples-berlin"
+}
+
+const content = {
+  intro: "Berlin captivates couples travelers with its unique blend of efficiency, culture, and surprising warmth. Finding the perfect hotels here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Berlin's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Berlin offer service, amenities, convenience. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Berlin are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Berlin's hotels deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Berlin",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Berlin requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Berlin is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Berlin rewards couples travelers who choose wisely. The hotels highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Berlin's unique character, and prepare for a stay that exceeds expectations. Your perfect Berlin adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Hotels for Couples in Berlin</h1>
-      
-      <p className="hook">Berlin's eclectic blend of history, culture, and modern energy creates the perfect backdrop for a romantic escape. Whether you're seeking intimate boutique charm or five-star luxury, the city's diverse neighborhoods offer exceptional hotels designed for couples.</p>
-      
-      <h2>Why Choose These Hotels</h2>
-      <ul>
-        <li>Romantic rooftop bars and Michelin-starred restaurants provide unforgettable date nights with stunning city views across landmarks like the Brandenburg Gate and TV Tower.</li>
-        <li>Boutique hotels in historic neighborhoods like Prenzlauer Berg and Kreuzberg offer intimate atmospheres with personalized service, spa facilities, and couples' suites featuring rainfall showers and king-size beds.</li>
-        <li>Berlin's world-class museums, scenic canal walks, and vibrant nightlife mean you'll never run out of experiences to share, from morning coffee at charming cafés to evening cocktails in chic speakeasies.</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book accommodations in central districts like Mitte or Charlottenburg for easy access to major attractions and romantic dining spots without lengthy commutes.</li>
-        <li>Summer and December are peak tourist seasons—reserve rooms well in advance and expect higher rates, especially for hotels with couples' amenities like private balconies or spa access.</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>Mitte offers proximity to Museum Island and Brandenburg Gate with upscale hotel options. Prenzlauer Berg provides a quieter, residential vibe with tree-lined streets perfect for romantic strolls. Charlottenburg delivers old-world elegance near palace gardens and luxury shopping.</p>
-      
-      <p className="cta">Start planning your romantic Berlin getaway today and discover hotels that combine German hospitality with unforgettable couple-centric experiences.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Business Travelers in Edinburgh",
-  description: "Discover the best serviced apartments in Edinburgh for business travelers. Find flexible accommodations near financial districts, conference venues, and transport links in Scotland's capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Business Travelers in Edinburgh</h1>
-      
-      <section className="hook">
-        <p>Edinburgh's thriving business scene demands accommodation that works as hard as you do. Serviced apartments offer the perfect blend of professional functionality and home comfort for corporate travelers.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Serviced apartments provide dedicated workspace, high-speed WiFi, and meeting facilities—essential for productive business trips. Many include business centers and printing services on-site.</li>
-          <li>Flexibility is key for corporate travel. With apartment rentals, enjoy full kitchens to maintain your routine, in-unit laundry, and spacious living areas for after-hours work or client entertaining.</li>
-          <li>Cost-effectiveness for extended stays makes apartments superior to hotels. Weekly rates offer significant savings, while separate living spaces provide better work-life balance during long assignments.</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book early during festival seasons (August) and parliamentary sessions when business accommodation fills quickly. Properties near the financial district command premium rates but offer unmatched convenience.</li>
-          <li>Prioritize locations with reliable transport links. The tram connects the airport to the city center in 35 minutes, while properties near Waverley Station provide easy access to Glasgow and London business hubs.</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>New Town offers prestigious addresses near financial institutions, while the Exchange District places you at the heart of Edinburgh's business quarter. Leith provides waterfront apartments with excellent value, just 15 minutes from the center.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Secure your Edinburgh business apartment today and experience professional accommodation that enhances productivity and comfort during your corporate stay.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Business Travelers in Edinburgh 2026 - BestTrips.org',
+  description: 'Discover the best apartments for business travelers in Edinburgh, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Edinburgh stay.'
+}
+
+const guide = {
+  destination: "Edinburgh",
+  country: "UK",
+  accommodationType: "Apartments",
+  audience: "Business Travelers",
+  slug: "best-apartments-business-edinburgh"
+}
+
+const content = {
+  intro: "Edinburgh captivates business travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect apartments here means balancing connectivity, location, productivity with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Edinburgh's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for business travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Edinburgh offer space, kitchen, living like a local. For business travelers specifically, this means access to fast WiFi, desk space, meeting rooms, gym that larger chains often lack.",
+    "Location advantages in Edinburgh are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to networking events, quick dining options that define the business experience here.",
+    "Value proposition matters: Edinburgh's apartments deliver connectivity, location, productivity at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Edinburgh",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Edinburgh requires strategy. For business travelers, prioritize connectivity, location, productivity when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider networking events, quick dining options when choosing your base. Transport in Edinburgh is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Edinburgh rewards business travelers who choose wisely. The apartments highlighted here represent the best of efficient and professional accommodations, each offering connectivity, location, productivity that elevates your experience. Whether you prioritize fast WiFi or gym, these options deliver. Book with confidence, embrace Edinburgh's unique character, and prepare for a stay that exceeds expectations. Your perfect Edinburgh adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

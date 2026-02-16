@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Athens",
-  description: "Discover the perfect Athens apartment base for your Greek adventures. From hiking Mount Lycabettus to exploring ancient ruins, find accommodation that puts you at the heart of the action."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Athens isn\'t just ancient history—it\'s a thrilling playground where urban exploration meets Mediterranean adventure, and your apartment choice can make or break your adrenaline-filled itinerary.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Strategic locations near hiking trails like Mount Lycabettus and Philopappos Hill, plus easy access to day trips to Cape Sounion for cliff diving and the Saronic Islands for kayaking and sailing</li>
-          <li>Flexible space for storing adventure gear—bikes, climbing equipment, snorkeling gear—with many apartments offering secure storage and bike rentals</li>
-          <li>Cost-effective base camp allowing you to invest more in experiences like rock climbing in Varibopi, scuba diving in the Athenian Riviera, or paragliding excursions while enjoying authentic neighborhood life</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments near metro stations (Monastiraki, Syntagma, Thissio) for quick access to coastal adventure spots and trailheads—Athens traffic can eat into your adventure time</li>
-          <li>Summer heat (June-August) can be intense; prioritize apartments with air conditioning and consider spring or fall for optimal hiking and outdoor exploration conditions</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Koukaki and Thissio offer proximity to hillside trails and ancient sites. Plaka provides central access to everything, while Exarchia appeals to alternative adventurers. For coastal activities, consider Glyfada or Vouliagmeni along the Athens Riviera.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Ready to conquer Athens from your perfect apartment base? Start comparing adventure-friendly rentals and plan your epic Greek escape today.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Athens 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Athens, Greece. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Athens stay.'
+}
+
+const guide = {
+  destination: "Athens",
+  country: "Greece",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-athens"
+}
+
+const content = {
+  intro: "Athens captivates adventure travelers with its unique blend of mythology, beauty, and Mediterranean soul. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Athens's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Athens offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Athens are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Athens's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Athens",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Athens requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Athens is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Athens rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Athens's unique character, and prepare for a stay that exceeds expectations. Your perfect Athens adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

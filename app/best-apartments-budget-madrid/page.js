@@ -1,42 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Budget Travelers in Madrid",
-  description: "Discover affordable apartment rentals in Madrid perfect for budget travelers. Explore authentic neighborhoods, save on accommodation, and experience local life in Spain's vibrant capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <h1>Best Apartments for Budget Travelers in Madrid</h1>
-      
-      <section className="hook">
-        <p>Madrid's apartment scene offers budget travelers an unbeatable combination of affordability, space, and authentic local living that hotels simply can't match.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This?</h2>
-        <ul>
-          <li>Save 30-50% compared to hotels while gaining full kitchens to prepare meals, cutting your daily food costs significantly and letting you shop at local markets like Mercado de San Miguel</li>
-          <li>Experience genuine Madrid life in residential neighborhoods like Lavapiés or Malasaña, where you'll find cheaper tapas bars, local shops, and a real sense of community away from tourist traps</li>
-          <li>Enjoy more space and flexibility with separate living areas perfect for families or groups, plus washer access to pack lighter and extend your trip without laundry costs piling up</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book at least 2-3 months in advance for the best rates, especially during peak season (May-October) when prices can double, and always verify the exact location on a map to ensure good metro access</li>
-          <li>Check for additional fees like cleaning charges (€30-60), utility caps, and security deposits that can add 20-30% to the advertised nightly rate</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Lavapiés offers the best value with multicultural vibes and excellent transit links. Malasaña provides hipster charm with affordable eats, while Chamberí balances residential calm with central access. Avoid Salamanca and Sol for budget stays.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Start your Madrid apartment search today and unlock authentic Spanish living at prices that let you stay longer and explore deeper.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Budget Travelers in Madrid 2026 - BestTrips.org',
+  description: 'Discover the best apartments for budget travelers in Madrid, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Madrid stay.'
+}
+
+const guide = {
+  destination: "Madrid",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Budget Travelers",
+  slug: "best-apartments-budget-madrid"
+}
+
+const content = {
+  intro: "Madrid captivates budget travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing value, location, social atmosphere with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Madrid's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for budget travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Madrid offer space, kitchen, living like a local. For budget travelers specifically, this means access to free WiFi, breakfast included, common areas that larger chains often lack.",
+    "Location advantages in Madrid are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to free walking tours, street food, local markets that define the budget experience here.",
+    "Value proposition matters: Madrid's apartments deliver value, location, social atmosphere at price points that make sense. Expect 30-50% savings versus chain hotels compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Madrid Central Hostel",
+        "description": "Located in City Center, this property offers exceptional value and location. Prices range €20-50 with consistent 8+ ratings from guests.",
+        "highlight": "Prime City Center location"
+    }
+],
+  tips: "Booking apartments in Madrid requires strategy. For budget travelers, prioritize value, location, social atmosphere when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider free walking tours, street food, local markets when choosing your base. Transport in Madrid is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Madrid rewards budget travelers who choose wisely. The apartments highlighted here represent the best of savvy and practical accommodations, each offering value, location, social atmosphere that elevates your experience. Whether you prioritize free WiFi or common areas, these options deliver. Book with confidence, embrace Madrid's unique character, and prepare for a stay that exceeds expectations. Your perfect Madrid adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

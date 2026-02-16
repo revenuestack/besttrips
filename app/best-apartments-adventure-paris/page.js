@@ -1,29 +1,46 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Adventure Seekers in Paris',
-  description: 'Paris isn\'t just museums and cafés—it\'s an adventure playground for thrill-seekers.'
+  title: 'Best Apartments for Adventure Seekers in Paris 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Paris, France. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Paris stay.'
+}
+
+const guide = {
+  destination: "Paris",
+  country: "France",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-paris"
+}
+
+const content = {
+  intro: "Paris captivates adventure travelers with its unique blend of art, cuisine, and timeless elegance. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from Le Marais, Saint-Germain-des-Prés, Montmartre—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Paris's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Paris offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Paris are significant—the best apartments position you within walking distance of the Eiffel Tower, Louvre, and Montmartre, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Paris's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hôtel Particulier Montmartre",
+        "description": "Located in Montmartre, this property offers Secret garden oasis in artistic quarter. Prices range €350-600 with consistent 9.1+ ratings from guests.",
+        "highlight": "Secret garden oasis in artistic quarter"
+    },
+    {
+        "name": "Pavillon de la Reine",
+        "description": "Located in Le Marais, this property offers Hidden courtyard on Place des Vosges. Prices range €300-550 with consistent 9+ ratings from guests.",
+        "highlight": "Hidden courtyard on Place des Vosges"
+    },
+    {
+        "name": "Hôtel Providence",
+        "description": "Located in République, this property offers Rock-and-roll chic with cocktail bar. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Rock-and-roll chic with cocktail bar"
+    }
+],
+  tips: "Booking apartments in Paris requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include Le Marais and Saint-Germain-des-Prés. Local insight: Skip the tourist cafés on Champs-Élysées - locals head to Canal Saint-Martin Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Paris is excellent via Metro, so location flexibility depends on your priorities.",
+  conclusion: "Paris rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Paris's unique character, and prepare for a stay that exceeds expectations. Your perfect Paris adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-  "intro": "Paris isn't just museums and cafés—it's an adventure playground for thrill-seekers. Staying in apartments gives you the freedom to start early, return late, and live like a local explorer. Choose neighborhoods with quick access to climbing gyms, riverside trails, and day-trip departure points.",
-  "why_stay": [
-    "Apartments offer flexible schedules perfect for sunrise Seine kayaking sessions and late-night returns from climbing gyms.",
-    "Self-catering kitchens let you fuel up properly before biking Bois de Vincennes or hiking Fontainebleau's boulder fields.",
-    "Local neighborhoods provide authentic bases near hidden skateparks, parkour spots, and adventure community hubs throughout Paris."
-  ],
-  "neighborhoods": [
-    "Belleville: Edgy hillside district with stunning city views, street art, and proximity to Buttes-Chaumont's cliff-climbing park.",
-    "Canal Saint-Martin: Waterside location perfect for morning runs, bike paths, and easy access to climbing gyms in northeastern Paris.",
-    "13th Arrondissement: Modern area near Seine docks for kayaking, close to Fontainebleau forest access via quick train connections."
-  ],
-  "tips": [
-    "Rent bikes through Vélib' stations to explore Bois de Boulogne, Vincennes forest, and riverside paths extending 50+ kilometers.",
-    "Book apartments near Gare de Lyon or Gare du Nord for weekend escapes to Fontainebleau climbing or Normandy coasteering adventures."
-  ],
-  "cta": "Find your Paris adventure base today and unlock the city's wild side from your own apartment!"
-}
-
-  return <SimpleGuide content={content} destination="Paris" slug="best-apartments-adventure-paris" title="Best Apartments for Adventure Seekers in Paris" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

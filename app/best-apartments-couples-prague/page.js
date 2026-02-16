@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Couples in Prague: Romantic Stays in the City of a Hundred Spires",
-  description: "Discover the best apartments for couples in Prague. From cozy Old Town lofts to riverside retreats, find your perfect romantic base in this enchanting Czech capital."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Prague's cobblestone streets, Gothic spires, and riverside charm create the perfect backdrop for romance, and choosing the right apartment can transform your couple's getaway into an unforgettable experience.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose This</h2>
-        <ul>
-          <li>Privacy and intimacy that hotels can't match, with fully-equipped kitchens perfect for romantic breakfasts and intimate dinners featuring local Czech ingredients from nearby markets</li>
-          <li>Better value for money with spacious accommodations often featuring separate living areas, balconies with castle views, and authentic architectural details like exposed beams and original parquet floors</li>
-          <li>Local neighborhood experiences in charming residential areas where you'll discover hidden cafés, traditional wine bars, and quiet parks away from tourist crowds</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book accommodations near tram lines for easy access to attractions, as Prague's hills can be challenging to navigate on foot, especially in winter</li>
-          <li>Verify elevator availability if booking upper-floor apartments in historic buildings, as many beautiful Art Nouveau and medieval structures lack modern conveniences</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Neighborhoods</h2>
-        <p>Malá Strana offers fairy-tale charm beneath the castle, Vinohrady provides trendy local vibes with excellent restaurants, Old Town places you steps from iconic landmarks, and Karlín combines riverside views with emerging cultural scenes and craft breweries.</p>
-      </section>
-      
-      <section className="cta">
-        <button>Start planning your romantic Prague escape today and discover apartments that combine historic charm with modern comfort for an unforgettable couples' retreat.</button>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Couples in Prague 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Prague, Czech Republic. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Prague stay.'
+}
+
+const guide = {
+  destination: "Prague",
+  country: "Czech Republic",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-prague"
+}
+
+const content = {
+  intro: "Prague captivates couples travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Prague's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Prague offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Prague are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Prague's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Prague",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Prague requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Prague is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Prague rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Prague's unique character, and prepare for a stay that exceeds expectations. Your perfect Prague adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

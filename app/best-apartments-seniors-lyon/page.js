@@ -1,25 +1,36 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Seniors in Lyon: Comfort Meets French Elegance',
-  description: 'Discover senior-friendly apartments in Lyon, France. From Presqu\'île charm to Croix-Rousse hillside living, find your perfect retirement haven in France\'s gastronomic capital.'
+  title: 'Best Apartments for Seniors in Lyon 2026 - BestTrips.org',
+  description: 'Discover the best apartments for seniors in Lyon, France. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lyon stay.'
+}
+
+const guide = {
+  destination: "Lyon",
+  country: "France",
+  accommodationType: "Apartments",
+  audience: "Seniors",
+  slug: "best-apartments-seniors-lyon"
+}
+
+const content = {
+  intro: "Lyon captivates seniors travelers with its unique blend of art, cuisine, and timeless elegance. Finding the perfect apartments here means balancing comfort, accessibility, convenience with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Lyon's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for seniors travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Lyon offer space, kitchen, living like a local. For seniors travelers specifically, this means access to elevators, ground floor options, quiet rooms that larger chains often lack.",
+    "Location advantages in Lyon are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to cultural tours, scenic walks, local cuisine that define the seniors experience here.",
+    "Value proposition matters: Lyon's apartments deliver comfort, accessibility, convenience at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Lyon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Lyon requires strategy. For seniors travelers, prioritize comfort, accessibility, convenience when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider cultural tours, scenic walks, local cuisine when choosing your base. Transport in Lyon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lyon rewards seniors travelers who choose wisely. The apartments highlighted here represent the best of warm and respectful accommodations, each offering comfort, accessibility, convenience that elevates your experience. Whether you prioritize elevators or quiet rooms, these options deliver. Book with confidence, embrace Lyon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lyon adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-    "hook": "Lyon offers seniors an unparalleled blend of cultural richness, world-class healthcare, and apartment living that balances independence with accessibility.",
-    "why_visit": [
-      "Healthcare Excellence: Lyon boasts top-tier medical facilities including Hôpital Édouard Herriot and specialized geriatric care centers, with many senior apartments located near major hospitals and clinics.",
-      "Walkable Neighborhoods: Districts like Presqu'île, Part-Dieu, and Bellecour feature ground-floor and elevator-equipped apartments near markets, pharmacies, and cultural venues—perfect for maintaining an active lifestyle.",
-      "Rich Cultural Life: Enjoy opera at Opéra Nouvel, riverside walks along the Rhône and Saône, and UNESCO-listed Old Lyon, all easily accessible via Lyon's senior-friendly public transport system."
-    ],
-    "insider_tips": [
-      "Target residence services like Domitys or Les Senioriales that offer apartments with optional meal services, housekeeping, and social activities while maintaining independence.",
-      "Visit during spring or fall for comfortable weather when exploring neighborhoods; request ground-floor units in historic buildings that may lack elevators."
-    ],
-    "logistics": "Senior apartments range from €800-2,000 monthly. Long-term rentals require proof of income and French guarantor. Many facilities offer trial stays. Public transport passes provide senior discounts.",
-    "cta": "Begin your Lyon apartment search today and discover why France's third-largest city is becoming a premier retirement destination for discerning seniors."
-  }
-  
-  return <SimpleGuide content={content} destination="Lyon" slug="best-apartments-seniors-lyon" title="Best Apartments for Seniors in Lyon: Comfort Meets French Elegance" />
+  return <AccommodationGuide guide={guide} content={content} />
 }

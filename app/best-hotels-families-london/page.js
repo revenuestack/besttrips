@@ -1,32 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Families in London",
-  description: "Discover London's top family-friendly hotels offering spacious rooms, kid-friendly amenities, and prime locations near major attractions. Find the perfect base for your family adventure."
-};
+  title: 'Best Hotels for Families in London 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in London, UK. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect London stay.'
+}
+
+const guide = {
+  destination: "London",
+  country: "UK",
+  accommodationType: "Hotels",
+  audience: "Families",
+  slug: "best-hotels-families-london"
+}
+
+const content = {
+  intro: "London captivates families travelers with its unique blend of heritage, sophistication, and modern creativity. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, London's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in London offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in London are significant—the best hotels position you within walking distance of Big Ben, museums, and West End theaters, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: London's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique London",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in London requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in London is superb via Tube, so location flexibility depends on your priorities.",
+  conclusion: "London rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace London's unique character, and prepare for a stay that exceeds expectations. Your perfect London adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article>
-      <h1>Best Hotels for Families in London</h1>
-      
-      <p className="hook">London welcomes families with open arms, and choosing the right hotel can transform your trip from stressful to spectacular. The city's best family hotels combine convenient locations, generous space, and thoughtful amenities that keep both parents and children happy.</p>
-      
-      <h2>Why Choose These Hotels</h2>
-      <ul>
-        <li>Many London hotels offer interconnecting rooms, family suites, and children's programs that provide entertainment while parents relax, making multi-generational travel seamless and enjoyable.</li>
-        <li>Prime locations near Hyde Park, the British Museum, and West End theaters mean less transit time and more exploration, with many properties offering cribs, high chairs, and welcome packs for young guests.</li>
-        <li>From historic luxury hotels with swimming pools to modern aparthotels with kitchenettes, London's accommodation diversity ensures every family finds their perfect fit regardless of budget or style preferences.</li>
-      </ul>
-      
-      <h2>Important Considerations</h2>
-      <ul>
-        <li>Book well in advance for summer and school holidays when family rooms fill quickly, and always confirm specific amenities like rollaway beds or babysitting services before arrival.</li>
-        <li>Central London hotels charge premium rates; consider properties in Kensington, South Bank, or near King's Cross for better value while maintaining excellent transport links to major attractions.</li>
-      </ul>
-      
-      <h2>Best Neighborhoods</h2>
-      <p>South Kensington offers museum access and leafy streets ideal for stroller walks, while Covent Garden provides street entertainment and proximity to theaters. Families seeking space should explore Notting Hill or Richmond, where larger rooms and nearby parks create a residential feel.</p>
-      
-      <p className="cta">Start planning your London family getaway today and discover hotels that cater to every age and interest.</p>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

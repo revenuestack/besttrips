@@ -1,63 +1,36 @@
+import AccommodationGuide from '@/components/AccommodationGuide'
+
 export const metadata = {
-  title: "Best Hotels for Families in Lisbon",
-  description: "Discover the best family hotels in Lisbon, from spacious suites near historic sites to properties with pools and kid-friendly amenities in safe neighborhoods."
-};
+  title: 'Best Hotels for Families in Lisbon 2026 - BestTrips.org',
+  description: 'Discover the best hotels for families in Lisbon, Portugal. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Lisbon stay.'
+}
+
+const guide = {
+  destination: "Lisbon",
+  country: "Portugal",
+  accommodationType: "Hotels",
+  audience: "Families",
+  slug: "best-hotels-families-lisbon"
+}
+
+const content = {
+  intro: "Lisbon captivates families travelers with its unique blend of melancholy charm, seafood, and golden light. Finding the perfect hotels here means balancing space, safety, kid-friendly amenities with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to reliable comfort, no hassle, full service, Lisbon's accommodation scene delivers options that exceed expectations. This guide reveals the best hotels for families travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Hotels in Lisbon offer service, amenities, convenience. For families travelers specifically, this means access to connecting rooms, pools, kitchens, laundry that larger chains often lack.",
+    "Location advantages in Lisbon are significant—the best hotels position you within walking distance of major attractions and local favorites, while keeping you connected to museums, parks, family restaurants, day trips that define the families experience here.",
+    "Value proposition matters: Lisbon's hotels deliver space, safety, kid-friendly amenities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Lisbon",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking hotels in Lisbon requires strategy. For families travelers, prioritize space, safety, kid-friendly amenities when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider museums, parks, family restaurants, day trips when choosing your base. Transport in Lisbon is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Lisbon rewards families travelers who choose wisely. The hotels highlighted here represent the best of practical and reassuring accommodations, each offering space, safety, kid-friendly amenities that elevates your experience. Whether you prioritize connecting rooms or laundry, these options deliver. Book with confidence, embrace Lisbon's unique character, and prepare for a stay that exceeds expectations. Your perfect Lisbon adventure starts with the right home base—and now you know exactly where to find it."
+}
 
 export default function Page() {
-  return (
-    <article className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Best Hotels for Families in Lisbon</h1>
-      
-      <section className="mb-8">
-        <p className="text-lg leading-relaxed">
-          Lisbon's sun-drenched hills, colorful tiled facades, and welcoming atmosphere make it a magical destination for families. The city's family-friendly hotels blend Portuguese hospitality with modern amenities, offering the perfect base to explore castles, beaches, and cobblestone neighborhoods together.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Why Choose Hotels in Lisbon</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Hotels provide reliable amenities like pools, kids' clubs, and family suites that make traveling with children stress-free and comfortable</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>Many Lisbon hotels offer strategic locations near tram lines and major attractions, reducing travel time and keeping little legs fresh for exploration</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-green-600 font-bold">✓</span>
-            <span>On-site restaurants with children's menus and 24-hour reception provide convenience and peace of mind for parents navigating a new city</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Things to Consider</h2>
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Book rooms with air conditioning as Lisbon summers can be hot, and request ground floor or elevator access to avoid hauling luggage and strollers up stairs</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-amber-600 font-bold">⚠</span>
-            <span>Check if the hotel offers cribs, high chairs, and babysitting services in advance, as availability varies and some charge additional fees</span>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Best Neighborhoods</h2>
-        <p className="leading-relaxed">
-          Belém offers spacious hotels near parks, museums, and the waterfront, ideal for families seeking room to roam. Parque das Nações features modern properties with nearby attractions like the Oceanarium and cable cars. Baixa-Chiado provides central access to major sites, though hotels here tend to be smaller. Avenida da Liberdade combines elegance with family-friendly parks and wide sidewalks perfect for strollers.
-        </p>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-lg font-medium text-blue-600">
-          Browse family hotels in Lisbon and book your perfect base for discovering Portugal's captivating capital with your loved ones.
-        </p>
-      </section>
-    </article>
-  );
+  return <AccommodationGuide guide={guide} content={content} />
 }

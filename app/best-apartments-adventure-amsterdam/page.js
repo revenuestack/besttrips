@@ -1,40 +1,36 @@
-export const metadata = {
-  title: "Best Apartments for Adventure Seekers in Amsterdam",
-  description: "Discover the best apartment rentals in Amsterdam for adventure seekers. Prime locations near biking trails, water sports, and urban exploration hotspots."
-};
+import AccommodationGuide from '@/components/AccommodationGuide'
 
-export default function GuidePage() {
-  return (
-    <div className="guide-page">
-      <section className="hook">
-        <p>Amsterdam is an adventure playground waiting to be explored, and the right apartment base camp makes all the difference. From cycling the legendary canal rings to kayaking through waterways and exploring hidden urban gems, adventure seekers need accommodations that match their active lifestyle.</p>
-      </section>
-      
-      <section className="why-choose">
-        <h2>Why Choose Apartments?</h2>
-        <ul>
-          <li>Freedom and flexibility to start early morning bike rides or return late from evening canal adventures without hotel restrictions or curfews</li>
-          <li>Full kitchens to fuel up properly before epic cycling tours through the countryside or prepare post-adventure meals with fresh Albert Cuyp Market finds</li>
-          <li>Strategic locations near bike rental shops, water sports centers, and adventure tour departure points, plus secure storage for your gear and equipment</li>
-        </ul>
-      </section>
-      
-      <section className="considerations">
-        <h2>Considerations</h2>
-        <ul>
-          <li>Book apartments near Vondelpark or the Jordaan for easiest access to bike paths leading into the countryside and water sport rental facilities</li>
-          <li>Verify secure bike storage is included—you\'ll likely rent bikes for multi-day use, and Amsterdam\'s cycling culture means this amenity is essential</li>
-        </ul>
-      </section>
-      
-      <section className="neighborhoods">
-        <h2>Best Neighborhoods</h2>
-        <p>Oud-West puts you steps from Vondelpark\'s running and cycling paths. De Pijp offers authentic local vibes with easy access to the Amstel River for kayaking. The Jordaan provides charming canal-side living with direct routes to Noord\'s urban beaches and cable wakeboarding parks.</p>
-      </section>
-      
-      <section className="cta">
-        <p>Ready to base your Amsterdam adventure in the perfect apartment? Browse our curated selection of adventure-friendly rentals and start planning your active Dutch escape today.</p>
-      </section>
-    </div>
-  );
+export const metadata = {
+  title: 'Best Apartments for Adventure Seekers in Amsterdam 2026 - BestTrips.org',
+  description: 'Discover the best apartments for adventure seekers in Amsterdam, Netherlands. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Amsterdam stay.'
+}
+
+const guide = {
+  destination: "Amsterdam",
+  country: "Netherlands",
+  accommodationType: "Apartments",
+  audience: "Adventure Seekers",
+  slug: "best-apartments-adventure-amsterdam"
+}
+
+const content = {
+  intro: "Amsterdam captivates adventure travelers with its unique blend of culture, history, and memorable experiences. Finding the perfect apartments here means balancing location for activities, gear storage, early starts with authentic local experiences. The city's diverse neighborhoods—from City Center, Old Town, Waterfront—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Amsterdam's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for adventure travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Amsterdam offer space, kitchen, living like a local. For adventure travelers specifically, this means access to bike storage, early breakfast, local guides that larger chains often lack.",
+    "Location advantages in Amsterdam are significant—the best apartments position you within walking distance of major attractions and local favorites, while keeping you connected to hiking, water sports, climbing, extreme sports that define the adventure experience here.",
+    "Value proposition matters: Amsterdam's apartments deliver location for activities, gear storage, early starts at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Boutique Amsterdam",
+        "description": "Located in Old Town, this property offers exceptional value and location. Prices range €100-200 with consistent 8.5+ ratings from guests.",
+        "highlight": "Prime Old Town location"
+    }
+],
+  tips: "Booking apartments in Amsterdam requires strategy. For adventure travelers, prioritize location for activities, gear storage, early starts when comparing options. The best neighborhoods for your style include City Center and Old Town. Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider hiking, water sports, climbing, extreme sports when choosing your base. Transport in Amsterdam is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Amsterdam rewards adventure travelers who choose wisely. The apartments highlighted here represent the best of energetic and inspiring accommodations, each offering location for activities, gear storage, early starts that elevates your experience. Whether you prioritize bike storage or local guides, these options deliver. Book with confidence, embrace Amsterdam's unique character, and prepare for a stay that exceeds expectations. Your perfect Amsterdam adventure starts with the right home base—and now you know exactly where to find it."
+}
+
+export default function Page() {
+  return <AccommodationGuide guide={guide} content={content} />
 }

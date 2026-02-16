@@ -1,29 +1,46 @@
-import SimpleGuide from '@/components/SimpleGuide'
+import AccommodationGuide from '@/components/AccommodationGuide'
 
 export const metadata = {
-  title: 'Best Apartments for Couples in Barcelona',
-  description: 'Barcelona offers couples an enchanting blend of Mediterranean charm, architectural wonders, and vibrant culture.'
+  title: 'Best Apartments for Couples in Barcelona 2026 - BestTrips.org',
+  description: 'Discover the best apartments for couples in Barcelona, Spain. Expert recommendations, insider tips, real property picks, and local knowledge for your perfect Barcelona stay.'
+}
+
+const guide = {
+  destination: "Barcelona",
+  country: "Spain",
+  accommodationType: "Apartments",
+  audience: "Couples",
+  slug: "best-apartments-couples-barcelona"
+}
+
+const content = {
+  intro: "Barcelona captivates couples travelers with its unique blend of vibrant culture, passionate nightlife, and architectural wonders. Finding the perfect apartments here means balancing privacy, romantic dining, couples activities with authentic local experiences. The city's diverse neighborhoods—from Gothic Quarter, El Born, Gràcia—each offer distinct character and advantages for your stay. Whether you're drawn to longer stays, self-catering, authentic experience, Barcelona's accommodation scene delivers options that exceed expectations. This guide reveals the best apartments for couples travelers, with insider tips that transform a good trip into an unforgettable one.",
+  whyChoose: [
+    "Apartments in Barcelona offer space, kitchen, living like a local. For couples travelers specifically, this means access to king beds, spa, rooftop bars, room service that larger chains often lack.",
+    "Location advantages in Barcelona are significant—the best apartments position you within walking distance of La Sagrada Familia, Gothic Quarter, and beaches, while keeping you connected to sunset walks, wine tasting, couples massage that define the couples experience here.",
+    "Value proposition matters: Barcelona's apartments deliver privacy, romantic dining, couples activities at price points that make sense. Expect better amenities and authentic character at similar prices compared to standard alternatives."
+],
+  topPicks: [
+    {
+        "name": "Hotel Brummell",
+        "description": "Located in Poble Sec, this property offers Rooftop pool, local neighborhood vibe. Prices range €150-280 with consistent 8.9+ ratings from guests.",
+        "highlight": "Rooftop pool, local neighborhood vibe"
+    },
+    {
+        "name": "Casa Camper Barcelona",
+        "description": "Located in El Raval, this property offers Free 24h snack bar, minimalist design. Prices range €180-320 with consistent 8.8+ ratings from guests.",
+        "highlight": "Free 24h snack bar, minimalist design"
+    },
+    {
+        "name": "Hotel Neri",
+        "description": "Located in Gothic Quarter, this property offers Medieval palace with rooftop terrace. Prices range €250-450 with consistent 9+ ratings from guests.",
+        "highlight": "Medieval palace with rooftop terrace"
+    }
+],
+  tips: "Booking apartments in Barcelona requires strategy. For couples travelers, prioritize privacy, romantic dining, couples activities when comparing options. The best neighborhoods for your style include Gothic Quarter and El Born. Local insight: La Boqueria is touristy - try Mercat de Sant Antoni instead Book 2-3 months ahead for peak season, or last-minute for shoulder season deals for best rates. Consider sunset walks, wine tasting, couples massage when choosing your base. Transport in Barcelona is reliable via public transport, so location flexibility depends on your priorities.",
+  conclusion: "Barcelona rewards couples travelers who choose wisely. The apartments highlighted here represent the best of romantic and intimate accommodations, each offering privacy, romantic dining, couples activities that elevates your experience. Whether you prioritize king beds or room service, these options deliver. Book with confidence, embrace Barcelona's unique character, and prepare for a stay that exceeds expectations. Your perfect Barcelona adventure starts with the right home base—and now you know exactly where to find it."
 }
 
 export default function Page() {
-  const content = {
-  "intro": "Barcelona offers couples an enchanting blend of Mediterranean charm, architectural wonders, and vibrant culture. Staying in a private apartment provides intimacy, authentic neighborhood experiences, and the freedom to create your own romantic rhythm in this captivating Catalan capital.",
-  "why_stay": [
-    "Enjoy complete privacy with fully equipped kitchens perfect for intimate breakfast-in-bed moments and candlelit dinners together.",
-    "Experience authentic Barcelona living in residential neighborhoods away from tourist crowds, discovering local markets and hidden cafés.",
-    "Save significantly compared to hotels while gaining more space, balconies with views, and flexible check-in times."
-  ],
-  "neighborhoods": [
-    "Eixample: Famous for Gaudí's architecture, tree-lined boulevards, rooftop terraces, and countless tapas bars within walking distance.",
-    "Gothic Quarter: Medieval charm with narrow romantic alleys, intimate plazas, cathedral views, and proximity to beaches.",
-    "Gràcia: Bohemian village atmosphere with artisan shops, cozy squares, local festivals, and authentic Catalan character."
-  ],
-  "tips": [
-    "Book apartments with air conditioning for summer visits and confirm reliable Wi-Fi if working remotely during your stay.",
-    "Choose locations near metro stations for easy exploration and verify building elevator availability if mobility matters."
-  ],
-  "cta": "Discover your perfect Barcelona apartment today and start planning an unforgettable romantic escape in Spain's most enchanting city."
-}
-
-  return <SimpleGuide content={content} destination="Barcelona" slug="best-apartments-couples-barcelona" title="Best Apartments for Couples in Barcelona" />
+  return <AccommodationGuide guide={guide} content={content} />
 }
