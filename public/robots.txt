@@ -1,12 +1,4 @@
-# BestTrips.org - Robots.txt
-
 User-agent: *
 Allow: /
 
-# Sitemaps
 Sitemap: https://besttrips.org/sitemap.xml
-
-# Crawl-delay for polite bots
-Crawl-delay: 1
-
-# Disallow admin/private areas (none currently)
